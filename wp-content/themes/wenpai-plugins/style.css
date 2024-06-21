@@ -8,3 +8,36 @@ Description:  这是一款基于 Powder 的子主题，由 薇晓朵网络工作
 Tags: two-columns,three-columns,one-column,right-sidebar,left-sidebar,footer-widgets,blog,e-commerce,flexible-header,full-width-template,buddypress,custom-header,custom-background,custom-menu,custom-colors,sticky-post,threaded-comments,translation-ready,rtl-language-support,featured-images,theme-options
 Version: 1.2.0
 */
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+body, button, input, select, textarea {
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+.site-info {
+    text-align: left;
+}
+.entry-meta {
+    margin-top: 1.5em;
+}
+[class*=dashicons-star-] {
+    color: var(--wp--preset--color--pomegrade-1);
+}
+.liam-icon > a::before {
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin: 0px 8px 3px 0px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
+    border: 1px solid #FFF;
+}
+
+.wp-block-group.is-style-default.has-border-color.wp-block-group-is-layout-flow:hover {
+    background-color: #fff !important;
+    border: 1px solid #1e1e1e !important;
+}
