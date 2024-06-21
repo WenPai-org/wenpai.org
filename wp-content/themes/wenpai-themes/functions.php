@@ -22,7 +22,8 @@ add_filter( 'meta_field_block_get_block_content', function ( $block_content, $at
 		if ( ! empty( $image_ids ) ) {
 			$block_content = '<div class="screenshots">';
 			foreach ( $image_ids as $image_id ) {
-				$block_content .= wp_get_attachment_image( $image_id, 'full' );
+				//$block_content .= wp_get_attachment_image( $image_id, 'full' );
+				$block_content .= '<img width="100%" src="' . wp_get_attachment_image_url( $image_id, 'full' ) . '" />';
 			}
 			$block_content .= '</div>';
 		}
