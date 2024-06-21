@@ -1,0 +1,73 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 8,
+            "index": 8
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 8,
+                    "index": 8
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "NewExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 7,
+                        "index": 7
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "callee": {
+                    "type": "Identifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 4,
+                            "index": 4
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 7,
+                            "index": 7
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "name": "foo"
+                },
+                "arguments": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

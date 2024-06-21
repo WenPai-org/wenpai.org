@@ -1,0 +1,45 @@
+--TEST--
+Updating a dev package to its latest ref should pick up new dependencies
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                {
+                    "name": "a/devpackage", "version": "dev-main",
+                    "source": { "reference": "newref", "url": "https://example.org", "type": "git" },
+                    "require": {
+                        "a/dependency": "*"
+                    },
+                    "default-branch": true
+                },
+                {
+                    "name": "a/dependency", "version": "dev-main",
+                    "source": { "reference": "ref", "url": "https://example.org", "type": "git" },
+                    "require": {},
+                    "default-branch": true
+                }
+            ]
+        }
+    ],
+    "require": {
+        "a/devpackage": "dev-main"
+    },
+    "minimum-stability": "dev"
+}
+--INSTALLED--
+[
+    {
+        "name": "a/devpackage", "version": "dev-main",
+        "source": { "reference": "oldref", "url": "https://example.org", "type": "git" },
+        "require": {},
+        "default-branch": true
+    }
+]
+--RUN--
+update
+--EXPECT--
+Installing a/dependency (dev-main ref)
+Marking a/dependency (9999999-dev ref) as installed, alias of a/dependency (dev-main ref)
+Upgrading a/devpackage (dev-main oldref => dev-main newref)

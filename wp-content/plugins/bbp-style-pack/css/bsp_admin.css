@@ -1,0 +1,269 @@
+
+/*----------------------  'not working' tab test--------------------------*/	
+.working {
+	background-color : green !important ;
+}
+
+
+/*----------------------  general styling  --------------------------*/
+
+.align-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+/*----------------------  tab styling--------------------------*/	
+
+.bsp-nav-tab {
+    padding: 6px 15px!important;
+    font-size: 15px!important;
+    font-family: arial!important;
+    font-weight: 400!important;
+    background: #dcdcde26!important;
+    border-radius: 5px 5px 0px 0px!important;
+}
+
+.bsp-nav-tab:hover {
+    background: #dbefffbf!important;
+}
+
+.bsp-nav-tab-active, .bsp-nav-tab-active:focus, .bsp-nav-tab-active:focus:active, .bsp-nav-tab-active:hover {
+    background: #dbefffbf!important;
+    /* color: #000; */
+}
+
+.bsp-column {
+        float: left;
+        width: calc( 50% - 30px); /* -24px for side padding, -4px for side margin, -2px of side border */
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 2px;
+}
+
+/* clear floats after the columns */
+.bsp-row:after {
+        content: "";
+        display: table;
+        clear: both;
+        margin: 12px;
+}
+
+/* make columns snap for small displays */
+@media screen and (max-width: 700px){
+        .bsp-column {
+                float: none;
+                width: 100%;
+        }
+}
+
+.bsp-inline-block p {
+        display: inline-block;
+        margin-top: -0.1em;
+}
+
+.bsp-light-border {
+        box-shadow: 1px 2px 3px #ccc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+
+
+/*----------------------  mod tools admin styling--------------------------*/
+
+#_bbp_moderation_english_threshold {
+	width: 50px;
+	text-align: right;
+}
+
+.bbp_moderation_custom_option {
+	padding-left: 30px;
+}
+
+.status-pending,
+.striped>tbody>:nth-child(odd).status-pending, 
+ul.striped>:nth-child(odd).status-pending {
+	background-color: #ffffe0;
+}
+
+
+/*----------------------  settings tables styling  --------------------------*/
+
+table.bsp-settings-table {
+        table-layout: fixed;
+        width: 100%;
+}
+
+table.bsp-settings-table tr {
+        border-top: 1px #eee solid;
+        width: 100%;
+}
+
+table.bsp-settings-table th.th-first, table.bsp-settings-table td.td-first {
+        width: 180px;
+        min-width: 180px;
+}
+
+table.bsp-settings-table th.th-second, table.bsp-settings-table td.td-second {
+        min-width: 80%;
+        width: inherit;
+        max-width: 85%;
+        overflow-wrap: break-word;
+}
+
+table.bsp-plugin-info {
+        border-collapse: collapse;
+        border: 0;
+        box-shadow: 1px 2px 3px #ccc;
+}
+
+table.bsp-plugin-info th, table.bsp-plugin-info td {
+        border: 1px solid #666;
+        font-size: 75%;
+        vertical-align: baseline;
+        padding: 4px 6px;
+}
+
+table.bsp-plugin-info th {
+        background-color: #ddd;
+}
+
+table.bsp-plugin-info tr {
+        background-color: #fff;
+}
+
+table.bsp-plugin-info tr:nth-child(odd) {
+        background-color: #f5f5f5;
+}
+
+
+/*----------------------  back to top scroller  --------------------------*/
+/* adapdted frpm: https://www.codexworld.com/back-to-top-button-using-jquery-css/ */
+
+.button-back-to-top {
+        position: fixed;
+        bottom: -24px;
+        right: 24px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(220, 220, 222, 0.45);
+        color: #50575e;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #c3c4c7;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
+        transform: scale(0.3);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+/* .button-back-to-top:focus {
+        background: #dbefff
+} */
+
+.button-back-to-top.show {
+        bottom: 24px;
+        right: 24px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+}
+
+.button-back-to-top.show:hover {
+        background: #dbefff;
+        bottom: 30px;
+        opacity: 1;
+}
+
+.to-top-dashicon {
+        color: #50575e;
+        position: absolute; 
+        background-size: contain;
+        top: 30%;
+        left: 30%;
+}
+
+.to-top-dashicon:nth-child(2){
+        top: 42%;
+}
+
+@keyframes bounceAlpha {
+        0% {opacity: 1; transform: translateY(0px) scale(1);}
+        25%{opacity: 0; transform: translateY(-10px) scale(0.9);}
+        26%{opacity: 0; transform: translateY(10px) scale(0.9);}
+        55% {opacity: 1; transform: translateY(0px) scale(1);}
+}
+
+.button-back-to-top:hover .to-top-dashicon {
+        animation-name: bounceAlpha;
+        animation-duration:1.4s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+}
+.button-back-to-top:hover .to-top-dashicon :nth-child(2){
+        animation-name: bounceAlpha;
+        animation-duration:1.4s;
+        animation-delay:0.2s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+}
+
+@media screen and (max-width: 700px) {
+        .button-back-to-top {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+        }
+
+        .button-back-to-top.show {
+                bottom: 10px;
+                right: 10px;
+        }
+
+        .button-back-to-top.show:hover {
+                bottom: 10px;
+        }
+
+        .to-top-dashicon {
+                top: 24%;
+                left: 24%;
+        }
+    
+}
+
+
+/*----------------------  block widget titles and text--------------------------*/
+.bsp-widget-heading {
+	color: #222;
+	font-weight: bold;
+}
+
+ul.bsp-widget-settings{
+	font-size : 12px !important;
+}
+
+
+/*----------------------  dashicons used in settings forum index and settings topic index--------------------------*/
+.bsp-topics-icon::before {
+	content: "\f325";	
+}
+
+.bsp-posts-icon::before {
+	content: "\f125";	
+}
+
+.bsp-voices-icon::before {
+	content: "\f307";	
+}
+
+
+

@@ -1,0 +1,61 @@
+/**1.0.16 - 2023.09.06**/
+- Updated: Add stop processing button
+
+/**1.0.15 - 2023.05.12**/
+- Updated: Keep exmage link of product when import product from csv
+
+/**1.0.14 - 2023.01.11**/
+- Updated: If the number of images is greater than threshold(20 by default, able to change via exmage_ajax_handle_url_threshold hook), they will be processed in the background
+- Updated: Compatible with WPML's attachment translations feature
+- Dev: Added exmage_insert_attachment_image_name filter hook
+
+/**1.0.13 - 2023.01.10**/
+- Fixed: Compatibility issue with Photon CDN(Jetpack)
+- Dev: Added exmage_get_supported_image_sizes, exmage_image_size_url filter hooks
+
+/**1.0.12 - 2022.11.17**/
+- Fixed: Image URL processing in some cases
+- Updated: Compatibility check with WP 6.1
+
+/**1.0.11 - 2022.08.29**/
+- Dev: Added exmage_get_supported_mime_types filter hook
+
+/**1.0.10 - 2022.07.22**/
+- Updated: VillaTheme_Support
+- Updated: Data sanitization/escaping check
+
+/**1.0.9 - 2022.05.07**/
+- Fixed: Error with URLs that contains more than 255 characters
+
+/**1.0.8 - 2022.04.19**/
+- Updated: VillaTheme_Support
+
+/**1.0.7 - 2022.04.14**/
+- Fixed: Use wp_http_validate_url before remote call
+
+/**1.0.6 - 2022.03.29**/
+- Updated: VillaTheme_Support
+
+/**1.0.5 - 2022.03.28**/
+- Fixed: Use wp_safe_remote_get instead of wp_remote_get to avoid redirection and request forgery attacks
+
+/**1.0.4 - 2022.03.21**/
+- Updated: VillaTheme_Support
+
+/**1.0.3 - 2022.01.14**/
+- Optimized: Enqueue script
+
+/**1.0.2.2 - 2022.01.10**/
+- Updated: VillaTheme_Support
+
+/**1.0.2.1 - 2021.12.13**/
+- Updated: Missing css/image files for class VillaTheme_Support
+
+/**1.0.2 - 2021.12.11**/
+- Added: Button to store external images to server in Media library/list view mode
+
+/**1.0.1 - 2021.12.08**/
+- Updated: Do not allow to edit(crop, rotate...) external images to avoid unexpected errors
+
+/**1.0.0 - 2021.12.07**/
+- Released

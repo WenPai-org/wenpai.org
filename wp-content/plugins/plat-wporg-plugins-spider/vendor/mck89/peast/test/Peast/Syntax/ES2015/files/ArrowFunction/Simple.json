@@ -1,0 +1,207 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 37,
+            "index": 37
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 37,
+                    "index": 37
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 4,
+                            "index": 4
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 36,
+                            "index": 36
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "id": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 4,
+                                "index": 4
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 10,
+                                "index": 10
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "logger"
+                    },
+                    "init": {
+                        "type": "ArrowFunctionExpression",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 13,
+                                "index": 13
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 36,
+                                "index": 36
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 13,
+                                        "index": 13
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 16,
+                                        "index": 16
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "name": "msg"
+                            }
+                        ],
+                        "body": {
+                            "type": "CallExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 20,
+                                    "index": 20
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 36,
+                                    "index": 36
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "callee": {
+                                "type": "MemberExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 20,
+                                        "index": 20
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 31,
+                                        "index": 31
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "object": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 20,
+                                            "index": 20
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 27,
+                                            "index": 27
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "console"
+                                },
+                                "property": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 28,
+                                            "index": 28
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 31,
+                                            "index": 31
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "log"
+                                },
+                                "computed": false
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 32,
+                                            "index": 32
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 35,
+                                            "index": 35
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "msg"
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "async": false,
+                        "expression": true
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    "sourceType": "script"
+}

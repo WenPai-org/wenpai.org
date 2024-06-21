@@ -1,0 +1,206 @@
+# Copyright (C) 2021 WenPai.org
+# This file is distributed under the same license as the WPfanyi import plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPfanyi import 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpfanyi-import\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-06T04:55:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: wpfanyi-import\n"
+
+#. Plugin Name of the plugin
+msgid "WPfanyi import"
+msgstr ""
+
+#. Description of the plugin
+msgid "Install translation package like a theme/plugin, no need for FTP. this tool will save you a lot of time."
+msgstr ""
+
+#. Author of the plugin
+msgid "WenPai.org"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wenpai.org/"
+msgstr ""
+
+#: core.php:44
+#: core.php:45
+msgid "import translation"
+msgstr ""
+
+#: core.php:54
+#: page.php:96
+#: page.php:173
+msgid "Import"
+msgstr ""
+
+#: core.php:81
+msgid "Translation imported successfully!"
+msgstr ""
+
+#: core.php:116
+msgid "You don't have the authority to do that"
+msgstr ""
+
+#: core.php:122
+msgid "Unexpected translation package type"
+msgstr ""
+
+#: core.php:129
+msgid "Translation package not selected"
+msgstr ""
+
+#: core.php:134
+msgid "The translation package should be in ZIP format"
+msgstr ""
+
+#: core.php:141
+msgid "Invalid URL format"
+msgstr ""
+
+#: core.php:146
+msgid "Parameter error: unknown translation package import method"
+msgstr ""
+
+#: core.php:165
+msgid "Translation package upload failed, please check whether the file system permissions are normal"
+msgstr ""
+
+#: core.php:167
+msgid "Translation package acquisition failed, please check whether the URL is valid"
+msgstr ""
+
+#: core.php:236
+msgid "No translation package was successfully identified."
+msgstr ""
+
+#: core.php:254
+msgid "The PHP temporary directory was not recognized"
+msgstr ""
+
+#: core.php:264
+msgid "PHP temporary directory is not writable."
+msgstr ""
+
+#: core.php:275
+msgid "This server doesn‘t support the decompression of Zip archives. Please contact the service provider of this server to enable the zip extension module function of PHP."
+msgstr ""
+
+#: core.php:283
+msgid "Failed to parse the Zip package. The Zip package may be damaged"
+msgstr ""
+
+#. translators: %s: Translation storage directory
+#: core.php:310
+msgid "The translation storage directory of this WordPress is not writable：%s"
+msgstr ""
+
+#: core.php:315
+msgid "WordPress translation storage directory does not exist and an error occurred when trying to create it. Please refer to PHP warning output for specific error information."
+msgstr ""
+
+#: core.php:359
+msgid "No valid translation was found."
+msgstr ""
+
+#: page.php:11
+msgid "Import translation"
+msgstr ""
+
+#: page.php:15
+msgid "The translation package is a Zip package including MO and PO files. Select the translation pack on this page and set its type correctly then click Import to add it to WordPress."
+msgstr ""
+
+#: page.php:17
+msgid "Note: If a translation package with the same name already exists, this operation will overwrite it"
+msgstr ""
+
+#: page.php:24
+msgid "Import from Local"
+msgstr ""
+
+#: page.php:25
+msgid "Import from URL"
+msgstr ""
+
+#: page.php:36
+msgid "Translation package:"
+msgstr ""
+
+#: page.php:44
+#: page.php:121
+msgid "Package type:"
+msgstr ""
+
+#: page.php:48
+#: page.php:125
+msgid "Plugin"
+msgstr ""
+
+#: page.php:51
+#: page.php:128
+msgid "Theme"
+msgstr ""
+
+#: page.php:54
+#: page.php:131
+msgid "Auto"
+msgstr ""
+
+#: page.php:56
+#: page.php:133
+msgid "Only the translation package with directory structure can be recognized automatically, e.g:"
+msgstr ""
+
+#: page.php:107
+msgid "URL address:"
+msgstr ""
+
+#: page.php:182
+msgid "Help"
+msgstr ""
+
+#: page.php:184
+msgid "common problem:"
+msgstr ""
+
+#: page.php:187
+msgid "The installed translation package does not work"
+msgstr ""
+
+#: page.php:188
+msgid "A:Please check whether the translation package contains a valid .mo file."
+msgstr ""
+
+#: page.php:189
+msgid "B: Please check whether you have correctly selected the type of translation package (plugin or theme)."
+msgstr ""
+
+#: page.php:190
+msgid "C: Please upload by traditional manual method to finally confirm whether the translation package is valid."
+msgstr ""
+
+#: page.php:193
+msgid "Found a bug in this plugin?"
+msgstr ""
+
+#. translators: %s: https://github.com/WenPai-org/wpfanyi-import/issues
+#: page.php:195
+msgid "Please submit issues here: <a href=\"%s\" target=\"_blank\">https://github.com/WenPai-org/wpfanyi-import/issues</a>, we will fix it in the next version, thank you for your feedback!"
+msgstr ""
+
+#: page.php:199
+msgid "Need to translate a WordPress plugin/theme?"
+msgstr ""
+
+#. translators: %s: https://wpfanyi.com/new-project
+#: page.php:201
+msgid "If he is hosted in wordpress.org we will handle its translation for free! Please send your needs to: <a href=\"%s\" target=\"_blank\">https://wpfanyi.com/new-project</a>."
+msgstr ""

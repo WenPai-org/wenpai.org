@@ -1,0 +1,94 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 19,
+            "index": 19
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 19,
+                    "index": 19
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "AssignmentExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 18,
+                        "index": 18
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "left": {
+                    "type": "Identifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 0,
+                            "index": 0
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 1,
+                            "index": 1
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "name": "r"
+                },
+                "operator": "=",
+                "right": {
+                    "type": "RegExpLiteral",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 4,
+                            "index": 4
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 18,
+                            "index": 18
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "value": "\/\\u0037\\u0037\/",
+                    "raw": "\/\\u0037\\u0037\/",
+                    "flags": "",
+                    "pattern": "\\u0037\\u0037"
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

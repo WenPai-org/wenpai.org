@@ -1,0 +1,111 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 27,
+            "index": 27
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "LabeledStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 27,
+                    "index": 27
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "label": {
+                "type": "Identifier",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 5,
+                        "index": 5
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "name": "label"
+            },
+            "body": {
+                "type": "FunctionDeclaration",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 6,
+                        "index": 6
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 27,
+                        "index": 27
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "id": {
+                    "type": "Identifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 15,
+                            "index": 15
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 23,
+                            "index": 23
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "name": "labelled"
+                },
+                "params": [],
+                "body": {
+                    "type": "BlockStatement",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 25,
+                            "index": 25
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 27,
+                            "index": 27
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "body": []
+                },
+                "generator": false,
+                "async": false
+            }
+        }
+    ],
+    "sourceType": "script"
+}

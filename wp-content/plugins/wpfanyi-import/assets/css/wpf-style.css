@@ -1,0 +1,149 @@
+.main {
+    max-width: 800px;
+}
+
+.form-table td {
+    line-height: 1.8;
+}
+
+.main label {
+    margin-right: 5px;
+}
+
+.wpfanyi-tab-title {
+    position: relative;
+    left: 0;
+    height: 40px;
+    white-space: nowrap;
+    font-size: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.wpfanyi-tab-title, .wpfanyi-tab-title .wpfanyi-this:after {
+    border-color: #e6e6e6;
+}
+
+.wpfanyi-colla-title {
+    box-shadow: #00000005 1px 1px 8px;
+}
+
+.wpfanyi-tab-title .wpfanyi-this:after {
+    border: 0;
+    box-shadow: inset 0 -0px #007cba;
+}
+
+.wpfanyi-tab-title li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    position: relative;
+    line-height: 40px;
+    min-width: 65px;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 2em;
+}
+
+.wpfanyi-tab-title li.wpfanyi-this, .wpfanyi-tab-title li:hover {
+    box-shadow: inset 0 -3px #007cba;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.wpfanyi-tab-item, .description {
+    display: none;
+}
+
+.wpfanyi-show {
+    display: block;
+}
+
+#trans_url {
+    min-height: 31px;
+    width: 28em;
+}
+
+@media screen and (max-width: 782px){
+#trans_url {
+    width: 22em;
+}
+.tree {
+    width: 86%!important;
+}
+}
+
+.form-table th {
+    min-width: 140px;
+}
+
+.input_clear button {
+    position: absolute;
+    right: 8px;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.wpfanyi-import-config-help .toggle-indicator:before {
+    content: "\f140";
+    font: 20px/1 dashicons;
+}
+
+.wpfanyi-import-config-help .handlediv {
+    float: right;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+}
+
+.wpfanyi-import-config-help .handle {
+    border-bottom: 1px solid #ccd0d4;
+    line-height: 1.4em;
+    font-size: 14px;
+    margin: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.wpfanyi-import-config-help .inside {
+    padding: 12px 30px 12px;
+    display: none;
+}
+
+.wpfanyi-tab-item input[value=theme]:checked ~ .des .radio-theme-description, .wpfanyi-tab-item input[value=auto]:checked ~ .des .radio-auto-description, .wpfanyi-tab-item input[value=plugin]:checked ~ .des .radio-plugin-description {
+    display: block;
+    transition: 1s all;
+    margin-bottom: -30px;
+    position: relative;
+}
+
+.tree {
+    background: #e9e9e9;
+    padding: 30px 25px 20px 25px;
+    border-radius: 6px;
+    width: 60%;
+    color: #686868;
+}
+
+.treeNode {
+    cursor: pointer;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.two-level, .three-level {
+    padding-left: 1.5em;
+    margin-top: 5px;
+}

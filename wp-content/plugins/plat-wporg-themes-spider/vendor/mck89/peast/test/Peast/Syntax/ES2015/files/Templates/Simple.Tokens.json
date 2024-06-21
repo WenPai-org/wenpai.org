@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Template",
+        "value": "`test\ntest`",
+        "location": {
+            "start": {
+                "line": 1,
+                "column": 0,
+                "index": 0
+            },
+            "end": {
+                "line": 2,
+                "column": 5,
+                "index": 11
+            }
+        }
+    }
+]

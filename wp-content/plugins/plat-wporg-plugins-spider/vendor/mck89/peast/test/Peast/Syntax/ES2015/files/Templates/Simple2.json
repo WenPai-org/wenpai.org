@@ -1,0 +1,77 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 15,
+            "index": 15
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 15,
+                    "index": 15
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "TemplateLiteral",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 15,
+                        "index": 15
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "quasis": [
+                    {
+                        "type": "TemplateElement",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 0,
+                                "index": 0
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 15,
+                                "index": 15
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "value": "no$expression",
+                        "tail": true,
+                        "rawValue": "no$expression"
+                    }
+                ],
+                "expressions": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

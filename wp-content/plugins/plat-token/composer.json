@@ -1,0 +1,23 @@
+{
+    "name": "platform/token",
+    "description": "Token generator for platform",
+    "type": "project",
+    "require": {
+        "firebase/php-jwt": "^6.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Platform\\Token\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "耗子",
+            "email": "i@haozi.net"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    }
+}

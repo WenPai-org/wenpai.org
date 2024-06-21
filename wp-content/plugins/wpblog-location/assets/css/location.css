@@ -1,0 +1,34 @@
+/* assets/location.css */
+.post-comment-location {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    font-size: 14px!important;
+    padding-left: 10px;
+    color: rgba(0,0,0,.5)!important;
+    fill: rgba(0,0,0,.5)!important;
+}
+
+
+.post-author-location-ending {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    font-size: 14px!important;
+    padding-left: 10px;
+    color: rgba(0,0,0,.5)!important;
+    fill: rgba(0,0,0,.5)!important;
+}
+
+.post-comment-absolute {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .post-comment-location {
+    color: rgba(255,255,255,.5)!important;
+    fill: rgba(255,255,255,.5)!important;
+  }
+}
+*/

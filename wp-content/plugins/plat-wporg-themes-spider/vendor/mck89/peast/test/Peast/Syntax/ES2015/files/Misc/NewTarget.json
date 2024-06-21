@@ -1,0 +1,185 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 3,
+            "column": 1,
+            "index": 40
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "FunctionDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 3,
+                    "column": 1,
+                    "index": 40
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "id": {
+                "type": "Identifier",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 9,
+                        "index": 9
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 10,
+                        "index": 10
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "name": "a"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 13,
+                        "index": 13
+                    },
+                    "end": {
+                        "line": 3,
+                        "column": 1,
+                        "index": 40
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "location": {
+                            "start": {
+                                "line": 2,
+                                "column": 4,
+                                "index": 19
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 23,
+                                "index": 38
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "expression": {
+                            "type": "CallExpression",
+                            "location": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 4,
+                                    "index": 19
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 23,
+                                    "index": 38
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "callee": {
+                                "type": "MemberExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 4,
+                                        "index": 19
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 21,
+                                        "index": 36
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "object": {
+                                    "type": "CallExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 4,
+                                            "index": 19
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 16,
+                                            "index": 31
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "callee": {
+                                        "type": "MetaProperty",
+                                        "location": {
+                                            "start": {
+                                                "line": 2,
+                                                "column": 4,
+                                                "index": 19
+                                            },
+                                            "end": {
+                                                "line": 2,
+                                                "column": 14,
+                                                "index": 29
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "meta": "new",
+                                        "property": "target"
+                                    },
+                                    "arguments": []
+                                },
+                                "property": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 17,
+                                            "index": 32
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 21,
+                                            "index": 36
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "call"
+                                },
+                                "computed": false
+                            },
+                            "arguments": []
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "async": false
+        }
+    ],
+    "sourceType": "script"
+}

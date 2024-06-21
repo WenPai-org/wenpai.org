@@ -1,0 +1,116 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EXMAGE - WordPress Image Links\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-11 09:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.2\n"
+"X-Domain: exmage-wp-image-links"
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:79
+#, php-format
+msgid "<a href=\"%s\">Add images from URLs</a>)"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:100
+msgid "Add"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:352
+msgid "Cannot delete file"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:358
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:419
+msgid "Cannot find external URL"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:247
+msgid ""
+"Change this image to use external link. The existing image file stored on "
+"your server will be deleted."
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:707
+msgid "Click here to select this image"
+msgstr ""
+
+#. Name of the plugin
+msgid "EXMAGE - WordPress Image Links"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:212
+msgid "External URL"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://villatheme.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://villatheme.com/extensions/exmage-wordpress-image-links/"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:561
+msgid "Image exists"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:355
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:565
+msgid "Invalid or not supported image URL"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:489
+msgid "No valid image URLs found"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:106
+msgid ""
+"Paste an external image URL here or press Enter after you type to process"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:93
+#, php-format
+msgid ""
+"Save storage by using an external image URL(need to add multiple URLs? <a "
+"target=\"_blank\" href=\"%s\">Click here</a>):"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:93
+msgid "Save storage by using external image URLs(one line each):"
+msgstr ""
+
+#. Description of the plugin
+msgid "Save storage by using external image URLs."
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:265
+msgid ""
+"Save this image to your WordPress server like normal images so that it will "
+"be editable"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:422
+msgid "Saved already, please reload the page"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:547
+msgid "Successful"
+msgstr ""
+
+#: E:/Git/master/free-version/exmage-wp-image-links/exmage-wp-image-links/exmage-wp-image-links.php:178
+msgid "This is an external media file"
+msgstr ""
+
+#. Author of the plugin
+msgid "VillaTheme(villatheme.com)"
+msgstr ""

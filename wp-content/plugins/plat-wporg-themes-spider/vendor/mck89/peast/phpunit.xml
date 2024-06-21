@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	bootstrap="./test/bootstrap.php"
+	backupGlobals="false"
+	backupStaticAttributes="false">
+    <testsuites>
+        <testsuite name="Peast">
+            <file>test/Peast/PeastTest.php</file>
+        </testsuite>
+        <testsuite name="ES2015">
+            <directory>test/Peast/Syntax/ES2015</directory>
+        </testsuite>
+        <testsuite name="ES2016">
+            <directory>test/Peast/Syntax/ES2016</directory>
+        </testsuite>
+        <testsuite name="ES2017">
+            <directory>test/Peast/Syntax/ES2017</directory>
+        </testsuite>
+        <testsuite name="ES2018">
+            <directory>test/Peast/Syntax/ES2018</directory>
+        </testsuite>
+        <testsuite name="ES2019">
+            <directory>test/Peast/Syntax/ES2019</directory>
+        </testsuite>
+        <testsuite name="ES2020">
+            <directory>test/Peast/Syntax/ES2020</directory>
+        </testsuite>
+        <testsuite name="ES2021">
+            <directory>test/Peast/Syntax/ES2021</directory>
+        </testsuite>
+        <testsuite name="ES2022">
+            <directory>test/Peast/Syntax/ES2022</directory>
+        </testsuite>
+        <testsuite name="ES2023">
+            <directory>test/Peast/Syntax/ES2023</directory>
+        </testsuite>
+        <testsuite name="ES2024">
+            <directory>test/Peast/Syntax/ES2024</directory>
+        </testsuite>
+        <testsuite name="Traverser">
+            <file>test/Peast/TraverserTest.php</file>
+        </testsuite>
+        <testsuite name="Query">
+            <file>test/Peast/QueryTest.php</file>
+        </testsuite>
+        <testsuite name="Renderer">
+            <file>test/Peast/RendererTest.php</file>
+        </testsuite>
+        <testsuite name="Node">
+            <directory>test/Peast/Syntax/Node</directory>
+        </testsuite>
+        <testsuite name="Comments">
+            <file>test/Peast/Syntax/CommentsRegistryTest.php</file>
+        </testsuite>
+        <testsuite name="Scanner">
+            <file>test/Peast/Syntax/ScannerTest.php</file>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>lib/Peast</directory>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,165 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 31,
+            "index": 31
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ImportDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 31,
+                    "index": 31
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "specifiers": [
+                {
+                    "type": "ImportSpecifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 8,
+                            "index": 8
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 9,
+                            "index": 9
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "local": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 8,
+                                "index": 8
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 9,
+                                "index": 9
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "a"
+                    },
+                    "imported": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 8,
+                                "index": 8
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 9,
+                                "index": 9
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "a"
+                    }
+                },
+                {
+                    "type": "ImportSpecifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 10,
+                            "index": 10
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 11,
+                            "index": 11
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "local": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 10,
+                                "index": 10
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 11,
+                                "index": 11
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "b"
+                    },
+                    "imported": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 10,
+                                "index": 10
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 11,
+                                "index": 11
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "b"
+                    }
+                }
+            ],
+            "source": {
+                "type": "Literal",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 19,
+                        "index": 19
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 30,
+                        "index": 30
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "value": "my-module",
+                "raw": "\"my-module\"",
+                "format": "double"
+            }
+        }
+    ],
+    "sourceType": "module"
+}

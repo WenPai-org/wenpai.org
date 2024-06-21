@@ -1,0 +1,20 @@
+{
+    "name": "platform/wporg-themes-spider",
+    "description": "WordPress.org Themes Spider",
+    "type": "project",
+    "require": {
+        "wp-cli/wp-cli-bundle": "^2.8",
+        "imangazaliev/didom": "^2.0",
+        "guzzlehttp/guzzle": "^7.7",
+        "nesbot/carbon": "^2.69"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Platform\\Themes\\WPOrgSpider\\": "./"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

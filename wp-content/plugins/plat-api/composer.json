@@ -1,0 +1,20 @@
+{
+    "name": "platform/api",
+    "description": "API for Platform.",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Platform\\API\\": "./"
+        },
+        "files": [
+            "helper.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

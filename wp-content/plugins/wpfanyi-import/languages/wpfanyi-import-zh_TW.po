@@ -1,0 +1,306 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPfanyi import\n"
+"POT-Creation-Date: 2021-03-13 14:46+0800\n"
+"PO-Revision-Date: 2021-03-13 14:48+0800\n"
+"Last-Translator: 薇晓朵 <support@weixiaoduo.com>\n"
+"Language-Team: 薇晓朵 <support@weixiaoduo.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpfanyi-import.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: core.php:44 core.php:45
+msgid "import translation"
+msgstr "匯入翻譯"
+
+#: core.php:54 page.php:149 page.php:274
+msgid "Import"
+msgstr "匯入"
+
+#: core.php:81
+msgid "Translation imported successfully!"
+msgstr "翻譯匯入成功！"
+
+#: core.php:116
+msgid "You don't have the authority to do that"
+msgstr "您無權這樣做"
+
+#: core.php:122
+msgid "Unexpected translation package type"
+msgstr "意外的翻譯包型別"
+
+#: core.php:129
+msgid "Translation package not selected"
+msgstr "沒有選擇翻譯包"
+
+#: core.php:134
+msgid "The translation package should be in ZIP format"
+msgstr "翻譯包應為ZIP格式"
+
+#: core.php:141
+msgid "Invalid URL format"
+msgstr "錯誤的URL格式"
+
+#: core.php:146
+msgid "Parameter error: unknown translation package import method"
+msgstr "引數錯誤：翻譯包匯入方法未知"
+
+#: core.php:165
+msgid ""
+"Translation package upload failed, please check whether the file system "
+"permissions are normal"
+msgstr "翻譯包上傳失敗，請檢查檔案系統許可權是否正常"
+
+#: core.php:167
+msgid ""
+"Translation package acquisition failed, please check whether the URL is valid"
+msgstr "獲取翻譯包失敗，請檢查URL是否有效"
+
+#: core.php:236
+msgid "No translation package was successfully identified."
+msgstr "未成功識別任何翻譯包。"
+
+#: core.php:254
+msgid "The PHP temporary directory was not recognized"
+msgstr "無法識別PHP臨時目錄"
+
+#: core.php:264
+msgid "PHP temporary directory is not writable."
+msgstr "PHP臨時目錄不可寫。"
+
+#: core.php:275
+msgid ""
+"This server doesn‘t support the decompression of Zip archives. Please "
+"contact the service provider of this server to enable the zip extension "
+"module function of PHP."
+msgstr ""
+"此伺服器不支援解壓ZIP包。 請與伺服器提供商聯絡以啟用PHP的zip擴充套件模組功"
+"能。"
+
+#: core.php:283
+msgid "Failed to parse the Zip package. The Zip package may be damaged"
+msgstr "無法解析ZIP包，該包可能已損壞"
+
+#. translators: %s: Translation storage directory
+#: core.php:310
+#, php-format
+msgid "The translation storage directory of this WordPress is not writable：%s"
+msgstr "該WordPress的翻譯儲存目錄不可寫：%s"
+
+#: core.php:315
+msgid ""
+"WordPress translation storage directory does not exist and an error occurred "
+"when trying to create it. Please refer to PHP warning output for specific "
+"error information."
+msgstr ""
+"WordPress翻譯儲存目錄不存在，嘗試建立時出錯。具體錯誤資訊請參考PHP警告輸出。"
+
+#: core.php:359
+msgid "No valid translation was found."
+msgstr "未發現任何有效的翻譯檔案。"
+
+#: page.php:12
+msgid "Import translation"
+msgstr "匯入翻譯"
+
+#: page.php:17
+msgid ""
+"The translation package is a Zip package including .mo and .po files. Select "
+"the translation pack on this page and set its type correctly then click "
+"Import to add it to WordPress."
+msgstr ""
+"翻譯包是一個包含 .mo 和 .po 檔案的zip 包。在此頁面上選擇翻譯包並正確設定其型"
+"別，然後單擊“匯入”以將其新增到WordPress。"
+
+#: page.php:20
+msgid ""
+"Note: If a translation package with the same name already exists, this "
+"operation will overwrite it"
+msgstr "注意：若已存在同名翻譯包，則此操作將覆蓋它"
+
+#: page.php:27
+msgid "Import from Local"
+msgstr "從本地匯入"
+
+#: page.php:30
+msgid "Import from URL"
+msgstr "從URL匯入"
+
+#: page.php:41
+msgid "Translation package:"
+msgstr "翻譯包："
+
+#: page.php:47 page.php:172
+msgid "Package type:"
+msgstr "包型別："
+
+#: page.php:49 page.php:174
+msgid "Plugin"
+msgstr "外掛"
+
+#: page.php:51 page.php:176
+msgid "Theme"
+msgstr "佈景主題"
+
+#: page.php:53 page.php:178
+msgid "Auto"
+msgstr "自動識別"
+
+#: page.php:56
+msgid "The standard format of plugin language pack is as follows:"
+msgstr "外掛語言包的標準格式如下："
+
+#: page.php:77 page.php:181 page.php:202
+msgid "The standard format of theme language pack is as follows:"
+msgstr "佈景主題語言包的標準格式如下："
+
+#: page.php:98 page.php:223
+msgid ""
+"The standard formats of language packages that can auto identify types are "
+"as follows:"
+msgstr "可自動識別類型的語言包的標準格式如下："
+
+#: page.php:160
+msgid "URL address:"
+msgstr "URL地址："
+
+#: page.php:284
+msgid "Help"
+msgstr "幫助"
+
+#: page.php:288
+msgid "common problem:"
+msgstr "常见问题："
+
+#: page.php:292
+msgid "The installed translation package does not work"
+msgstr "安裝的翻譯包不起作用"
+
+#: page.php:295
+msgid ""
+"A:Please check whether the translation package contains a valid .mo file."
+msgstr "第一步：請檢查該翻譯包中是否包含有效的 .mo 檔案。"
+
+#: page.php:298
+msgid ""
+"B: Please check whether you have correctly selected the type of translation "
+"package (plugin or theme)."
+msgstr "第二步：請檢查你是否正確選擇了翻譯包型別（外掛或佈景主題）。"
+
+#: page.php:301
+msgid ""
+"C: Please upload by traditional manual method to finally confirm whether the "
+"translation package is valid."
+msgstr "第三步：請通過傳統的手工方式上傳語言包，以最終確認該語言包是否有效。"
+
+#: page.php:305
+msgid "Found a bug in this plugin?"
+msgstr "發現了這個外掛的BUG？"
+
+#. translators: %s: https://github.com/WenPai-org/wpfanyi-import/issues
+#: page.php:308
+#, php-format
+msgid ""
+"Please submit issues here: <a href=\"%s\" target=\"_blank\">https://github."
+"com/WenPai-org/wpfanyi-import/issues</a>, we will fix it in the next "
+"version, thank you for your feedback!"
+msgstr ""
+"請在此處提交問題：<a href=\"%s\" target=\"_blank\">https://github.com/WenPai-"
+"org/wpfanyi-import/issues</a>，我們將在下一個版本中對其進行修復，衷心感謝您的"
+"反饋！"
+
+#: page.php:312
+msgid "Need to translate a WordPress plugin/theme?"
+msgstr "需要翻譯一個WordPress外掛/佈景主題？"
+
+#. translators: %s: https://wpfanyi.com/new-project
+#: page.php:315
+#, php-format
+msgid ""
+"If he is hosted in wordpress.org we will handle its translation for free! "
+"Please send your needs to: <a href=\"%s\" target=\"_blank\">https://wpfanyi."
+"com/new-project</a>."
+msgstr ""
+"如果它託管在WordPress.org中，我們將免費處理它的翻譯！請將您的需求傳送至：<a "
+"href=\"%s\" target=\"_blank\">https://wpfanyi.com/new-project</a>。"
+
+#. Plugin Name of the plugin/theme
+msgid "WPfanyi import"
+msgstr "文派翻譯匯入器"
+
+#. Description of the plugin/theme
+msgid ""
+"Install translation package like a theme/plugin, no need for FTP/SFTP. this "
+"tool will save you a lot of time."
+msgstr ""
+"像安裝外掛、佈景主題那樣安裝翻譯包，無需FTP。這個工具將為您節省大量時間。"
+
+#. Author of the plugin/theme
+msgid "WenPai.org"
+msgstr "文派"
+
+#. Author URI of the plugin/theme
+msgid "https://wenpai.org/"
+msgstr "https://wenpai.org/"
+
+#~ msgid ""
+#~ "Only the translation package with directory structure can be recognized "
+#~ "automatically, e.g:"
+#~ msgstr "只有包含目錄結構的翻譯包才能被自動識別，例如："
+
+#, fuzzy
+#~| msgid "Import"
+#~ msgid "import"
+#~ msgstr "匯入"
+
+#~ msgid ""
+#~ "There are no valid Po and Mo files in the current translation package"
+#~ msgstr "當前翻譯包中沒有有效的Po和Mo檔案"
+
+#~ msgid ""
+#~ "This plugin provides an innovative translation package installation "
+#~ "method."
+#~ msgstr "該外掛提供了創新的翻譯包安裝方法。"
+
+#~ msgid "Old Method"
+#~ msgstr "舊方法"
+
+#~ msgid ""
+#~ "You need to download the translation package to the local first, unzip "
+#~ "the package, and upload it to the correct path via FTP."
+#~ msgstr ""
+#~ "您需要先將翻譯包下載到本地，解壓縮該包，再通過FTP將其上傳到正確的路徑中。"
+
+#~ msgid ""
+#~ "Imagine the process of selecting a lengthy path on FTP with the mouse. "
+#~ "This is troublesome, right?"
+#~ msgstr "想象一下用滑鼠在FTP上選取冗長路徑的過程，這很麻煩，對吧？"
+
+#~ msgid "New Method"
+#~ msgstr "新方法"
+
+#~ msgid ""
+#~ "Now you only need to paste the download address of the translation "
+#~ "package in the text input, and correctly select the type of translation "
+#~ "package (plugin or theme), after clicking “Import”, the tool will help "
+#~ "you complete all operations."
+#~ msgstr ""
+#~ "現在，您只需要在文字框中貼上翻譯包的下載地址，並正確選擇翻譯包的型別（外掛"
+#~ "或主題），在單擊“匯入”後，該工具將幫助您完成所有操作。"
+
+#~ msgid ""
+#~ "If you have a local translation package, you can also easily import it "
+#~ "through this tool."
+#~ msgstr "如果您有一個本地翻譯包，您也可以通過此工具輕鬆匯入它。"

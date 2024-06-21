@@ -1,0 +1,125 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mfb/meta-field-block",
+  "title": "Meta Field Block",
+  "category": "theme",
+  "description": "Display a custom field as a block on the front end. It supports custom fields for posts, terms, and users. It supports ACF fields explicitly.",
+  "keywords": [
+    "meta",
+    "custom",
+    "acf",
+    "meta field",
+    "custom field",
+    "setting field",
+    "metadata"
+  ],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "fieldType": {
+      "type": "string",
+      "default": "meta"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "fieldSettings": {
+      "type": "object"
+    },
+    "hideEmpty": {
+      "type": "boolean",
+      "default": false
+    },
+    "emptyMessage": {
+      "type": "string",
+      "default": ""
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "labelAsPrefix": {
+      "type": "boolean",
+      "default": false
+    },
+    "prefixSettings": {
+      "type": "object"
+    },
+    "suffixSettings": {
+      "type": "object"
+    },
+    "displayLayout": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "showOutline": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "margin": true,
+        "padding": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true,
+        "lineHeight": true,
+        "fontAppearance": true,
+        "textTransform": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType",
+    "queryId",
+    "query"
+  ],
+  "textdomain": "display-a-meta-field-as-block",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

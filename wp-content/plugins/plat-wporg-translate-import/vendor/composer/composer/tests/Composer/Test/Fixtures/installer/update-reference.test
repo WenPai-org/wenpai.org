@@ -1,0 +1,30 @@
+--TEST--
+Updates a dev package forcing its reference
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                {
+                    "name": "a/a", "version": "dev-master",
+                    "source": { "reference": "abc123", "url": "https://example.org", "type": "git" }
+                }
+            ]
+        }
+    ],
+    "require": {
+        "a/a": "dev-master#def000"
+    }
+}
+--INSTALLED--
+[
+    {
+        "name": "a/a", "version": "dev-master",
+        "source": { "reference": "abc123", "url": "https://example.org", "type": "git" }
+    }
+]
+--RUN--
+install
+--EXPECT--
+Upgrading a/a (dev-master abc123 => dev-master def000)

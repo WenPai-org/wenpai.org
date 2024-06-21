@@ -1,0 +1,67 @@
+--TEST--
+
+See Github issue #4795 ( github.com/composer/composer/issues/4795 ).
+
+Composer\Installer::allowListUpdateDependencies should not output a warning for dependencies that need to be updated
+that are also a root package, when that root package is also explicitly allowed.
+
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                { "name": "a/a", "version": "1.0.0" },
+                { "name": "a/a", "version": "1.1.0" },
+                { "name": "b/b", "version": "1.0.0", "require": { "a/a": "~1.0" } },
+                { "name": "b/b", "version": "1.1.0", "require": { "a/a": "~1.1" } }
+            ]
+        }
+    ],
+    "require": {
+        "a/a": "~1.0",
+        "b/b": "~1.0"
+    }
+}
+
+--INSTALLED--
+[
+    { "name": "a/a", "version": "1.0.0" },
+    { "name": "b/b", "version": "1.0.0", "require": { "a/a": "~1.0" } }
+]
+--LOCK--
+{
+    "packages": [
+        {
+            "name": "a/a", "version": "1.0.0"
+        },
+        {
+            "name": "b/b", "version": "1.0.0", "require": { "a/a": "~1.0" }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
+--RUN--
+update a/a b/b --with-dependencies
+
+--EXPECT-OUTPUT--
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 0 installs, 2 updates, 0 removals
+  - Upgrading a/a (1.0.0 => 1.1.0)
+  - Upgrading b/b (1.0.0 => 1.1.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 2 updates, 0 removals
+Generating autoload files
+
+--EXPECT--
+Upgrading a/a (1.0.0 => 1.1.0)
+Upgrading b/b (1.0.0 => 1.1.0)

@@ -1,0 +1,22 @@
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	>
+	<testsuites>
+		<testsuite name="cavalcade">
+			<directory prefix="class-" suffix=".php">tests/tests</directory>
+		</testsuite>
+	</testsuites>
+	<groups>
+		<exclude>
+			<group>32656</group>
+			<group>49961</group>
+			<group>53635</group>
+			<group>53950</group>
+		</exclude>
+	</groups>
+</phpunit>

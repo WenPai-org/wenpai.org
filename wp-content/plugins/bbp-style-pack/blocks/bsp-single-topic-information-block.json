@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Single Topic Information",
+    "name": "bbp-style-pack/bsp-single-topic-information",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "title": {
+            "type": "string",
+            "selector": "",
+            "default": "Topic Information"
+        },
+        "in": {
+            "type": "string",
+            "selector": "",
+            "default": "In "
+        },
+        "reply": {
+            "type": "string",
+            "selector": "",
+            "default": "Reply"
+        },
+        "replies": {
+            "type": "string",
+            "selector": "",
+            "default": "Replies"
+        },
+        "participant": {
+            "type": "string",
+            "selector": "",
+            "default": "Participant"
+        },
+        "participants": {
+            "type": "string",
+            "selector": "",
+            "default": "Participants"
+        },
+        "last_activity": {
+            "type": "string",
+            "selector": "",
+            "default": "Last Activity: "
+        },
+        "last_reply": {
+            "type": "string",
+            "selector": "",
+            "default": "Last Reply: "
+        },
+        "show_icons": {
+            "type": "boolean",
+            "selector": "",
+            "default": ""
+        }
+    },
+    "editorScript": "file:./../build/ti-index.js",
+    "render": "file:./bsp-single-topic-information.php"
+}

@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPblog Location\n"
+"POT-Creation-Date: 2023-04-17 23:22+0800\n"
+"PO-Revision-Date: 2024-03-25 04:31+0800\n"
+"Last-Translator: 薇晓朵 <support@weixiaoduo.com>\n"
+"Language-Team: 薇晓朵 <support@weixiaoduo.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpblog-location.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/functions.php:23 includes/functions.php:86 templates/WpBlogTemplate.php:26
+msgid "From"
+msgstr "来自"
+
+#: includes/functions.php:51 includes/functions.php:67
+msgid "Author from"
+msgstr "作者来自"
+
+#: includes/functions.php:101
+msgid "Author From"
+msgstr "作者来自"
+
+#: wpblog-location.php:54
+msgid "IP Location Settings"
+msgstr "IP 位置设置"
+
+#: wpblog-location.php:55
+msgid "IP Location"
+msgstr "IP 位置"
+
+#: wpblog-location.php:63
+msgid "Show author location on post pages"
+msgstr "在文章页面上显示作者位置"
+
+#: wpblog-location.php:81
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您没有足够的权限访问此页面。"
+
+#: wpblog-location.php:95
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#: wpblog-location.php:106
+msgid "WordPress Blog User IP address attribution"
+msgstr "文派博客用户IP地址属地"
+
+#: wpblog-location.php:107
+msgid ""
+"1. Display WordPress user IP address attribution and city location information, "
+"More information at"
+msgstr "1、显示WordPress用户IP地址归属地和城市位置信息，更多信息可见"
+
+#: wpblog-location.php:108
+msgid ""
+"2. You can display the author or publisher location anywhere on your website. The "
+"shortcode is"
+msgstr "2、您可以在网站上的任何地方显示作者或发布者的定位信息。简码为"
+
+#: wpblog-location.php:113
+msgid "Post/pages"
+msgstr "文章/页面"
+
+#: wpblog-location.php:114 wpblog-location.php:118
+msgid "Show location"
+msgstr "显示位置"
+
+#: wpblog-location.php:117
+msgid "Comments"
+msgstr "评论"
+
+#: wpblog-location.php:122
+msgid "Save Changes"
+msgstr "保存更改"
+
+#. Plugin Name of the plugin/theme
+msgid "WPblog Location"
+msgstr "文派博客位置"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpblog.cn/download"
+msgstr "https://wpblog.cn/download"
+
+#. Description of the plugin/theme
+msgid ""
+"Display user account IP address attribution information in comments and articles."
+msgstr "在评论和文章中显示用户帐户 IP 地址属地信息。"
+
+#. Author of the plugin/theme
+msgid "WPfanyi"
+msgstr "文派翻译"
+
+#. Author URI of the plugin/theme
+msgid "https://wpfanyi.com"
+msgstr "https://wpfanyi.com/"
+
+#. IP
+msgid "IPChannel"
+msgstr "IP查询渠道"
+
+msgid "IPChannel-local"
+msgstr "本地数据库"
+
+msgid "IPChannel-ipapi"
+msgstr "API"
+
+msgid "IPAddressFormat"
+msgstr "IP地址格式"
+
+msgid "city"
+msgstr "城市"
+
+msgid "country"
+msgstr "国家/地区"
+
+msgid "region"
+msgstr "省份"
+
+msgid "country, region, city"
+msgstr "国家/地区, 省份, 城市"
+
+msgid "city, region, country"
+msgstr "城市, 省份, 国家/地区"
+
+msgid "IPAddressCustomForAdmin"
+msgstr "管理员自定义IP归属地"
+
+msgid "ip_address_custom_for_admin_tips"
+msgstr "例如：广州, 广东, 中国"
+
+msgid "f/a/l/s/e"
+msgstr "关闭"
+
+#~ msgid "WordPress Blog Location Settings"
+#~ msgstr "文派博客位置设置"

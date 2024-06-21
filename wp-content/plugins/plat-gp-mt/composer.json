@@ -1,0 +1,18 @@
+{
+    "name": "platform/gp-mt",
+    "description": "GlotPress Machine Translate",
+    "type": "project",
+    "require": {
+        "stichoza/google-translate-php": "^5.1",
+        "agentile/php-stanford-nlp": "^0.1.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Platform\\Translate\\MachineTranslate\\": "./"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

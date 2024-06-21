@@ -1,0 +1,109 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Latest Activity",
+    "name": "bbp-style-pack/bsp-latest-activity-widget",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "laTitle": {
+            "type": "string",
+            "selector": "",
+            "default": "Latest Activity"
+        },
+        "laExcludeForum": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "laParentForum": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "laExcludedForum": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "laShowFreshness": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "laShowAuthor": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "laTopicAuthorLabel": {
+            "type": "string",
+            "selector": "",
+            "default": "Topic by: "
+        },
+        "laReplyAuthorLabel": {
+            "type": "string",
+            "selector": "",
+            "default": "Reply by:"
+        },
+        "laHideAvatar": {
+            "type": "boolean",
+            "selector": "",
+            "default": "0"
+        },
+        "laShowForum": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "laShowParentForum": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "laShowReplyCount": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "laReplyCountLabel": {
+            "type": "string",
+            "selector": "",
+            "default": "Replies: "
+        },
+        "laOrderBy": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "laMaxShown": {
+            "type": "string",
+            "selector": "",
+            "default": "5"
+        },
+        "laShortenFreshness": {
+            "type": "boolean",
+            "selector": "",
+            "default": "1"
+        },
+        "helptext": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+		"bbpressOnly": {
+             "type": "boolean",
+            "selector": "",
+            "default": "0"
+        }
+    },
+    "editorScript": "file:./../build/la-index.js",
+    "render": "file:./bsp-latest-activity-widget.php"
+}

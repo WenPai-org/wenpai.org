@@ -1,0 +1,297 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 4,
+            "column": 1,
+            "index": 76
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "FunctionDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 4,
+                    "column": 1,
+                    "index": 76
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "id": {
+                "type": "Identifier",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 15,
+                        "index": 15
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 19,
+                        "index": 19
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "name": "test"
+            },
+            "params": [],
+            "body": {
+                "type": "BlockStatement",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 22,
+                        "index": 22
+                    },
+                    "end": {
+                        "line": 4,
+                        "column": 1,
+                        "index": 76
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "body": [
+                    {
+                        "type": "ForOfStatement",
+                        "location": {
+                            "start": {
+                                "line": 2,
+                                "column": 4,
+                                "index": 28
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 29,
+                                "index": 53
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "left": {
+                            "type": "VariableDeclaration",
+                            "location": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 15,
+                                    "index": 39
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 20,
+                                    "index": 44
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "location": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 19,
+                                            "index": 43
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 20,
+                                            "index": 44
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "id": {
+                                        "type": "Identifier",
+                                        "location": {
+                                            "start": {
+                                                "line": 2,
+                                                "column": 19,
+                                                "index": 43
+                                            },
+                                            "end": {
+                                                "line": 2,
+                                                "column": 20,
+                                                "index": 44
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "name": "a"
+                                    },
+                                    "init": null
+                                }
+                            ],
+                            "kind": "let"
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "location": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 24,
+                                    "index": 48
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 25,
+                                    "index": 49
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "name": "b"
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "location": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 27,
+                                    "index": 51
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 29,
+                                    "index": 53
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "body": []
+                        },
+                        "await": true
+                    },
+                    {
+                        "type": "ForOfStatement",
+                        "location": {
+                            "start": {
+                                "line": 3,
+                                "column": 1,
+                                "index": 55
+                            },
+                            "end": {
+                                "line": 3,
+                                "column": 20,
+                                "index": 74
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "left": {
+                            "type": "VariableDeclaration",
+                            "location": {
+                                "start": {
+                                    "line": 3,
+                                    "column": 6,
+                                    "index": 60
+                                },
+                                "end": {
+                                    "line": 3,
+                                    "column": 11,
+                                    "index": 65
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "location": {
+                                        "start": {
+                                            "line": 3,
+                                            "column": 10,
+                                            "index": 64
+                                        },
+                                        "end": {
+                                            "line": 3,
+                                            "column": 11,
+                                            "index": 65
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "id": {
+                                        "type": "Identifier",
+                                        "location": {
+                                            "start": {
+                                                "line": 3,
+                                                "column": 10,
+                                                "index": 64
+                                            },
+                                            "end": {
+                                                "line": 3,
+                                                "column": 11,
+                                                "index": 65
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "name": "c"
+                                    },
+                                    "init": null
+                                }
+                            ],
+                            "kind": "let"
+                        },
+                        "right": {
+                            "type": "Identifier",
+                            "location": {
+                                "start": {
+                                    "line": 3,
+                                    "column": 15,
+                                    "index": 69
+                                },
+                                "end": {
+                                    "line": 3,
+                                    "column": 16,
+                                    "index": 70
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "name": "d"
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "location": {
+                                "start": {
+                                    "line": 3,
+                                    "column": 18,
+                                    "index": 72
+                                },
+                                "end": {
+                                    "line": 3,
+                                    "column": 20,
+                                    "index": 74
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "body": []
+                        },
+                        "await": false
+                    }
+                ]
+            },
+            "generator": false,
+            "async": true
+        }
+    ],
+    "sourceType": "script"
+}

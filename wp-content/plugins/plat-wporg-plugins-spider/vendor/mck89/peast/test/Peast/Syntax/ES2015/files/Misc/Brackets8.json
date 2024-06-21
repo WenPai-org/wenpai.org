@@ -1,0 +1,125 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 24,
+            "index": 24
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ClassDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 24,
+                    "index": 24
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "id": {
+                "type": "Identifier",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 6,
+                        "index": 6
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 7,
+                        "index": 7
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "name": "a"
+            },
+            "superClass": {
+                "type": "ParenthesizedExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 16,
+                        "index": 16
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 21,
+                        "index": 21
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "expression": {
+                    "type": "ParenthesizedExpression",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 17,
+                            "index": 17
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 20,
+                            "index": 20
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "expression": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 18,
+                                "index": 18
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 19,
+                                "index": 19
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "b"
+                    }
+                }
+            },
+            "body": {
+                "type": "ClassBody",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 22,
+                        "index": 22
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 24,
+                        "index": 24
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "body": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

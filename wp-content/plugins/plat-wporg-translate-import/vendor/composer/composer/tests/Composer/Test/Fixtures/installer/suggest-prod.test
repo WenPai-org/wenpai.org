@@ -1,0 +1,40 @@
+--TEST--
+Suggestions are not displayed for when not updating the lock file
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                { "name": "a/a", "version": "1.0.0", "suggest": { "b/b": "an obscure reason" } }
+            ]
+        }
+    ],
+    "require": {
+        "a/a": "1.0.0"
+    }
+}
+--LOCK--
+{
+    "packages": [
+        { "name": "a/a", "version": "1.0.0", "suggest": { "b/b": "an obscure reason" } }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
+--RUN--
+install
+--EXPECT-OUTPUT--
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Package operations: 1 install, 0 updates, 0 removals
+Generating autoload files
+
+--EXPECT--
+Installing a/a (1.0.0)

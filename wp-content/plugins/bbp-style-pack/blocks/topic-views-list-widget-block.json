@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Topic Views List",
+    "name": "bbp-style-pack/topic-views-list-widget",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "title": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+		"bbpressOnly": {
+             "type": "boolean",
+            "selector": "",
+            "default": "0"
+        }
+    },
+    "editorScript": "file:./../build/topic-views-index.js",
+    "render": "file:./topic-views-list-widget.php"
+}

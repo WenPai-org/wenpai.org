@@ -1,0 +1,903 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: o2 0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/o2\n"
+"POT-Creation-Date: 2016-03-25 00:16:45+00:00\n"
+"PO-Revision-Date: 2023-05-22 20:51+0800\n"
+"Last-Translator: 薇晓朵 <support@weixiaoduo.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: inc/fragment.php:121 o2.php:365
+msgid "Show full post"
+msgstr "显示完整文章"
+
+#: inc/fragment.php:476
+msgid "Posts by %1$s (%2$s)"
+msgstr "作者：%1$s，发表于%2$s"
+
+#: inc/keyboard.php:15
+msgid "Keyboard Shortcuts"
+msgstr "键盘快捷键"
+
+#: inc/keyboard.php:22
+msgid "s"
+msgstr "秒"
+
+#: inc/keyboard.php:22
+msgid "search"
+msgstr "搜索"
+
+#: inc/keyboard.php:23
+msgid "compose new post"
+msgstr "撰写新文章"
+
+#: inc/keyboard.php:24
+msgid "reply"
+msgstr "回复"
+
+#: inc/keyboard.php:25
+msgid "edit"
+msgstr "编辑"
+
+#: inc/keyboard.php:26
+msgid "go to top"
+msgstr "返回顶部"
+
+#: inc/keyboard.php:27
+msgid "toggle comment visibility"
+msgstr "切换评论可见性"
+
+#: inc/keyboard.php:28
+msgid "esc"
+msgstr "esc"
+
+#: inc/keyboard.php:28
+msgid "cancel edit post or comment"
+msgstr "取消编辑文章或评论"
+
+#: inc/nopriv-write-api.php:8 inc/read-api.php:9 inc/write-api.php:9
+msgid "No method supplied"
+msgstr "未提供方法"
+
+#: inc/nopriv-write-api.php:18 inc/write-api.php:17
+msgid "No message supplied"
+msgstr "未提供信息"
+
+#: inc/nopriv-write-api.php:24 inc/write-api.php:23
+msgid "Invalid or expired nonce"
+msgstr "nonce 无效或已过期。"
+
+#: inc/nopriv-write-api.php:30 inc/write-api.php:29
+msgid "Message could not be decoded"
+msgstr "无法解码信息"
+
+#: inc/nopriv-write-api.php:35 inc/write-api.php:34
+msgid "Unknown message type passed"
+msgstr "传递了未知的消息类型"
+
+#: inc/nopriv-write-api.php:42 inc/read-api.php:41 inc/write-api.php:57
+msgid "Unknown/unsupported method supplied"
+msgstr "提供了未知/不支持的方法"
+
+#: inc/nopriv-write-api.php:70 inc/write-api.php:287
+msgid "Failed to post comment on post ID %s. %s"
+msgstr "未能对文章ID %s发表评论。%s"
+
+#: inc/nopriv-write-api.php:83
+msgid ""
+"The email you specified is associated with a WordPress.com account.  Please "
+"login first or use a different email address."
+msgstr ""
+"您指定的电子邮箱地址与WordPress.com账户相关联。 请先登录或使用不同的电子邮箱"
+"地址。"
+
+#: inc/nopriv-write-api.php:104 inc/write-api.php:380
+msgid "Failed to post comment."
+msgstr "无法发表评论。"
+
+#: inc/read-api.php:453
+msgid "Unable to complete this action"
+msgstr "无法完成此操作"
+
+#: inc/read-api.php:461
+msgid "Nothing to preview."
+msgstr "没有要预览的内容。"
+
+#. translators: 'tag name (count)'
+#: inc/tags.php:359
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: inc/tags.php:361
+msgid "1 post"
+msgid_plural "%s posts"
+msgstr[0] "%s篇文章。"
+
+#: inc/template-tags.php:26 inc/template-tags.php:27
+#: modules/post-actions/load.php:161 o2.php:411
+msgid "Reply"
+msgstr "回复"
+
+#: inc/template-tags.php:37
+msgid "Scroll"
+msgstr "滚动"
+
+#: inc/template-tags.php:38
+msgid "Scroll to comments"
+msgstr "滚动至评论区域"
+
+#: inc/template-tags.php:48 inc/template-tags.php:49
+#: modules/checklists/load.php:259 modules/post-actions/load.php:178 o2.php:406
+msgid "Edit"
+msgstr "编辑"
+
+#: inc/template-tags.php:59 inc/template-tags.php:60
+#: modules/post-actions/load.php:179
+msgid "Trash"
+msgstr "回收站"
+
+#: inc/template-tags.php:70 inc/template-tags.php:71
+msgid "Shortlink"
+msgstr "短链接"
+
+#: inc/write-api.php:65
+msgid "You are not allowed to trash this post"
+msgstr "您无法将此文章放入回收站"
+
+#: inc/write-api.php:77 inc/write-api.php:126
+msgid "You are not allowed to edit this post"
+msgstr "您无权修改此帖子"
+
+#: inc/write-api.php:83 modules/sticky-posts/load.php:121
+#: modules/to-do/load.php:477
+msgid "Post not found."
+msgstr "找不到文章。"
+
+#: inc/write-api.php:136
+msgid "No callback action taken."
+msgstr "未执行回调操作。"
+
+#: inc/write-api.php:140
+msgid "You are not allowed to publish new posts"
+msgstr "您无权限发布新帖子"
+
+#: inc/write-api.php:317
+msgid "Deleting comments is not supported yet"
+msgstr "尚不支持删除评论"
+
+#: inc/write-api.php:324
+msgid "You are not allowed to edit this comment"
+msgstr "您无权限编辑此评论"
+
+#: inc/write-api.php:333
+msgid "Comment has already been deleted by another session."
+msgstr "评论已被另一会话删除。"
+
+#: inc/write-api.php:336
+msgid "Trashing that comment failed."
+msgstr "取消该评论失败。"
+
+#: inc/write-api.php:341
+msgid "Untrashing that comment failed."
+msgstr "撤销该评论失败。"
+
+#: inc/write-api.php:436
+msgid "Your upload failed. Perhaps try from within wp-admin."
+msgstr "您的上传已失败。也许可以从wp-admin进行尝试。"
+
+#: inc/xposts.php:194
+msgid "Xposts"
+msgstr "Xposts"
+
+#: inc/xposts.php:419
+msgid "X-comment from %1$s: Comment on %2$s"
+msgstr "X-comment已从“%1$s”更改为“%2$s”"
+
+#: inc/xposts.php:423
+msgid "X-post from %1$s: %2$s"
+msgstr "X-post已从“%1$s”更改为“%2$s”"
+
+#: modules/checklists/load.php:169
+msgid "Enter the text for the new item"
+msgstr "输入新项目的文本"
+
+#: modules/checklists/load.php:170
+msgid "Update the item text below"
+msgstr "更新以下项的文本"
+
+#: modules/checklists/load.php:171
+msgid "Are you sure you want to delete this item?"
+msgstr "您确定要删除此项目吗?"
+
+#: modules/checklists/load.php:172
+msgid "CheckList Error"
+msgstr "检查表错误"
+
+#: modules/checklists/load.php:173
+msgid "An unknown error occurred"
+msgstr "发生未知错误"
+
+#: modules/checklists/load.php:174
+msgid "A malformed response was received"
+msgstr "收到了错误的响应"
+
+#: modules/checklists/load.php:259
+msgid "Edit this item"
+msgstr "编辑此项"
+
+#: modules/checklists/load.php:260
+msgid "Delete this item"
+msgstr "删除此项"
+
+#: modules/checklists/load.php:260
+msgid "Delete"
+msgstr "删除"
+
+#: modules/checklists/load.php:261
+msgid "Add a new item after this item"
+msgstr "在此项目后添加新项"
+
+#: modules/checklists/load.php:261
+msgid "Add New After"
+msgstr "在后面添加新的"
+
+#: modules/filter-widget/load.php:10
+msgid "Quick access to popular views of your o2"
+msgstr "快速访问您的O2的热门视图"
+
+#: modules/filter-widget/load.php:23
+msgid "Recent Updates"
+msgstr "最近更新"
+
+#: modules/filter-widget/load.php:30 modules/recent-comments/load.php:86
+msgid "Recent Comments"
+msgstr "近期评论"
+
+#: modules/filter-widget/load.php:37 modules/unreplied-posts/load.php:74
+msgid "No Replies"
+msgstr "无回复"
+
+#: modules/filter-widget/load.php:48
+msgid "My @Mentions"
+msgstr "我的@提到"
+
+#: modules/filter-widget/load.php:55 o2.php:696
+msgid "My Posts"
+msgstr "我的文章"
+
+#: modules/filter-widget/load.php:173 modules/live-comments/load.php:119
+#: modules/to-do/inc/class-to-do-widget.php:59
+msgid "Title:"
+msgstr "标题："
+
+#: modules/follow/load.php:30
+msgid "Follow"
+msgstr "关注"
+
+#: modules/follow/load.php:31
+msgid "Follow comments"
+msgstr "关注评论"
+
+#: modules/follow/load.php:32
+msgid "Unfollow"
+msgstr "取消关注"
+
+#: modules/follow/load.php:33
+msgid "Unfollow comments"
+msgstr "取消关注评论"
+
+#: modules/follow/load.php:34
+msgid "There was a problem updating your following preferences."
+msgstr "更新以下偏好时出现问题。"
+
+#: modules/follow/load.php:35
+msgid "Following all"
+msgstr "所有以关注"
+
+#: modules/follow/load.php:36
+msgid "You are already following all comments on this site."
+msgstr "您已经关注了此站点上的所有评论。"
+
+#: modules/live-comments/load.php:8
+msgid "Displays a live stream of posts and comments on your o2 powered blog"
+msgstr "在您O2驱动的博客上显示文章和评论的实时流。"
+
+#: modules/live-comments/load.php:21
+msgid "Post by %1$s"
+msgstr "文章作者：%1$s"
+
+#: modules/live-comments/load.php:22
+msgid "Comment on %1$s"
+msgstr "%1$s的评论"
+
+#: modules/live-comments/load.php:23
+msgid "Comment by %1$s"
+msgstr "评论者%1$s"
+
+#: modules/live-comments/load.php:124
+msgid "Show:"
+msgstr "显示："
+
+#: modules/live-comments/load.php:128
+msgid "Comments"
+msgstr "评论"
+
+#: modules/live-comments/load.php:129
+msgid "Posts"
+msgstr "文章"
+
+#: modules/live-comments/load.php:130
+msgid "Comments and Posts"
+msgstr "评论和文章"
+
+#: modules/live-comments/load.php:143
+msgid "Number to show:"
+msgstr "要显示的数字："
+
+#: modules/notifications/load.php:96
+msgid "Clear All"
+msgstr "全部清除"
+
+#: modules/offline/load.php:16
+msgid "The connection to the server has been interrupted. Please reconnect."
+msgstr "与服务器的连接已经中断。请重连接。"
+
+#: modules/post-actions/load.php:49
+msgid "Post Actions"
+msgstr "发表操作"
+
+#: modules/post-actions/load.php:130 modules/to-do/load.php:425 o2.php:416
+msgid "Someone"
+msgstr "有人"
+
+#: modules/post-actions/load.php:134
+msgid "done"
+msgstr "完成"
+
+#: modules/post-actions/load.php:136
+msgid "to-do"
+msgstr "待办"
+
+#: modules/post-actions/load.php:138 modules/to-do/load.php:429
+msgid "%1$s marked this %2$s"
+msgstr "%1$s已被标记为%2$s。"
+
+#: modules/post-actions/load.php:184
+msgid "Untrash"
+msgstr "还原"
+
+#: modules/post-actions/load.php:208
+msgid "Stop following"
+msgstr "不在关注"
+
+#: modules/sticky-posts/load.php:41 modules/sticky-posts/load.php:42
+msgid "Unstick Post from Home"
+msgstr "取消首页置顶"
+
+#: modules/sticky-posts/load.php:43 modules/sticky-posts/load.php:44
+msgid "Stick Post to Home"
+msgstr "首页置顶"
+
+#: modules/sticky-posts/load.php:68 modules/sticky-posts/load.php:69
+msgid "Stick post to home"
+msgstr "首页置顶"
+
+#: modules/sticky-posts/load.php:75 modules/sticky-posts/load.php:76
+msgid "Unstick post from home"
+msgstr "取消首页置顶"
+
+#: modules/sticky-posts/load.php:117 modules/to-do/load.php:473
+msgid "Insufficient information provided."
+msgstr "提供的信息不足。"
+
+#: modules/sticky-posts/load.php:124
+msgid "You are not allowed to edit this post sticky."
+msgstr "您无权限编辑此帖子置顶。"
+
+#: modules/to-do/inc/class-to-do-widget.php:16
+msgid "Display an (optionally filtered) list of posts marked to do"
+msgstr "显示（可选择过滤）标记为 \"代办 \"的文章列表。"
+
+#: modules/to-do/inc/class-to-do-widget.php:18 modules/to-do/load.php:191
+msgid "o2 To Do"
+msgstr "o2待办"
+
+#: modules/to-do/inc/class-to-do-widget.php:63
+msgid "State"
+msgstr "状态"
+
+#: modules/to-do/inc/class-to-do-widget.php:72
+msgid "Order:"
+msgstr "排序："
+
+#: modules/to-do/inc/class-to-do-widget.php:74
+msgid "Ascending (oldest first)"
+msgstr "升序（最早优先）"
+
+#: modules/to-do/inc/class-to-do-widget.php:75
+msgid "Descending (newest first)"
+msgstr "降序（最新优先）"
+
+#: modules/to-do/inc/class-to-do-widget.php:79
+msgid "Posts Per Page"
+msgstr "每页文章"
+
+#: modules/to-do/inc/class-to-do-widget.php:138
+msgid "%1$s, %2$s comments"
+msgstr "%1$s，%2$s评论"
+
+#: modules/to-do/inc/class-to-do-widget.php:139
+msgid "Showing %1$s of %2$s %3$s posts"
+msgstr "显示%1$s到%2$s的%3$s篇文章。"
+
+#: modules/to-do/inc/class-to-do-widget.php:316
+msgid "Untitled"
+msgstr "无标题"
+
+#: modules/to-do/load.php:209
+msgid "The post has already been set to that resolution."
+msgstr "此文章已被设定为该方案。"
+
+#: modules/to-do/load.php:258
+msgid "Done"
+msgstr "完成"
+
+#: modules/to-do/load.php:266
+msgid "To Do"
+msgstr "待办事项"
+
+#: modules/to-do/load.php:308
+msgid "Normal"
+msgstr "标准"
+
+#: modules/to-do/load.php:309 modules/to-do/load.php:310
+msgid "To-do"
+msgstr "标记为待办"
+
+#: modules/to-do/load.php:317
+msgid "Unresolved"
+msgstr "未解决"
+
+#: modules/to-do/load.php:318 modules/to-do/load.php:319
+msgid "Mark as done"
+msgstr "标记为完成"
+
+#: modules/to-do/load.php:325
+msgid "Resolved"
+msgstr "已解决"
+
+#: modules/to-do/load.php:326 modules/to-do/load.php:327
+msgid "Clear to-do"
+msgstr "清除待办"
+
+#: modules/to-do/load.php:432
+msgid "%s removed resolution"
+msgstr "移除%s方案。"
+
+#: modules/to-do/load.php:480
+msgid "You are not allowed to edit this post resolution"
+msgstr "您不能编辑此文章方案"
+
+#: modules/to-do/load.php:485
+msgid "Invalid post resolution."
+msgstr "文章方案无效。"
+
+#: modules/to-do/load.php:489
+msgid "Unable to set post resolution."
+msgstr "无法设置文章方案。"
+
+#: o2.php:335
+msgid "%1$s on %2$s"
+msgstr "%1$s on %2$s"
+
+#: o2.php:339
+msgid "Yesterday at %s"
+msgstr "昨天%s"
+
+#: o2.php:341
+msgid "Now"
+msgstr "现在"
+
+#: o2.php:366
+msgid "Hide extended post"
+msgstr "隐藏扩展文章"
+
+#: o2.php:384
+msgid "You have unsaved changes."
+msgstr "您有未保存的更改。"
+
+#: o2.php:385
+msgid ""
+"Not all changes have been saved to the server yet. Please stay on this page "
+"until they are saved."
+msgstr "尚未将所有更改保存到服务器。请留在本页，直到将其保存。"
+
+#: o2.php:386
+msgid ""
+"Your session has expired. Click here to log in again. Your changes will not "
+"be lost."
+msgstr "您的会话已过期。 单击此处再次登录。 您所做的更改不会丢失。"
+
+#: o2.php:387
+msgid "You have successfully logged back in."
+msgstr "您已成功地重新登录。"
+
+#: o2.php:388
+msgid "New comment by %s"
+msgstr "%s的新评论"
+
+#: o2.php:389
+msgid "New comment by someone"
+msgstr "某人的新评论"
+
+#: o2.php:390
+msgid "New post by %s"
+msgstr "%s的新文章"
+
+#: o2.php:391
+msgid "%1$s mentioned you: \"%2$s\""
+msgstr "%1$s提到您：“%2$s”"
+
+#: o2.php:392
+msgid "%1$s was not uploaded (%2$s files are not allowed)."
+msgstr "未上传%1$s（不允许上传%2$s文件）。"
+
+#: o2.php:393
+msgid "%1$s was not uploaded (unrecognized file type)."
+msgstr "未上传%1$s（文件类型无法识别）。"
+
+#: o2.php:394
+msgid "Sorry, %1$s files are not allowed."
+msgstr "抱歉，不允许上传%1$s文件。"
+
+#: o2.php:395
+msgid "Sorry, file not uploaded (unrecognized file type)."
+msgstr "抱歉，文件未上传（文件类型无法识别）。"
+
+#: o2.php:396
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr "抱歉，找不到您请求的页面。也许搜索会有所帮助。"
+
+#: o2.php:397
+msgid ""
+"Apologies, but I could not find any results for that search term. Please try "
+"again."
+msgstr "抱歉，找不到该搜索字词的任何结果。请再试一次。"
+
+#: o2.php:398
+msgid "An unexpected error occurred. Please refresh the page and try again."
+msgstr "发生意外错误。请刷新页面并重试。"
+
+#: o2.php:399
+msgid "Generating preview..."
+msgstr "正在生成预览……"
+
+#: o2.php:400
+msgid "Ready to publish your first post? Simply use the form above."
+msgstr "准备好发表您的第一篇文章了吗？只需使用上面的表单。"
+
+#: o2.php:401
+msgid "Tap the new post control below to begin writing your first post."
+msgstr "点击下面的新文章控件，开始撰写您的第一篇文章。"
+
+#: o2.php:402
+msgid "This comment is awaiting approval."
+msgstr "此评论正在等待批准。"
+
+#: o2.php:403
+msgid "This comment was trashed."
+msgstr "此评论为垃圾。"
+
+#: o2.php:404 o2.php:1151
+msgid "This comment was deleted."
+msgstr "此评论已删除。"
+
+#: o2.php:405
+msgid "Cancel"
+msgstr "取消"
+
+#: o2.php:407 o2.php:563
+msgid "Email"
+msgstr "电子邮件"
+
+#: o2.php:408 o2.php:562
+msgid "Name"
+msgstr "名称"
+
+#: o2.php:409
+msgid "Permalink"
+msgstr "固定链接"
+
+#: o2.php:412
+msgid "Save"
+msgstr "保存"
+
+#: o2.php:413
+msgid "Saving"
+msgstr "保存"
+
+#: o2.php:414 o2.php:423
+msgid "Website"
+msgstr "网站地址"
+
+#: o2.php:415 o2.php:1080
+msgid "Search"
+msgstr "搜索"
+
+#: o2.php:417
+msgid "Preview"
+msgstr "预览"
+
+#: o2.php:418
+msgid "Older posts"
+msgstr "较旧文章"
+
+#: o2.php:419
+msgid "Newer posts"
+msgstr "较新文章"
+
+#: o2.php:420
+msgid "Login to leave a comment."
+msgstr "登录后可发表评论。"
+
+#: o2.php:421
+msgid "Fill in your details below."
+msgstr "请在下面填写您的详细信息。"
+
+#: o2.php:422
+msgid "Careful! You are editing someone else's comment."
+msgstr "小心！您正在编辑其他人的评论。"
+
+#: o2.php:424
+msgid "Show Comments"
+msgstr "显示评论"
+
+#: o2.php:425
+msgid "Hide Comments"
+msgstr "隐藏评论"
+
+#: o2.php:426
+msgid "This post was trashed. You will be redirected home now."
+msgstr "此文章已被标记为垃圾。您现在将被重定向回首页。"
+
+#: o2.php:427
+msgid "This page was trashed. You will be redirected home now."
+msgstr "此页面已被放入回收站。现在您将被重定向回首页。"
+
+#: o2.php:428
+msgid "This post is being trashed."
+msgstr "此文章已被放入回收站。"
+
+#: o2.php:429
+msgid "This page is being trashed."
+msgstr "此页面已被放入回收站。"
+
+#: o2.php:430
+msgid "There was an error trashing that post. Please try again in a moment."
+msgstr "将此文章移至回收站时出错，请稍后再试。"
+
+#: o2.php:431
+msgid "There was an error trashing that page. Please try again in a moment."
+msgstr "将此页面移至回收站时出错，请稍后再试。"
+
+#: o2.php:463
+msgid "Show comment threads"
+msgstr "显示评论部分"
+
+#: o2.php:463
+msgid "Hide comment threads"
+msgstr "隐藏评论部分"
+
+#: o2.php:524
+msgid "Hi, {name}! What's happening?"
+msgstr "嗨，{name}！有什么重要的事？"
+
+#: o2.php:559
+msgid "Name (required)"
+msgstr "名字（必填）"
+
+#: o2.php:560
+msgid "Email (required)"
+msgstr "邮箱（必填）"
+
+#: o2.php:619
+msgid "Theme Options"
+msgstr "主题选项"
+
+#: o2.php:629
+msgid "Front-end Post Prompt: Use {name} for user's name"
+msgstr "前端发布提示符：使用{name}作为用户名"
+
+#: o2.php:640
+msgid "Enable \"To Do\" Module"
+msgstr "启用“待办事项”模块"
+
+#: o2.php:652
+msgid "Mark New Posts \"To Do\""
+msgstr "标记新文章“为待办”"
+
+#: o2.php:692
+msgid "Posts by %s"
+msgstr "作者 %s"
+
+#: o2.php:700
+msgid "Posts categorized as %s"
+msgstr "文章分类为 %s"
+
+#: o2.php:713
+msgid "Posts containing &lsquo;%s&rsquo; (%d)"
+msgstr "包含&lsquo;%s&rsquo;(%d)的文章。"
+
+#: o2.php:715
+msgid "Page Not Found"
+msgstr "找不到页面"
+
+#: o2.php:718
+msgid "Daily Archives: "
+msgstr "日度归档："
+
+#: o2.php:720
+msgid "Monthly Archives: "
+msgstr "月度归档："
+
+#: o2.php:722
+msgid "Yearly Archives: "
+msgstr "年度归档："
+
+#: o2.php:724
+msgid "Post Archives"
+msgstr "文章归档"
+
+#: o2.php:845
+msgid ""
+"Your browser is not up-to-date.  As a result, some features may not work "
+"correctly.  Please switch to an updated browser."
+msgstr ""
+"您的浏览器不是最新的。 因此，某些功能可能无法正常工作。 请切换到更新的浏览"
+"器。"
+
+#: o2.php:918
+msgid "an hour"
+msgstr "一小时"
+
+#: o2.php:919
+msgid "%d hours"
+msgstr "%d小时"
+
+#: o2.php:920
+msgid "a day"
+msgstr "一天"
+
+#: o2.php:921
+msgid "%d days"
+msgstr "%d 天"
+
+#: o2.php:922
+msgid "a month"
+msgstr "一个月"
+
+#: o2.php:923
+msgid "%d months"
+msgstr "%d 月"
+
+#: o2.php:924
+msgid "a year"
+msgstr "一年"
+
+#: o2.php:925
+msgid "%d years"
+msgstr "%d 年"
+
+#: o2.php:1104
+msgid "Recent Activity"
+msgstr "最近动态"
+
+#. Plugin Name of the plugin/theme
+msgid "o2"
+msgstr "o2"
+
+#. Plugin URI of the plugin/theme
+msgid "http://geto2.com"
+msgstr "http://geto2.com"
+
+#. Description of the plugin/theme
+msgid "Front-page editing and live-updating posts/comments for your site."
+msgstr "您网站的首页编辑和实时更新帖子/评论。"
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "薇晓朵"
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.com/"
+msgstr "http://wordpress.com/"
+
+#: modules/to-do/load.php:512
+msgctxt "resolved/unresolved posts"
+msgid "Posts Marked To Do (%d)"
+msgstr "将文章标记为代办(%d)"
+
+#: modules/to-do/load.php:514
+msgctxt "resolved/unresolved posts"
+msgid "Posts Marked Done (%d)"
+msgstr "标记为已完成的文章（%d）"
+
+#: modules/to-do/load.php:516
+msgctxt "resolved/unresolved posts"
+msgid "%s Posts (%d)"
+msgstr "%s的文章（%d）"
+
+#: o2.php:338
+msgctxt "time ago today"
+msgid "%s"
+msgstr "%s"
+
+#: o2.php:342
+msgctxt "time in minutes abbreviation"
+msgid "%sm"
+msgstr "%s分钟"
+
+#: o2.php:343
+msgctxt "time in hours abbreviation"
+msgid "%sh"
+msgstr "%s小时"
+
+#: o2.php:344
+msgctxt "time in days abbreviation"
+msgid "%sd"
+msgstr "%s天"
+
+#: o2.php:345
+msgctxt "time in weeks abbreviation"
+msgid "%sw"
+msgstr "%s周"
+
+#: o2.php:346
+msgctxt "time in months abbreviation"
+msgid "%smon"
+msgstr "%s月"
+
+#: o2.php:347
+msgctxt "time in years abbreviation"
+msgid "%sy"
+msgstr "%s年"
+
+#: o2.php:410
+msgctxt "Verb, to post"
+msgid "Post"
+msgstr "文章"
+
+#: o2.php:913
+msgctxt "time from now"
+msgid "in %s"
+msgstr "在%s"
+
+#: o2.php:914
+msgctxt "time ago"
+msgid "%s ago"
+msgstr "%s之前"
+
+#: o2.php:915
+msgctxt "unit of time"
+msgid "a few seconds"
+msgstr "1秒"
+
+#: o2.php:916
+msgctxt "abbreviation of minute"
+msgid "a min"
+msgstr "1分钟"
+
+#: o2.php:917
+msgctxt "abbreviation of minutes"
+msgid "%d mins"
+msgstr "%d分钟"

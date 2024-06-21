@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Statistics",
+    "name": "bbp-style-pack/bsp-statistics-widget",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "title": {
+            "type": "string",
+            "selector": "",
+            "default": "Forum Statistics"
+        },
+		"bbpressOnly": {
+             "type": "boolean",
+            "selector": "",
+            "default": "0"
+        }
+        
+    },
+    "editorScript": "file:./../build/statistics-index.js",
+    "render": "file:./bsp-statistics-widget.php"
+}

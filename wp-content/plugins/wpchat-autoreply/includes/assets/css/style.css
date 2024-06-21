@@ -1,0 +1,108 @@
+        /* Add this CSS style block */
+        #accounts-container,
+        #api-urls-container {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .account-group,
+        .api-url-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        .account-group input,
+        .api-url-group input {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+    
+        .account-group button,
+        .api-url-group button {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    
+        .account-group button:hover,
+        .api-url-group button:hover {
+            background-color: #d32f2f;
+        }
+    
+        #add-account,
+        #add-api-url {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+    
+        #add-account:hover,
+        #add-api-url:hover {
+            background-color: #43a047;
+        }
+
+
+        /* Add this CSS style block */
+        textarea[name="wpchat_autoreply_options[information_sources]"] {
+            width: 100%;
+            font-size: 14px;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+            /* Add this CSS style block */
+            .radio-container {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .radio-container label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        
+            .radio-container input[type="radio"] {
+                margin-right: 8px;
+            }
+
+
+        /* Add this CSS style block */
+        #user-search {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    
+        #user-select {
+            width: 100%;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+.form-table {
+    width: 50%;
+}
+@media screen and (max-width: 782px){
+.form-table {
+    box-sizing: border-box;
+    width: 100%;
+}
+}

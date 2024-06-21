@@ -1,0 +1,348 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 3,
+            "column": 1,
+            "index": 45
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ForStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 3,
+                    "column": 1,
+                    "index": 45
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "init": {
+                "type": "VariableDeclaration",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 5,
+                        "index": 5
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 13,
+                        "index": 13
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 9,
+                                "index": 9
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 10,
+                                "index": 10
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "id": {
+                            "type": "Identifier",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 9,
+                                    "index": 9
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 10,
+                                    "index": 10
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "name": "a"
+                        },
+                        "init": null
+                    },
+                    {
+                        "type": "VariableDeclarator",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 11,
+                                "index": 11
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 12,
+                                "index": 12
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "id": {
+                            "type": "Identifier",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 11,
+                                    "index": 11
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 12,
+                                    "index": 12
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "name": "b"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "let"
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 14,
+                        "index": 14
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 20,
+                        "index": 20
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "left": {
+                    "type": "Identifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 14,
+                            "index": 14
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 15,
+                            "index": 15
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "name": "i"
+                },
+                "operator": ">=",
+                "right": {
+                    "type": "Literal",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 19,
+                            "index": 19
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 20,
+                            "index": 20
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "value": 0,
+                    "raw": "0",
+                    "format": "decimal"
+                }
+            },
+            "update": {
+                "type": "UpdateExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 22,
+                        "index": 22
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 25,
+                        "index": 25
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "argument": {
+                    "type": "Identifier",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 22,
+                            "index": 22
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 23,
+                            "index": 23
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "name": "i"
+                },
+                "operator": "--",
+                "prefix": false
+            },
+            "body": {
+                "type": "BlockStatement",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 27,
+                        "index": 27
+                    },
+                    "end": {
+                        "line": 3,
+                        "column": 1,
+                        "index": 45
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "body": [
+                    {
+                        "type": "ExpressionStatement",
+                        "location": {
+                            "start": {
+                                "line": 2,
+                                "column": 4,
+                                "index": 33
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 14,
+                                "index": 43
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "location": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 4,
+                                    "index": 33
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 13,
+                                    "index": 42
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "Identifier",
+                                "location": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 4,
+                                        "index": 33
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 5,
+                                        "index": 34
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "name": "a"
+                            },
+                            "operator": "=",
+                            "right": {
+                                "type": "AssignmentExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 8,
+                                        "index": 37
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 13,
+                                        "index": 42
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 8,
+                                            "index": 37
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 9,
+                                            "index": 38
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "b"
+                                },
+                                "operator": "=",
+                                "right": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 12,
+                                            "index": 41
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 13,
+                                            "index": 42
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "i"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

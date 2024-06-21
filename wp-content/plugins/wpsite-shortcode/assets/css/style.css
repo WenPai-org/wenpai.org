@@ -1,0 +1,105 @@
+.wpsite-shortcode-columns {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  overflow: auto;
+}
+
+.wpsite-shortcode-column {
+  flex-basis: calc(25% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 560px;
+}
+
+.wpsite-shortcode-column h3 {
+  margin-top: 0;
+}
+
+.wpsite-shortcode-column p {
+  margin: 10px 0;
+}
+
+.wpsite-shortcode-column code {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  user-select: all; /* 允许文本选择 */
+}
+
+
+@media only screen and (max-width: 767px) {
+  .wpsite-shortcode-columns {
+    display: block;
+  }
+
+  .wpsite-shortcode-column {
+    flex-direction: column;
+    height: auto;
+  }
+}
+/*
+.wpsite-shortcode-column h3 {
+    position: relative;
+    margin: -1px -1px 5px;
+    padding: 15px 18px 14px 15px;
+    border: 1px solid #2271b1;
+    border-bottom: none;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #fff;
+    background: #2271b1;
+    background-color: #3858e9;
+    border-color: #2145e6;
+}
+
+h3.woo {
+    border-color: #7f54b3;
+    background-color: #7f54b3;
+}
+h3.bbp {
+    border-color: #7f54b3;
+    background-color: #7f54b3;
+}
+h3.bp {
+    border-color: #7f54b3;
+    background-color: #7f54b3;
+}
+ */
+
+.wpsite-shortcode-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wpsite-shortcode-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wpsite-shortcode-info ul li {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wpsite-shortcode-column {
+  /* 初始状态下隐藏滚动条 */
+  overflow-y: hidden;
+}
+
+.wpsite-shortcode-column:hover {
+  /* 鼠标悬浮时显示滚动条 */
+  overflow-y: auto;
+}

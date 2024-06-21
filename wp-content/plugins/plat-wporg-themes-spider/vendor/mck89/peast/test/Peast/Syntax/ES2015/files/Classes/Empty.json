@@ -1,0 +1,74 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 13,
+            "index": 13
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ClassDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 13,
+                    "index": 13
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "id": {
+                "type": "Identifier",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 6,
+                        "index": 6
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 10,
+                        "index": 10
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "name": "Test"
+            },
+            "superClass": null,
+            "body": {
+                "type": "ClassBody",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 11,
+                        "index": 11
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 13,
+                        "index": 13
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "body": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

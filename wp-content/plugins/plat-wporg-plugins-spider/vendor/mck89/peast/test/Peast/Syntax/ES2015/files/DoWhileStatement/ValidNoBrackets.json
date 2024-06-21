@@ -1,0 +1,109 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 28,
+            "index": 28
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "DoWhileStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 28,
+                    "index": 28
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "body": {
+                "type": "ExpressionStatement",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 3,
+                        "index": 3
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 15,
+                        "index": 15
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "expression": {
+                    "type": "CallExpression",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 3,
+                            "index": 3
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 14,
+                            "index": 14
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "callee": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 3,
+                                "index": 3
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 12,
+                                "index": 12
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "something"
+                    },
+                    "arguments": []
+                }
+            },
+            "test": {
+                "type": "Literal",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 23,
+                        "index": 23
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 27,
+                        "index": 27
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "value": true,
+                "raw": "true"
+            }
+        }
+    ],
+    "sourceType": "script"
+}

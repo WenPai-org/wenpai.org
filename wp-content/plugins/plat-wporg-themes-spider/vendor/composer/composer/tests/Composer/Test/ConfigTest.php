@@ -1,0 +1,457 @@
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of Composer.
+ *
+ * (c) Nils Adermann <naderman@naderman.de>
+ *     Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Composer\Test;
+
+use Composer\Advisory\Auditor;
+use Composer\Config;
+use Composer\IO\IOInterface;
+use Composer\Util\Platform;
+
+class ConfigTest extends TestCase
+{
+    /**
+     * @dataProvider dataAddPackagistRepository
+     * @param mixed[] $expected
+     * @param mixed[] $localConfig
+     * @param ?array<mixed> $systemConfig
+     */
+    public function testAddPackagistRepository(array $expected, array $localConfig, ?array $systemConfig = null): void
+    {
+        $config = new Config(false);
+        if ($systemConfig) {
+            $config->merge(['repositories' => $systemConfig]);
+        }
+        $config->merge(['repositories' => $localConfig]);
+
+        $this->assertEquals($expected, $config->getRepositories());
+    }
+
+    public static function dataAddPackagistRepository(): array
+    {
+        $data = [];
+        $data['local config inherits system defaults'] = [
+            [
+                'packagist.org' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+            [],
+        ];
+
+        $data['local config can disable system config by name'] = [
+            [],
+            [
+                ['packagist.org' => false],
+            ],
+        ];
+
+        $data['local config can disable system config by name bc'] = [
+            [],
+            [
+                ['packagist' => false],
+            ],
+        ];
+
+        $data['local config adds above defaults'] = [
+            [
+                1 => ['type' => 'vcs', 'url' => 'git://github.com/composer/composer.git'],
+                0 => ['type' => 'pear', 'url' => 'http://pear.composer.org'],
+                'packagist.org' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+            [
+                ['type' => 'vcs', 'url' => 'git://github.com/composer/composer.git'],
+                ['type' => 'pear', 'url' => 'http://pear.composer.org'],
+            ],
+        ];
+
+        $data['system config adds above core defaults'] = [
+            [
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+                'packagist.org' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+            [],
+            [
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+            ],
+        ];
+
+        $data['local config can disable repos by name and re-add them anonymously to bring them above system config'] = [
+            [
+                0 => ['type' => 'composer', 'url' => 'http://packagist.org'],
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+            ],
+            [
+                ['packagist.org' => false],
+                ['type' => 'composer', 'url' => 'http://packagist.org'],
+            ],
+            [
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+            ],
+        ];
+
+        $data['local config can override by name to bring a repo above system config'] = [
+            [
+                'packagist.org' => ['type' => 'composer', 'url' => 'http://packagistnew.org'],
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+            ],
+            [
+                'packagist.org' => ['type' => 'composer', 'url' => 'http://packagistnew.org'],
+            ],
+            [
+                'example.com' => ['type' => 'composer', 'url' => 'http://example.com'],
+            ],
+        ];
+
+        $data['local config redefining packagist.org by URL override it if no named keys are used'] = [
+            [
+                ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+            [
+                ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+        ];
+
+        $data['local config redefining packagist.org by URL override it also with named keys'] = [
+            [
+                'example' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+            [
+                'example' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+            ],
+        ];
+
+        $data['incorrect local config does not cause ErrorException'] = [
+            [
+                'packagist.org' => ['type' => 'composer', 'url' => 'https://repo.packagist.org'],
+                'type' => 'vcs',
+                'url' => 'http://example.com',
+            ],
+            [
+                'type' => 'vcs',
+                'url' => 'http://example.com',
+            ],
+        ];
+
+        return $data;
+    }
+
+    public function testPreferredInstallAsString(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['preferred-install' => 'source']]);
+        $config->merge(['config' => ['preferred-install' => 'dist']]);
+
+        $this->assertEquals('dist', $config->get('preferred-install'));
+    }
+
+    public function testMergePreferredInstall(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['preferred-install' => 'dist']]);
+        $config->merge(['config' => ['preferred-install' => ['foo/*' => 'source']]]);
+
+        // This assertion needs to make sure full wildcard preferences are placed last
+        // Handled by composer because we convert string preferences for BC, all other
+        // care for ordering and collision prevention is up to the user
+        $this->assertEquals(['foo/*' => 'source', '*' => 'dist'], $config->get('preferred-install'));
+    }
+
+    public function testMergeGithubOauth(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['github-oauth' => ['foo' => 'bar']]]);
+        $config->merge(['config' => ['github-oauth' => ['bar' => 'baz']]]);
+
+        $this->assertEquals(['foo' => 'bar', 'bar' => 'baz'], $config->get('github-oauth'));
+    }
+
+    public function testVarReplacement(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['a' => 'b', 'c' => '{$a}']]);
+        $config->merge(['config' => ['bin-dir' => '$HOME', 'cache-dir' => '~/foo/']]);
+
+        $home = rtrim(getenv('HOME') ?: getenv('USERPROFILE'), '\\/');
+        $this->assertEquals('b', $config->get('c'));
+        $this->assertEquals($home, $config->get('bin-dir'));
+        $this->assertEquals($home.'/foo', $config->get('cache-dir'));
+    }
+
+    public function testRealpathReplacement(): void
+    {
+        $config = new Config(false, '/foo/bar');
+        $config->merge(['config' => [
+            'bin-dir' => '$HOME/foo',
+            'cache-dir' => '/baz/',
+            'vendor-dir' => 'vendor',
+        ]]);
+
+        $home = rtrim(getenv('HOME') ?: getenv('USERPROFILE'), '\\/');
+        $this->assertEquals('/foo/bar/vendor', $config->get('vendor-dir'));
+        $this->assertEquals($home.'/foo', $config->get('bin-dir'));
+        $this->assertEquals('/baz', $config->get('cache-dir'));
+    }
+
+    public function testStreamWrapperDirs(): void
+    {
+        $config = new Config(false, '/foo/bar');
+        $config->merge(['config' => [
+            'cache-dir' => 's3://baz/',
+        ]]);
+
+        $this->assertEquals('s3://baz', $config->get('cache-dir'));
+    }
+
+    public function testFetchingRelativePaths(): void
+    {
+        $config = new Config(false, '/foo/bar');
+        $config->merge(['config' => [
+            'bin-dir' => '{$vendor-dir}/foo',
+            'vendor-dir' => 'vendor',
+        ]]);
+
+        $this->assertEquals('/foo/bar/vendor', $config->get('vendor-dir'));
+        $this->assertEquals('/foo/bar/vendor/foo', $config->get('bin-dir'));
+        $this->assertEquals('vendor', $config->get('vendor-dir', Config::RELATIVE_PATHS));
+        $this->assertEquals('vendor/foo', $config->get('bin-dir', Config::RELATIVE_PATHS));
+    }
+
+    public function testOverrideGithubProtocols(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['github-protocols' => ['https', 'ssh']]]);
+        $config->merge(['config' => ['github-protocols' => ['https']]]);
+
+        $this->assertEquals(['https'], $config->get('github-protocols'));
+    }
+
+    public function testGitDisabledByDefaultInGithubProtocols(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['github-protocols' => ['https', 'git']]]);
+        $this->assertEquals(['https'], $config->get('github-protocols'));
+
+        $config->merge(['config' => ['secure-http' => false]]);
+        $this->assertEquals(['https', 'git'], $config->get('github-protocols'));
+    }
+
+    /**
+     * @dataProvider allowedUrlProvider
+     * @doesNotPerformAssertions
+     */
+    public function testAllowedUrlsPass(string $url): void
+    {
+        $config = new Config(false);
+        $config->prohibitUrlByConfig($url);
+    }
+
+    /**
+     * @dataProvider prohibitedUrlProvider
+     */
+    public function testProhibitedUrlsThrowException(string $url): void
+    {
+        self::expectException('Composer\Downloader\TransportException');
+        self::expectExceptionMessage('Your configuration does not allow connections to ' . $url);
+        $config = new Config(false);
+        $config->prohibitUrlByConfig($url);
+    }
+
+    /**
+     * @return string[][] List of test URLs that should pass strict security
+     */
+    public static function allowedUrlProvider(): array
+    {
+        $urls = [
+            'https://packagist.org',
+            'git@github.com:composer/composer.git',
+            'hg://user:pass@my.satis/satis',
+            '\\myserver\myplace.git',
+            'file://myserver.localhost/mygit.git',
+            'file://example.org/mygit.git',
+            'git:Department/Repo.git',
+            'ssh://[user@]host.xz[:port]/path/to/repo.git/',
+        ];
+
+        return array_combine($urls, array_map(static function ($e): array {
+            return [$e];
+        }, $urls));
+    }
+
+    /**
+     * @return string[][] List of test URLs that should not pass strict security
+     */
+    public static function prohibitedUrlProvider(): array
+    {
+        $urls = [
+            'http://packagist.org',
+            'http://10.1.0.1/satis',
+            'http://127.0.0.1/satis',
+            'svn://localhost/trunk',
+            'svn://will.not.resolve/trunk',
+            'svn://192.168.0.1/trunk',
+            'svn://1.2.3.4/trunk',
+            'git://5.6.7.8/git.git',
+        ];
+
+        return array_combine($urls, array_map(static function ($e): array {
+            return [$e];
+        }, $urls));
+    }
+
+    public function testProhibitedUrlsWarningVerifyPeer(): void
+    {
+        $io = $this->getIOMock();
+
+        $io->expects([['text' => '<warning>Warning: Accessing example.org with verify_peer and verify_peer_name disabled.</warning>']], true);
+
+        $config = new Config(false);
+        $config->prohibitUrlByConfig('https://example.org', $io, [
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+            ],
+        ]);
+    }
+
+    /**
+     * @group TLS
+     */
+    public function testDisableTlsCanBeOverridden(): void
+    {
+        $config = new Config;
+        $config->merge(
+            ['config' => ['disable-tls' => 'false']]
+        );
+        $this->assertFalse($config->get('disable-tls'));
+        $config->merge(
+            ['config' => ['disable-tls' => 'true']]
+        );
+        $this->assertTrue($config->get('disable-tls'));
+    }
+
+    public function testProcessTimeout(): void
+    {
+        Platform::putEnv('COMPOSER_PROCESS_TIMEOUT', '0');
+        $config = new Config(true);
+        $result = $config->get('process-timeout');
+        Platform::clearEnv('COMPOSER_PROCESS_TIMEOUT');
+
+        $this->assertEquals(0, $result);
+    }
+
+    public function testHtaccessProtect(): void
+    {
+        Platform::putEnv('COMPOSER_HTACCESS_PROTECT', '0');
+        $config = new Config(true);
+        $result = $config->get('htaccess-protect');
+        Platform::clearEnv('COMPOSER_HTACCESS_PROTECT');
+
+        $this->assertEquals(0, $result);
+    }
+
+    public function testGetSourceOfValue(): void
+    {
+        Platform::clearEnv('COMPOSER_PROCESS_TIMEOUT');
+
+        $config = new Config;
+
+        $this->assertSame(Config::SOURCE_DEFAULT, $config->getSourceOfValue('process-timeout'));
+
+        $config->merge(
+            ['config' => ['process-timeout' => 1]],
+            'phpunit-test'
+        );
+
+        $this->assertSame('phpunit-test', $config->getSourceOfValue('process-timeout'));
+    }
+
+    public function testGetSourceOfValueEnvVariables(): void
+    {
+        Platform::putEnv('COMPOSER_HTACCESS_PROTECT', '0');
+        $config = new Config;
+        $result = $config->getSourceOfValue('htaccess-protect');
+        Platform::clearEnv('COMPOSER_HTACCESS_PROTECT');
+
+        $this->assertEquals('COMPOSER_HTACCESS_PROTECT', $result);
+    }
+
+    public function testAudit(): void
+    {
+        $config = new Config(true);
+        $result = $config->get('audit');
+        self::assertArrayHasKey('abandoned', $result);
+        self::assertArrayHasKey('ignore', $result);
+        self::assertSame(Auditor::ABANDONED_FAIL, $result['abandoned']);
+        self::assertSame([], $result['ignore']);
+
+        Platform::putEnv('COMPOSER_AUDIT_ABANDONED', Auditor::ABANDONED_IGNORE);
+        $result = $config->get('audit');
+        Platform::clearEnv('COMPOSER_AUDIT_ABANDONED');
+        self::assertArrayHasKey('abandoned', $result);
+        self::assertArrayHasKey('ignore', $result);
+        self::assertSame(Auditor::ABANDONED_IGNORE, $result['abandoned']);
+        self::assertSame([], $result['ignore']);
+
+        $config->merge(['config' => ['audit' => ['ignore' => ['A', 'B']]]]);
+        $config->merge(['config' => ['audit' => ['ignore' => ['A', 'C']]]]);
+        $result = $config->get('audit');
+        self::assertArrayHasKey('ignore', $result);
+        self::assertSame(['A', 'B', 'A', 'C'], $result['ignore']);
+    }
+
+    public function testGetDefaultsToAnEmptyArray(): void
+    {
+        $config = new Config;
+        $keys = [
+            'bitbucket-oauth',
+            'github-oauth',
+            'gitlab-oauth',
+            'gitlab-token',
+            'http-basic',
+            'bearer',
+        ];
+        foreach ($keys as $key) {
+            $value = $config->get($key);
+            $this->assertIsArray($value); // @phpstan-ignore-line - PHPStan knows that its an array for all given keys
+            $this->assertCount(0, $value);
+        }
+    }
+
+    public function testMergesPluginConfig(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['allow-plugins' => ['some/plugin' => true]]]);
+        $this->assertEquals(['some/plugin' => true], $config->get('allow-plugins'));
+
+        $config->merge(['config' => ['allow-plugins' => ['another/plugin' => true]]]);
+        $this->assertEquals(['some/plugin' => true, 'another/plugin' => true], $config->get('allow-plugins'));
+    }
+
+    public function testOverridesGlobalBooleanPluginsConfig(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['allow-plugins' => true]]);
+        $this->assertEquals(true, $config->get('allow-plugins'));
+
+        $config->merge(['config' => ['allow-plugins' => ['another/plugin' => true]]]);
+        $this->assertEquals(['another/plugin' => true], $config->get('allow-plugins'));
+    }
+
+    public function testAllowsAllPluginsFromLocalBoolean(): void
+    {
+        $config = new Config(false);
+        $config->merge(['config' => ['allow-plugins' => ['some/plugin' => true]]]);
+        $this->assertEquals(['some/plugin' => true], $config->get('allow-plugins'));
+
+        $config->merge(['config' => ['allow-plugins' => true]]);
+        $this->assertEquals(true, $config->get('allow-plugins'));
+    }
+}

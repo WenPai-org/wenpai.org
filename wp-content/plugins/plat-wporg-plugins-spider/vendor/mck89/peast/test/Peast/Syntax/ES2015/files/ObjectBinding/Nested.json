@@ -1,0 +1,301 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 24,
+            "index": 24
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 24,
+                    "index": 24
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 4,
+                            "index": 4
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 23,
+                            "index": 23
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "id": {
+                        "type": "ObjectPattern",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 4,
+                                "index": 4
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 19,
+                                "index": 19
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 5,
+                                        "index": 5
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 17,
+                                        "index": 17
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "key": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 5,
+                                            "index": 5
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 6,
+                                            "index": 6
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "a"
+                                },
+                                "value": {
+                                    "type": "AssignmentPattern",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 7,
+                                            "index": 7
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 17,
+                                            "index": 17
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "ObjectPattern",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 7,
+                                                "index": 7
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 15,
+                                                "index": 15
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "properties": [
+                                            {
+                                                "type": "Property",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 8,
+                                                        "index": 8
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 9,
+                                                        "index": 9
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "key": {
+                                                    "type": "Identifier",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 8,
+                                                            "index": 8
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 9,
+                                                            "index": 9
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "name": "c"
+                                                },
+                                                "value": {
+                                                    "type": "Identifier",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 8,
+                                                            "index": 8
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 9,
+                                                            "index": 9
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "name": "c"
+                                                },
+                                                "kind": "init",
+                                                "method": false,
+                                                "shorthand": true,
+                                                "computed": false
+                                            },
+                                            {
+                                                "type": "Property",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 10,
+                                                        "index": 10
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 13,
+                                                        "index": 13
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "key": {
+                                                    "type": "Identifier",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 10,
+                                                            "index": 10
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 11,
+                                                            "index": 11
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "name": "d"
+                                                },
+                                                "value": {
+                                                    "type": "Identifier",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 12,
+                                                            "index": 12
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 13,
+                                                            "index": 13
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "name": "e"
+                                                },
+                                                "kind": "init",
+                                                "method": false,
+                                                "shorthand": false,
+                                                "computed": false
+                                            }
+                                        ]
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 16,
+                                                "index": 16
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 17,
+                                                "index": 17
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "name": "f"
+                                    }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false,
+                                "computed": false
+                            }
+                        ]
+                    },
+                    "init": {
+                        "type": "Identifier",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 22,
+                                "index": 22
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 23,
+                                "index": 23
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "name": "g"
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "cloudcatch/tab",
+  "version": "2.1.0",
+  "title": "Tab",
+  "category": "design",
+  "parent": [
+    "cloudcatch/tabs"
+  ],
+  "keywords": [
+    "tab",
+    "tabs"
+  ],
+  "description": "Customize your tabs look and feel using the Styles panel. Use any block within the tab content below.",
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "index": {
+      "type": "number"
+    },
+    "label": {
+      "type": "string",
+      "default": "Title"
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "usesContext": [
+    "cloudcatch/tabs/activeTab",
+    "cloudcatch/tabs/defaultTab"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": false,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true,
+      "blockGap": false,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "shadow": true
+  },
+  "textdomain": "simple-tabs-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

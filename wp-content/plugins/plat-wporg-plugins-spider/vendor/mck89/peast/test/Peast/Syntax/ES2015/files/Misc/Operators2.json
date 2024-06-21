@@ -1,0 +1,1577 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 209,
+            "index": 209
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 209,
+                    "index": 209
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "LogicalExpression",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 209,
+                        "index": 209
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "left": {
+                    "type": "BinaryExpression",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 0,
+                            "index": 0
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 152,
+                            "index": 152
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "left": {
+                        "type": "BinaryExpression",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 0,
+                                "index": 0
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 103,
+                                "index": 103
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "left": {
+                            "type": "BinaryExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 0,
+                                    "index": 0
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 37,
+                                    "index": 37
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 0,
+                                        "index": 0
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 29,
+                                        "index": 29
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 0,
+                                            "index": 0
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 19,
+                                            "index": 19
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 0,
+                                                "index": 0
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 10,
+                                                "index": 10
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 0,
+                                                    "index": 0
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 1,
+                                                    "index": 1
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 1,
+                                            "raw": "1",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "<<",
+                                        "right": {
+                                            "type": "BinaryExpression",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 5,
+                                                    "index": 5
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 10,
+                                                    "index": 10
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "left": {
+                                                "type": "Literal",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 5,
+                                                        "index": 5
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 6,
+                                                        "index": 6
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "value": 2,
+                                                "raw": "2",
+                                                "format": "decimal"
+                                            },
+                                            "operator": "+",
+                                            "right": {
+                                                "type": "Literal",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 9,
+                                                        "index": 9
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 10,
+                                                        "index": 10
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "value": 3,
+                                                "raw": "3",
+                                                "format": "decimal"
+                                            }
+                                        }
+                                    },
+                                    "operator": ">>",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 14,
+                                                "index": 14
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 19,
+                                                "index": 19
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 14,
+                                                    "index": 14
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 15,
+                                                    "index": 15
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 4,
+                                            "raw": "4",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "-",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 18,
+                                                    "index": 18
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 19,
+                                                    "index": 19
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 5,
+                                            "raw": "5",
+                                            "format": "decimal"
+                                        }
+                                    }
+                                },
+                                "operator": ">>>",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 24,
+                                            "index": 24
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 29,
+                                            "index": 29
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 24,
+                                                "index": 24
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 25,
+                                                "index": 25
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 6,
+                                        "raw": "6",
+                                        "format": "decimal"
+                                    },
+                                    "operator": "*",
+                                    "right": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 28,
+                                                "index": 28
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 29,
+                                                "index": 29
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 7,
+                                        "raw": "7",
+                                        "format": "decimal"
+                                    }
+                                }
+                            },
+                            "operator": "&",
+                            "right": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 32,
+                                        "index": 32
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 37,
+                                        "index": 37
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 32,
+                                            "index": 32
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 33,
+                                            "index": 33
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 8,
+                                    "raw": "8",
+                                    "format": "decimal"
+                                },
+                                "operator": "\/",
+                                "right": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 36,
+                                            "index": 36
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 37,
+                                            "index": 37
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 9,
+                                    "raw": "9",
+                                    "format": "decimal"
+                                }
+                            }
+                        },
+                        "operator": "|",
+                        "right": {
+                            "type": "BinaryExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 40,
+                                    "index": 40
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 103,
+                                    "index": 103
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 40,
+                                        "index": 40
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 76,
+                                        "index": 76
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 40,
+                                            "index": 40
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 42,
+                                            "index": 42
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 10,
+                                    "raw": "10",
+                                    "format": "decimal"
+                                },
+                                "operator": "^",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 46,
+                                            "index": 46
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 76,
+                                            "index": 76
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 46,
+                                                "index": 46
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 65,
+                                                "index": 65
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 46,
+                                                    "index": 46
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 48,
+                                                    "index": 48
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 11,
+                                            "raw": "11",
+                                            "format": "decimal"
+                                        },
+                                        "operator": ">=",
+                                        "right": {
+                                            "type": "BinaryExpression",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 52,
+                                                    "index": 52
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 65,
+                                                    "index": 65
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "left": {
+                                                "type": "BinaryExpression",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 52,
+                                                        "index": 52
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 59,
+                                                        "index": 59
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "left": {
+                                                    "type": "Literal",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 52,
+                                                            "index": 52
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 54,
+                                                            "index": 54
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "value": 12,
+                                                    "raw": "12",
+                                                    "format": "decimal"
+                                                },
+                                                "operator": "+",
+                                                "right": {
+                                                    "type": "Literal",
+                                                    "location": {
+                                                        "start": {
+                                                            "line": 1,
+                                                            "column": 57,
+                                                            "index": 57
+                                                        },
+                                                        "end": {
+                                                            "line": 1,
+                                                            "column": 59,
+                                                            "index": 59
+                                                        }
+                                                    },
+                                                    "leadingComments": [],
+                                                    "trailingComments": [],
+                                                    "value": 13,
+                                                    "raw": "13",
+                                                    "format": "decimal"
+                                                }
+                                            },
+                                            "operator": ">>",
+                                            "right": {
+                                                "type": "Literal",
+                                                "location": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 63,
+                                                        "index": 63
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 65,
+                                                        "index": 65
+                                                    }
+                                                },
+                                                "leadingComments": [],
+                                                "trailingComments": [],
+                                                "value": 14,
+                                                "raw": "14",
+                                                "format": "decimal"
+                                            }
+                                        }
+                                    },
+                                    "operator": "&",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 68,
+                                                "index": 68
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 76,
+                                                "index": 76
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 68,
+                                                    "index": 68
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 70,
+                                                    "index": 70
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 15,
+                                            "raw": "15",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "<<",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 74,
+                                                    "index": 74
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 76,
+                                                    "index": 76
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 16,
+                                            "raw": "16",
+                                            "format": "decimal"
+                                        }
+                                    }
+                                }
+                            },
+                            "operator": "^",
+                            "right": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 79,
+                                        "index": 79
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 103,
+                                        "index": 103
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 79,
+                                            "index": 79
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 81,
+                                            "index": 81
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 15,
+                                    "raw": "15",
+                                    "format": "decimal"
+                                },
+                                "operator": ">>>",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 86,
+                                            "index": 86
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 103,
+                                            "index": 103
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 86,
+                                                "index": 86
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 93,
+                                                "index": 93
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 86,
+                                                    "index": 86
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 88,
+                                                    "index": 88
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 17,
+                                            "raw": "17",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "\/",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 91,
+                                                    "index": 91
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 93,
+                                                    "index": 93
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 18,
+                                            "raw": "18",
+                                            "format": "decimal"
+                                        }
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 96,
+                                                "index": 96
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 103,
+                                                "index": 103
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 96,
+                                                    "index": 96
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 98,
+                                                    "index": 98
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 19,
+                                            "raw": "19",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "*",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 101,
+                                                    "index": 101
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 103,
+                                                    "index": 103
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 20,
+                                            "raw": "20",
+                                            "format": "decimal"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "operator": "|",
+                    "right": {
+                        "type": "BinaryExpression",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 106,
+                                "index": 106
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 152,
+                                "index": 152
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "left": {
+                            "type": "BinaryExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 106,
+                                    "index": 106
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 142,
+                                    "index": 142
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 106,
+                                        "index": 106
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 131,
+                                        "index": 131
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 106,
+                                            "index": 106
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 115,
+                                            "index": 115
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 106,
+                                                "index": 106
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 108,
+                                                "index": 108
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 21,
+                                        "raw": "21",
+                                        "format": "decimal"
+                                    },
+                                    "operator": ">>>",
+                                    "right": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 113,
+                                                "index": 113
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 115,
+                                                "index": 115
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 22,
+                                        "raw": "22",
+                                        "format": "decimal"
+                                    }
+                                },
+                                "operator": "<<",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 119,
+                                            "index": 119
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 131,
+                                            "index": 131
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 119,
+                                                "index": 119
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 121,
+                                                "index": 121
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 23,
+                                        "raw": "23",
+                                        "format": "decimal"
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 124,
+                                                "index": 124
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 131,
+                                                "index": 131
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 124,
+                                                    "index": 124
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 126,
+                                                    "index": 126
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 24,
+                                            "raw": "24",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "*",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 129,
+                                                    "index": 129
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 131,
+                                                    "index": 131
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 25,
+                                            "raw": "25",
+                                            "format": "decimal"
+                                        }
+                                    }
+                                }
+                            },
+                            "operator": ">>",
+                            "right": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 135,
+                                        "index": 135
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 142,
+                                        "index": 142
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 135,
+                                            "index": 135
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 137,
+                                            "index": 137
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 26,
+                                    "raw": "26",
+                                    "format": "decimal"
+                                },
+                                "operator": "\/",
+                                "right": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 140,
+                                            "index": 140
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 142,
+                                            "index": 142
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 27,
+                                    "raw": "27",
+                                    "format": "decimal"
+                                }
+                            }
+                        },
+                        "operator": "&",
+                        "right": {
+                            "type": "BinaryExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 145,
+                                    "index": 145
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 152,
+                                    "index": 152
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "Literal",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 145,
+                                        "index": 145
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 147,
+                                        "index": 147
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "value": 28,
+                                "raw": "28",
+                                "format": "decimal"
+                            },
+                            "operator": "+",
+                            "right": {
+                                "type": "Literal",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 150,
+                                        "index": 150
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 152,
+                                        "index": 152
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "value": 29,
+                                "raw": "29",
+                                "format": "decimal"
+                            }
+                        }
+                    }
+                },
+                "operator": "||",
+                "right": {
+                    "type": "LogicalExpression",
+                    "location": {
+                        "start": {
+                            "line": 1,
+                            "column": 156,
+                            "index": 156
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 209,
+                            "index": 209
+                        }
+                    },
+                    "leadingComments": [],
+                    "trailingComments": [],
+                    "left": {
+                        "type": "Literal",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 156,
+                                "index": 156
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 158,
+                                "index": 158
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "value": 30,
+                        "raw": "30",
+                        "format": "decimal"
+                    },
+                    "operator": "&&",
+                    "right": {
+                        "type": "BinaryExpression",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 162,
+                                "index": 162
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 209,
+                                "index": 209
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "left": {
+                            "type": "BinaryExpression",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 162,
+                                    "index": 162
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 204,
+                                    "index": 204
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "left": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 162,
+                                        "index": 162
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 179,
+                                        "index": 179
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 162,
+                                            "index": 162
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 169,
+                                            "index": 169
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 162,
+                                                "index": 162
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 164,
+                                                "index": 164
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 31,
+                                        "raw": "31",
+                                        "format": "decimal"
+                                    },
+                                    "operator": "%",
+                                    "right": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 167,
+                                                "index": 167
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 169,
+                                                "index": 169
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 32,
+                                        "raw": "32",
+                                        "format": "decimal"
+                                    }
+                                },
+                                "operator": "^",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 172,
+                                            "index": 172
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 179,
+                                            "index": 179
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 172,
+                                                "index": 172
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 174,
+                                                "index": 174
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 33,
+                                        "raw": "33",
+                                        "format": "decimal"
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                        "type": "Literal",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 177,
+                                                "index": 177
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 179,
+                                                "index": 179
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "value": 34,
+                                        "raw": "34",
+                                        "format": "decimal"
+                                    }
+                                }
+                            },
+                            "operator": "|",
+                            "right": {
+                                "type": "BinaryExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 182,
+                                        "index": 182
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 204,
+                                        "index": 204
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 182,
+                                            "index": 182
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 199,
+                                            "index": 199
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 182,
+                                                "index": 182
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 189,
+                                                "index": 189
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 182,
+                                                    "index": 182
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 184,
+                                                    "index": 184
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 35,
+                                            "raw": "35",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "\/",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 187,
+                                                    "index": 187
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 189,
+                                                    "index": 189
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 36,
+                                            "raw": "36",
+                                            "format": "decimal"
+                                        }
+                                    },
+                                    "operator": "-",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "location": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 192,
+                                                "index": 192
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 199,
+                                                "index": 199
+                                            }
+                                        },
+                                        "leadingComments": [],
+                                        "trailingComments": [],
+                                        "left": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 192,
+                                                    "index": 192
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 194,
+                                                    "index": 194
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 37,
+                                            "raw": "37",
+                                            "format": "decimal"
+                                        },
+                                        "operator": "%",
+                                        "right": {
+                                            "type": "Literal",
+                                            "location": {
+                                                "start": {
+                                                    "line": 1,
+                                                    "column": 197,
+                                                    "index": 197
+                                                },
+                                                "end": {
+                                                    "line": 1,
+                                                    "column": 199,
+                                                    "index": 199
+                                                }
+                                            },
+                                            "leadingComments": [],
+                                            "trailingComments": [],
+                                            "value": 38,
+                                            "raw": "38",
+                                            "format": "decimal"
+                                        }
+                                    }
+                                },
+                                "operator": "&",
+                                "right": {
+                                    "type": "Literal",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 202,
+                                            "index": 202
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 204,
+                                            "index": 204
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "value": 39,
+                                    "raw": "39",
+                                    "format": "decimal"
+                                }
+                            }
+                        },
+                        "operator": "|",
+                        "right": {
+                            "type": "Literal",
+                            "location": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 207,
+                                    "index": 207
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 209,
+                                    "index": 209
+                                }
+                            },
+                            "leadingComments": [],
+                            "trailingComments": [],
+                            "value": 40,
+                            "raw": "40",
+                            "format": "decimal"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}

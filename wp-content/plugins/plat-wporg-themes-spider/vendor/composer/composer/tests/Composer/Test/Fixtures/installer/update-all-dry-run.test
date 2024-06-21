@@ -1,0 +1,49 @@
+--TEST--
+Updates updateable packages in dry-run mode
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                { "name": "a/a", "version": "1.0.0" },
+                { "name": "a/a", "version": "1.0.1" },
+                { "name": "a/a", "version": "1.1.0" },
+
+                { "name": "a/b", "version": "1.0.0" },
+                { "name": "a/b", "version": "1.0.1" },
+                { "name": "a/b", "version": "2.0.0" },
+
+                { "name": "a/c", "version": "1.0.0" },
+                { "name": "a/c", "version": "2.0.0" }
+            ]
+        }
+    ],
+    "require": {
+        "a/a": "1.0.*",
+        "a/c": "1.*"
+    },
+    "require-dev": {
+        "a/b": "*"
+    }
+}
+--INSTALLED--
+[
+    { "name": "a/a", "version": "1.0.0" },
+    { "name": "a/c", "version": "1.0.0" },
+    { "name": "a/b", "version": "1.0.0" }
+]
+--RUN--
+update --dry-run
+--EXPECT-OUTPUT--
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 3 installs, 0 updates, 0 removals
+  - Locking a/a (1.0.1)
+  - Locking a/b (2.0.0)
+  - Locking a/c (1.0.0)
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 2 updates, 0 removals
+  - Upgrading a/a (1.0.0 => 1.0.1)
+  - Upgrading a/b (1.0.0 => 2.0.0)
+--EXPECT--

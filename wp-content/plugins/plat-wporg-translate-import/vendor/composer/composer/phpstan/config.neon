@@ -1,0 +1,62 @@
+includes:
+    - ../vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - ../vendor/phpstan/phpstan-phpunit/extension.neon
+    - ../vendor/phpstan/phpstan-deprecation-rules/rules.neon
+    - ../vendor/phpstan/phpstan-strict-rules/rules.neon
+    - ../vendor/phpstan/phpstan-symfony/extension.neon
+    - ../vendor/phpstan/phpstan-symfony/rules.neon
+    - ./rules.neon # Composer-specific PHPStan extensions, can be reused by third party packages by including 'vendor/composer/composer/phpstan/rules.neon' in your phpstan config
+    - ./baseline.neon
+    - ./ignore-by-php-version.neon.php
+
+parameters:
+    level: 8
+
+    excludePaths:
+       - '../tests/Composer/Test/Fixtures/*'
+       - '../tests/Composer/Test/Autoload/Fixtures/*'
+       - '../tests/Composer/Test/Autoload/MinimumVersionSupport/vendor/'
+       - '../tests/Composer/Test/Plugin/Fixtures/*'
+       - '../tests/Composer/Test/PolyfillTestCase.php'
+
+    reportUnmatchedIgnoredErrors: false
+    treatPhpDocTypesAsCertain: false
+
+    ignoreErrors:
+        # unused parameters
+        - '~^Constructor of class Composer\\Repository\\VcsRepository has an unused parameter \$dispatcher\.$~'
+        - '~^Constructor of class Composer\\Util\\Http\\CurlDownloader has an unused parameter \$disableTls\.$~'
+        - '~^Constructor of class Composer\\Util\\Http\\CurlDownloader has an unused parameter \$options\.$~'
+
+        # ion cube is not installed
+        - '~^Function ioncube_loader_\w+ not found\.$~'
+
+        # variables from global scope
+        - '~^Undefined variable: \$vendorDir$~'
+        - '~^Undefined variable: \$baseDir$~'
+
+        # we don't have different constructors for parent/child
+        - '~^Unsafe usage of new static\(\)\.$~'
+
+        # Ignore some irrelevant errors in test files
+        - '~Method Composer\\Test\\[^:]+::(data\w+|provide\w+|\w+?Provider)\(\) (has no return type specified.|return type has no value type specified in iterable type array.)~'
+
+        # PHPUnit assertions as instance methods
+        - '~Dynamic call to static method PHPUnit\\Framework\\Assert::\w+\(\)~'
+        - '~Dynamic call to static method PHPUnit\\Framework\\TestCase::(once|atLeast|exactly|will|exactly|returnValue|returnCallback|any|atLeastOnce|throwException|onConsecutiveCalls|never|returnValueMap)\(\)~'
+
+    bootstrapFiles:
+        - ../tests/bootstrap.php
+
+    paths:
+        - ../src
+        - ../tests
+
+    symfony:
+        consoleApplicationLoader: ../tests/console-application.php
+
+    dynamicConstantNames:
+        - Composer\Composer::BRANCH_ALIAS_VERSION
+        - Composer\Composer::VERSION
+        - Composer\Composer::RELEASE_DATE
+        - Composer\Composer::SOURCE_VERSION

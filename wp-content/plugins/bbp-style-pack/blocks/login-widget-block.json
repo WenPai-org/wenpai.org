@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Login Widget",
+    "name": "bbp-style-pack/bsp-login-widget",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "title": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "register": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "lostpass": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+        "helptext": {
+            "type": "string",
+            "selector": "",
+            "default": ""
+        },
+		"bbpressOnly": {
+             "type": "boolean",
+            "selector": "",
+            "default": "0"
+        }
+    },
+    "editorScript": "file:./../build/login-index.js",
+    "render": "file:./login-widget.php"
+}

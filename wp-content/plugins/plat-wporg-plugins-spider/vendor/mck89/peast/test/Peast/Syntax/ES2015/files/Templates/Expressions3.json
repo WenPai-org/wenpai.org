@@ -1,0 +1,195 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 25,
+            "index": 25
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 25,
+                    "index": 25
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "TemplateLiteral",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 25,
+                        "index": 25
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "quasis": [
+                    {
+                        "type": "TemplateElement",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 0,
+                                "index": 0
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 7,
+                                "index": 7
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "value": "test",
+                        "tail": false,
+                        "rawValue": "test"
+                    },
+                    {
+                        "type": "TemplateElement",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 19,
+                                "index": 19
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 25,
+                                "index": 25
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "value": "test",
+                        "tail": true,
+                        "rawValue": "test"
+                    }
+                ],
+                "expressions": [
+                    {
+                        "type": "TemplateLiteral",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 7,
+                                "index": 7
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 19,
+                                "index": 19
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "quasis": [
+                            {
+                                "type": "TemplateElement",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 7,
+                                        "index": 7
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 13,
+                                        "index": 13
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "value": "abc",
+                                "tail": false,
+                                "rawValue": "abc"
+                            },
+                            {
+                                "type": "TemplateElement",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 17,
+                                        "index": 17
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 19,
+                                        "index": 19
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "value": "",
+                                "tail": true,
+                                "rawValue": ""
+                            }
+                        ],
+                        "expressions": [
+                            {
+                                "type": "CallExpression",
+                                "location": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 13,
+                                        "index": 13
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 17,
+                                        "index": 17
+                                    }
+                                },
+                                "leadingComments": [],
+                                "trailingComments": [],
+                                "callee": {
+                                    "type": "Identifier",
+                                    "location": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 13,
+                                            "index": 13
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 15,
+                                            "index": 15
+                                        }
+                                    },
+                                    "leadingComments": [],
+                                    "trailingComments": [],
+                                    "name": "fn"
+                                },
+                                "arguments": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('lodash', 'react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-data-controls', 'wp-element', 'wp-polyfill', 'wp-server-side-render', 'wicked-block-generator-v1'), 'version' => 'b68a2c903dba3c503fa6c3df83c2784c');

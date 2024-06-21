@@ -1,0 +1,37 @@
+--TEST--
+Partial update without lock file should error
+--COMPOSER--
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                { "name": "a/old", "version": "1.0.0" },
+                { "name": "a/old", "version": "2.0.0" },
+                { "name": "b/unstable", "version": "1.0.0" },
+                { "name": "b/unstable", "version": "1.1.0-alpha" },
+                { "name": "c/uptodate", "version": "1.0.0" },
+                { "name": "d/removed", "version": "1.0.0" }
+            ]
+        }
+    ],
+    "require": {
+        "a/old": "*",
+        "b/unstable": "*",
+        "c/uptodate": "*"
+    }
+}
+--INSTALLED--
+[
+    { "name": "a/old", "version": "1.0.0" },
+    { "name": "b/unstable", "version": "1.1.0-alpha" },
+    { "name": "c/uptodate", "version": "1.0.0" },
+    { "name": "d/removed", "version": "1.0.0" }
+]
+--RUN--
+update b/unstable
+--EXPECT-OUTPUT--
+Cannot update only a partial set of packages without a lock file present. Run `composer update` to generate a lock file.
+--EXPECT-EXIT-CODE--
+3
+--EXPECT--

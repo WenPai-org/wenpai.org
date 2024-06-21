@@ -1,0 +1,77 @@
+{
+    "type": "Program",
+    "location": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 2,
+            "column": 5,
+            "index": 11
+        }
+    },
+    "leadingComments": [],
+    "trailingComments": [],
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "location": {
+                "start": {
+                    "line": 1,
+                    "column": 0,
+                    "index": 0
+                },
+                "end": {
+                    "line": 2,
+                    "column": 5,
+                    "index": 11
+                }
+            },
+            "leadingComments": [],
+            "trailingComments": [],
+            "expression": {
+                "type": "TemplateLiteral",
+                "location": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 2,
+                        "column": 5,
+                        "index": 11
+                    }
+                },
+                "leadingComments": [],
+                "trailingComments": [],
+                "quasis": [
+                    {
+                        "type": "TemplateElement",
+                        "location": {
+                            "start": {
+                                "line": 1,
+                                "column": 0,
+                                "index": 0
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 5,
+                                "index": 11
+                            }
+                        },
+                        "leadingComments": [],
+                        "trailingComments": [],
+                        "value": "test\ntest",
+                        "tail": true,
+                        "rawValue": "test\ntest"
+                    }
+                ],
+                "expressions": []
+            }
+        }
+    ],
+    "sourceType": "script"
+}

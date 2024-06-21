@@ -1,0 +1,15 @@
+.idea
+/wp-admin
+/wp-includes
+/wp-content/*
+!/wp-content/mu-plugins
+!/wp-content/plugins
+!/wp-content/themes
+/wp-content/plugins/*-pro/
+/wp-content/plugins/powder-patterns/
+/wp-content/plugins/wp-oauth-server/
+/wp-content/plugins/ultimate-branding/
+/*.php
+/readme.html
+!/wp-config-sample.php
+.DS_Store

@@ -1,0 +1,71 @@
+/* Label styles
+-------------------------------------------------------------- */
+.simple-settings-options-table .form-table label {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  margin: 4px 0 0;
+}
+
+.simple-settings-options-table .form-table input[type = "radio"],
+.simple-settings-options-table .form-table input[type = "checkbox"] {
+  vertical-align: text-bottom;
+}
+
+.simple-settings-options-table .form-table input[type = "radio"] + label,
+.simple-settings-options-table .form-table input[type = "checkbox"] + label {
+  font-style: normal;
+  margin-top: 0;
+}
+
+.simple-settings-radio-wrap .description,
+.simple-settings-multicheck-wrap .description {
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+/* Fix color picker alignment
+-------------------------------------------------------------- */
+.simple-settings-color-picker-wrap .wp-picker-container .wp-color-result.button {
+  margin-top: -6px;
+}
+
+/* System info styles
+-------------------------------------------------------------- */
+.simple-settings-system-info {
+  background: none;
+  display: block;
+  font-family: Menlo, Monaco, monospace;
+  height: 400px;
+  overflow: auto;
+  white-space: pre;
+  width: 800px;
+}
+
+/* Tooltips
+-------------------------------------------------------------- */
+.simple-settings-help-tip {
+  cursor: help;
+  vertical-align: middle !important;
+}
+
+.simple-settings-ui-tooltip {
+  background: #333;
+  border-radius: 3px;
+  border-width: 1px;
+  box-shadow: 1px 1px 2px 1px rgba(214, 214, 214, 0.5);
+  color: #dedede;
+  max-width: 300px;
+  padding: 7px;
+  position: absolute;
+  text-rendering: optimizeLegibility;
+  text-shadow: none;
+  z-index: 9999;
+}
+
+.simple-settings-ui-tooltip strong {
+  font-weight: bolder;
+}

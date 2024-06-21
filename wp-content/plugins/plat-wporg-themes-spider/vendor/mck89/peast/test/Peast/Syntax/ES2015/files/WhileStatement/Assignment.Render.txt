@@ -1,0 +1,10 @@
+while (row = getRow()) {
+	rowNumber++;
+}
+/**************************************************/
+while(row=getRow())rowNumber++;
+/**************************************************/
+while ( row = getRow(  ) )
+{
+	rowNumber++;
+}

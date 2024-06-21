@@ -1,0 +1,448 @@
+# Copyright (C) 2020 Widgit Team
+# This file is distributed under the same license as the Username Changer package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Username Changer 3.2.2\n"
+"Report-Msgid-Bugs-To: "
+"https://gitlab.com/widgitlabs/wordpress/Username-Changer/issues\n"
+"POT-Creation-Date: 2020-05-25 19:18:12+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Evertiro (https://evertiro.com/)\n"
+"Language-Team: Evertiro <dgriffiths@evertiro.com>\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: class-username-changer.php:96 class-username-changer.php:108
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/admin/actions.php:32
+msgid "Invalid request."
+msgstr ""
+
+#: includes/admin/actions.php:46
+#: includes/admin/settings/register-settings.php:235
+msgid "You do not have the correct permissions to change this username."
+msgstr ""
+
+#: includes/admin/actions.php:53
+msgid ""
+"The username {new_username} contains invalid characters. Please enter a "
+"valid username."
+msgstr ""
+
+#: includes/admin/actions.php:60
+msgid "Sorry, that username is not allowed."
+msgstr ""
+
+#: includes/admin/actions.php:66
+#: includes/admin/settings/register-settings.php:244
+msgid "The username {new_username} is already in use. Please try again."
+msgstr ""
+
+#: includes/admin/actions.php:80 includes/admin/actions.php:85
+#: includes/admin/settings/register-settings.php:214
+msgid "Username successfully changed to {new_username}."
+msgstr ""
+
+#: includes/admin/actions.php:82
+#: includes/admin/settings/register-settings.php:221
+msgid "Click here to log back in."
+msgstr ""
+
+#: includes/admin/actions.php:91
+#: includes/admin/settings/register-settings.php:152
+msgid "Username change notification - {sitename}"
+msgstr ""
+
+#: includes/admin/actions.php:92
+#: includes/admin/settings/register-settings.php:159
+msgid ""
+"Howdy! We're just writing to let you know that your username for {siteurl} "
+"has been changed to {new_username}."
+msgstr ""
+
+#: includes/admin/actions.php:92
+#: includes/admin/settings/register-settings.php:159
+msgid "Login now at {loginurl}"
+msgstr ""
+
+#: includes/admin/actions.php:107
+msgid "An unknown error occurred."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:24
+msgid "Username Changer Settings"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:40
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:41
+msgid "Support"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:60
+#: includes/admin/settings/register-settings.php:102
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:61
+msgid "String Settings"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:108
+#: includes/admin/settings/register-settings.php:112
+msgid "Allowed Roles"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:109
+msgid "Select the user roles which are permitted to change their own username."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:113
+msgid ""
+"Administrators can always change usernames, and are the only role capable "
+"of changing other users username."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:117
+#: includes/admin/settings/register-settings.php:124
+msgid "Minimum Length"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:118
+msgid "Specify the minimum allowed username length."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:125
+msgid "The minimum allowed length for usernames is {minlength} characters."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:129
+msgid "Email Settings"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:135
+#: includes/admin/settings/register-settings.php:138
+msgid "Enable Email Notifications"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:136
+msgid "Enable to send notification emails when usernames are changed."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:139
+msgid "Notifications are not sent when a user changes their own username."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:149
+msgid "Email Subject"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:150
+msgid "Specify the subject for username change notifications."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:156
+msgid "Email Message"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:157
+msgid "Specify the message to send for username change notifications."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:165
+msgid "Button Labels"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:171
+msgid "Change Button Label"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:172
+msgid "Customize the text for the 'change username' button."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:174 includes/scripts.php:38
+msgid "Change Username"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:178
+msgid "Save Button Label"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:179
+msgid "Customize the text for the save button."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:181 includes/scripts.php:39
+msgid "Save Username"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:185
+msgid "Cancel Button Label"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:186
+msgid "Customize the text for the cancel button."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:188 includes/scripts.php:40
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:192
+msgid "Messages"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:204
+msgid "Please Wait Message"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:205
+msgid "Customize the text displayed while usernames are being checked."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:207 includes/scripts.php:41
+msgid "Please wait..."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:211
+msgid "Username Changed Message"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:212
+msgid "Customize the message displayed when a username is changed successfully."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:218
+msgid "Relogin Message"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:219
+msgid ""
+"Customize the text for the relogin link shown if a user changes their own "
+"username."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:225
+msgid "Short Username Error"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:226
+msgid "Customize the error displayed when a username is too short."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:228 includes/scripts.php:42
+msgid "Username is too short, the minimum length is {minlength} characters."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:232
+#: includes/admin/settings/register-settings.php:236
+msgid "Wrong Permissions Error"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:233
+msgid ""
+"Customize the error displayed when a user attempts to change a username "
+"they do not have permission to change."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:237
+msgid ""
+"In normal circumstances, this message should never be triggered. It exists "
+"only to provide an extra layer of security against unauthorized use."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:241
+msgid "Duplicate Username Error"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:242
+msgid ""
+"Customize the error displayed when a user attempts to change a username to "
+"something that is already in use."
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:254
+msgid "Username Changer Support"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:260
+msgid "System Info"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:282
+#: includes/admin/settings/register-settings.php:300
+msgid "Template Tags"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:283
+msgid "Emails allow the use of the following template tags:"
+msgstr ""
+
+#: includes/admin/settings/register-settings.php:301
+msgid "The message settings fields allow the use of the following template tags:"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:293
+msgid "The original username of the user"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:299
+msgid "The new username of the user"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:305
+msgid "The email address of the user"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:311
+msgid "Your site name"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:317
+msgid "Your site URL"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:323
+msgid "The login URL for your site"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:329
+msgid "Today's date"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:335
+msgid "The first name of the user"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:341
+msgid "The full name of the user, first and last"
+msgstr ""
+
+#: includes/class-username-changer-template-tags.php:347
+msgid "The minimum allowed username length"
+msgstr ""
+
+#: tests/bootstrap.php:65
+msgid "HTTP requests disabled for unit tests"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:167
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:169
+msgid "Simple Settings"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:661
+msgid "Settings updated."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1199
+msgid ""
+"To copy the system info, click below then press Ctrl + C (PC) or Cmd + C "
+"(Mac)."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1202
+msgid "Download System Info File"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1300
+msgid "Upload File"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1335
+msgid "Deactivate License"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1370
+#. Translators: The passed ID that has no corresponding callback.
+msgid "The callback function used for the <strong>%s</strong> setting is missing."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1465
+msgid "Insert Image"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/class-simple-settings.php:1466
+msgid "Select Image"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:228
+msgid "Licensing"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:247
+#. Translators: The item name for this license.
+msgid "%1$s License Key"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:248
+msgid "Please enter your license key to enable automatic updates and support."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:291
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:369
+msgid "Nonce verification failed"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:291
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:369
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-plugin-updater.php:412
+msgid "Error"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:450
+msgid "This license does not belong to the product you have entered it for."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:453
+msgid "This license does not have any activations left"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:456
+msgid "This license key is expired. Please renew it."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-license.php:460
+#. Translators: The details of the error code.
+msgid ""
+"There was a problem activating your license key, please try again or "
+"contact support. Error code: %s"
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-plugin-updater.php:246
+#. Translators: The name, link, and version.
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-plugin-updater.php:255
+#. Translators: The name, link, version, and download link.
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: vendor/widgitlabs/simple-settings/modules/licensing/class-simple-settings-plugin-updater.php:412
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Change usernames easily"
+msgstr ""

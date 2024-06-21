@@ -1,0 +1,21 @@
+{
+    "name": "platform/wporg-helphub-import",
+    "description": "WordPress.org HelpHub Spider",
+    "type": "project",
+    "require": {
+        "wp-cli/wp-cli-bundle": "^2.8",
+        "imangazaliev/didom": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Platform\\Translate\\WPOrgHelpHubImport\\": "./"
+        },
+        "files": [
+            "helper.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

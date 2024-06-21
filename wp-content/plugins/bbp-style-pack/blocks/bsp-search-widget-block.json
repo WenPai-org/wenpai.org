@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "title": "(Style Pack) Forum Search",
+    "name": "bbp-style-pack/bsp-search-widget",
+    "category": "widgets",
+    "attributes": {
+        "_wbbBlockId": {
+            "type": "string",
+            "source": "attribute"
+        },
+        "_wbbImages": {
+            "type": "array",
+            "selector": "img"
+        },
+        "title": {
+            "type": "string",
+            "selector": "",
+            "default": "Search Forums"
+        },
+		"bbpressOnly": {
+             "type": "boolean",
+            "selector": "",
+            "default": "0"
+        }
+        
+    },
+    "editorScript": "file:./../build/search-index.js",
+    "render": "file:./bsp-search-widget.php"
+}

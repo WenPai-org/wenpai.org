@@ -1,0 +1,33 @@
+.customize-partial-edit-shortcut-button {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    line-height: 1 !important;
+    font-size: 18px;
+    z-index: 5;
+    background: #3582c4 !important;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 1px rgb(60 67 74 / 15%);
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 3px;
+    animation-fill-mode: both;
+    animation-duration: .4s;
+    text-shadow: 0 -1px 1px #135e96, 1px 0 1px #135e96, 0 1px 1px #135e96, -1px 0 1px #135e96;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.customize-partial-edit-shortcut-button svg {
+    fill: #fff;
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}

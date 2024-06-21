@@ -1,0 +1,35 @@
+# Copyright (C) 2024 Phi Phan
+# This file is distributed under the same license as the Meta Field Block plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Meta Field Block 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/meta-field-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-02T08:44:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: meta-field-block\n"
+
+#. Plugin Name of the plugin
+msgid "Meta Field Block"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://metafieldblock.com?utm_source=MFB&utm_campaign=MFB+visit+site&utm_medium=link&utm_content=Plugin+URI"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display a meta field or a custom field as a block on the front end, supporting ACF fields."
+msgstr ""
+
+#. Author of the plugin
+msgid "Phi Phan"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://metafieldblock.com?utm_source=MFB&utm_campaign=MFB+visit+site&utm_medium=link&utm_content=Author+URI"
+msgstr ""

@@ -1,0 +1,12 @@
+export default function * () {
+	yield a + b;
+}
+;
+/**************************************************/
+export default function*(){yield a+b;};
+/**************************************************/
+export default function * (  )
+{
+	yield a + b;
+}
+;
