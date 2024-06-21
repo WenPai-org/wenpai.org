@@ -270,14 +270,6 @@ add_filter( 'wp_nav_menu_objects', function ( $menu_items ) {
 	return $menu_items;
 } );
 
-// JWT 插件添加 generatepress-pro 的白名单
-add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
-	$your_endpoints = array(
-		'/wp-json/generatepress-pro/*',
-	);
-
-	return array_unique( array_merge( $endpoints, $your_endpoints ) );
-} );
 // JWT 插件添加 Redis 的白名单
 add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
 	$your_endpoints = array(
@@ -286,6 +278,7 @@ add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
 
 	return array_unique( array_merge( $endpoints, $your_endpoints ) );
 } );
+
 // JWT 插件添加区块可见性插件白名单
 add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
 	$your_endpoints = array(
@@ -334,101 +327,3 @@ add_action( 'init', 'asdds_disable_default_runner', 10 );*/
 }
 
 add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );*/
-
-/**
- * 过滤允许的古腾堡区块
- * 列表: https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
- */
-add_filter( 'blocks_everywhere_allowed_blocks', function ( $allowed, $editor_type ) {
-	return [
-		'core/audio',
-		'core/block',
-		'core/button',
-		'core/buttons',
-		'core/code',
-		'core/column',
-		'core/columns',
-		'core/cover',
-		'core/details',
-		'core/embed',
-		'core/freeform',
-		'core/group',
-		'core/heading',
-		'core/home-link',
-		'core/image',
-		'core/list',
-		'core/list-item',
-		'core/media-text',
-		'core/missing',
-		'core/more',
-		'core/paragraph',
-		'core/pattern',
-		'core/preformatted',
-		'core/pullquote',
-		'core/quote',
-		'core/separator',
-		'core/spacer',
-		'core/table',
-		'core/table-of-contents',
-		'core/verse',
-		'core/video',
-	];
-}, 10, 2 );
-
-/**
- * 为古腾堡提个一个上传图片接口
- */
-function plat_upload_image(): WP_REST_Response {
-
-	require_once ABSPATH . "wp-admin" . '/includes/image.php';
-	require_once ABSPATH . "wp-admin" . '/includes/file.php';
-	require_once ABSPATH . "wp-admin" . '/includes/media.php';
-
-	if ( ! $_FILES["upload_img_file"] ) {
-		$output = array(
-			'code'    => 1,
-			'message' => '非法请求',
-		);
-		$result = new WP_REST_Response( $output );
-		$result->set_headers( array( 'Content-Type' => 'application/json' ) );
-
-		return $result;
-	}
-	$attach_id = media_handle_upload( 'upload_img_file', 0 );
-	$image_url = wp_get_attachment_image_src( $attach_id, 'full' )[0];
-	$output    = array(
-		'code'    => 0,
-		'message' => 'success',
-		'link'    => $image_url,
-	);
-	$result    = new WP_REST_Response( $output );
-	$result->set_headers( array( 'Content-Type' => 'application/json' ) );
-
-	return $result;
-}
-
-// 给 JWT 插件添加白名单
-add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
-	$your_endpoints = array(
-		'/wp-json/upload_image/v1/upload',
-	);
-
-	return array_unique( array_merge( $endpoints, $your_endpoints ) );
-} );
-
-add_action( 'rest_api_init', function () {
-	register_rest_route( 'upload_image/v1', '/upload', array(
-		'methods'             => 'POST',
-		'callback'            => 'plat_upload_image',
-		'permission_callback' => 'is_user_logged_in',
-	) );
-} );
-
-// 加载古腾堡
-if ( get_current_blog_id() == SITE_ID_FORUM ) {
-	add_filter( 'blocks_everywhere_bbpress', '__return_true' );
-	add_filter( 'blocks_everywhere_bbpress_admin', '__return_true' );
-}
-add_filter( 'blocks_everywhere_comments', '__return_true' );
-add_filter( 'blocks_everywhere_admin', '__return_true' );
-add_filter( 'blocks_everywhere_email', '__return_true' );
