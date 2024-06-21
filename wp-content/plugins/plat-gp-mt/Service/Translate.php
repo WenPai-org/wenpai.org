@@ -20,7 +20,6 @@ use const Platform\Translate\MachineTranslate\PLUGIN_DIR;
  * 对于 WEB 端的请求，会直接保存进对应的项目，而 API 端则将结果返回。
  */
 class Translate extends GP_Route {
-	const string DEEPLX_TOKEN = 'KZylP7MmW7aiRIKkKoSFWGPAZpMjxtsi4l3d9L_SIfU';
 
 	/**
 	 * 面向 WEB 场景的外部接口函数
@@ -568,8 +567,7 @@ class Translate extends GP_Route {
 			'source_lang' => 'auto',
 			'target_lang' => 'ZH',
 		];
-		$response        = wp_remote_post(
-			sprintf( 'https://api.deeplx.org/%s/translate', self::DEEPLX_TOKEN ),
+		$response        = wp_remote_post( DEEPLX_API,
 			array(
 				'timeout' => 120,
 				'headers' => array(

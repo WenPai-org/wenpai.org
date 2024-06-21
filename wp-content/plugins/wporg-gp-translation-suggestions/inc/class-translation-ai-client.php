@@ -7,7 +7,7 @@ use WP_Error;
 
 class Translation_AI_Client {
 
-	const API_ENDPOINT = 'https://api.deeplx.org/translate';
+	const API_ENDPOINT = DEEPLX_API;
 	const API_KEY = '';
 
 	/**
