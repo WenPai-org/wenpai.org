@@ -3,7 +3,7 @@
  * Plugin Name: Active Plugins
  * Description: 细化控制每个站点加载的网络插件（注意：后台启用或停用插件会导致屏蔽的插件一并被停用）
  * Version: 1.0
- * Author: 如来
+ * Author: 树新蜂
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
@@ -49,11 +49,14 @@ add_filter( 'option_active_plugins', function ( $value ) {
 add_filter( 'option_active_plugins', function ( $value ) {
 	if ( PHP_SAPI === 'cli' ) {
 		$plugins = [
-			"exmage-wp-image-links/exmage-wp-image-links.php",
-			'plat-wporg-themes-spider/plat-wporg-themes-spider.php',
+			// 这货报错
+			'license-manager-for-woocommerce/license-manager-for-woocommerce.php',
+			// 这两卧龙凤雏使用 6.x 版本的 GuzzleHttp 导致市场爬虫报错
+			'wenprise-alipay-checkout-for-woocommerce/wenprise-alipay-checkout-for-woocommerce.php',
+			'wenprise-wechatpay-checkout-for-woocommerce/wenprise-wechatpay-checkout-for-woocommerce.php',
 		];
 
-		return $plugins;
+		return array_diff( $value, $plugins );
 	}
 
 	return $value;

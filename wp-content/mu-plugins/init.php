@@ -82,6 +82,42 @@ function assign_role_to_all_users_in_all_sites() {
 	}
 }
 
+
+// 显示头像的简码
+function show_user_wpavatar( $atts ) {
+	global $current_user;
+	wp_get_current_user();
+
+	// Set default avatar size to 64 pixels
+	$size = $atts['size'] ?? 64;
+
+	// Set default CSS class to 'wpavatar'
+	$class = isset( $atts['class'] ) ? 'wpavatar ' . $atts['class'] : 'wpavatar';
+
+	// Set user ID as additional CSS class if provided
+	if ( isset( $atts['user_id'] ) ) {
+		$class   .= ' wpavatar-' . $atts['user_id'];
+		$user_id = $atts['user_id'];
+	} else {
+		$user_id = $current_user->ID;
+	}
+
+	// Generate avatar HTML with size and class attributes
+	return get_avatar( $user_id, $size, '', '', array( 'class' => $class ) );
+}
+
+add_shortcode( 'wpavatar', 'show_user_wpavatar' );
+
+// 显示用户名的简码
+function show_user_wpusername() {
+	global $current_user;
+	wp_get_current_user();
+
+	return $current_user->display_name;
+}
+
+add_shortcode( 'wpavatar_username', 'show_user_wpusername' );
+
 /**
  * 如果用户在 URL 上拼接了 login_token 查询参数，则尝试解析 token 并使用其对应的用户来登录（如果已经登录其他用户则会切换为 token 对应的用户）
  */
