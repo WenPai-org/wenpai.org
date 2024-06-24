@@ -1,2 +1,0 @@
-switch (test) {
-    case "a"

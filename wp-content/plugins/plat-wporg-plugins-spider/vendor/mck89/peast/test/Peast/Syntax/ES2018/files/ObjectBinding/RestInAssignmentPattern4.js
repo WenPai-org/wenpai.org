@@ -1,1 +1,0 @@
-for ({a, b,...rest} = {a, b,...rest} = obj; i < 10; i++) {}

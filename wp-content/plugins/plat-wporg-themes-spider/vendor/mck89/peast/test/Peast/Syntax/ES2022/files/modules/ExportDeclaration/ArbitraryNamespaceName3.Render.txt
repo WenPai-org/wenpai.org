@@ -1,5 +1,0 @@
-export * as "test" from "source.js";
-/**************************************************/
-export * as "test" from "source.js";
-/**************************************************/
-export * as "test" from "source.js";

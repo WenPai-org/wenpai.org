@@ -1,5 +1,0 @@
-export {"abc"} from "source.js";
-/**************************************************/
-export{"abc"}from "source.js";
-/**************************************************/
-export {"abc"} from "source.js";

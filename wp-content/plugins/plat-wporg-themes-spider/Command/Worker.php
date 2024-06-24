@@ -29,6 +29,10 @@ class Worker extends WP_CLI_Command {
 	 * @return void
 	 */
 	public function force_run(): void {
+		while ( ob_get_level() ) {
+			ob_end_flush();
+		}
+
 		$slugs = [];
 
 		WP_CLI::line( '开始获取远程全部slug' );
@@ -72,7 +76,7 @@ class Worker extends WP_CLI_Command {
 		);
 		$wpdb->query( 'SET autocommit = 0;' );
 
-		$chunks = array_chunk( $slugs, 40 );// 并发数
+		$chunks = array_chunk( $slugs, 200 );// 并发数
 
 		foreach ( $chunks as $chunk_index => $chunk ) {
 			$infos = $this->fetch_remote_themes( $chunk );

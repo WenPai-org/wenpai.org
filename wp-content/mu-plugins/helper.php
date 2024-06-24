@@ -10,7 +10,6 @@
 
 namespace Platform\Helper;
 
-use DiDom\Document;
 use WP_Error;
 use WP_Http;
 

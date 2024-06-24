@@ -1,2 +1,0 @@
-var a = 0xFF15c,
-    b = 0xF;

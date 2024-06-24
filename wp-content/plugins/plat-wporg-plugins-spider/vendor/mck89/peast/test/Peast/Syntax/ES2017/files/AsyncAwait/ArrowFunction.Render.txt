@@ -1,5 +1,0 @@
-var test = async (a) => await test();
-/**************************************************/
-var test=async(a)=>await test();
-/**************************************************/
-var test = async ( a ) => await test(  );

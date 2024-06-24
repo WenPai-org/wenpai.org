@@ -1,7 +1,0 @@
-{
-    "name": "regular/dep",
-    "version": "1.0.0",
-    "autoload": {
-        "files": ["exec.php"]
-    }
-}

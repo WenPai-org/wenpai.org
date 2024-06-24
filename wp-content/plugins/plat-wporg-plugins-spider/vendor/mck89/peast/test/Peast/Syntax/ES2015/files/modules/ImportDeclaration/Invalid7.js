@@ -1,1 +1,0 @@
-import mod, mod2 from "my-module"

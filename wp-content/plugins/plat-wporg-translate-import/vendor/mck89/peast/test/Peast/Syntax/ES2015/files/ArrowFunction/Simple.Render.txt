@@ -1,5 +1,0 @@
-var logger = (msg) => console.log(msg);
-/**************************************************/
-var logger=(msg)=>console.log(msg);
-/**************************************************/
-var logger = ( msg ) => console.log( msg );

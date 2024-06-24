@@ -1,1 +1,0 @@
-for (;;) const test = true;

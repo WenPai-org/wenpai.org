@@ -2,9 +2,6 @@
     "name": "platform/gp-generate-pack",
     "description": "GlotPress Auto Generate Package",
     "type": "project",
-    "require": {
-        "nesbot/carbon": "^2.69"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {

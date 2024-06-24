@@ -3,7 +3,6 @@
 namespace Platform\API\Service;
 
 use function Platform\Helper\get_products_from_es;
-use function Platform\Helper\get_woo_download_url;
 
 class Theme {
 

@@ -1,1 +1,0 @@
-new new foo.bar.baz()(arg);

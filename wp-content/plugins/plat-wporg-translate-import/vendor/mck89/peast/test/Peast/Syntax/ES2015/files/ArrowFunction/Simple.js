@@ -1,1 +1,0 @@
-var logger = msg => console.log(msg);

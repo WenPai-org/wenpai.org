@@ -1,0 +1,12 @@
+{
+    "require": {
+        "wp-cli/wp-cli-bundle": "^2.8",
+        "imangazaliev/didom": "^2.0",
+        "guzzlehttp/guzzle": "^7.7",
+        "nesbot/carbon": "^2.69",
+        "monolog/monolog": "^3.6"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

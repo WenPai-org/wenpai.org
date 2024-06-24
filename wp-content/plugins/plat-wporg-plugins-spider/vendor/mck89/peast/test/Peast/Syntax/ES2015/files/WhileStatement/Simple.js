@@ -1,3 +1,0 @@
-while (check() && !finished()) {
-    doSomething();
-}

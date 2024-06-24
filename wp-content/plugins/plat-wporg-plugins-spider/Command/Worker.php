@@ -29,6 +29,10 @@ class Worker extends WP_CLI_Command {
 	 * @return void
 	 */
 	public function force_run(): void {
+		while ( ob_get_level() ) {
+			ob_end_flush();
+		}
+
 		$slugs = [];
 
 		WP_CLI::line( '开始获取远程全部slug' );

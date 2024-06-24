@@ -1,1 +1,0 @@
-for (const i in iterable);

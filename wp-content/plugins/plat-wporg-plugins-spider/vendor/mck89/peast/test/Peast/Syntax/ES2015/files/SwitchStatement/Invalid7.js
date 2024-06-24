@@ -1,4 +1,0 @@
-switch (test) {
-    case:
-    break;
-}

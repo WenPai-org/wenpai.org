@@ -1,1 +1,0 @@
-<main><sub>{condition ? <a>test</a> : <b>test2</b>}</sub></main>;

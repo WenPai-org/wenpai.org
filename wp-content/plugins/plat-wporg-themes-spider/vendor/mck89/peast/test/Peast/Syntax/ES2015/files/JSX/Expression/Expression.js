@@ -1,1 +1,0 @@
-<main><sub>{fn()}</sub></main>;

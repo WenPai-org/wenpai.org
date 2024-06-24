@@ -1,1 +1,0 @@
-for await (a of b) {}

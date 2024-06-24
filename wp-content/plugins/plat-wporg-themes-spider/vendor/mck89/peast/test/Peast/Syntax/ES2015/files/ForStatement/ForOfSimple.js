@@ -1,1 +1,0 @@
-for (val of values) console.log(val); 

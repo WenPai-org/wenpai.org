@@ -1,1 +1,0 @@
-import * as mod from "my-module";

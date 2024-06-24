@@ -1,3 +1,0 @@
-var test = => {
-    await test();
-}

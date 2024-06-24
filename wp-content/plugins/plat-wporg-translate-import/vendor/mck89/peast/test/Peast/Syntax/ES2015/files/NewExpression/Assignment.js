@@ -1,1 +1,0 @@
-var a = new foo.bar.baz().test();

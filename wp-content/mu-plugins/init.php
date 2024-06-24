@@ -21,6 +21,11 @@ require __DIR__ . '/cavalcade/plugin.php';
 error_reporting( error_reporting() & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE );
 
 /**
+ * 载入 autoloader
+ */
+require __DIR__ . '/vendor/autoload.php';
+
+/**
  * 载入日志服务
  */
 require __DIR__ . '/logger/logger.php';
@@ -214,61 +219,6 @@ add_filter( 'ep_formatted_args', function ( $formatted_args ) {
 // 取消 EP 通知
 add_filter( 'pre_option_ep_hide_different_server_type_notice', '__return_true' );
 add_filter( 'pre_option_ep_hide_es_above_compat_notice', '__return_true' );
-
-// 显示头像的简码
-function show_user_wpavatar( $atts ) {
-	global $current_user;
-	wp_get_current_user();
-
-	// Set default avatar size to 64 pixels
-	$size = $atts['size'] ?? 64;
-
-	// Set default CSS class to 'wpavatar'
-	$class = isset( $atts['class'] ) ? 'wpavatar ' . $atts['class'] : 'wpavatar';
-
-	// Set user ID as additional CSS class if provided
-	if ( isset( $atts['user_id'] ) ) {
-		$class   .= ' wpavatar-' . $atts['user_id'];
-		$user_id = $atts['user_id'];
-	} else {
-		$user_id = $current_user->ID;
-	}
-
-	// Generate avatar HTML with size and class attributes
-	return get_avatar( $user_id, $size, '', '', array( 'class' => $class ) );
-}
-
-add_shortcode( 'wpavatar', 'show_user_wpavatar' );
-
-// 显示用户名的简码
-function show_user_wpusername() {
-	global $current_user;
-	wp_get_current_user();
-
-	return $current_user->display_name;
-}
-
-add_shortcode( 'wpavatar_username', 'show_user_wpusername' );
-
-/**
- * 替换菜单栏上的各种变量为动态数据
- */
-add_filter( 'wp_nav_menu_objects', function ( $menu_items ) {
-	$data = array(
-		'{wpavatar}'          => do_shortcode( '[wpavatar_username]' ),
-		'{wpavatar_username}' => do_shortcode( '[wpavatar]' )
-	);
-
-	foreach ( $menu_items as $menu_item ) {
-		foreach ( $data as $k => $v ) {
-			if ( str_contains( $menu_item->title, $k ) ) {
-				$menu_item->title = str_replace( $k, $v, $menu_item->title );
-			}
-		}
-	}
-
-	return $menu_items;
-} );
 
 // JWT 插件添加 Redis 的白名单
 add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {

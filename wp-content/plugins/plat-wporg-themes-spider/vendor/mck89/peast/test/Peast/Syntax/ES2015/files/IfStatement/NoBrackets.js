@@ -1,2 +1,0 @@
-if (failed) error();
-finish();

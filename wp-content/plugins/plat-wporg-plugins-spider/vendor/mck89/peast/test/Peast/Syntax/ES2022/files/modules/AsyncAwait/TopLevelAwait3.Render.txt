@@ -1,5 +1,0 @@
-export default a = await test();
-/**************************************************/
-export default a=await test();
-/**************************************************/
-export default a = await test(  );

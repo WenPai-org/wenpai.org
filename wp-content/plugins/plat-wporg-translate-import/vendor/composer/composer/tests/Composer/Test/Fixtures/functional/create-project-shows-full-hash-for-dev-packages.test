@@ -1,4 +1,0 @@
---RUN--
-create-project --repository=packages.json -v seld/jsonlint foo dev-main
---EXPECT-REGEX--
-{^Installing seld/jsonlint \(dev-main [a-f0-9]{40}\)}m

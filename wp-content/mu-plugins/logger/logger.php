@@ -10,8 +10,6 @@
 
 namespace Platform\Logger;
 
-require __DIR__ . '/vendor/autoload.php';
-
 use Monolog\Logger as Logger_Lib;
 use Monolog\Handler\StreamHandler;
 

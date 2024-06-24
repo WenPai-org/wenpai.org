@@ -1,5 +1,0 @@
-import("module.js").then((m) => console.log(m));
-/**************************************************/
-import("module.js").then((m)=>console.log(m));
-/**************************************************/
-import( "module.js" ).then( ( m ) => console.log( m ) );

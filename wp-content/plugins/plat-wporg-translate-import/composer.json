@@ -2,9 +2,6 @@
     "name": "platform/wporg-translate-import",
     "description": "WordPress.org Translate Spider",
     "type": "project",
-    "require": {
-        "wp-cli/wp-cli-bundle": "^2.8"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {

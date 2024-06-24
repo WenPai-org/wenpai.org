@@ -1,1 +1,0 @@
-for (index = 0; index < 10 && valid; index++)  instances.push(new Row(index));

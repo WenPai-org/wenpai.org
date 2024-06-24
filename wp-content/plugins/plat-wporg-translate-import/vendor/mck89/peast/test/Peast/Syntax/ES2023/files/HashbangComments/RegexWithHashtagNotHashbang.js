@@ -1,1 +1,0 @@
-const HASH_RE = /#/g;
