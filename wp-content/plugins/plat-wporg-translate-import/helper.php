@@ -15,7 +15,7 @@ function get_web_page_contents( $url ): WP_Error|bool|string {
 	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
 	curl_setopt( $ch, CURLOPT_TIMEOUT, 60 );
 	curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
-	curl_setopt( $ch, CURLOPT_USERAGENT, 'WordPress/6.4.3; https://translate.wordpress.org/' );
+	curl_setopt( $ch, CURLOPT_USERAGENT, 'WordPress/6.4.3; https://translate.wpmirror.com/' );
 
 	$response = curl_exec( $ch );
 

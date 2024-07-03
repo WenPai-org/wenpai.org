@@ -335,8 +335,10 @@ class GP_Translation_Set extends GP_Thing {
 			 * @param GP_Translation|null $old_translation The previous translation.
 			 */
 			$entry->status = apply_filters( 'gp_translation_set_import_status', $is_fuzzy ? 'fuzzy' : $desired_status, $entry, null );
-
-			$entry->warnings = maybe_unserialize( GP::$translation_warnings->check( $entry->singular, $entry->plural, $entry->translations, $locale ) );
+			// TODO 文派临时性修复，解决一堆警告问题
+			// https://github.com/GlotPress/GlotPress/issues/1853
+			//$entry->warnings = maybe_unserialize( GP::$translation_warnings->check( $entry->singular, $entry->plural, $entry->translations, $locale ) );
+			$entry->warnings = null;
 			if ( ! empty( $entry->warnings ) && 'current' === $entry->status ) {
 				$entry->status = 'waiting';
 			}

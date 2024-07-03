@@ -42,7 +42,7 @@ class Project {
 			set_time_limit( 3600 );
 			ignore_user_abort( true );
 		}
-		$wporg_url = sprintf( 'https://translate.wordpress.org/locale/zh-cn/default/wp-%s/%s/', $type, $slug );
+		$wporg_url = sprintf( 'https://translate.wpmirror.com/locale/zh-cn/default/wp-%s/%s/', $type, $slug );
 		$data      = get_web_page_contents( $wporg_url );
 		if ( is_wp_error( $data ) || false === $data ) {
 			return false;
@@ -85,18 +85,18 @@ class Project {
 					continue;
 				}
 
-				$wporg_url = sprintf( 'https://translate.wordpress.org/projects/wp-%s/%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug, $wporg_project_slug );
+				$wporg_url = sprintf( 'https://translate.wpmirror.com/projects/wp-%s/%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug, $wporg_project_slug );
 
 				$data = get_web_page_contents( $wporg_url );
 				if ( is_wp_error( $data ) ) {
 					// 插件第一次请求失败时尝试抓取trunk翻译
 					$wporg_project_slug = str_replace( 'stable', 'dev', $wporg_project_slug );
-					$wporg_url          = sprintf( 'https://translate.wordpress.org/projects/wp-%s/%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug, $wporg_project_slug );
+					$wporg_url          = sprintf( 'https://translate.wpmirror.com/projects/wp-%s/%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug, $wporg_project_slug );
 
 					$data = get_web_page_contents( $wporg_url );
 				}
 			} else {
-				$wporg_url = sprintf( 'https://translate.wordpress.org/projects/wp-%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug );
+				$wporg_url = sprintf( 'https://translate.wpmirror.com/projects/wp-%s/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $type, $slug );
 
 				$data = get_web_page_contents( $wporg_url );
 			}

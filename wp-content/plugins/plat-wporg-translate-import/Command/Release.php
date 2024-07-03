@@ -44,25 +44,25 @@ class Release extends WP_CLI_Command {
 			'body'    =>
 				array(
 					'name' => '主体',
-					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 大洲与城市
 			'cc'      =>
 				array(
 					'name' => '大洲与城市',
-					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/cc/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/cc/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 管理面板
 			'admin'   =>
 				array(
 					'name' => '管理',
-					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/admin/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/admin/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 多站点网络管理面板
 			'network' =>
 				array(
 					'name' => '网络管理',
-					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/admin/network/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/admin/network/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 		);
 
@@ -183,16 +183,19 @@ class Release extends WP_CLI_Command {
 			exit;
 		}
 		// 导入前先循环格式化一下，纠正错误的格式
-		$format = Chinese_Format::get_instance();
+		/*$format = Chinese_Format::get_instance();
 		foreach ( $translations->entries as $translation ) {
 			foreach ( $translation->translations as $key => $value ) {
 				$translation->translations[ $key ] = $format->convert( $value );
 			}
-		}
+		}*/
 
 		wp_set_current_user( BOT_USER_ID );
+		add_filter( 'gp_translation_set_import_status', function ( $status, $entry, $translated ) {
+			return 'current';
+		}, 10, 3 );
 
-		$translation_set->import( $translations, 'waiting' );
+		$translation_set->import( $translations, 'current' );
 
 		unlink( $temp_file );
 	}
