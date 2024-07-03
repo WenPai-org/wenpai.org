@@ -263,17 +263,7 @@ class Plugin {
 	 * @return bool True, if user is an admin, false if not.
 	 */
 	public function is_global_administrator( $user_id ) {
-		$user = get_user_by( 'id', $user_id );
-		if ( ! $user ) {
-			return false;
-		}
-
-		$capabilities = $user->allcaps;
-		if ( ! empty( $capabilities['manage_network'] ) ) {
-			return true;
-		}
-
-		return false;
+		return is_super_admin( $user_id );
 	}
 
 	/**

@@ -76,8 +76,11 @@ gp_tmpl_header();
 		?>
 		<li class="filter-header-link__sep" aria-hidden="true">|</li>
 		<li class="has-children">
-			<a target="_blank" href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-Hans.md">翻译员手册</a>
+			<a target="_blank" href="https://cn.wordpress.org/team/handbook/translation-style-guide/">翻译员手册</a>
 		</li>
+        <li class="has-children">
+            <a target="_blank" href="/waiting-list">待审项目</a>
+        </li>
 	</ul>
 	<div class="search-form">
 		<form>
