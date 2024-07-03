@@ -209,7 +209,7 @@ class WP_Directory extends GP_Route {
 		} else {
 			$type = 'themes';
 		}
-		$json = file_get_contents( "https://api.wordpress.org/translations/$type/1.0/?slug={$slug}", null, $http_context );
+		$json = file_get_contents( "https://api.wpmirror.com/translations/$type/1.0/?slug={$slug}", null, $http_context );
 		$language_packs = $json && '{' == $json[0] ? json_decode( $json ) : null;
 
 		return $language_packs;

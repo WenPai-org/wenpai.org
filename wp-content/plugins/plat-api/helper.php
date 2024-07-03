@@ -27,7 +27,7 @@ function request_wporg( string $path ): WP_Error|string {
 
 	// 发起请求
 	try {
-		$response = $client->request( $_SERVER['REQUEST_METHOD'], 'https://api.wordpress.org' . $path, $options );
+		$response = $client->request( $_SERVER['REQUEST_METHOD'], 'https://api.wpmirror.com' . $path, $options );
 		$body     = $response->getBody()->getContents();
 		wp_cache_set( $cache_key, $body, 'platform', 1800 );
 

@@ -332,7 +332,7 @@ class Worker extends WP_CLI_Command {
 	 * @return bool|array
 	 */
 	private function fetch_remote_themes( array $slugMap ): bool|array {
-		$url    = "https://api.wordpress.org/themes/info/1.2/";
+		$url    = "https://api.wpmirror.com/themes/info/1.2/";
 		$query  = "action=theme_information&request[fields][last_updated]=1&request[fields][downloaded]=1&request[fields][icons]=1&request[fields][screenshots]=1&request[fields][versions]=0&request[slug]=";
 		$client = new Client( [ 'base_uri' => $url ] );
 

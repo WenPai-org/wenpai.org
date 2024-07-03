@@ -140,7 +140,7 @@ class Stats extends GP_Route {
 			if ( false === $items ) {
 				$items = array();
 				foreach ( range( 1, 2 ) as $page ) { // 2 pages x 250 items per page.
-					$api = wp_safe_remote_get( 'https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[per_page]=250&request[page]=' . $page );
+					$api = wp_safe_remote_get( 'https://api.wpmirror.com/plugins/info/1.2/?action=query_plugins&request[per_page]=250&request[page]=' . $page );
 					foreach ( json_decode( wp_remote_retrieve_body( $api ) )->plugins as $plugin ) {
 						$items[ $plugin->slug ] = (object) [
 							'installs' => $plugin->active_installs,

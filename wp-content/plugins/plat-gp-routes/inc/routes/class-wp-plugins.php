@@ -154,7 +154,7 @@ class WP_Plugins extends WP_Directory {
 				'user_agent' => 'WordPress.org Translate',
 			),
 		) );
-		$json = file_get_contents( "https://api.wordpress.org/translations/plugins/1.0/?slug={$project_slug}", null, $http_context );
+		$json = file_get_contents( "https://api.wpmirror.com/translations/plugins/1.0/?slug={$project_slug}", null, $http_context );
 		$language_packs = $json && '{' == $json[0] ? json_decode( $json ) : null;
 
 		$this->tmpl( 'projects-wp-plugins-language-packs', get_defined_vars() );

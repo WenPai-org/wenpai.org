@@ -343,7 +343,7 @@ class Stats {
 	 * @return float
 	 */
 	private function get_translated_sites_pct() {
-		$translation_stats_json  = file_get_contents( 'https://api.wordpress.org/stats/locale/1.0/' );
+		$translation_stats_json  = file_get_contents( 'https://api.wpmirror.com/stats/locale/1.0/' );
 		$ranslation_stats_array  = $translation_stats_json && '{' == $translation_stats_json[0] ? json_decode( $translation_stats_json, true ) : null;
 		$wp_translated_sites_pct = 100 - $ranslation_stats_array['English (US)'];
 		return $wp_translated_sites_pct;

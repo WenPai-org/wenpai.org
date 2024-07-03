@@ -332,7 +332,7 @@ class Worker extends WP_CLI_Command {
 	 * @return bool|array
 	 */
 	private function fetch_remote_plugins( array $slugMap ): bool|array {
-		$url    = "https://api.wordpress.org/plugins/info/1.2/";
+		$url    = "https://api.wpmirror.com/plugins/info/1.2/";
 		$query  = "action=plugin_information&request[fields][short_description]=1&request[fields][downloaded]=1&request[fields][icons]=1&request[fields][contributors]=0&request[fields][versions]=0&request[slug]=";
 		$client = new Client( [ 'base_uri' => $url ] );
 
