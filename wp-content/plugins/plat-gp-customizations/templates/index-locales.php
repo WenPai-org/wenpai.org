@@ -37,12 +37,15 @@ gp_tmpl_header();
 				</ul>
 				<div class="contributors">
 					<?php
-					$contributors = sprintf(
+					/*$contributors = sprintf(
 						'<span class="dashicons dashicons-admin-users"></span><br />%s',
 						isset( $contributors_count[ $locale->slug ] ) ? $contributors_count[ $locale->slug ] : 0
 					);
-					echo gp_link_get( 'https://make.wordpress.org/polyglots/teams/?locale=' . $locale->wp_locale, $contributors );
+					echo gp_link_get( 'https://make.wordpress.org/polyglots/teams/?locale=' . $locale->wp_locale, $contributors );*/
+					// 改成加群链接
 					?>
+                    <span class="dashicons dashicons-admin-users"></span><br />
+                    <a href="https://qm.qq.com/q/9dLnADv24U" target="_blank" rel="noopener">加群</a>
 				</div>
 				<div class="percent">
 					<div class="percent-complete" style="width:<?php echo $percent_complete; ?>%;"></div>
