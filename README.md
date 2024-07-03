@@ -109,6 +109,24 @@ SET status = 'waiting'
 WHERE status = 'failed';
 ```
 
+## 常用命令
+
+### 下面是一些可能会使用到的 CLI 命令。
+
+```bash
+wp --allow-root --url=wenpai.org/plugins platform wporg_plugins_update force_run
+wp --allow-root --url=wenpai.org/themes platform wporg_themes_update force_run
+
+wp --allow-root --url=translate.wenpai.org platform translate_import import --type=plugins --slug=woocommerce
+wp --allow-root --url=translate.wenpai.org platform translate_import_release release --version=dev --display_version=dev --old_version=dev
+wp --allow-root --url=translate.wenpai.org platform translate_pack all
+wp --allow-root --url=translate.wenpai.org platform translate_memory clear
+wp --allow-root --url=translate.wenpai.org platform translate_memory sync
+wp --allow-root --url=translate.wenpai.org platform translate_import sync_all_product
+
+wp --allow-root --url=wenpai.org/documentation platform helphub_import sync_all
+```
+
 ## 技术支持
 
 如果你在分叉过程中遇到问题可以在[文派支持论坛](https://wenpai.org/support)发帖交流，但我们仅能提供架构及程序流程咨询，如需定制开发请自行聘请工程师。

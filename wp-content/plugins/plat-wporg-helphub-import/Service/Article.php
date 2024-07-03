@@ -30,7 +30,7 @@ class Article {
 
 		$total_pages = 100;
 		for ( $page = 1; $page <= $total_pages; $page ++ ) {
-			$url  = "https://wordpress.org/documentation/wp-json/wp/v2/articles?per_page=100&page=$page";
+			$url  = "https://wpmirror.com/documentation/wp-json/wp/v2/articles?per_page=100&page=$page";
 			$data = $this->remote_get( $url );
 			if ( is_wp_error( $data ) ) {
 				Logger::error( Logger::DOCUMENT, $data->get_error_message(), array(
@@ -68,7 +68,7 @@ class Article {
 	}
 
 	private function update_category(): array {
-		$url  = "https://wordpress.org/documentation/wp-json/wp/v2/category?per_page=100";
+		$url  = "https://wpmirror.com/documentation/wp-json/wp/v2/category?per_page=100";
 		$data = $this->remote_get( $url );
 		if ( is_wp_error( $data ) ) {
 			Logger::error( Logger::DOCUMENT, $data->get_error_message(), array(
