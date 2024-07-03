@@ -23,12 +23,17 @@ class Article {
 	}
 
 	public function job() {
+		while ( ob_get_level() ) {
+			ob_end_flush();
+		}
+
 		/**
 		 * 初始化 w.org 上分类 ID 与本地的分类 ID 的对照关系
 		 */
 		$this->cat_map = $this->update_category();
 
 		$total_pages = 100;
+		$all_data    = [];
 		for ( $page = 1; $page <= $total_pages; $page ++ ) {
 			$url  = "https://wpmirror.com/documentation/wp-json/wp/v2/articles?per_page=100&page=$page";
 			$data = $this->remote_get( $url );
@@ -63,6 +68,26 @@ class Article {
 				restore_current_blog();
 				WP_CLI::line( '导入文章：' . $item->title?->rendered );
 			}
+
+			$all_data = array_merge( $all_data, $data );
+		}
+
+		// 删除 ID 不在列表中的文章
+		$exist_ids = array_map( function ( $item ) {
+			return $item->id;
+		}, $all_data );
+		$exist_ids = implode( ',', $exist_ids );
+		global $wpdb;
+		$unexist_ids = $wpdb->get_col( "SELECT ID FROM $wpdb->posts WHERE post_type='post' AND ID NOT IN ($exist_ids)" );
+		foreach ( $unexist_ids as $id ) {
+			$slug = get_post_field( 'post_name', $id );
+			WP_CLI::line( '删除不存在的文章：' . $slug );
+			wp_delete_post( $id, true );
+			switch_to_blog( SITE_ID_TRANSLATE );
+			wp_schedule_single_event( time() + 1, 'plat_gp_helphub_delete', array(
+				'slug' => $slug,
+			) );
+			restore_current_blog();
 		}
 
 	}

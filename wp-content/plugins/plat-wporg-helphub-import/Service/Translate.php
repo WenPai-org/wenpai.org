@@ -8,7 +8,6 @@ use GP_Project;
 use PO;
 use Translation_Entry;
 use Platform\Logger\Logger;
-use function Platform\Helper\is_chinese;
 use function Platform\Translate\WPOrgHelpHubImport\html_split;
 
 defined( 'ABSPATH' ) || exit;
@@ -21,6 +20,7 @@ class Translate {
 
 	public function init() {
 		add_action( 'plat_gp_helphub_import', array( $this, 'job' ), 10, 3 );
+		add_action( 'plat_gp_helphub_delete', array( $this, 'delete_gp_project' ), 10, 1 );
 	}
 
 	public function job( string $name, string $slug, string $content ) {
@@ -138,5 +138,21 @@ class Translate {
 		GP::$translation_set->create( $args );
 
 		return $project;
+	}
+
+	/**
+	 * 通过 slug 删除 GlotPress 上的项目
+	 */
+	public function delete_gp_project( string $slug ) {
+		$project = GP::$project->find_one( array( 'path' => "docs/helphub/$slug" ) );
+		if ( empty( $project ) ) {
+			Logger::error( Logger::DOCUMENT, '未找到项目', array(
+				'slug' => $slug,
+			) );
+
+			return;
+		}
+
+		$project->delete();
 	}
 }
