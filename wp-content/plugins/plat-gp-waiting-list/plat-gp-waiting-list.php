@@ -52,6 +52,11 @@ function plat_gp_get_waiting_list( $atts = [], $content = null, $tag = '' ) {
                                           LIMIT %d, %d;", $offset, $wporg_atts['per_page'] );
 	$waiting_list       = $wpdb->get_results( $waiting_list_query );
 
+	// 把所有待审核项目更新为已审核
+	/*$res = $wpdb->query( "UPDATE wp_" . SITE_ID_TRANSLATE . "_gp_translations SET `status`='current' WHERE `status`='waiting';" );
+	var_dump( $res );
+	exit;*/
+
 	$translation_set_ids = [];
 	foreach ( $waiting_list as $v ) {
 		$translation_set_ids[] = $v->translation_set_id;
