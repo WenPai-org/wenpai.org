@@ -139,9 +139,9 @@ function add_translate_modal(): void {
                         </small>
                     </div>
                     <div class="form-floating">
+                        <label>译文</label>
                         <textarea class="translation-text"
                                   style="height: 150px"></textarea>
-                        <label>译文</label>
                         <button class="copy-original"
                                 title="将原始字符串复制到翻译区域（覆盖现有文本）。">
                             从原文复制

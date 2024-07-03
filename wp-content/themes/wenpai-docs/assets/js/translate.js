@@ -44,6 +44,8 @@ $(function () {
                 $(".copy-original").click(function () {
                     $(".translation-text").val($(".original").text())
                 });
+
+                $("#translate").addClass("show");
             },
             error: function (e) {
                 console.log(e);
@@ -85,14 +87,14 @@ $(function () {
             success: function (s) {
                 console.log(s);
                 if (s[original_id].translation_status === "current") {
-                    alert("提交翻译成功,2秒后刷新页面");
+                    alert("提交翻译成功，2秒后刷新页面");
                     setTimeout(function () {
                         window.location.reload();// 刷新当前页面.
                     }, 2000)
                 } else if (s[original_id].translation_status === "waitting") {
                     alert("提交成功，请等待管理员审核");
                 }
-
+                $("#translate").removeClass("show");
             },
             error: function (e) {
                 if (e.status === 409) {
@@ -101,5 +103,9 @@ $(function () {
             }
         });
 
+    });
+
+    $("#submit-cancel").click(function () {
+        $("#translate").removeClass("show");
     });
 });
