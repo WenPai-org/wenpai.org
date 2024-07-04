@@ -43,11 +43,10 @@ function compress_html( $string ): string {
 function html_split( string $html ): array {
 	$section_strings = array();
 
-	$dom = new Document( $html );
+	$dom = new Document();
+	$dom->loadHtml( $html, LIBXML_HTML_NOIMPLIED | LIBXML_BIGLINES | LIBXML_HTML_NODEFDTD | LIBXML_PARSEHUGE | LIBXML_SCHEMA_CREATE );
 
-	$body = $dom->find( 'body' );
-
-	foreach ( $body[0]->children() as $node ) {
+	foreach ( $dom->toElement()->children() as $node ) {
 		// 有一些用作列表的 HTML 标签，对于它们，需要取子元素
 		$list_tag = array(
 			'ol',
@@ -55,26 +54,26 @@ function html_split( string $html ): array {
 		);
 		if ( ! empty( $node->getNode()->tagName ) && in_array( $node->getNode()->tagName, $list_tag ) ) {
 			foreach ( $node->children() as $child_node ) {
-				if ( ! empty( $child_node->html() ) ) {
-					$section_strings[] = $child_node->html();
+				if ( ! empty( $child_node->innerHtml() ) ) {
+					$section_strings[] = $child_node->innerHtml();
 				}
 			}
 		} else {
-			if ( ! empty( $node->html() ) ) {
-				$section_strings[] = $node->html();
+			if ( ! empty( $node->innerHtml() ) ) {
+				$section_strings[] = $node->innerHtml();
 			}
 		}
 	}
 
 	// 进行一次预处理，去掉所有字符串最外侧的 HTML 标签
-	foreach ( $section_strings as &$section_string ) {
+	/*foreach ( $section_strings as &$section_string ) {
 		if ( preg_match( '|^<\w+[^>]*>([\s\S]*?)</\w+>$|', $section_string, $matches ) ) {
 			if ( ! empty( $matches[1] ) ) {
 				$section_string = compress_html( $matches[1] );
 			}
 		}
 	}
-	unset( $section_string );
+	unset( $section_string );*/
 
 	return $section_strings;
 }
@@ -87,6 +86,7 @@ function html_split( string $html ): array {
  * @return string
  */
 function prepare_w_org_string( string $str ): string {
+	return $str;
 	$items = array(
 		'translate.wordpress.org' => 'translate.wenpai.org',
 		'developer.wordpress.org' => 'developer.wenpai.org',

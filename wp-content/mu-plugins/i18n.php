@@ -10,6 +10,7 @@
 
 namespace Platform;
 
+use DiDom\Document;
 use WP_Error;
 
 class i18n {
@@ -81,7 +82,7 @@ class i18n {
 			return $a_len == $b_len ? 0 : ( $a_len > $b_len ? - 1 : 1 );
 		} );
 
-		$content = $this->prepare_text( $content );
+		//$content = $this->prepare_text( $content );
 
 		$content = $this->insert_original_id_for_html( $content, $originals );
 
@@ -91,7 +92,7 @@ class i18n {
 		}
 
 		foreach ( $originals as $original_id => $original ) {
-			$original = $this->prepare_text( $original );
+			//$original = $this->prepare_text( $original );
 
 			if ( isset( $translations[ $original_id ] ) ) {
 				if ( $original === $content ) {
@@ -181,17 +182,42 @@ class i18n {
 	 * 为 HTML 标签插入原文 ID
 	 */
 	private function insert_original_id_for_html( string $content, array $originals ): string {
+		$dom = new Document();
+		$dom->loadHtml( $content, LIBXML_HTML_NOIMPLIED | LIBXML_BIGLINES | LIBXML_HTML_NODEFDTD | LIBXML_PARSEHUGE | LIBXML_SCHEMA_CREATE );
 		foreach ( $originals as $original_id => $original ) {
-			$original = $this->prepare_text( $original );
+			//$original = $this->prepare_text( $original );
 
-			$original_quoted = preg_quote( $original, '/' );
+			foreach ( $dom->toElement()->children() as $node ) {
+				// 有一些用作列表的 HTML 标签，对于它们，需要取子元素
+				$list_tag = array(
+					'ol',
+					'ul',
+				);
+				if ( ! empty( $node->getNode()->tagName ) && in_array( $node->getNode()->tagName, $list_tag ) ) {
+					foreach ( $node->children() as $child_node ) {
+						if ( ! empty( $child_node->innerHtml() ) ) {
+							if ( str_contains( $child_node->innerHtml(), $original ) ) {
+								$child_node->setAttribute( 'original_id', $original_id );
+							}
+						}
+					}
+				} else {
+					if ( ! empty( $node->innerHtml() ) ) {
+						if ( str_contains( $node->innerHtml(), $original ) ) {
+							$node->setAttribute( 'original_id', $original_id );
+						}
+					}
+				}
+			}
+
+			/*$original_quoted = preg_quote( $original, '/' );
 
 			if ( str_contains( $content, '<' ) ) {
-				$content = preg_replace( "/(<([a-z0-9]*)\b([^>]*)>){$original_quoted}(<\/\\2>)/m", "<\$2 \$3 original_id='$original_id'>{$original}\${4}", $content );
-			}
+				$content = preg_replace( "/(<([a-z0-9]*)\b([^>]*)>){$original_quoted}(<\/\\2>)/m", "<\$2 \$3 original_id='$original_id'>{$original}\${4}", $content, 1 );
+			}*/
 		}
 
-		return $content;
+		return $dom->toElement()->html();
 	}
 
 	private function get_gp_translations( $originals, $translation_set_id ): array {

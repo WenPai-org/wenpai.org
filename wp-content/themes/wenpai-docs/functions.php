@@ -4,6 +4,8 @@ use Platform\i18n;
 
 defined( 'ABSPATH' ) || exit;
 
+add_filter('use_block_editor_for_post', '__return_false');
+
 // 静态资源加载
 add_action( 'init', 'load_assets' );
 function load_assets(): void {

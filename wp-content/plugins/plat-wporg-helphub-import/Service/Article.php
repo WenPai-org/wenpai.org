@@ -163,20 +163,19 @@ class Article {
 		}*/
 
 		// 使用平台的全局 DOM 处理库先预处理一遍，因为这个鸟库会转义一些 HTML 实体，如果不预处理的话，将来经过这个库处理的字符串就和原字符串匹配不上了
-		$dom = new Document( $content );
+		$dom = new Document();
+		$dom->loadHtml( $content, LIBXML_HTML_NOIMPLIED | LIBXML_BIGLINES | LIBXML_HTML_NODEFDTD | LIBXML_PARSEHUGE | LIBXML_SCHEMA_CREATE );
 
-		$body = $dom->find( 'body' );
-
-		$content = $body[0]->html();
+		$content = $dom->toElement()->html();
 
 		// 去除 DOM 处理库自动添加的 Body 标签
-		if ( preg_match( '|^<body>([\s\S]*?)</body>$|', $content, $matches ) ) {
+		/*if ( preg_match( '|^<body>([\s\S]*?)</body>$|', $content, $matches ) ) {
 			if ( ! empty( $matches[1] ) ) {
 				$content = $matches[1];
 			}
-		}
+		}*/
 
-		$content = compress_html( $content );
+		//$content = compress_html( $content );
 		$content = prepare_w_org_string( $content );
 
 		$title     = prepare_w_org_string( $title );

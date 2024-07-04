@@ -23,6 +23,7 @@ class Plugin extends GP_Route {
 		GP::$router->add( '/cloud-translate', array( $t, 'api' ), 'post' );
 		GP::$router->add( "/gp-mt/(.+?)", array( $this, 'add_web_translate_job' ), 'get' );
 		GP::$router->add( "/gp-mt/(.+?)", array( $this, 'add_web_translate_job' ), 'post' );
+		GP::$router->add( "/gp-mt-bulk/(.+?)", array( $this, 'bulk_add_web_translate_job' ), 'get' );
 
 		add_action( 'plat_schedule_gp_mt', array( $t, 'web' ), 999, 2 );
 
@@ -81,7 +82,7 @@ class Plugin extends GP_Route {
 		if ( $check ) {
 			$route            = new GP_Route();
 			$route->notices[] = '同一项目一小时内只能执行一次 AI 翻译任务！';
-			$route->redirect( $_SERVER['HTTP_REFERER'] );
+			$route->redirect( $_SERVER['HTTP_REFERER'] ?? '/' );
 
 			return;
 		}
@@ -89,6 +90,60 @@ class Plugin extends GP_Route {
 		// 设置任务锁
 		set_transient( 'plat_gp_mt_' . $project_id, true, 60 * 60 );
 
+		$project = $this->add_translate_job( $project_id );
+		$referer = gp_url_project( $project['path'] );
+		if ( isset( $_SERVER['HTTP_REFERER'] ) ) {
+			$referer = $_SERVER['HTTP_REFERER'];
+		}
+
+		$route            = new GP_Route();
+		$route->notices[] = '该请求已加入队列，请稍后刷新页面';
+		$route->redirect( $referer );
+	}
+
+	/**
+	 * 批量创建网页端翻译任务
+	 * $project_id 项目 ID（xxx-xxx格式）
+	 */
+	public function bulk_add_web_translate_job( $project_id ) {
+		if ( ! is_user_logged_in() ) {
+			$route            = new GP_Route();
+			$route->notices[] = '请先登录';
+			$route->redirect( $_SERVER['HTTP_REFERER'] );
+
+			return;
+		}
+
+		// 检查是否有权限
+		if ( ! current_user_can( 'manage_options' ) ) {
+			$route            = new GP_Route();
+			$route->notices[] = '你没有权限执行该操作';
+			$route->redirect( $_SERVER['HTTP_REFERER'] );
+
+			return;
+		}
+
+		// 切割项目 ID
+		$project_ids = explode( '-', $project_id );
+		for ( $id = $project_ids[0]; $id <= $project_ids[1]; $id ++ ) {
+			// 检查任务锁
+			$check = get_transient( 'plat_gp_mt_' . $id );
+
+			if ( $check ) {
+				continue;
+			}
+
+			// 设置任务锁
+			set_transient( 'plat_gp_mt_' . $id, true, 60 * 60 );
+			$this->add_translate_job( $id );
+		}
+
+		$route            = new GP_Route();
+		$route->notices[] = '该请求已加入队列，请稍后刷新页面';
+		$route->redirect( '/' );
+	}
+
+	public function add_translate_job( $project_id ) {
 		$project = GP::$project->find_one( array( 'id' => $project_id ) )->fields();
 		// 获取待翻译原文
 		$site_id = SITE_ID_TRANSLATE;
@@ -122,14 +177,7 @@ SQL;
 			] );
 		}
 
-		$referer = gp_url_project( $project['path'] );
-		if ( isset( $_SERVER['HTTP_REFERER'] ) ) {
-			$referer = $_SERVER['HTTP_REFERER'];
-		}
-
-		$route            = new GP_Route();
-		$route->notices[] = '该请求已加入队列，请稍后刷新页面';
-		$route->redirect( $referer );
+		return $project;
 	}
 }
 
