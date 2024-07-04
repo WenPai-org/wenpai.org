@@ -84,34 +84,12 @@ class i18n {
 
 		//$content = $this->prepare_text( $content );
 
-		$content = $this->insert_original_id_for_html( $content, $originals );
-
 		$translations = $this->get_gp_translations( $originals, $translation_set_id );
 		if ( empty( $translations ) ) {
 			return $content;
 		}
 
-		foreach ( $originals as $original_id => $original ) {
-			//$original = $this->prepare_text( $original );
-
-			if ( isset( $translations[ $original_id ] ) ) {
-				if ( $original === $content ) {
-					$content = $translations[ $original_id ];
-				} else {
-					$original = preg_quote( $original, '/' );
-
-					if ( empty( $original ) || ' ' === $original ) {
-						continue;
-					}
-
-					if ( ! str_contains( $content, '<' ) ) {
-						$content = preg_replace( "/\b{$original}\b/", $translations[ $original_id ], $content );
-					} else {
-						$content = preg_replace( "/(<([a-z0-9]*)\b([^>]*)>){$original}(<\/\\2>)/m", "\${1}{$translations[$original_id]}\${4}", $content );
-					}
-				}
-			}
-		}
+		$content = $this->do_translate( $content, $originals, $translations );
 
 		if ( ! $no_wpautop ) {
 			$content = wpautop( str_replace( '\\', '', $content ), false );
@@ -179,13 +157,13 @@ class i18n {
 	}
 
 	/**
-	 * 为 HTML 标签插入原文 ID
+	 * 执行翻译，并为 HTML 标签插入原文 ID
 	 */
-	private function insert_original_id_for_html( string $content, array $originals ): string {
+	private function do_translate( string $content, array $originals, array $translations ): string {
 		$dom = new Document();
 		$dom->loadHtml( $content, LIBXML_HTML_NOIMPLIED | LIBXML_BIGLINES | LIBXML_HTML_NODEFDTD | LIBXML_PARSEHUGE | LIBXML_SCHEMA_CREATE );
 		foreach ( $originals as $original_id => $original ) {
-			//$original = $this->prepare_text( $original );
+			$translation = $translations[ $original_id ] ?? $original;
 
 			foreach ( $dom->toElement()->children() as $node ) {
 				// 有一些用作列表的 HTML 标签，对于它们，需要取子元素
@@ -198,6 +176,7 @@ class i18n {
 						if ( ! empty( $child_node->innerHtml() ) ) {
 							if ( str_contains( $child_node->innerHtml(), $original ) ) {
 								$child_node->setAttribute( 'original_id', $original_id );
+								$child_node->setInnerHtml( $translation );
 							}
 						}
 					}
@@ -205,16 +184,11 @@ class i18n {
 					if ( ! empty( $node->innerHtml() ) ) {
 						if ( str_contains( $node->innerHtml(), $original ) ) {
 							$node->setAttribute( 'original_id', $original_id );
+							$node->setInnerHtml( $translation );
 						}
 					}
 				}
 			}
-
-			/*$original_quoted = preg_quote( $original, '/' );
-
-			if ( str_contains( $content, '<' ) ) {
-				$content = preg_replace( "/(<([a-z0-9]*)\b([^>]*)>){$original_quoted}(<\/\\2>)/m", "<\$2 \$3 original_id='$original_id'>{$original}\${4}", $content, 1 );
-			}*/
 		}
 
 		return $dom->toElement()->html();
