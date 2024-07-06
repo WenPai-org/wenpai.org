@@ -100,14 +100,7 @@ class Project {
 
 				$data = get_web_page_contents( $wporg_url );
 			}
-			if ( is_wp_error( $data ) && $data->get_error_code() == 'http_request_error_404' ) {
-				// 404 的项目直接删除，说明不支持本地化
-				self::delete( $slug, $type );
-				$route->redirect_with_error( '该项目不支持本地化' );
-
-				return false;
-			}
-			if ( is_wp_error( $data ) && $data->get_error_code() !== 'http_request_error_404' ) {
+			if ( is_wp_error( $data ) ) {
 				Logger::error( Logger::TRANSLATE, '请求翻译文件失败', array(
 					'id'    => $sub_project->id,
 					'url'   => $wporg_url,
