@@ -1,18 +1,32 @@
+
 .customize-partial-edit-shortcut-button {
-    width: 30px !important;
-    height: 30px !important;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     line-height: 1 !important;
-    background: #3582c4 !important;
+    font-size: 14px;
+    z-index: 5;
+    background: #3858e9 !important;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 1px rgb(60 67 74 / 15%);
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0px;
+    animation-fill-mode: both;
+    animation-duration: .4s;
+    text-shadow: 0 -1px 1px #135e96, 1px 0 1px #135e96, 0 1px 1px #135e96, -1px 0 1px #135e96;
+    margin: auto;
+    bottom: 0;
 }
 
 .customize-partial-edit-shortcut-button svg {
-    fill: #fff;
-    min-width: 20px;
-    min-height: 20px;
-    width: 20px;
-    height: 20px;
-    margin: auto;
+    display: none;
 }
+
 
 /* 背景模糊效果 */
 .modal.fade {
@@ -38,7 +52,7 @@
 
 /* 模态窗对话框 */
 .modal-dialog {
-    max-width: 600px;
+    max-width: 850px;
     margin: auto;
     position: relative;
     top: 50%;
@@ -87,13 +101,14 @@
 }
 
 .original {
-    font-size: medium;
+    font-size: 14px;
 }
 
 .original_zh-cn {
     margin: 0;
     padding: 0;
     font-style: italic;
+    font-size: 14px;
     color: #6c757d;
 }
 
@@ -184,5 +199,5 @@
 }
 
 #submit-translate:hover {
-    background-color: #0056b3;
+    background-color: #22282d;
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="iconFont" horiz-adv-x="16">
+    <font-face font-family="iconFont"
+      units-per-em="100" ascent="100"
+      descent="0"
+      font-weight="300" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="question"
+      unicode="&#xEA01;"
+      horiz-adv-x="100" d=" M56.25 37.5H43.75C43.75 50 51.25 53.75 56.25 56.25C58.125 56.875 59.375 57.5 60.625 58.75C61.25 59.375 62.5 60.625 61.25 63.125C60 66.25 56.25 69.375 50.625 69.375C41.875 69.375 40.625 61.875 40 60L27.5 61.875C28.125 68.75 33.75 81.875 50 81.875C60 81.875 68.75 76.25 72.5 68.125C75 61.25 73.75 54.375 68.75 49.375C66.25 46.875 63.75 45.625 61.25 45C57.5 42.5 56.25 43.75 56.25 37.5z M50 93.75C74.375 93.75 93.75 74.375 93.75 50S74.375 6.25 50 6.25S6.25 25.625 6.25 50S25.625 93.75 50 93.75zM50 100C22.5 100 0 77.5 0 50S22.5 0 50 0S100 22.5 100 50S77.5 100 50 100V100z M43.125 31.25H55.625V18.75H43.125V31.25z" />
+  </font>
+</defs>
+</svg>

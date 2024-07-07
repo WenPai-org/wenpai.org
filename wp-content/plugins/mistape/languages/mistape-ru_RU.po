@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mistape\n"
+"POT-Creation-Date: 2018-03-06 09:06+0200\n"
+"PO-Revision-Date: 2018-03-06 09:06+0200\n"
+"Last-Translator: deco.agency <hello@deco.agency>\n"
+"Language-Team: deco.agency <hello@deco.agency>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/class-deco-mistape-abstract.php:94
+msgid ""
+"If you have found a spelling error, please, notify us by selecting that text "
+"and pressing <em>Ctrl+Enter</em>."
+msgstr ""
+"Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите <em>Ctrl"
+"+Enter</em>."
+
+#: src/class-deco-mistape-abstract.php:124 src/class-deco-mistape-ajax.php:92
+#: src/class-deco-mistape-ajax.php:105
+msgid "Thanks!"
+msgstr "Спасибо!"
+
+#: src/class-deco-mistape-abstract.php:125 src/class-deco-mistape-ajax.php:106
+msgid "Our editors are notified."
+msgstr "Теперь редакторы в курсе."
+
+#: src/class-deco-mistape-abstract.php:126
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/class-deco-mistape-abstract.php:130
+msgid "Spelling error report"
+msgstr "Сообщить об опечатке"
+
+#: src/class-deco-mistape-abstract.php:131
+msgid "The following text will be sent to our editors:"
+msgstr "Текст, который будет отправлен нашим редакторам:"
+
+#: src/class-deco-mistape-abstract.php:133
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/class-deco-mistape-abstract.php:134
+msgid "Send"
+msgstr "Отправить"
+
+#: src/class-deco-mistape-abstract.php:138
+msgid "Your comment (optional)"
+msgstr "Ваш комментарий (необязательно)"
+
+#: src/class-deco-mistape-admin.php:61
+msgid "Administrator"
+msgstr "Администратор"
+
+#: src/class-deco-mistape-admin.php:62
+msgid "Editor"
+msgstr "Редактор"
+
+#: src/class-deco-mistape-admin.php:63
+msgid "Specify other"
+msgstr "Указать свой адрес"
+
+#: src/class-deco-mistape-admin.php:67
+msgid "Text"
+msgstr "Текст"
+
+#: src/class-deco-mistape-admin.php:68
+msgid "Image"
+msgstr "Картинка"
+
+#: src/class-deco-mistape-admin.php:69
+msgid "Do not show caption at the bottom of post"
+msgstr "Не показывать надпись в конце записи"
+
+#: src/class-deco-mistape-admin.php:74
+msgid "Default"
+msgstr "Текст по умолчанию"
+
+#: src/class-deco-mistape-admin.php:75
+msgid "automatically translated to supported languages"
+msgstr "автоматически переводится на поддерживаемые языки"
+
+#: src/class-deco-mistape-admin.php:78
+msgid "Custom text"
+msgstr "Редактируемый текст"
+
+#: src/class-deco-mistape-admin.php:84
+msgid "Just notify of successful submission"
+msgstr ""
+"Сразу отправлять и показывать диалог \"Спасибо\" независимо от результата"
+
+#: src/class-deco-mistape-admin.php:85
+msgid "Show preview of reported text and ask confirmation"
+msgstr "Предпросмотр отправляемого текста с подтверждением"
+
+#: src/class-deco-mistape-admin.php:86
+msgid "Preview and comment field"
+msgstr "Предпросмотр с полем для комментария"
+
+#: src/class-deco-mistape-admin.php:130
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: src/class-deco-mistape-admin.php:133
+msgid "Help"
+msgstr "Справка"
+
+#: src/class-deco-mistape-admin.php:147
+#, php-format
+msgctxt "%s = rate"
+msgid "Please %s our plugin"
+msgstr "Пожалуйста, %s наш плагин"
+
+#: src/class-deco-mistape-admin.php:149
+msgctxt "please rate our plugin"
+msgid "rate"
+msgstr "оцените"
+
+#: src/class-deco-mistape-admin.php:156
+#, php-format
+msgctxt "deco.agency's products"
+msgid "%s's products"
+msgstr "Продукты %s"
+
+#: src/class-deco-mistape-admin.php:192
+msgid "Statistics"
+msgstr "Статистика"
+
+#: src/class-deco-mistape-admin.php:198
+msgid "Reports received up to date:"
+msgstr "Всего зарегистрировано отчетов:"
+
+#: src/class-deco-mistape-admin.php:205
+msgid "Detailed mistake statistics is available in Mistape PRO"
+msgstr "Подробная статистика ошибок доступна в Mistape PRO"
+
+#: src/class-deco-mistape-admin.php:208
+msgid ""
+"An option to mark notification as resolved, archive, delete from the table "
+"in one click"
+msgstr ""
+"Возможность отмечать уведомления как разрешенные, архивные, удалять из "
+"таблицы одним щелчком мыши"
+
+#: src/class-deco-mistape-admin.php:212
+msgid "Buy PRO for just"
+msgstr "Купить PRO всего за"
+
+#: src/class-deco-mistape-admin.php:239
+msgid "Email recipient"
+msgstr "Получатель уведомлений"
+
+#: src/class-deco-mistape-admin.php:241
+msgid "Post types"
+msgstr "Типы записей"
+
+#: src/class-deco-mistape-admin.php:243 src/class-deco-mistape-admin.php:805
+msgid "Shortcodes"
+msgstr "Шорткоды"
+
+#: src/class-deco-mistape-admin.php:245
+msgid "Caption format"
+msgstr "Формат надписи"
+
+#: src/class-deco-mistape-admin.php:247
+msgid "Caption text mode"
+msgstr "Текст надписи"
+
+#: src/class-deco-mistape-admin.php:249
+msgid "Icon before the caption text"
+msgstr "Иконка возле подписи под записью"
+
+#: src/class-deco-mistape-admin.php:251
+msgid "Powered by"
+msgstr "Разработано"
+
+#: src/class-deco-mistape-admin.php:253
+msgid "Color scheme"
+msgstr "Цветовая схема"
+
+#: src/class-deco-mistape-admin.php:255
+msgid "Dialog mode"
+msgstr "Режим диалога"
+
+#: src/class-deco-mistape-admin.php:259
+msgid "Multisite inheritance"
+msgstr "Наследование параметров"
+
+#: src/class-deco-mistape-admin.php:317
+msgctxt "select option, shown when no users with editor role are present"
+msgid "no editors found"
+msgstr "редакторы не найдены"
+
+#: src/class-deco-mistape-admin.php:324
+msgid "separate multiple recipients with commas"
+msgstr "можно задать несколько получателей, разделив их запятой"
+
+#: src/class-deco-mistape-admin.php:329
+msgid "If post ID is determined, notify post author instead"
+msgstr "Если ID поста определен, отправлять письмо автору"
+
+#: src/class-deco-mistape-admin.php:348
+msgid ""
+"\"Press Ctrl+Enter&hellip;\" captions will be displayed at the bottom of "
+"selected post types."
+msgstr ""
+"Надпись \"Нажмите Ctrl+Enter&hellip;\" будет отображаться в конце записей "
+"выбранных типов"
+
+#: src/class-deco-mistape-admin.php:359
+msgid "Register <code>[mistape]</code> shortcode."
+msgstr "Зарегистрировать шорткод <code>[mistape]</code>."
+
+#: src/class-deco-mistape-admin.php:361
+msgid "Enable if manual caption insertion via shortcodes is needed."
+msgstr "При помощи шорткодов надпись можно размещать выборочно."
+
+#: src/class-deco-mistape-admin.php:362
+msgid "Usage examples are in Help section."
+msgstr "Примеры использования — в разделе \"Справка\"."
+
+#: src/class-deco-mistape-admin.php:363
+msgid ""
+"When enabled, Mistape Ctrl+Enter listener works on all pages, not only on "
+"enabled post types."
+msgstr ""
+"Если активно, сочетание Ctrl+Enter работает на всех страницах сайта — не "
+"только на отмеченных выше типах записей"
+
+#: src/class-deco-mistape-admin.php:373
+msgid "Enable"
+msgstr "Включить"
+
+#: src/class-deco-mistape-admin.php:374
+msgid "Here you can enable Mistape.com link in an icon"
+msgstr "Здесь вы можете включить Mistape.com ссылку для иконки"
+
+#: src/class-deco-mistape-admin.php:393
+msgid "Enter the full image URL starting with http://"
+msgstr "Укажите полный адрес картинки, начиная с http://"
+
+#: src/class-deco-mistape-admin.php:432
+msgid "no icon"
+msgstr "без иконки"
+
+#: src/class-deco-mistape-admin.php:477
+msgid "default color"
+msgstr "Цвет по умолчанию "
+
+#: src/class-deco-mistape-admin.php:501
+msgid "Preview dialog"
+msgstr "Предпросмотр"
+
+#: src/class-deco-mistape-admin.php:513
+msgid "Copy settings from main site when new blog is created"
+msgstr "Наследовать параметры основного сайта при добавлении сайта в сети"
+
+#: src/class-deco-mistape-admin.php:563
+#, php-format
+msgid "ERROR: You entered invalid email address: %s"
+msgstr "ОШИБКА: указан некорректный email-адрес: %s"
+
+#: src/class-deco-mistape-admin.php:574
+msgid "ERROR: You didn't select valid email recipient."
+msgstr "ОШИБКА: не указан корректный email-адрес получателя уведомлений."
+
+#: src/class-deco-mistape-admin.php:598
+msgid "ERROR: You didn't enter caption image URL."
+msgstr "ОШИБКА: не указан адрес изображения."
+
+#: src/class-deco-mistape-admin.php:640
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/class-deco-mistape-admin.php:749
+msgid ""
+"<strong>Mistape</strong> settings notice will be dismissed after saving "
+"changes."
+msgstr ""
+"Уведомление <strong>Mistape</strong> будет снято после сохранения настроек."
+
+#: src/class-deco-mistape-admin.php:752
+#, php-format
+msgid ""
+"<strong>Mistape</strong> must now be <a href=\"%s\">configured</a> before "
+"use."
+msgstr ""
+"Плагин <strong>Mistape</strong> нуждается в  <a href=\"%s\">настройке</a>."
+
+#: src/class-deco-mistape-admin.php:806
+msgid "Optional shortcode parameters are:"
+msgstr "Дополнительные параметры:"
+
+#: src/class-deco-mistape-admin.php:808
+msgid "can be 'text' or 'image'"
+msgstr "может быть \"text\" или \"image\""
+
+#: src/class-deco-mistape-admin.php:809
+msgid "override default css class"
+msgstr "заменяет стандартный CSS-класс"
+
+#: src/class-deco-mistape-admin.php:810
+msgid "override caption text"
+msgstr "заменяет текст надписи"
+
+#: src/class-deco-mistape-admin.php:811
+msgid "override image URL"
+msgstr "заменяет ссылку на изображение"
+
+#: src/class-deco-mistape-admin.php:813
+msgid "When no parameters specified, general configuration is used."
+msgstr "Если параметры не указаны, используется основная конфигурация."
+
+#: src/class-deco-mistape-admin.php:814
+msgid "If image url is specified, format parameter can be omitted."
+msgstr ""
+"Если указана ссылка на изображение, параметр \"format\" можно опустить."
+
+#: src/class-deco-mistape-admin.php:815
+msgid "Shortcode usage example:"
+msgstr "Пример использования шорткода:"
+
+#: src/class-deco-mistape-admin.php:819
+msgid "PHP code example:"
+msgstr "Пример вставки с помощью PHP-кода:"
+
+#: src/class-deco-mistape-admin.php:827
+msgid "Hooks"
+msgstr "Фильтры и действия"
+
+#: src/class-deco-mistape-admin.php:833
+msgid "Allows to modify caption text globally (preferred over HTML filter)."
+msgstr "Позволяет изменить стандартный текст надписи."
+
+#: src/class-deco-mistape-admin.php:840
+msgid "Allows to modify the caption HTML before output."
+msgstr "Позволяет изменить HTML-код надписи перед выводом."
+
+#: src/class-deco-mistape-admin.php:846
+msgid "Allows to modify modal dialog strings (preferred over HTML filter)."
+msgstr "Позволяет изменить текстовые элементы модального окна."
+
+#: src/class-deco-mistape-admin.php:853
+msgid "Allows to modify the modal dialog HTML before output."
+msgstr "Позволяет изменить HTML-код модального окна перед выводом."
+
+#: src/class-deco-mistape-admin.php:860
+msgid "Allows to override email sending logic."
+msgstr "Позволяет замещать логику отправки писем."
+
+#: src/class-deco-mistape-admin.php:866
+msgid "Allows to change email recipient."
+msgstr "Позволяет изменить получателя письма."
+
+#: src/class-deco-mistape-admin.php:873
+msgid "Allows to change email subject."
+msgstr "Позволяет изменить тему письма."
+
+#: src/class-deco-mistape-admin.php:880
+msgid "Allows to modify email message to send."
+msgstr "Позволяет изменять содержимое письма перед отправкой."
+
+#: src/class-deco-mistape-admin.php:886
+msgid ""
+"Allows for custom reports handling. Refer to code for implementation details."
+msgstr "Позволяет регистрировать сторонние обработчики отчетов."
+
+#: src/class-deco-mistape-admin.php:892
+msgid "Allows to modify global options array during initialization."
+msgstr ""
+"Позволяет модифицировать массив общих параметров во время инициализации."
+
+#: src/class-deco-mistape-admin.php:898
+msgid ""
+"Allows to add custom logic for whether to output Mistape to front end or not."
+msgstr ""
+"Позволяет модифицировать логику, определяющую, выводить Mistape на фронт-энд "
+"или нет."
+
+#: src/class-deco-mistape-admin.php:918
+msgid "Vote!"
+msgstr "Проголосуйте!"
+
+#: src/class-deco-mistape-ajax.php:72 src/class-deco-mistape-ajax.php:80
+#: src/class-deco-mistape-ajax.php:110
+msgid "Report not sent"
+msgstr "Отчет не отправлен"
+
+#: src/class-deco-mistape-ajax.php:73
+msgid "Spam protection: too many reports from your IP address."
+msgstr "Защита от спама: получено слишком много отчетов с вашего IP адреса."
+
+#: src/class-deco-mistape-ajax.php:81
+msgid "No text selected."
+msgstr "Текст не выделен."
+
+#: src/class-deco-mistape-ajax.php:93
+msgid ""
+"Our editors already got notified about this error. Thanks for your care."
+msgstr ""
+"Наши редакторы уже уведомлены об этой опечатке. Спасибо за вашу заботу."
+
+#: src/class-deco-mistape-ajax.php:111
+msgid "Email service returned an error while trying to deliver your report."
+msgstr "Почтовый сервис ответил ошибкой при попытке доставить ваш отчет."
+
+#: src/class-deco-mistape-ajax.php:192
+msgid "Reported from page:"
+msgstr "Отправлено со страницы:"
+
+#: src/class-deco-mistape-ajax.php:193
+msgctxt "[Email] Reported from page: unknown"
+msgid "unknown"
+msgstr "страница не определена"
+
+#: src/class-deco-mistape-ajax.php:199
+msgid "Post edit URL:"
+msgstr "Редактировать запись:"
+
+#: src/class-deco-mistape-ajax.php:205
+msgid "Reported by:"
+msgstr "Сообщено пользователем:"
+
+#: src/class-deco-mistape-ajax.php:208
+msgid "Reported text"
+msgstr "Выделенный текст"
+
+#: src/class-deco-mistape-ajax.php:212
+msgid "Comment:"
+msgstr "Комментарий:"
+
+#: src/class-deco-mistape-ajax.php:223
+msgid "Spelling error reported"
+msgstr "Получено сообщение об опечатке"
+
+#~ msgid "Disable"
+#~ msgstr "Отключить"
+
+#~ msgid "Here you can disable Mistape.com link in an icon"
+#~ msgstr "Здесь вы можете отключить Mistape.com ссылку для иконки"
+
+#~ msgid ""
+#~ "In a case you activate the icon, the link to mistape.com adds "
+#~ "automatically."
+#~ msgstr "Выбирая иконку, ссылка на mistape.com добавляет автоматически."
+
+#~ msgid ""
+#~ "In a case you activate the icon, the link to mistepe.com adds "
+#~ "automatically."
+#~ msgstr "Выбирая иконку, ссылка на mistepe.com добавляет автоматически."

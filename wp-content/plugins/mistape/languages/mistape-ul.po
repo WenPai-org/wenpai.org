@@ -1,0 +1,482 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mistape\n"
+"POT-Creation-Date: 2018-03-06 09:07+0200\n"
+"PO-Revision-Date: 2018-03-06 09:08+0200\n"
+"Last-Translator: sergey.ilchuk <ilchuksergey@gmail.com>\n"
+"Language-Team: deco.agency <hello@deco.agency>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/class-deco-mistape-abstract.php:94
+msgid ""
+"If you have found a spelling error, please, notify us by selecting that text "
+"and pressing <em>Ctrl+Enter</em>."
+msgstr ""
+"Jakščo vy znajšly pomylku, buď laska, vydiliť fragment tekstu ta natysniť "
+"<em>Ctrl Enter</em>."
+
+#: src/class-deco-mistape-abstract.php:124 src/class-deco-mistape-ajax.php:92
+#: src/class-deco-mistape-ajax.php:105
+msgid "Thanks!"
+msgstr "Djakuju!"
+
+#: src/class-deco-mistape-abstract.php:125 src/class-deco-mistape-ajax.php:106
+msgid "Our editors are notified."
+msgstr "Teper redaktory znajuť."
+
+#: src/class-deco-mistape-abstract.php:126
+msgid "Close"
+msgstr "Zakryty"
+
+#: src/class-deco-mistape-abstract.php:130
+msgid "Spelling error report"
+msgstr "Povidomyty pro pomylku"
+
+#: src/class-deco-mistape-abstract.php:131
+msgid "The following text will be sent to our editors:"
+msgstr "Tekst, jakyj bude nadislano našym redaktoram:"
+
+#: src/class-deco-mistape-abstract.php:133
+msgid "Cancel"
+msgstr "Skasuvaty"
+
+#: src/class-deco-mistape-abstract.php:134
+msgid "Send"
+msgstr "Nadislaty"
+
+#: src/class-deco-mistape-abstract.php:138
+msgid "Your comment (optional)"
+msgstr "Vaš komentar (neobov'jazkovo)"
+
+#: src/class-deco-mistape-admin.php:61
+msgid "Administrator"
+msgstr "Administrator"
+
+#: src/class-deco-mistape-admin.php:62
+msgid "Editor"
+msgstr "Redaktor"
+
+#: src/class-deco-mistape-admin.php:63
+msgid "Specify other"
+msgstr "Vkazaty svoju adresu"
+
+#: src/class-deco-mistape-admin.php:67
+msgid "Text"
+msgstr "Tekst"
+
+#: src/class-deco-mistape-admin.php:68
+msgid "Image"
+msgstr "Zobražennja"
+
+#: src/class-deco-mistape-admin.php:69
+msgid "Do not show caption at the bottom of post"
+msgstr "Ne pokazuvaty napys u kinci zapysu"
+
+#: src/class-deco-mistape-admin.php:74
+msgid "Default"
+msgstr "Tekst za zamovčuvannjam"
+
+#: src/class-deco-mistape-admin.php:75
+msgid "automatically translated to supported languages"
+msgstr "avtomatyčno perekladajeťsja na movy ščo pidtrymujuťsja"
+
+#: src/class-deco-mistape-admin.php:78
+msgid "Custom text"
+msgstr "Redagujemyj tekst"
+
+#: src/class-deco-mistape-admin.php:84
+msgid "Just notify of successful submission"
+msgstr ""
+"Odrazu vidpravljaty ta pokazuvaty dialog «Djakuju» nezaležno vid rezuľtatu"
+
+#: src/class-deco-mistape-admin.php:85
+msgid "Show preview of reported text and ask confirmation"
+msgstr "Poperednij peregljad teksta šo bude vidpravleno z poperedžennjam"
+
+#: src/class-deco-mistape-admin.php:86
+msgid "Preview and comment field"
+msgstr "Poperednij peregljad polja dlja komentarja"
+
+#: src/class-deco-mistape-admin.php:130
+msgid "Configuration"
+msgstr "Konfiguracija"
+
+#: src/class-deco-mistape-admin.php:133
+msgid "Help"
+msgstr "Dovidka"
+
+#: src/class-deco-mistape-admin.php:147
+#, php-format
+msgctxt "%s = rate"
+msgid "Please %s our plugin"
+msgstr "Buď laska, %s naš plağin"
+
+#: src/class-deco-mistape-admin.php:149
+msgctxt "please rate our plugin"
+msgid "rate"
+msgstr "ociniť"
+
+#: src/class-deco-mistape-admin.php:156
+#, php-format
+msgctxt "deco.agency's products"
+msgid "%s's products"
+msgstr "Produkty %s"
+
+#: src/class-deco-mistape-admin.php:192
+msgid "Statistics"
+msgstr "Statystyka"
+
+#: src/class-deco-mistape-admin.php:198
+msgid "Reports received up to date:"
+msgstr "Vśogo zarejestrovano zvitiv:"
+
+#: src/class-deco-mistape-admin.php:205
+msgid "Detailed mistake statistics is available in Mistape PRO"
+msgstr ""
+
+#: src/class-deco-mistape-admin.php:208
+msgid ""
+"An option to mark notification as resolved, archive, delete from the table "
+"in one click"
+msgstr ""
+
+#: src/class-deco-mistape-admin.php:212
+msgid "Buy PRO for just"
+msgstr ""
+
+#: src/class-deco-mistape-admin.php:239
+msgid "Email recipient"
+msgstr "Otrymuvač spoviščeń"
+
+#: src/class-deco-mistape-admin.php:241
+msgid "Post types"
+msgstr "Typy zapysiv"
+
+#: src/class-deco-mistape-admin.php:243 src/class-deco-mistape-admin.php:805
+msgid "Shortcodes"
+msgstr "Šortkody"
+
+#: src/class-deco-mistape-admin.php:245
+msgid "Caption format"
+msgstr "Format systemnogo napysu"
+
+#: src/class-deco-mistape-admin.php:247
+msgid "Caption text mode"
+msgstr "Tekst systemnogo napysu"
+
+#: src/class-deco-mistape-admin.php:249
+msgid "Icon before the caption text"
+msgstr "Ikonka bilja teksu pid zapysom"
+
+#: src/class-deco-mistape-admin.php:251
+msgid "Powered by"
+msgstr "Rozrobleno"
+
+#: src/class-deco-mistape-admin.php:253
+msgid "Color scheme"
+msgstr "Koľrova shema"
+
+#: src/class-deco-mistape-admin.php:255
+msgid "Dialog mode"
+msgstr "Režym dialogu"
+
+#: src/class-deco-mistape-admin.php:259
+msgid "Multisite inheritance"
+msgstr "Nasliduvannja parametriv"
+
+#: src/class-deco-mistape-admin.php:317
+msgctxt "select option, shown when no users with editor role are present"
+msgid "no editors found"
+msgstr "redaktoriv ne znajdeno"
+
+#: src/class-deco-mistape-admin.php:324
+msgid "separate multiple recipients with commas"
+msgstr ""
+"je možlyvisť dodaty dekiľka otrymuvačiv, razdilyvšy їh adresy čerez komu"
+
+#: src/class-deco-mistape-admin.php:329
+msgid "If post ID is determined, notify post author instead"
+msgstr "Jakščo ID postu ne vyznačeno, vidpravljaty lysta avtoru"
+
+#: src/class-deco-mistape-admin.php:348
+msgid ""
+"\"Press Ctrl+Enter&hellip;\" captions will be displayed at the bottom of "
+"selected post types."
+msgstr ""
+"Napys «Nažmyte Ctrl+Enter&hellip;» bude vidobražatysja naprykinci zapysiv "
+"obranyh typiv."
+
+#: src/class-deco-mistape-admin.php:359
+msgid "Register <code>[mistape]</code> shortcode."
+msgstr "Zarejestruvaty šortkod <code>[mistape]</code>."
+
+#: src/class-deco-mistape-admin.php:361
+msgid "Enable if manual caption insertion via shortcodes is needed."
+msgstr "Za dopomogoju šortkodiv je možlyvisť rozmiščuvaty napys vybirkovo."
+
+#: src/class-deco-mistape-admin.php:362
+msgid "Usage examples are in Help section."
+msgstr "Pryklady vykorystannja — v rozdili «Dovidka»."
+
+#: src/class-deco-mistape-admin.php:363
+msgid ""
+"When enabled, Mistape Ctrl+Enter listener works on all pages, not only on "
+"enabled post types."
+msgstr ""
+"Jakščo uvimkneno, pojednannja klaviš Ctrl+Enter pracjuje na vsih storinkah "
+"sajtu — ne tiľky na vidmičenyh vyšče typah zapysiv."
+
+#: src/class-deco-mistape-admin.php:373
+msgid "Enable"
+msgstr "Uvimknuty"
+
+#: src/class-deco-mistape-admin.php:374
+msgid "Here you can enable Mistape.com link in an icon"
+msgstr "Tut vy možete uvimknuty Mistape.com posylannja dlja ikonky"
+
+#: src/class-deco-mistape-admin.php:393
+msgid "Enter the full image URL starting with http://"
+msgstr "Vkažiť povnu adresu zobražennja, počynajučy z http://"
+
+#: src/class-deco-mistape-admin.php:432
+msgid "no icon"
+msgstr "bez ikonky"
+
+#: src/class-deco-mistape-admin.php:477
+msgid "default color"
+msgstr "Kolir za zamovčuvannjam"
+
+#: src/class-deco-mistape-admin.php:501
+msgid "Preview dialog"
+msgstr "Poperednij peregljad"
+
+#: src/class-deco-mistape-admin.php:513
+msgid "Copy settings from main site when new blog is created"
+msgstr "Nasliduvaty parametry golovnogo sajtu pry dodavanni sajtiv u mereži"
+
+#: src/class-deco-mistape-admin.php:563
+#, php-format
+msgid "ERROR: You entered invalid email address: %s"
+msgstr "POMYLKA: vkazano nekorektnu email-adresu: %s"
+
+#: src/class-deco-mistape-admin.php:574
+msgid "ERROR: You didn't select valid email recipient."
+msgstr "POMYLKA: ne vkazano korektnu email-adresu otrymuvača spoviščeń."
+
+#: src/class-deco-mistape-admin.php:598
+msgid "ERROR: You didn't enter caption image URL."
+msgstr "POMYLKA: ne vkazano ardesu zobražennja."
+
+#: src/class-deco-mistape-admin.php:640
+msgid "Settings"
+msgstr "Nalaštuvannja"
+
+#: src/class-deco-mistape-admin.php:749
+msgid ""
+"<strong>Mistape</strong> settings notice will be dismissed after saving "
+"changes."
+msgstr ""
+"Spoviščennja <strong>Mistape</strong> bude znjato pislja zberežennja "
+"nalaštuvań."
+
+#: src/class-deco-mistape-admin.php:752
+#, php-format
+msgid ""
+"<strong>Mistape</strong> must now be <a href=\"%s\">configured</a> before "
+"use."
+msgstr ""
+"Plagin <strong>Mistape</strong> potrebuje vnesennja <a href=\"%s"
+"\">nalaštuvań</a>."
+
+#: src/class-deco-mistape-admin.php:806
+msgid "Optional shortcode parameters are:"
+msgstr "Dodatkovi parametry:"
+
+#: src/class-deco-mistape-admin.php:808
+msgid "can be 'text' or 'image'"
+msgstr "može buty «text» abo «image»"
+
+#: src/class-deco-mistape-admin.php:809
+msgid "override default css class"
+msgstr "zaminjuje standartnyj CSS-klas"
+
+#: src/class-deco-mistape-admin.php:810
+msgid "override caption text"
+msgstr "zaminjuje tekst pidpysu"
+
+#: src/class-deco-mistape-admin.php:811
+msgid "override image URL"
+msgstr "zaminjuje posylannja na zobražennja"
+
+#: src/class-deco-mistape-admin.php:813
+msgid "When no parameters specified, general configuration is used."
+msgstr "Jakščo parametry ne vkazano, bude vykorystano osnovnu konfiguraciju."
+
+#: src/class-deco-mistape-admin.php:814
+msgid "If image url is specified, format parameter can be omitted."
+msgstr ""
+"Jakščo vkazano posylannja na zobražennja, parametr «format» možna ignoruvaty."
+
+#: src/class-deco-mistape-admin.php:815
+msgid "Shortcode usage example:"
+msgstr "Pryklad vykorystannja šortkodu:"
+
+#: src/class-deco-mistape-admin.php:819
+msgid "PHP code example:"
+msgstr "Pryklad vstavky za dopomogoju PHP-kodu:"
+
+#: src/class-deco-mistape-admin.php:827
+msgid "Hooks"
+msgstr "Fiľtry ta diї"
+
+#: src/class-deco-mistape-admin.php:833
+msgid "Allows to modify caption text globally (preferred over HTML filter)."
+msgstr "Dozvoljaje zminyty standartnyj tekst pidpysu."
+
+#: src/class-deco-mistape-admin.php:840
+msgid "Allows to modify the caption HTML before output."
+msgstr "Dozvoljaje zminyty HTML-kod pidpysu pered pojavoju."
+
+#: src/class-deco-mistape-admin.php:846
+msgid "Allows to modify modal dialog strings (preferred over HTML filter)."
+msgstr "Dozvoljaje zminyty tekstovi elementy modaľnogo vikna."
+
+#: src/class-deco-mistape-admin.php:853
+msgid "Allows to modify the modal dialog HTML before output."
+msgstr "Dozvoljaje zminyty HTML-kod modaľnogo vikna pered pojavoju."
+
+#: src/class-deco-mistape-admin.php:860
+msgid "Allows to override email sending logic."
+msgstr "Dozvoljaje zamiščuvaty logiku vidpravlennja lystiv."
+
+#: src/class-deco-mistape-admin.php:866
+msgid "Allows to change email recipient."
+msgstr "Dozvoljaje zminyty otrymuvača lystiv."
+
+#: src/class-deco-mistape-admin.php:873
+msgid "Allows to change email subject."
+msgstr "Dozvoljaje zminity temu lysta."
+
+#: src/class-deco-mistape-admin.php:880
+msgid "Allows to modify email message to send."
+msgstr "Dozvoljaje zminity vmist lysta pered vidpravlennjam."
+
+#: src/class-deco-mistape-admin.php:886
+msgid ""
+"Allows for custom reports handling. Refer to code for implementation details."
+msgstr "Dozvoljaje rejestruvaty storonni obrobnyky zvitiv."
+
+#: src/class-deco-mistape-admin.php:892
+msgid "Allows to modify global options array during initialization."
+msgstr ""
+"Dozvoljaje modyfikuvaty masyv zagaľnyh parametriv pid čas inicializaciї."
+
+#: src/class-deco-mistape-admin.php:898
+msgid ""
+"Allows to add custom logic for whether to output Mistape to front end or not."
+msgstr ""
+"Dozvoljaje modyfikuvaty logiku, ščo vyznačaje, čy vidobražaty Mistape na "
+"storinci."
+
+#: src/class-deco-mistape-admin.php:918
+msgid "Vote!"
+msgstr "Progolosuvaty!"
+
+#: src/class-deco-mistape-ajax.php:72 src/class-deco-mistape-ajax.php:80
+#: src/class-deco-mistape-ajax.php:110
+msgid "Report not sent"
+msgstr "Zvit ne nadislano."
+
+#: src/class-deco-mistape-ajax.php:73
+msgid "Spam protection: too many reports from your IP address."
+msgstr "Zahyst vid spamu: otrymano zabagato povidomleń z vašoї IP adresy."
+
+#: src/class-deco-mistape-ajax.php:81
+msgid "No text selected."
+msgstr "Tekst ne vydileno."
+
+#: src/class-deco-mistape-ajax.php:93
+msgid ""
+"Our editors already got notified about this error. Thanks for your care."
+msgstr ""
+"Našyh redaktoriv vže bulo povidomleno pro cju odrukivku. Djakujemo za "
+"turbotu."
+
+#: src/class-deco-mistape-ajax.php:111
+msgid "Email service returned an error while trying to deliver your report."
+msgstr "Poštovyj servis povernuv pomylku pid čas sproby nadislaty vaš zvit."
+
+#: src/class-deco-mistape-ajax.php:192
+msgid "Reported from page:"
+msgstr "Nadislano zi storinky:"
+
+#: src/class-deco-mistape-ajax.php:193
+msgctxt "[Email] Reported from page: unknown"
+msgid "unknown"
+msgstr "storinku ne vyznačeno"
+
+#: src/class-deco-mistape-ajax.php:199
+msgid "Post edit URL:"
+msgstr "Redaguvaty zapys:"
+
+#: src/class-deco-mistape-ajax.php:205
+msgid "Reported by:"
+msgstr "Nadislano korystuvačem:"
+
+#: src/class-deco-mistape-ajax.php:208
+msgid "Reported text"
+msgstr "Bulo vydileno tekst:"
+
+#: src/class-deco-mistape-ajax.php:212
+msgid "Comment:"
+msgstr "Komentar:"
+
+#: src/class-deco-mistape-ajax.php:223
+msgid "Spelling error reported"
+msgstr "Otrymano povidomlennja pro pomylku."
+
+#~ msgid "Disable"
+#~ msgstr "Відключити"
+
+#~ msgid "Here you can disable Mistape.com link in an icon"
+#~ msgstr "Тут ви можете відключити Mistape.com посилання для іконки"
+
+#~ msgid ""
+#~ "In a case you activate the icon, the link to mistape.com adds "
+#~ "automatically."
+#~ msgstr ""
+#~ "У разі, якщо активувати значок, посилання на mistape.com додає "
+#~ "автоматично."
+
+#~ msgid ""
+#~ "In a case you activate the icon, the link to mistepe.com adds "
+#~ "automatically."
+#~ msgstr ""
+#~ "У разі, якщо активувати значок, посилання на mistepe.com додає "
+#~ "автоматично."
+
+#~ msgid "Detailed mistake statistics is coming soon!"
+#~ msgstr ""
+#~ "Скоро стане доступна докладна статистика одруківок! Слідкуйте за "
+#~ "оновленнями."
+
+#~ msgid "Mistape Logo"
+#~ msgstr "Логотип Mistape"
+
+#~ msgid "Caption with Mistape logo"
+#~ msgstr "Відображати логотип Mistape у підписі"
+
+#~ msgid "Please <a href=\"%s\" target=\"_blank\">rate</a> our plugin"
+#~ msgstr "Будь ласка, <a href=\"%s\" target=\"_blank\">оцініть</a> наш плаґін"

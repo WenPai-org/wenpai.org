@@ -31,7 +31,7 @@ do_action( 'bbp_template_before_search_results_loop' ); ?>
 
 		<?php while ( bbp_search_results() ) : bbp_the_search_result(); ?>
 		
-			<?php // don't display forums (just in case they are pending) - should not occure, but stops error
+			<?php // don't display forums (just in case they are pending) - should not occur, but stops error
 			if (get_post_type() == bbp_get_forum_post_type()) continue ; ?>
 
 			<?php bbp_get_template_part( 'loop', 'pending-' . get_post_type() ); ?>

@@ -7,8 +7,8 @@ defined( 'ABSPATH' ) || exit;
 global $bsp_style_settings_modtools ;
 if( !class_exists( 'bbPressModToolsPlugin') && !empty($bsp_style_settings_modtools['modtools_activate']) ) {
 add_shortcode ('bsp-moderation-pending' , 'bsp_mod_pending') ;
-add_filter ('bbp_toggle_topic', 'rew_redirect_to') ;
-add_filter ('bbp_toggle_reply', 'rew_redirect_to') ;
+add_filter ('bbp_toggle_topic', 'bsp_pending_redirect_to') ;
+add_filter ('bbp_toggle_reply', 'bsp_pending_redirect_to') ;
 }
 
 function bsp_mod_pending () {
@@ -61,13 +61,20 @@ function bsp_has_pending_results( $args = array() ) {
 		// Conditionally prime the cache for last active posts
 		//'update_post_family_cache' => true
 	);
+	
+	/*in bbpress 2.6.11 the function 'bbp_pre_get_posts_normalize_forum_visibility' (in includes/forums/functions.php) overrides the 'pending' post status set above
+	This was added to sort out hidden forum visibility error, but we're not dealing with forums here, so we can take it out
+	so adding this filter causes this function to bail on entry so that the pending status works.
+	//this filter is removed once the wp_query has run below
+	*/
+	add_filter ('bbp_include_all_forums' , 'bsp_pending_true') ;
 
-	//$default['s'] = '';
-		
 	/** Setup *****************************************************************/
 
 	// Parse arguments against default values
 	$r = bbp_parse_args( $args, $default, 'has_pending_results' );
+	
+	//$r = $default ;
 	
 	// Get bbPress
 	$bbp = bbpress();
@@ -101,12 +108,16 @@ function bsp_has_pending_results( $args = array() ) {
 		// Add pagination to query object
 		$bbp->search_query->pagination_links = bbp_paginate_links( $bbp_search_pagination );
 	}
+	/*in bbpress 2.6.11 the function 'bbp_pre_get_posts_normalize_forum_visibility' (in includes/forums/functions.php) overrides the 'pending' post status set above
+	a filter is added above, and removed in the line below once the function has run.
+	*/
+	remove_filter ('bbp_include_all_forums' , 'bsp_pending_true') ;
 
 	// Filter & return
 	return apply_filters( 'bbp_has_pending_results', $bbp->search_query->have_posts(), $bbp->search_query );
 }
 
-function rew_redirect_to ($retval) {
+function bsp_pending_redirect_to ($retval) {
 	//this hooks to the toggle functions of topics and replies, and adds a redirect to get back to the pending page after action
 	$shortcode_page = get_option ('bsp_mod_pending_page') ;
 	if (!empty ($shortcode_page)) {
@@ -114,4 +125,8 @@ function rew_redirect_to ($retval) {
 		if (strpos($check, $shortcode_page) !== false) $retval['redirect_to'] = $shortcode_page ;
 	}
 return $retval ;
+}
+
+function bsp_pending_true () {
+	return true ;
 }

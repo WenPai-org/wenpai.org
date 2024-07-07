@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "gutena/tab",
+  "title": "Tab",
+  "category": "gutena",
+  "parent": [
+    "gutena/tabs"
+  ],
+  "description": "Gutena Tab",
+  "textdomain": "gutena-tab",
+  "supports": {
+    "html": false,
+    "ariaLabel": true,
+    "reusable": false,
+    "lock": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "tabId": {
+      "type": "integer"
+    },
+    "tabBorder": {
+      "type": "object",
+      "enable": false
+    },
+    "parentUniqueId": {
+      "type": "string"
+    },
+    "blockStyles": {
+      "type": "object"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

@@ -3,7 +3,7 @@ Contributors: robin-w, codejp3
 Tags: forum, bbpress, bbp, style
 Donate link: http://www.rewweb.co.uk/donate
 Tested up to: 6.5
-Stable tag: 6.0.5
+Stable tag: 6.0.6
 License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ To install this plugin :
 
 
 == Changelog ==
+
+= 6.0.6 =
+* Following release of bbPress 2.6.11 a modification is needed for those using the [bsp-moderation-pending] shortcode.
 
 = 6.0.5 =
 * I've fixed a small bug in the 6.0.4 realted to the new topic fields functionality.

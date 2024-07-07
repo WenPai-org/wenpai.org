@@ -1,0 +1,225 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "gutena/tabs",
+  "title": "Tabs",
+  "category": "gutena",
+  "description": "Gutena Tabs",
+  "keywords": [
+    "block",
+    "horizontal tab",
+    "responsive tabs",
+    "tabs",
+    "wordpress tabs"
+  ],
+  "textdomain": "gutena-tabs",
+  "supports": {
+    "__experimentalLayout": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "ariaLabel": true
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "tabCount": {
+      "type": "number",
+      "default": 3
+    },
+    "activeTab": {
+      "type": "number",
+      "default": 1
+    },
+    "titleTabs": {
+      "type": "array",
+      "default": [
+        {
+          "text": "Tab 1",
+          "icon": "wordpress-starFilled",
+          "iconSize": 22,
+          "iconPosition": "left"
+        },
+        {
+          "text": "Tab 2",
+          "icon": "wordpress-starFilled",
+          "iconSize": 22,
+          "iconPosition": "left"
+        },
+        {
+          "text": "Tab 3",
+          "icon": "wordpress-starFilled",
+          "iconSize": 22,
+          "iconPosition": "left"
+        }
+      ]
+    },
+    "tabPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "tabPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "8px",
+          "right": "15px",
+          "bottom": "8px",
+          "left": "15px"
+        }
+      }
+    },
+    "tabBorder": {
+      "type": "object",
+      "default": {
+        "normal": {
+          "border": {
+            "color": "#9d9d9d",
+            "style": "solid",
+            "width": "1px"
+          }
+        },
+        "hover": {
+          "border": {
+            "color": "#3f3b3b",
+            "style": "solid",
+            "width": "1px"
+          }
+        },
+        "active": {
+          "border": {
+            "color": "#3f3b3b",
+            "style": "solid",
+            "width": "1px"
+          }
+        }
+      }
+    },
+    "tabMinWidth": {
+      "type": "string",
+      "default": "40px"
+    },
+    "tabSpacing": {
+      "type": "string",
+      "default": "10px"
+    },
+    "tabAfterGap": {
+      "type": "string",
+      "default": "10px"
+    },
+    "tabBoxShadow": {
+      "type": "object",
+      "default": {
+        "normal": {
+          "onBoxShadow": false,
+          "blurRadius": "10px",
+          "inset": false,
+          "offsetX": "2px",
+          "offsetY": "5px",
+          "spreadRadius": "2px",
+          "color": "#08080821"
+        }
+      }
+    },
+    "tabColors": {
+      "type": "object"
+    },
+    "tabTitleFontFamily": {
+      "type": "object"
+    },
+    "tabTitleFontSize": {
+      "type": "string",
+      "default": "16px"
+    },
+    "tabTitleFontStyle": {
+      "type": "string"
+    },
+    "tabTitleFontWeight": {
+      "type": "string"
+    },
+    "tabTitleTextTransform": {
+      "type": "string",
+      "default": ""
+    },
+    "tabIcon": {
+      "type": "boolean"
+    },
+    "tabIconPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "tabIconSize": {
+      "type": "number",
+      "default": 22
+    },
+    "tabIconSpacing": {
+      "type": "number",
+      "default": 5
+    },
+    "tabContainerBorder": {
+      "type": "object",
+      "default": {
+        "normal": {
+          "border": {
+            "color": "#9d9d9d",
+            "style": "solid",
+            "width": "1px"
+          }
+        },
+        "hover": {
+          "border": {
+            "color": "#9d9d9d",
+            "style": "solid",
+            "width": "1px"
+          }
+        }
+      }
+    },
+    "tabContainerPadding": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "top": "20px",
+          "bottom": "20px",
+          "left": "20px",
+          "right": "20px"
+        }
+      }
+    },
+    "tabContainerBoxShadow": {
+      "type": "object",
+      "default": {
+        "normal": {
+          "onBoxShadow": false,
+          "blurRadius": "10px",
+          "inset": false,
+          "offsetX": "2px",
+          "offsetY": "5px",
+          "spreadRadius": "2px",
+          "color": "#08080821"
+        }
+      }
+    },
+    "tabContainerColors": {
+      "type": "object"
+    },
+    "tabLayout": {
+      "type": "object",
+      "default": {
+        "desktop": "horizontal",
+        "tablet": "default",
+        "mobile": "default"
+      }
+    },
+    "blockStyles": {
+      "type": "object"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

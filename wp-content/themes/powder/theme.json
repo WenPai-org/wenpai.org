@@ -54,14 +54,24 @@
 			],
 			"gradients": [
 				{
-					"gradient": "linear-gradient(var(--wp--preset--color--base) 50%, var(--wp--preset--color--contrast) 50%)",
-					"name": "Base to Contrast",
-					"slug": "base-contrast"
+					"gradient": "linear-gradient(0deg, #6d28d9 0%, #8b5cf6 100%)",
+					"name": "Primary to Secondary",
+					"slug": "primary-secondary"
 				},
 				{
-					"gradient": "linear-gradient(var(--wp--preset--color--contrast) 50%, var(--wp--preset--color--base) 50%)",
-					"name": "Contrast to Base",
-					"slug": "contrast-base"
+					"gradient": "linear-gradient(0deg, #8b5cf6 0%, #6d28d9 100%)",
+					"name": "Secondary to Primary",
+					"slug": "secondary-primary"
+				},
+				{
+					"gradient": "linear-gradient(0deg, #c4b5fd 0%, #ede9fe 100%)",
+					"name": "Tertiary to Quaternary",
+					"slug": "tertiary-quaternary"
+				},
+				{
+					"gradient": "linear-gradient(0deg, #ede9fe 0%, #c4b5fd 100%)",
+					"name": "Quaternary to Tertiary",
+					"slug": "quaternary-tertiary"
 				}
 			],
 			"palette": [
@@ -199,12 +209,6 @@
 			"fontSizes": [
 				{
 					"fluid": false,
-					"name": "Tiny",
-					"size": "14px",
-					"slug": "tiny"
-				},
-				{
-					"fluid": false,
 					"name": "xSmall",
 					"size": "16px",
 					"slug": "x-small"
@@ -247,9 +251,9 @@
 						"min": "30px",
 						"max": "36px"
 					},
-					"name": "36px",
+					"name": "xxLarge",
 					"size": "36px",
-					"slug": "max-36"
+					"slug": "xx-large"
 				},
 				{
 					"fluid": {
@@ -268,15 +272,6 @@
 					"name": "60px",
 					"size": "60px",
 					"slug": "max-60"
-				},
-				{
-					"fluid": {
-						"min": "48px",
-						"max": "72px"
-					},
-					"name": "72px",
-					"size": "72px",
-					"slug": "max-72"
 				}
 			]
 		},
@@ -323,7 +318,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--tiny)"
+					"fontSize": "var(--wp--preset--font-size--x-small)"
 				}
 			},
 			"core/comment-author-name": {
@@ -371,7 +366,7 @@
 				}
 			},
 			"core/post-comments-form": {
-				"css": " & input:not([type=submit]), textarea {border-color: var(--wp--preset--color--contrast); & input[type=submit] {width: auto;} & label {font-size: var(--wp--preset--font-size--small);}"
+				"css": " & input:not([type=submit]), textarea {border-color: var(--wp--preset--color--contrast) !important; & input[type=submit] {width: auto;}"
 			},
 			"core/post-excerpt": {
 				"css": "& .wp-block-post-excerpt__more-text {margin-top: var(--wp--preset--spacing--x-small);}"
@@ -401,7 +396,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--tiny)"
+					"fontSize": "var(--wp--preset--font-size--x-small)"
 				}
 			},
 			"core/pullquote": {
@@ -598,7 +593,7 @@
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--tiny)"
+					"fontSize": "var(--wp--preset--font-size--x-small)"
 				}
 			},
 			"heading": {

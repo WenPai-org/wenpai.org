@@ -9,8 +9,8 @@
 <div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--x-large);padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px">
 	<!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"constrained","wideSize":""}} -->
 	<div class="wp-block-group">
-		<!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400"}},"fontSize":"tiny"} -->
-		<p class="has-text-align-center has-tiny-font-size" style="font-style:normal;font-weight:400;text-transform:uppercase"><?php echo esc_html__( 'Meet Powder', 'powder' ); ?></p>
+		<!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} -->
+		<p class="has-text-align-center has-x-small-font-size" style="font-style:normal;font-weight:400;text-transform:uppercase"><?php echo esc_html__( 'Meet Powder', 'powder' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:heading {"textAlign":"center","fontSize":"max-60"} -->
 		<h2 class="wp-block-heading has-text-align-center has-max-60-font-size"><?php echo esc_html__( 'Are you ready to design with WordPress?', 'powder' ); ?></h2>
@@ -23,13 +23,13 @@
 		<div class="wp-block-column">
 			<!-- wp:cover {"overlayColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}}} -->
 			<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
-				<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"dimensions":{"minHeight":"400px"}},"borderColor":"base","textColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
-				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)">
-					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"x-large"} -->
-					<h3 class="wp-block-heading has-text-align-center has-x-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
+			<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"},"dimensions":{"minHeight":"400px"}},"textColor":"base","borderColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
+				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
+					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"large"} -->
+					<h3 class="wp-block-heading has-text-align-center has-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
 					<!-- /wp:heading -->
-					<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
-					<p class="has-text-align-center has-tiny-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
+					<!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
+					<p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -48,13 +48,13 @@
 		<div class="wp-block-column">
 			<!-- wp:cover {"overlayColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}}} -->
 			<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
-				<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"dimensions":{"minHeight":"400px"}},"borderColor":"base","textColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
-				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)">
-					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"x-large"} -->
-					<h3 class="wp-block-heading has-text-align-center has-x-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
+			<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"},"dimensions":{"minHeight":"400px"}},"textColor":"base","borderColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
+				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
+					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"large"} -->
+					<h3 class="wp-block-heading has-text-align-center has-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
 					<!-- /wp:heading -->
-					<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
-					<p class="has-text-align-center has-tiny-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
+					<!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
+					<p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -73,13 +73,13 @@
 		<div class="wp-block-column">
 			<!-- wp:cover {"overlayColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}}} -->
 			<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
-				<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"dimensions":{"minHeight":"400px"}},"borderColor":"base","textColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
-				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)">
-					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"x-large"} -->
-					<h3 class="wp-block-heading has-text-align-center has-x-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
+			<!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"},"dimensions":{"minHeight":"400px"}},"textColor":"base","borderColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
+				<div class="wp-block-group has-border-color has-base-border-color has-base-color has-text-color" style="border-width:1px;min-height:400px;padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
+					<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase","lineHeight":"1.2"}},"fontSize":"large"} -->
+					<h3 class="wp-block-heading has-text-align-center has-large-font-size" style="line-height:1.2;text-transform:uppercase"><?php echo esc_html__( 'Sample Title', 'powder' ); ?></h3>
 					<!-- /wp:heading -->
-					<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
-					<p class="has-text-align-center has-tiny-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
+					<!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
+					<p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( 'By: Brian Gardner', 'powder' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

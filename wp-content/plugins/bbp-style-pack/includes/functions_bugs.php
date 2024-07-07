@@ -10,6 +10,7 @@ defined( 'ABSPATH' ) || exit;
 //https://bbpress.trac.wordpress.org/ticket/3327
 
 global $bsp_style_settings_bugs ;
+global $bsp_bbpress_full_version ;
 
 if ( !empty ($bsp_style_settings_bugs['activate_threaded_replies'])) {
         add_action( 'wp_print_scripts', 'bsp_dequeue_reply', 100 );
@@ -430,9 +431,10 @@ function bsp_correct_untrash_status ($new_status, $post_id, $previous_status) {
 return $new_status ;
 }
 
-/*  *****************fix search showing hidden forums */
-
+/*  *****************fix search showing hidden forums for earlier versions*/
+if ($bsp_bbpress_full_version != '2.6.10' || $bsp_bbpress_full_version != '2.6.11') {
 add_filter ('bbp_after_has_search_results_parse_args', 'bsp_search_hide_hidden_forums') ;
+}
 
 function bsp_search_hide_hidden_forums ($args) {
 	/*mods and above get permissions to see all from line 50 of \bbpress\includes\search/template.php which sets a list of $default['post_status']

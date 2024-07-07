@@ -31,3 +31,10 @@ add_filter( 'meta_field_block_get_block_content', function ( $block_content, $at
 
 	return $block_content;
 }, 10, 5 );
+
+
+// 前台调用 Dashicons 图标
+add_action( 'wp_enqueue_scripts', 'dashicons_style_front_end' );
+function dashicons_style_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}

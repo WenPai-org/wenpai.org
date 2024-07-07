@@ -40,7 +40,7 @@
 		<!-- /wp:buttons -->
 		<!-- wp:social-links {"iconColor":"base","iconColorValue":"#ffffff","openInNewTab":true,"size":"has-normal-icon-size","align":"center","className":"has-icon-base-color is-style-outline","layout":{"type":"flex","justifyContent":"center"}} -->
 		<ul class="wp-block-social-links aligncenter has-normal-icon-size has-icon-color has-icon-base-color is-style-outline">
-			<!-- wp:social-link {"url":"https://twitter.com/","service":"x"} /-->
+			<!-- wp:social-link {"url":"https://x.com/","service":"x"} /-->
 			<!-- wp:social-link {"url":"https://www.linkedin.com/","service":"linkedin"} /-->
 			<!-- wp:social-link {"url":"https://instagram.com/","service":"instagram"} /-->
 			<!-- wp:social-link {"url":"https://www.facebook.com/","service":"facebook"} /-->

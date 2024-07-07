@@ -12,11 +12,10 @@ add_action( 'wp_enqueue_scripts', function () {
 } );
 
 
-// load_dashicons
-
+// 前台调用 Dashicons 图标
 add_action( 'wp_enqueue_scripts', 'dashicons_style_front_end' );
 function dashicons_style_front_end() {
-	wp_enqueue_style( 'dashicons' );
+  wp_enqueue_style( 'dashicons' );
 }
 
 
