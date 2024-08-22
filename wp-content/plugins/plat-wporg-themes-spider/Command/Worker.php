@@ -448,6 +448,10 @@ class Worker extends WP_CLI_Command {
 
 		switch_to_blog( SITE_ID_FORUM );
 		require_once WP_PLUGIN_DIR . '/bbpress/bbpress.php';
+		// 需要假装已经注册了 forum 文章类型
+		if ( ! post_type_exists( bbp_get_forum_post_type() ) ) {
+			bbp_register_post_types();
+		}
 
 		$existing_forum = get_posts( array(
 			'post_type'      => bbp_get_forum_post_type(),
