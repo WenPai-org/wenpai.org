@@ -1,9 +1,9 @@
 # User Switching
 
-Stable tag: 1.7.3  
-Tested up to: 6.4  
+Stable tag: 1.8.0  
+Tested up to: 6.6  
 License: GPL v2 or later  
-Tags: users, user switching, fast user switching, multisite, woocommerce, buddypress, bbpress  
+Tags: users, user switching, fast user switching, multisite, woocommerce  
 Contributors: johnbillion  
 Donate link: https://github.com/sponsors/johnbillion
 
@@ -39,6 +39,7 @@ Note: User Switching supports versions of WordPress up to three years old, and P
  * Implements the nonce security system in WordPress, meaning only those who intend to switch users can switch.
  * Full support for user session validation where appropriate.
  * Full support for HTTPS.
+ * Backed by [the Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/user-switching)
 
 ### Usage
 
@@ -102,7 +103,7 @@ Yes, and you'll also be able to switch users from the Users screen in Network Ad
 
 ### Does this plugin work with WooCommerce?
 
-Yes, and you'll also be able to switch users from various WooCommerce administration screens.
+Yes, and you'll also be able to switch users from various WooCommerce administration screens while logged in as a Shop Manager or an administrative user.
 
 ### Does this plugin work with BuddyPress?
 
@@ -160,7 +161,10 @@ add_filter( 'user_has_cap', function( $allcaps, $caps, $args, $user ) {
 }, 9, 4 );
 ~~~
 
-Note that this needs to happen before User Switching's own capability filtering, hence the priority of `9`.
+Notes:
+
+* This needs to happen before User Switching's own capability filtering, hence the priority of `9`.
+* The ID of the target user can be found in `$args[2]`.
 
 ### Can I add a custom "Switch To" link to my own plugin or theme?
 
@@ -179,7 +183,28 @@ if ( method_exists( 'user_switching', 'maybe_switch_url' ) ) {
 }
 ~~~
 
-This link also works for switching back to the original user, but if you want an explicit link for this you can use the following code:
+If you want to specify the URL that the user gets redirected to after switching, add a `redirect_to` parameter to the URL like so:
+
+~~~php
+if ( method_exists( 'user_switching', 'maybe_switch_url' ) ) {
+	$url = user_switching::maybe_switch_url( $target_user );
+	if ( $url ) {
+		// Redirect to the home page after switching:
+		$redirect_to = home_url();
+		printf(
+			'<a href="%1$s">Switch to %2$s</a>',
+			esc_url( add_query_arg(
+				'redirect_to',
+				rawurlencode( $redirect_to ),
+				$url
+			) ),
+			esc_html( $target_user->display_name )
+		);
+	}
+}
+~~~
+
+The above code also works for displaying a link to switch back to the original user, but if you want an explicit link for this you can use the following code:
 
 ~~~php
 if ( method_exists( 'user_switching', 'get_old_user' ) ) {
@@ -216,9 +241,9 @@ You can install an audit trail plugin such as [Simple History](https://wordpress
 
 Potentially yes, but User Switching includes some safety protections for this and there are further precautions you can take as a site administrator:
 
+* You can install an audit trail plugin such as [Simple History](https://wordpress.org/plugins/simple-history/), [WP Activity Log](https://wordpress.org/plugins/wp-security-audit-log/), or [Stream](https://wordpress.org/plugins/stream/), all of which have built-in support for User Switching and all of which log an entry when a user switches into another account.
 * User Switching stores the ID of the originating user in the new WordPress user session for the user they switch to. Although this session does not persist by default when they subsequently switch back, there will be a record of this ID if your database server has query logging enabled.
 * User Switching stores the login name of the originating user in an authentication cookie (see the Privacy Statement for more information). If your server access logs store cookie data, there will be a record of this login name (along with the IP address) for each access request.
-* You can install an audit trail plugin such as [Simple History](https://wordpress.org/plugins/simple-history/), [WP Activity Log](https://wordpress.org/plugins/wp-security-audit-log/), or [Stream](https://wordpress.org/plugins/stream/), all of which have built-in support for User Switching and all of which log an entry when a user switches into another account.
 * User Switching triggers an action when a user switches account, switches off, or switches back (see below). You can use these actions to perform additional logging for safety purposes depending on your requirements.
 
 One or more of the above should allow you to correlate an action with the originating user when a user switches account, should you need to.
@@ -304,11 +329,20 @@ In addition, User Switching respects the following filters from WordPress core w
 * `login_redirect` when switching to another user.
 * `logout_redirect` when switching off.
 
+### How can I report a security bug?
+
+[You can report security bugs through the official User Switching Vulnerability Disclosure Program on Patchstack](https://patchstack.com/database/vdp/user-switching). The Patchstack team helps validate, triage, and handle any security vulnerabilities.
+
 ### Do you accept donations?
 
 [I am accepting sponsorships via the GitHub Sponsors program](https://github.com/sponsors/johnbillion) and any support you can give will help me maintain this plugin and keep it free for everyone.
 
 ## Changelog ##
+
+### 1.8.0 (22 July 2024) ###
+
+* Adds a 'Switch back' link to some access denied messages within the admin area.
+* Confirms support for WordPress 6.6.
 
 ### 1.7.3 (21 February 2024) ###
 
@@ -388,106 +422,6 @@ In addition, User Switching respects the following filters from WordPress core w
 * Add support for forgetting WooCommerce sessions when switching between users. Requires WooCommerce 3.6+.
 
 
-### 1.4.2 (13 February 2019) ###
+### Earlier versions ###
 
-* Don't attempt to add the `Switch To` link to the admin toolbar when viewing an author archive in the admin area. This prevents a fatal error occurring when filtering custom post type listing screens by authors in the admin area.
-
-### 1.4.1 (2 February 2019) ###
-
-* Add a `Switch To` link to the Edit User admin toolbar menu when viewing an author archive.
-* Add a `Switch back` link to the Edit User admin toolbar menu when viewing an author archive and you're already switched.
-
-### 1.4.0 (17 September 2018) ###
-
-* Add support for user session retention, reuse, and destruction when switching to and back from other user accounts.
-* Add support for the `switch_users` meta capability for fine grained control over the ability to switch user accounts.
-* More code and documentation quality improvements.
-
-### 1.3.1 (24 May 2018) ###
-
-* Add support for the `X-Redirect-By` header in WordPress 5.0.
-* Allow User Switching's admin notices to be dismissed.
-* Introduce a privacy statement.
-
-
-### 1.3.0 (9 November 2017) ###
-
-* Update the BuddyPress compatibility.
-* Various code and inline docs improvements.
-
-
-### 1.2.0 (29 September 2017) ###
-
-* Improve the Switch Back functionality when the interim login window is shown.
-* Always show the `Switch Back` link in the Meta widget if it's present.
-
-
-### 1.1.0 (7 September 2017) ###
-
-* Introduce a `user_switching_switched_message` filter to allow customisation of the message displayed to switched users in the admin area.
-* Switch to safe redirects for extra paranoid hardening.
-* Docblock improvements.
-* Coding standards improvements.
-
-### 1.0.9 (14 July 2016) ###
-
-- Remove the bundled languages in favour of language packs from translate.wordpress.org.
-
-
-### 1.0.8 (14 July 2016) ###
-
-- Chinese (Taiwan) and Czech translations.
-- Updated Dutch, Spanish, Hebrew, and German translations.
-- Add an ID attribute to the links that User Switching outputs on the WordPress login screen, BuddyPress screens, and bbPress screens.
-- Avoid a deprecated argument notice when the `user-actions` admin toolbar node has been removed.
-
-
-### 1.0.7 (14 July 2016) ###
-
-- Azerbaijani, Danish, and Bosnian translations.
-- Add back the 'User Switching' heading on the user profile screen.
-- Correct the value passed to the `$old_user_id` parameter of the `switch_back_user` hook when a user has been switched off. This should be boolean `false` rather than `0`.
-- Docblocks for actions and filters.
-- More code standards tweaks.
-
-
-### 1.0.6 (14 July 2016) ###
-
-- Correct the values passed to the `switch_back_user` action when a user switches back.
-- More code standards tweaks.
-
-
-### 1.0.5 (14 July 2016) ###
-
-- Norwegian translation by Per Søderlind.
-- Code standards tweaks.
-
-
-### 1.0.4 (14 July 2016) ###
-
-- Support for the new `logout_redirect` and `removable_query_args` filters in WordPress 4.2.
-
-
-### 1.0.3 (14 July 2016) ###
-
-- Croation translation by Ante Sepic.
-- Avoid PHP notices caused by other plugins which erroneously use boolean `true` as a capability.
-
-
-### 1.0.2 (14 July 2016) ###
-
-- Turkish translation by Abdullah Pazarbasi.
-- Romanian translation by ArianServ.
-- Dutch translation by Thom.
-- Greek translation by evigiannakou.
-- Bulgarian translation by Petya Raykovska.
-- Finnish translation by Sami Keijonen.
-- Italian translation by Alessandro Curci and Alessandro Tesoro.
-- Updated Arabic, Spanish, German, and Polish translations.
-
-
-### 1.0.1 (14 July 2016) ###
-
-- Shorten the names of User Switching's cookies to avoid problems with Suhosin's over-zealous default rules.
-- Add backwards compatibility for the deprecated `OLDUSER_COOKIE` constant.
-
+For the changelog of earlier versions, <a href="https://github.com/johnbillion/user-switching/releases">please refer to the releases page on GitHub</a>.

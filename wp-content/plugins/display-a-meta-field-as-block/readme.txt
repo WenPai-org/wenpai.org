@@ -3,9 +3,9 @@ Contributors: Mr2P, freemius
 Donate link:       https://metafieldblock.com?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=MFB+Donate
 Tags:              custom field, meta field, ACF custom field, block, Gutenberg
 Requires PHP:      7.4
-Requires at least: 6.3
-Tested up to:      6.5
-Stable tag:        1.2.11
+Requires at least: 6.5
+Tested up to:      6.6
+Stable tag:        1.3.0
 License:           GPL-3.0
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -319,6 +319,30 @@ There is a chance that your meta value contains some HTML tags or HTML attribute
 3. Enable `Show in REST API` ACF setting
 
 == Changelog ==
+
+= 1.3.0 =
+*Release Date - 05 August 2024*
+
+* Added    - (MFB Pro) Register custom bindings for heading and paragraph when displaying a text field as a heading or a paragraph block
+* Added    - (MFB Pro) Allow linking an image field to a custom URL from another field
+* Improved - (MFB Pro) Display dynamic value in the editor when displaying a field as a heading, paragraph, button, image, or video block
+* Improved - (MFB Pro) Allow displaying the value of URL, and email as button text when displaying them as a button
+* Fixed    - (MFB Pro) Expanding image is not getting dynamic value
+* Refactor - Replaced classnames with clsx
+* Refactor - Replace useSetting by useEttings
+* Updated  - Tested up to 6.5 for block bindings
+
+= 1.2.14 =
+*Release Date - 31 July 2024*
+
+* Improved - Escape the style attribute for prefix and suffix
+
+= 1.2.13 =
+*Release Date - 17 July 2024*
+
+* Improved - Ignore array and object fields from the list of suggested names in the meta field type
+* Improved - MFB Pro: Change the label with mailto prefix to the mail value
+* Updated  - Update Freemius SDK to 2.7.3
 
 = 1.2.11 =
 *Release Date - 06 June 2024*

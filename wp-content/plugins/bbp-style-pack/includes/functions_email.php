@@ -32,6 +32,26 @@ function bsp_no_reply ($no_reply) {
         return $no_reply ;
 }
 
+if (!empty ($bsp_style_settings_email['email_from_name'])) {
+add_filter ('bbp_subscription_mail_headers' , 'bsp_change_email_from_name', 10 , 1 ) ;
+}
+
+
+function bsp_change_email_from_name ($headers) {
+	global $bsp_style_settings_email ;
+	$name = 'From: ' . get_bloginfo( 'name' ) ;
+		foreach ($headers as $header=>$header_name) {	
+			if( strpos( $header_name, $name ) !== false)	{
+				//replace the site nane with the changed ;
+				$new_name = 'From: ' .$bsp_style_settings_email['email_from_name'] ;
+				// re Setup the From header
+				$headers[$header]  = str_replace($name,$new_name, $header_name);
+			}	
+		}
+return $headers ;		
+}
+
+
 function bsp_html_email () {
         add_filter( 'wp_mail_content_type', 'bsp_set_html_content_type' );
 }
@@ -196,10 +216,10 @@ function bsp_test_email ($input) {
 	if (!empty ($input['test_topic_email'] )) {
 	//set up the header
 		$no_reply   = bbp_get_do_not_reply_address();
-
-		// Setup "From" email address
 		$from_email = apply_filters( 'bbp_subscription_from_email', $no_reply );
-		$headers = array( 'From: ' . get_bloginfo( 'name' ) . ' <' . $from_email . '>' );
+		$name = (!empty($bsp_style_settings_email['email_from_name']) ? $bsp_style_settings_email['email_from_name']  : get_bloginfo( 'name' )) ;
+		// Setup "From" email address
+		$headers = array( 'From: ' . $name . ' <' . $from_email . '>' );
 		// Get email address of test user
 		$header_recip = (!empty($bsp_style_settings_email['test_email_address']) ? $bsp_style_settings_email['test_email_address']  : get_bloginfo('admin_email')) ;
 		$headers[] = 'Bcc: '.$header_recip ;
@@ -271,7 +291,9 @@ function bsp_test_email ($input) {
 
 		// Setup "From" email address
 		$from_email = apply_filters( 'bbp_subscription_from_email', $no_reply );
-		$headers = array( 'From: ' . get_bloginfo( 'name' ) . ' <' . $from_email . '>' );
+		$name = (!empty($bsp_style_settings_email['email_from_name']) ? $bsp_style_settings_email['email_from_name']  : get_bloginfo( 'name' )) ;
+		// Setup "From" email address
+		$headers = array( 'From: ' . $name . ' <' . $from_email . '>' );
 		// Get email address of test user
 		$header_recip = (!empty($bsp_style_settings_email['test_email_address']) ? $bsp_style_settings_email['test_email_address']  : get_bloginfo('admin_email')) ;
 		$headers[] = 'Bcc: '.$header_recip ;

@@ -1,9 +1,9 @@
 === Powder ===
 Contributors: bgardner
-Requires at least: 6.5
-Tested up to: 6.5.4
+Requires at least: 6.6
+Tested up to: 6.6.1
 Requires PHP: 7.0
-Stable tag: 1.1.7
+Stable tag: 1.2.1
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,6 +38,8 @@ Outfit Font
 The following images are self-designed and declared under GPL License, Version 3.0.
 License URL: https://www.gnu.org/licenses/gpl-3.0.html
 
+icon-quote-bottom.svg
+icon-quote-top.svg
 sample-avatar-dark.svg
 sample-avatar-light.svg
 sample-image-dark.svg
@@ -52,11 +54,15 @@ site-logo-light.svg
 The following icons are available through Google Material Icons and declared under Apache Open Source License, Version 2.0.
 License URL: https://www.apache.org/licenses/LICENSE-2.0
 
+icon-arrow.svg
 icon-arrow-dark.svg
 icon-arrow-light.svg
+icon-circle-bolt.svg
 icon-circle-bolt-dark.svg
 icon-circle-bolt-light.svg
+icon-circle-check.svg
 icon-circle-check-dark.svg
 icon-circle-check-light.svg
+icon-circle-x.svg
 icon-circle-x-dark.svg
 icon-circle-x-light.svg

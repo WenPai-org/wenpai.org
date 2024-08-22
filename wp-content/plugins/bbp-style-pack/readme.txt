@@ -2,8 +2,8 @@
 Contributors: robin-w, codejp3
 Tags: forum, bbpress, bbp, style
 Donate link: http://www.rewweb.co.uk/donate
-Tested up to: 6.5
-Stable tag: 6.0.6
+Tested up to: 6.6
+Stable tag: 6.0.8
 License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,12 @@ To install this plugin :
 
 
 == Changelog ==
+
+= 6.0.8 =
+* I've added the ability to change the 'from name' on subscription emails. See Subscription Emails tab item 1.
+
+= 6.0.7 =
+* I've added the ability to customise the 'create new reply' button with forum or topic name. See 'Topic/Reply Display' tab item 25.
 
 = 6.0.6 =
 * Following release of bbPress 2.6.11 a modification is needed for those using the [bsp-moderation-pending] shortcode.

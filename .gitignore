@@ -9,6 +9,7 @@
 /wp-content/plugins/powder-patterns/
 /wp-content/plugins/wp-oauth-server/
 /wp-content/plugins/ultimate-branding/
+/wp-content/plugins/mainwp-child/
 /*.php
 /readme.html
 !/wp-config-sample.php

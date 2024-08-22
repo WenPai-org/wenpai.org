@@ -1,14 +1,14 @@
 === The Icon Block ===
 Contributors:      ndiego, outermostdesign
 Tags:              icon, icon block, SVG, SVG block, block
-Requires at least: 6.3
-Tested up to:      6.5
-Requires PHP:      7.0
-Stable tag:        1.8.0
+Requires at least: 6.4
+Tested up to:      6.6
+Requires PHP:      7.4
+Stable tag:        1.9.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Effortlessly add SVG icons and graphics to the WordPress block editor.
+Easily add SVG icons and graphics to the WordPress block editor.
 
 == Description ==
 
@@ -16,7 +16,7 @@ The Icon Block plugin registers a single, easy-to-use block that allows you to a
 
 The plugin also includes the complete WordPress icon library with 290+ SVG icons.
 
-=== Key Features ===
+=== Key features ===
 
 * 290+ native WordPress icons, including social logos
 * Use any custom SVG icon or graphic
@@ -28,17 +28,17 @@ The plugin also includes the complete WordPress icon library with 290+ SVG icons
 * Will get additional functionality as it's added to WordPress core
 * Register your own custom icon library. [Learn more](https://nickdiego.com/adding-custom-icons-to-the-icon-block/)
 
-=== Stay Connected ===
+=== Stay connected ===
 
 * [View on GitHub](https://github.com/ndiego/icon-block)
 * [Visit plugin project page](https://nickdiego.com/projects/icon-block/)
-* [Follow on Twitter](https://twitter.com/theiconblock)
+* [Follow on Twitter](https://twitter.com/nickmdiego)
 
 == Installation ==
 
 1. You have a couple of options:
 	* Go to Plugins &rarr; Add New and search for "Icon Block". Once found, click "Install".
-	* Download the Icon Block from wordpress.org and make sure the folder is zipped. Then upload via Plugins &rarr; Add New &rarr; Upload.
+	* Download the Icon Block from WordPress.org and make sure the folder is zipped. Then upload via Plugins &rarr; Add New &rarr; Upload.
     * Open the block inserter within the Block Editor (Gutenberg) and search for "icon". The plugin should appear and allow you to install it directly. Skip steps 2 and 3.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Search for the block within the Block Editor (Gutenberg) and begin using it.
@@ -67,18 +67,41 @@ Note that WordPress multisite installations have additional restrictions. "Unfil
 
 == Screenshots ==
 
-1. The Icon Block includes the WordPress icon library, allowing you to insert 270+ graphics.
-2. Create your own custom icons by simply copying/pasting the SVG code. Then, modify the icon to suit your needs.
-3. The Icon Block includes icon controls such as color, rotation, alignment, padding, and border-radius.
-4. The Icon Block adapts to your layout, whether you need a big or small icon.
-5. Use the "quick inserter" to pick the WordPress icon you need.
-6. The WordPress icon library modal has categories, search, and preview size functionality.
-7. Custom icons are added via their own insertion modal with a large text area and the ability to preview the SVG code.
-8. You are not limited to traditional icons. Any SVG-based graphic will work as well. The block will respect any hard-coded color/fill values in the provided SVG.
+1. The Icon Block includes icon controls such as color, rotation, alignment, padding, and border-radius.
+2. The Icon Block adapts to your layout, whether you need a big or small icon.
+3. Use the "quick inserter" to pick the WordPress icon you need.
+4. The Icon Block includes the WordPress icon library, allowing you to insert 270+ graphics.
+5. Create your own custom icons by simply copying/pasting the SVG code. Then, modify the icon to suit your needs.
+6. You are not limited to traditional icons. Any SVG-based graphic will work as well. The block will respect any hard-coded color/fill values in the provided SVG.
 
 == Changelog ==
 
-+ 1.8.0 = 2024-03-24
+= 1.9.0 = 2024-07-20
+
+**Added**
+
+* Add support for `clientNavigation` interactivity, meaning that the Icon Block can now be placed in Query Loops with client-side navigation enabled.
+
+**Changed**
+
+* Update "Tested up to" to WordPress 6.6. 
+* Update minimum WordPress version to 6.4.
+* Update minimum PHP version 7.4.
+* Update the settings panel to use the `ToolsPanel` component, which is consistent with WordPress Core.
+* Update the Playground blueprint for the Live Preview.
+
+**Removed**
+
+* Remove the custom `OptionsPanel` component in favor of the Core `ToolsPanel` and `ToolsPanelItems` components.
+
+**Fixed**
+
+- Fix the bug causing icon categories to become unalphabetized after the search.
+- Fix text overflow bug caused by custom icon categories with long names.
+- Fix the bug where the icon color input would get duplicated when setting the icon label. This occurred when `blockInspectorTabs` was set to `false`.
+- Fix a typo in the "Justify Stretch" icon name.
+
+= 1.8.0 = 2024-03-24
 
 **Added**
 

@@ -45,18 +45,38 @@ function bsp_style_settings_email () {
                 $area1='_email_account' ;
                 $item1="bsp_style_settings_email[".$name.$area1."]" ;
                 $value1 = (!empty($bsp_style_settings_email[$name.$area1]) ? $bsp_style_settings_email[$name.$area1]  : $default_email) ;
+				$area2='_from_name' ;
+                $item2="bsp_style_settings_email[".$name.$area2."]" ;
+                $value2 = (!empty($bsp_style_settings_email[$name.$area2]) ? $bsp_style_settings_email[$name.$area2]  : '') ;
                 ?>
                 <tr>
 
                         <th>
                                 1. <?php echo $name1 ; ?>
                         </th>
-                        <td>
+						</tr>
+						<tr>
+                        <td valign="top">
+						<?php _e ('Email Address' , 'bbp-style-pack' ) ;?>
+						</td>
+						<td>
                                         <?php echo '<input id="'.$item1.'" class="large-text" name="'.$item1.'" type="text" value="'.esc_html( $value1 ).'"> <br>' ; ?> 
                                         <label class="description"><?php _e( 'By default bbpress sends an email using noreply@yoursite as both the sending and receiving email address.  Each subscriber is then blind copied in (bcc\'d ).				', 'bbp-style-pack' ); ?></label><br/>
                                         <label class="description"><?php _e( 'This means on topic or reply creation a single email is sent, which makes for fast processing', 'bbp-style-pack' ); ?></label><br/>
                                         <label class="description"><?php _e( 'You may wish to change this address in some cases, for instance if you are on a sub domain ' , 'bbp-style-pack' ); ?></label><br/>
-                                <label class="description"><?php _e( 'Many email sytems will reject emails which don\'t come from the site\'s domain so amend with care !' , 'bbp-style-pack' ); ?></label><br/>
+                                <label class="description"><?php _e( 'Many email sytems will reject emails which don\'t come from the site\'s domain or real email addresses so amend with care !' , 'bbp-style-pack' ); ?></label><br/>
+
+                        </td>
+                </tr>
+				<tr>
+                        <td valign="top">
+						<?php _e ('From Name' , 'bbp-style-pack' ) ;?>
+						</td>
+						<td>
+                                        <?php echo '<input id="'.$item2.'" class="large-text" name="'.$item2.'" type="text" value="'.esc_html( $value2 ).'"> <br>' ; ?> 
+                                        <label class="description"><?php _e( 'By default bbpress sends an email using your site title ie ', 'bbp-style-pack' ).bloginfo( 'name' ); ?></label><br/>
+                                        <label class="description"><?php _e( 'Leave blank, unless you wish to change this', 'bbp-style-pack' ); ?></label><br/>
+                                        <label class="description"><?php _e( 'Email sytems may reject emails which appear to be spoofing another site so amend with care !' , 'bbp-style-pack' ); ?></label><br/>
 
                         </td>
                 </tr>

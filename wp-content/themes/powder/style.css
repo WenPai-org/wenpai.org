@@ -4,16 +4,47 @@ Theme URI: https://powderwp.com/
 Author: Brian Gardner
 Author URI: https://briangardner.com/
 Description: Powder reclaims its minimalist roots by embracing simplicity and focusing on the purity of form and function. Its signature approach—inspired by the vibrant color palettes of Tailwind CSS—transcends conventional design standards and provides a canvas where creativity knows no bounds. Unlock the full potential of Powder with our All-Access plan, which features an extensive library of wireframe patterns and versatile templates, streamlining the development of WordPress websites.
-Requires at least: 6.5
-Tested up to: 6.5.4
+Requires at least: 6.6
+Tested up to: 6.6.1
 Requires PHP: 7.0
-Version: 1.1.7
+Version: 1.2.1
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: powder
 Tags: block-patterns, block-styles, custom-colors, custom-logo, custom-menu, e-commerce, editor-style, full-site-editing, one-column, style-variations, translation-ready, wide-blocks
 */
 
+
+/* Legacy Styles (Do not remove)
+---------------------------------------- */
+
+/* -- Spacing -- */
+
+:root {
+	--wp--preset--spacing--x-small: clamp(10px, 2vw, 20px);
+	--wp--preset--spacing--small: clamp(30px, 4vw, 40px);
+	--wp--preset--spacing--medium: clamp(40px, 6vw, 60px);
+	--wp--preset--spacing--large: clamp(50px, 8vw, 80px);
+	--wp--preset--spacing--x-large: clamp(60px, 10vw, 100px);
+}
+
+/* -- Font Size -- */
+
+.has-max-36-font-size {
+	font-size: clamp(24px, 3vw, 36px);
+}
+
+.has-max-48-font-size {
+	font-size: clamp(30px, 4vw, 48px);
+}
+
+.has-max-60-font-size {
+	font-size: clamp(36px, 5vw, 60px);
+}
+
+.has-max-72-font-size {
+	font-size: clamp(48px, 6vw, 72px);
+}
 
 /* Defaults
 ---------------------------------------- */
@@ -40,7 +71,7 @@ th {
 }
 
 *:not(.wp-block-code) > code {
-	background-color: var(--wp--preset--color--quaternary);
+	background-color: var(--wp--preset--color--neutral);
 	font-family: inherit;
 	font-size: var(--wp--preset--font-size--small);
 	font-weight: var(--wp--custom--font-weight--regular);
@@ -114,34 +145,17 @@ select {
 /* -- Navigation -- */
 
 .wp-block-navigation__responsive-container.is-menu-open {
-	padding: var(--wp--custom--spacing--gap);
+	padding: var(--wp--preset--spacing--40);
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
-	padding-top: var(--wp--custom--spacing--gap);
+	padding-top: var(--wp--preset--spacing--40);
 }
 
 .wp-block-navigation__responsive-container-close,
 .wp-block-navigation__responsive-container-open {
 	border: 1px solid currentColor;
 	padding: 2px;
-}
-
-/* -- Navigation Link -- */
-
-.wp-block-navigation-item.is-style-underline a::after {
-	background-color: currentcolor;
-	bottom: 0;
-	content: '';
-	height: 1px;
-	left: 0;
-	position: absolute;
-	transition: width 0.5s ease;
-	width: 0;
-}
-
-.wp-block-navigation-item.is-style-underline a:hover::after {
-	width: 100%;
 }
 
 /* -- Navigation Submenu -- */
@@ -205,12 +219,6 @@ select {
 	position: relative;
 }
 
-/* -- Pull -- */
-
-.is-style-pull-100 {
-	margin-top: -100px !important;
-}
-
 /* -- Z-Index -- */
 
 .is-style-negative-zindex {
@@ -219,18 +227,6 @@ select {
 
 .is-style-positive-zindex {
 	z-index: 99;
-}
-
-/* Effects
----------------------------------------- */
-
-/* -- Header -- */
-
-.js-enabled .site-header {
-	position: sticky;
-	top: 0;
-	transition: top 0.5s;
-	z-index: 100;
 }
 
 /* Media Queries

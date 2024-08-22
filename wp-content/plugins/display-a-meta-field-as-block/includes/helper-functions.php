@@ -342,7 +342,7 @@ if ( ! function_exists( __NAMESPACE__ . '\meta_field_block_build_prefix_suffix_s
 		}
 
 		if ( $style ) {
-			$style = ' style="' . $style . '"';
+			$style = ' style="' . esc_attr( $style ) . '"';
 		}
 
 		return $style;

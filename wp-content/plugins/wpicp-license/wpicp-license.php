@@ -7,7 +7,7 @@
  * Author URI: https://wpicp.com/
  * Text Domain: wpicp-license
  * Domain Path: /languages
- * Version: 1.2
+ * Version: 1.3.1
  * Network: True
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -86,10 +86,64 @@
          'wpicp_license_section'
      );
 
+     add_settings_field(
+         'wpicp_company',
+         __('Company Name', 'wpicp-license'),
+         'wpicp_company_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
+
+     add_settings_field(
+         'wpicp_email',
+         __('Report Email', 'wpicp-license'),
+         'wpicp_email_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
+
+     add_settings_field(
+         'wpicp_phone',
+         __('Complaint Hotline', 'wpicp-license'),
+         'wpicp_phone_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
+
+     add_settings_field(
+         'wpicp_edi',
+         __('EDI License Number', 'wpicp-license'),
+         'wpicp_edi_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
+
+     add_settings_field(
+         'wpicp_app',
+         __('APP License Number', 'wpicp-license'),
+         'wpicp_app_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
+
+     add_settings_field(
+         'wpicp_miniapp',
+         __('MiniAPP License Number', 'wpicp-license'),
+         'wpicp_miniapp_field_callback',
+         'wpicp_license_settings',
+         'wpicp_license_section'
+     );
 
      register_setting( 'wpicp_license_settings', 'wpicp_province' );
      register_setting( 'wpicp_license_settings', 'wpicp_wangan' );
      register_setting( 'wpicp_license_settings', 'wpicp_license' );
+     register_setting( 'wpicp_license_settings', 'wpicp_company');
+     register_setting( 'wpicp_license_settings', 'wpicp_email' );
+     register_setting( 'wpicp_license_settings', 'wpicp_phone' );
+     register_setting( 'wpicp_license_settings', 'wpicp_edi');
+     register_setting( 'wpicp_license_settings', 'wpicp_app');
+     register_setting( 'wpicp_license_settings', 'wpicp_miniapp');
+
  }
 
 
@@ -191,6 +245,47 @@ function wpicp_wangan_field_callback() {
 <?php
 }
 
+function wpicp_company_field_callback() {
+    $company = get_option('wpicp_company');
+    echo '<input type="text" id="wpicp_company" name="wpicp_company" value="' . esc_attr($company) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_company]</code>', 'wpicp-license' ) . '</p>';
+
+}
+
+function wpicp_email_field_callback() {
+    $company = get_option('wpicp_email');
+    echo '<input type="text" id="wpicp_email" name="wpicp_email" value="' . esc_attr($company) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_email]</code>', 'wpicp-license' ) . '</p>';
+
+}
+
+function wpicp_phone_field_callback() {
+    $company = get_option('wpicp_phone');
+    echo '<input type="text" id="wpicp_phone" name="wpicp_phone" value="' . esc_attr($company) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_phone]</code>', 'wpicp-license' ) . '</p>';
+
+}
+
+function wpicp_edi_field_callback() {
+    $edi = get_option('wpicp_edi');
+    echo '<input type="text" id="wpicp_edi" name="wpicp_edi" value="' . esc_attr($edi) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_edi]</code>', 'wpicp-license' ) . '</p>';
+
+}
+
+function wpicp_app_field_callback() {
+    $app = get_option('wpicp_app');
+    echo '<input type="text" id="wpicp_app" name="wpicp_app" value="' . esc_attr($app) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_app]</code>', 'wpicp-license' ) . '</p>';
+}
+
+function wpicp_miniapp_field_callback() {
+    $minipapp = get_option('wpicp_miniapp');
+    echo '<input type="text" id="wpicp_miniapp" name="wpicp_miniapp" value="' . esc_attr($minipapp) . '" />';
+    echo '<p class="description" style="font-size:13px;">' . __( 'Use the shortcode <code>[wpicp_miniapp]</code>', 'wpicp-license' ) . '</p>';
+
+}
+
 
 // Settings page callback
 function wpicp_license_settings_page() {
@@ -206,6 +301,18 @@ function wpicp_license_settings_page() {
     <?php
 }
 
+
+// Ensure this code runs after other plugins have loaded
+add_action('plugins_loaded', 'wpicp_sync_cn_settings');
+
+function wpicp_sync_cn_settings() {
+    if (get_option('wpicp_license') == '' && get_option('cn_icp') != '') {
+        update_option('wpicp_license', get_option('cn_icp'));
+    }
+    if (get_option('wpicp_wangan') == '' && get_option('cn_ga') != '') {
+        update_option('wpicp_wangan', get_option('cn_ga'));
+    }
+}
 
 
 ?>

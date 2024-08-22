@@ -1400,9 +1400,9 @@ function bsp_style_settings_t () {
 				<?php
 				$item =  'bsp_style_settings_t[new_reply_description]' ;
 				$item1 = (!empty($bsp_style_settings_t['new_reply_description']) ? $bsp_style_settings_t['new_reply_description'] : 'Create New Reply');
-				echo '<input id="'.$item.'" class="medium-text" name="'.$item.'" type="text" value="'.esc_html( $item1 ).'"<br>' ; ?> 
+				echo '<input id="'.$item.'" class="large-text" name="'.$item.'" type="text" value="'.esc_html( $item1 ).'"<br>' ; ?> 
 				<label class="description">
-					<?php _e( 'Text for button', 'bbp-style-pack' ); ?>
+					<?php _e( 'Text for button.  Allowable codes - {topic_name} {forum_name}', 'bbp-style-pack' ); ?>
 					</label>
 					<br/>
 			</td>

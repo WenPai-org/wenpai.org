@@ -478,6 +478,11 @@ function bsp_display_reply_button() {
 	global $bsp_style_settings_buttons;
 	if ( ! empty( $bsp_style_settings_t['new_reply_description'] ) ) $text = $bsp_style_settings_t['new_reply_description'];
 	else $text = __( 'Create New Reply', 'bbp-style-pack' );
+	$forum_title = bbp_get_topic_forum_title () ;
+	$topic_title = bbp_get_topic_title() ;
+	$text = str_replace( '{topic_name}',  $topic_title,  $text );
+	$text = str_replace( '{forum_name}',  $forum_title,  $text );
+	$text = apply_filters ('bsp_display_reply_button_text' , $text ) ;
 	$class = 'bsp_button1';
 	if ( ! empty( $bsp_style_settings_buttons['button_type'] ) && ! empty( $bsp_style_settings_buttons['Buttonclass'] ) ) {
                 if ( $bsp_style_settings_buttons['button_type'] == 2 ) $class = esc_attr( $bsp_style_settings_buttons['Buttonclass'] );
@@ -3838,7 +3843,7 @@ add_action( 'save_post', 'bsp_bulk_edit_save' );
 function bsp_bulk_edit_save( $post_id ){
 
 	// check bulk edit nonce
-	if ( ! wp_verify_nonce( $_REQUEST[ '_wpnonce' ], 'bulk-posts' ) ) {
+	if ( empty( wp_verify_nonce( $_REQUEST[ '_wpnonce' ], 'bulk-posts' ) )) {
 		return;
 	}
 

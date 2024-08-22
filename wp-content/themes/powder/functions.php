@@ -18,14 +18,11 @@ if ( ! function_exists( 'powder_setup' ) ) {
 		// Enqueue editor stylesheet.
 		add_editor_style( get_template_directory_uri() . '/style.css' );
 
-		// Disable core block inline styles.
-		add_filter( 'should_load_separate_core_block_assets', '__return_false' );
-
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
 
-		// Include admin notice.
-		require_once get_template_directory() . '/inc/admin-notice.php';
+		// Include theme settings.
+		require_once get_template_directory() . '/inc/theme-settings.php';
 
 	}
 }
@@ -38,9 +35,6 @@ function powder_enqueue_stylesheet_script() {
 
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'powder', get_template_directory_uri() . '/style.css', array(), wp_get_theme( 'powder' )->get( 'Version' ) );
-
-	// Enqueue theme script.
-	wp_enqueue_script( 'powder', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), '1.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'powder_enqueue_stylesheet_script' );
@@ -55,18 +49,13 @@ function powder_register_block_styles() {
 			'column-reverse' => __( 'Reverse', 'powder' ),
 		),
 		'core/cover' => array(
-			'gradient' => __( 'Gradient', 'powder' )
+			'gradient' => __( 'Gradient', 'powder' ),
 		),
 		'core/group' => array(
-			'shadow-faint' => __( 'Shadow (Faint)', 'powder' ),
-			'shadow-light' => __( 'Shadow (Light)', 'powder' ),
-			'shadow-solid' => __( 'Shadow (Solid)', 'powder' ),
+			'shadow-light' => __( 'Shadow', 'powder' ),
 		),
 		'core/list' => array(
 			'no-style' => __( 'No Style', 'powder' ),
-		),
-		'core/navigation-link' => array(
-			'underline' => __( 'Underline', 'powder' )
 		),
 		'core/social-links' => array(
 			'outline' => __( 'Outline', 'powder' ),

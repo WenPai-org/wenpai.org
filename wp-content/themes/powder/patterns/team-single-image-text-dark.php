@@ -5,9 +5,9 @@
  * Categories: powder-team
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Team Member"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"30px","right":"30px"},"margin":{"top":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained","wideSize":"960px"}} -->
-<div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color" style="margin-top:0;padding-top:var(--wp--preset--spacing--x-large);padding-right:30px;padding-bottom:var(--wp--preset--spacing--x-large);padding-left:30px">
-	<!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|medium"}}}} -->
+<!-- wp:group {"metadata":{"name":"Team Member"},"align":"full","className":"is-style-section-2","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","wideSize":"960px"}} -->
+<div class="wp-block-group alignfull is-style-section-2" style="margin-top:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+	<!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 	<div class="wp-block-columns are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"300px"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:300px">
@@ -16,7 +16,7 @@
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
-		<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}}} -->
+		<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 			<!-- wp:heading {"fontSize":"x-large"} -->
 			<h2 class="wp-block-heading has-x-large-font-size"><?php echo esc_html__( 'Jennifer Kayne', 'powder' ); ?></h2>
@@ -27,8 +27,8 @@
 			<!-- wp:paragraph -->
 			<p><?php echo esc_html__( 'Raised under the sunny skies of Laguna Beach, she channels her coastal upbringing into creative leadership at a cutting-edge design studio, focusing on distinctive branding and digital innovation.', 'powder' ); ?></p>
 			<!-- /wp:paragraph -->
-			<!-- wp:social-links {"iconColor":"base","iconColorValue":"#ffffff","openInNewTab":true,"size":"has-small-icon-size","style":{"spacing":{"blockGap":{"left":"5px"}}},"className":"is-style-outline"} -->
-			<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-outline">
+			<!-- wp:social-links {"openInNewTab":true,"size":"has-small-icon-size","className":"is-style-outline","style":{"spacing":{"blockGap":{"left":"5px"}}}} -->
+			<ul class="wp-block-social-links has-small-icon-size is-style-outline">
 				<!-- wp:social-link {"url":"https://x.com/","service":"x"} /-->
 				<!-- wp:social-link {"url":"https://www.linkedin.com/","service":"linkedin"} /-->
 				<!-- wp:social-link {"url":"https://instagram.com/","service":"instagram"} /-->
