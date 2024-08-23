@@ -147,7 +147,7 @@ class Super {
 				global $concatenate_scripts;
 				$concatenate_scripts = false;
 
-				$this->page_str_replace( 'preg_replace', [
+				$this->page_str_replace( 'init', 'preg_replace', [
 					'~' . home_url( '/' ) . '(wp-admin|wp-includes)/(css|js)/~',
 					sprintf( 'https://wpstatic.admincdn.com/%s/$1/$2/', $GLOBALS['wp_version'] )
 				] );
@@ -159,22 +159,17 @@ class Super {
 			 * 前台静态加速
 			 */
 			if ( ! empty( $this->settings['admincdn']['frontend'] ) ) {
-				add_action( 'template_redirect', function () {
-					ob_start( function ( $content ) {
-						$regex = '#(?<=[(\"\'])(?:' . quotemeta( home_url() ) . ')?/(?:((?:wp-content|wp-includes)[^\"\')]+\.(css|js)[^\"\')]+))(?=[\"\')])#';
-
-						return preg_replace_callback( $regex, function ( $asset ) {
-							return 'https://public.admincdn.com/' . $asset[0];
-						}, $content );
-					} );
-				} );
+				$this->page_str_replace( 'template_redirect', 'preg_replace', [
+					'#(?<=[(\"\'])(?:' . quotemeta( home_url() ) . ')?/(?:((?:wp-content|wp-includes)[^\"\')]+\.(css|js)[^\"\')]+))(?=[\"\')])#',
+					'https://public.admincdn.com/$0'
+				] );
 			}
 
 			/**
 			 * Google 字体替换
 			 */
 			if ( ! empty( $this->settings['admincdn']['googlefonts'] ) ) {
-				$this->page_str_replace( 'str_replace', [
+				$this->page_str_replace( 'init', 'str_replace', [
 					'fonts.googleapis.com',
 					'googlefonts.admincdn.com'
 				] );
@@ -184,7 +179,7 @@ class Super {
 			 * Google 前端公共库替换
 			 */
 			if ( ! empty( $this->settings['admincdn']['googleajax'] ) ) {
-				$this->page_str_replace( 'str_replace', [
+				$this->page_str_replace( 'init', 'str_replace', [
 					'ajax.googleapis.com',
 					'googleajax.admincdn.com'
 				] );
@@ -194,7 +189,7 @@ class Super {
 			 * CDNJS 前端公共库替换
 			 */
 			if ( ! empty( $this->settings['admincdn']['cdnjs'] ) ) {
-				$this->page_str_replace( 'str_replace', [
+				$this->page_str_replace( 'init', 'str_replace', [
 					'cdnjs.cloudflare.com/ajax/libs',
 					'cdnjs.admincdn.com'
 				] );
@@ -204,7 +199,7 @@ class Super {
 			 * jsDelivr 前端公共库替换
 			 */
 			if ( ! empty( $this->settings['admincdn']['jsdelivr'] ) ) {
-				$this->page_str_replace( 'str_replace', [
+				$this->page_str_replace( 'init', 'str_replace', [
 					'cdn.jsdelivr.net',
 					'jsd.admincdn.com'
 				] );
@@ -309,7 +304,11 @@ class Super {
 	 * WordPress 讨论设置中的默认 LOGO 名称替换
 	 */
 	public function set_defaults_for_cravatar( $avatar_defaults ) {
-		$avatar_defaults['gravatar_default'] = '初认头像';
+		if ( $this->settings['cravatar'] == 'weavatar' ) {
+			$avatar_defaults['gravatar_default'] = 'WeAvatar';
+		} else {
+			$avatar_defaults['gravatar_default'] = '初认头像';
+		}
 
 		return $avatar_defaults;
 	}
@@ -318,7 +317,11 @@ class Super {
 	 * 个人资料卡中的头像上传地址替换
 	 */
 	public function set_user_profile_picture_for_cravatar() {
-		return '<a href="https://cravatar.com" target="_blank">您可以在初认头像修改您的资料图片</a>';
+		if ( $this->settings['cravatar'] == 'weavatar' ) {
+			return '<a href="https://weavatar.com" target="_blank">您可以在 WeAvatar 修改您的资料图片</a>';
+		} else {
+			return '<a href="https://cravatar.com" target="_blank">您可以在初认头像修改您的资料图片</a>';
+		}
 	}
 
 	/**
@@ -327,13 +330,17 @@ class Super {
 	 * @param $replace_func string 要调用的字符串关键字替换函数
 	 * @param $param array 传递给字符串替换函数的参数
 	 */
-	private function page_str_replace( $replace_func, $param ) {
-		add_action( 'init', function () use ( $replace_func, $param ) {
+	private function page_str_replace( $hook, $replace_func, $param ) {
+		// CLI 下返回，防止影响缓冲区
+		if ( php_sapi_name() == 'cli' ) {
+			return;
+		}
+		add_action( $hook, function () use ( $replace_func, $param ) {
 			ob_start( function ( $buffer ) use ( $replace_func, $param ) {
 				$param[] = $buffer;
 
 				return call_user_func_array( $replace_func, $param );
 			} );
-		}, 999999 );
+		}, PHP_INT_MAX );
 	}
 }
