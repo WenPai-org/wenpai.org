@@ -27,8 +27,8 @@ class VersionCheck extends Base {
 		$plugin_info = array(
 			"name"            => "WP-China-Yes",
 			"slug"            => "wp-china-yes",
-			"version"         => "3.6.2",
-			"download_url"    => "https://dl1.weixiaoduo.com/2024/03/wp-china-yes-3.6.2.zip",
+			"version"         => "3.6.5",
+			"download_url"    => "https://dl1.weixiaoduo.com/2024/08/wp-china-yes-3.6.5.zip",
 			"homepage"        => "https://wp-china-yes.com",
 			"requires"        => "4.9",
 			"tested"          => "9.9.9",
