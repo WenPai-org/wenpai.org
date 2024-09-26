@@ -12,5 +12,7 @@
 /wp-content/plugins/mainwp-child/
 /*.php
 /readme.html
+/license.txt
+/robots.txt
 !/wp-config-sample.php
 .DS_Store
