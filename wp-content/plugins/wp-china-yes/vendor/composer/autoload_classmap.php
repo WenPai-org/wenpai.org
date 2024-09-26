@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'TheTNB\\Setting\\API' => $vendorDir . '/thetnb/wp-setting-api/src/API.php',
     'WenPai\\ChinaYes\\Plugin' => $baseDir . '/Plugin.php',
     'WenPai\\ChinaYes\\Service\\Base' => $baseDir . '/Service/Base.php',
     'WenPai\\ChinaYes\\Service\\Monitor' => $baseDir . '/Service/Monitor.php',

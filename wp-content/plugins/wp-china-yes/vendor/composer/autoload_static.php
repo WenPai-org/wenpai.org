@@ -9,16 +9,13 @@ class ComposerStaticInit19512e097932a150b6ccc5f8044c62ed
     public static $files = array (
         'd05ecc14ff93fd612a81ec7e8ab4c2c9' => __DIR__ . '/..' . '/yahnis-elsts/plugin-update-checker/load-v5p4.php',
         '8fe3f4dc59a946436862ea1c04431b07' => __DIR__ . '/../..' . '/helpers.php',
+        '2c184d590d9bd63b3951eff716f664d3' => __DIR__ . '/../..' . '/framework/classes/setup.class.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WenPai\\ChinaYes\\' => 16,
-        ),
-        'T' => 
-        array (
-            'TheTNB\\Setting\\' => 15,
         ),
     );
 
@@ -27,15 +24,10 @@ class ComposerStaticInit19512e097932a150b6ccc5f8044c62ed
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
-        'TheTNB\\Setting\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/thetnb/wp-setting-api/src',
-        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'TheTNB\\Setting\\API' => __DIR__ . '/..' . '/thetnb/wp-setting-api/src/API.php',
         'WenPai\\ChinaYes\\Plugin' => __DIR__ . '/../..' . '/Plugin.php',
         'WenPai\\ChinaYes\\Service\\Base' => __DIR__ . '/../..' . '/Service/Base.php',
         'WenPai\\ChinaYes\\Service\\Monitor' => __DIR__ . '/../..' . '/Service/Monitor.php',

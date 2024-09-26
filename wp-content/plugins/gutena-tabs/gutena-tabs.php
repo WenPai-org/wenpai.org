@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Gutena Tabs
  * Description:     Gutena Tabs is a simple and easy-to-use WordPress plugin which allows you to create beautiful tabs in your posts and pages. The plugin is simple to use but provides many customization options so you can create tabs that look great and fit into your design. Additionally, You can add beautiful icons to the tabs.
- * Version:         1.0.7
+ * Version:         1.0.8
  * Author:          ExpressTech
  * Author URI:      https://expresstech.io
  * License:         GPL-2.0-or-later
@@ -31,7 +31,7 @@ if ( ! class_exists( 'Gutena_Tabs' ) ) {
 		 *
 		 * @var string
 		 */
-		public $version = '1.0.7';
+		public $version = '1.0.8';
 
 		/**
 		 * Child Block styles.

@@ -1,0 +1,50 @@
+.simpletoc {
+	margin-bottom: 1em;
+}
+
+.simpletoc-collapsible {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	font-weight: 700;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.simpletoc-collapsible.active {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.simpletoc .active,
+.simpletoc-collapsible:hover {
+	background-color: #ddd;
+}
+
+.simpletoc-collapsible .simpletoc-icon::after {
+	content: "\02795"; /* Unicode character for "plus" sign (+) */
+	float: right;
+	margin-left: 5px;
+	font-size: 13px;
+}
+
+.simpletoc .active .simpletoc-icon::after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.simpletoc-content {
+	padding: 0;
+	background-color: #f1f1f1;
+	overflow: hidden;
+	transition: max-height 0.25s ease-in-out;
+	display: block; /* Ensure the content is set to display */
+	max-height: 0; /* Initial state for collapsed content */
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+

@@ -23,7 +23,7 @@ function auto_sso_init( $template ) {
 				'oauth'         => 'authorize',
 				'response_type' => 'code',
 				'client_id'     => $options['client_id'],
-				'client_secret' => $options['client_secret'],
+				//'client_secret' => $options['client_secret'],
 				'redirect_uri'  => site_url( '?auth=sso' ),
 				'state'         => urlencode( $last_page ),
 			);

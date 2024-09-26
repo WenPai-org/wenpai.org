@@ -2,8 +2,8 @@
 Contributors: expresstech, infosatech
 Tags: block, horizontal tab, responsive tabs, tabs, wordpress tabs
 Requires at least: 6.5
-Tested up to: 6.5
-Stable tag: 1.0.7
+Tested up to: 6.6
+Stable tag: 1.0.8
 Requires PHP: 5.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -66,6 +66,9 @@ If you like this plugin, consider exploring our other themes and plugins:
 1. Activate Gutena Tabs from your Plugins page.
 
 == Changelog ==
+
+= 1.0.8 ( 03rd September 2024 ) =
+* Fixed: Non FSE theme typography error
 
 = 1.0.7 ( 07 June 2024 ) =
 * Updated: setDeviceType function to preview responsive changes

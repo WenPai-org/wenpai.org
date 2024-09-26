@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'd05ecc14ff93fd612a81ec7e8ab4c2c9' => $vendorDir . '/yahnis-elsts/plugin-update-checker/load-v5p4.php',
     '8fe3f4dc59a946436862ea1c04431b07' => $baseDir . '/helpers.php',
+    '2c184d590d9bd63b3951eff716f664d3' => $baseDir . '/framework/classes/setup.class.php',
 );

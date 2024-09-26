@@ -1,0 +1,21 @@
+
+/*----------------------  Quotes Styling --------------------------*/
+
+	
+
+#bbpress-forums#bbpress-forums .bs-forums-items.list-view .bs-dropdown-wrap .bs-dropdown-wrap-inner > a {
+  float: none !important;
+}
+ 
+
+.bsp-admin-links-border-buddyboss {
+  font-size:19px;
+  color:#9ca8b4;
+  background-color:#fff;
+  padding:7px 6px 7px 6px  ;
+  border:1px solid #e7e9ec;
+  border-left-width:0;
+  border-radius:0 3px 3px 0;
+  font-weight:700;
+  margin:6px ;
+}

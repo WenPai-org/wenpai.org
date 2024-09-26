@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WenPai\\ChinaYes\\' => array($baseDir . '/'),
-    'TheTNB\\Setting\\' => array($vendorDir . '/thetnb/wp-setting-api/src'),
 );

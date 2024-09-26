@@ -30,7 +30,7 @@ if ( ! isset( $_GET['code'] ) ) {
 		'oauth'         => 'authorize',
 		'response_type' => 'code',
 		'client_id'     => wp_sso_get_option( 'client_id' ),
-		'client_secret' => wp_sso_get_option( 'client_secret' ),
+		//'client_secret' => wp_sso_get_option( 'client_secret' ),
 		'redirect_uri'  => site_url( '?auth=sso' ),
 		'state'         => $user_redirect
 	);

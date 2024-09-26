@@ -43,14 +43,6 @@
 			"duotone": [
 				{
 					"colors": [
-						"#ffffff",
-						"#ffffff"
-					],
-					"name": "White and White",
-					"slug": "white-and-white"
-				},
-				{
-					"colors": [
 						"#0a0a0a",
 						"#ffffff"
 					],
@@ -395,6 +387,9 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--x-small)"
 				}
+			},
+			"core/post-comments-form": {
+				"css": " & .form-submit {margin-bottom: 0;}"
 			},
 			"core/post-template": {
 				"spacing": {

@@ -36,8 +36,15 @@ add_filter( 'pre_http_request', function ( $preempt, $parsed_args, $url ) {
 	if ( wp_parse_url( $url, PHP_URL_HOST ) === 'duplicator.com' ) {
 		return new WP_Error( 'http_request_not_executed', '无用 URL 已屏蔽访问' );
 	}
+	if ( wp_parse_url( $url, PHP_URL_HOST ) === 'translations.duplicator.com' ) {
+		return new WP_Error( 'http_request_not_executed', '无用 URL 已屏蔽访问' );
+	}
 	// image-upload-for-bbpress-pro
 	if ( wp_parse_url( $url, PHP_URL_HOST ) === 'aspengrovestudios.com' ) {
+		return new WP_Error( 'http_request_not_executed', '无用 URL 已屏蔽访问' );
+	}
+	// GeneratePress
+	if ( wp_parse_url( $url, PHP_URL_HOST ) === 'generatepress.com' ) {
 		return new WP_Error( 'http_request_not_executed', '无用 URL 已屏蔽访问' );
 	}
 	// Woo 的 Feed
