@@ -10,8 +10,8 @@
 
 namespace Platform\API;
 
-const PLUGIN_FILE     = __FILE__;
-const PLUGIN_DIR      = __DIR__;
+const PLUGIN_FILE = __FILE__;
+const PLUGIN_DIR  = __DIR__;
 
 // 加载插件
 require_once( plugin_dir_path( __FILE__ ) . 'vendor/autoload.php' );
@@ -27,6 +27,8 @@ add_filter( 'jwt_auth_whitelist', function ( $endpoints ) {
 		'/wp-json/themes/*',
 		'/wp-json/plugins/*',
 		'/wp-json/core/*',
+		'/wp-json/patterns/*',
+		'/wp-json/translations/*',
 	);
 
 	return array_unique( array_merge( $endpoints, $your_endpoints ) );

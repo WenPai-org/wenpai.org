@@ -13,11 +13,11 @@ class Index extends Base {
 	public function __construct() {
 		register_rest_route( 'translations', '(?P<path>.+)', array(
 			'methods'  => WP_REST_Server::ALLMETHODS,
-			'callback' => array( $this, 'patterns' ),
+			'callback' => array( $this, 'translations' ),
 		) );
 	}
 
-	public function patterns( WP_REST_Request $request ): WP_REST_Response {
+	public function translations( WP_REST_Request $request ): WP_REST_Response {
 		$path = $request->get_param( 'path' );
 		$data = request_wporg( add_query_arg( $_GET, '/translations/' . $path ) );
 		if ( is_wp_error( $data ) ) {
