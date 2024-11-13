@@ -33,16 +33,12 @@
 
 ## 特殊信息
 
-平台使用了一些付费专业版插件，这部分插件我们无法开源，列表如下：
+平台使用了一些付费专业版插件，这部分插件我们无法提供，请自行购买，列表如下：
 
 | slug                         | 名称                           |
 |------------------------------|------------------------------|
 | better-search-replace-pro    | Better Search Replace Pro    |
-| duplicator-pro               | Duplicator Pro               |
-| image-upload-for-bbpress-pro | Image Upload for bbPress Pro |
 | object-cache-pro             | Object Cache Pro             |
-| wp-all-export-pro            | WP All Export Pro            |
-| powder-patterns              | Powder Patterns              |
 | wp-oauth-server              | WP OAuth Server - Pro        |
 | ultimate-branding            | Branda Pro                   |
 
