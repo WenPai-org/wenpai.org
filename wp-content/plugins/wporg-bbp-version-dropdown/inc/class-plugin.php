@@ -47,6 +47,10 @@ class Plugin {
 
 		// WordPress 版本号
 		add_filter( 'wporg_bbp_get_wp_versions', function ( $versions ) {
+			$versions['6.9'] = '6.9';
+			$versions['6.8'] = '6.8';
+			$versions['6.7'] = '6.7';
+			$versions['6.6'] = '6.6';
 			$versions['6.5'] = '6.5';
 			$versions['6.4'] = '6.4';
 			$versions['6.3'] = '6.3';

@@ -43,11 +43,13 @@ defined( 'ABSPATH' ) || exit;
 					<?php
 						if ( bbp_is_topic_edit() )
 							printf( 
+																/* translators: %s - topic_title */
                                                                 __( 'Now Editing &ldquo;%s&rdquo;', 'bbpress' ), 
                                                                 bbp_get_topic_title() 
                                                         );
 						else
 							bbp_is_single_forum() ? printf( 
+																/* translators: %s - forum_title */
                                                                 __( 'Create New Topic in &ldquo;%s&rdquo;', 'bbpress' ), 
                                                                 bbp_get_forum_title() 
                                                         ) : _e( 'Create New Topic', 'bbpress' );
@@ -86,6 +88,7 @@ defined( 'ABSPATH' ) || exit;
 					<p>
 						<label for="bbp_topic_title">
                                                         <?php printf( 
+																/* translators: %1s - topic_title max length*/
                                                                 __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), 
                                                                 bbp_get_title_max_length() 
                                                         ); ?>

@@ -203,10 +203,10 @@ class bspbbPressModToolsPlugin_bbPress extends bspbbPressModToolsPlugin {
 				));
 				$nonce_url = wp_nonce_url( $url, 'moderator_action', $this->plugin_slug . '-wp_nonce' );
 				//$confirm = '" onclick="return confirm(\'' . esc_js( esc_html__( 'Confirm you wish to block this user', 'cd' ) ). '\' );"' ;
-				$confirm =  esc_html__( 'Confirm you wish to ', 'cd' ). __( ucfirst( $action ) . ' User', 'bbp-style-pack') ;
+				$confirm =  esc_html__( 'Confirm you wish to ', 'cd' ). ucfirst( $action ) . esc_html__(' User', 'bbp-style-pack') ;
 				$confirm = esc_js( $confirm ) ; // '\' ) ;
 				$confirm = '" onclick="return confirm(\'' . $confirm. '\' );"' ;
-				$output .= '<li class="moderationlinks-block"><a href="' . $nonce_url . '" class="bbp-reply-edit-link"'.$confirm.'>' . __( ucfirst( $action ) . ' User', 'bbp-style-pack') . '</a></li>';
+				$output .= '<li class="moderationlinks-block"><a href="' . $nonce_url . '" class="bbp-reply-edit-link"'.$confirm.'>' . ucfirst( $action ) . esc_html__(' User', 'bbp-style-pack') . '</a></li>';
 			}
 
 			// Add a user moderation flag link

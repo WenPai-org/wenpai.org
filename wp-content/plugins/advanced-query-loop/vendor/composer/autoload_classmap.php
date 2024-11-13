@@ -8,7 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'AdvancedQueryLoop\\Query_Params_Generator' => $baseDir . '/includes/Query_Params_Generator.php',
     'AdvancedQueryLoop\\Traits\\Date_Query' => $baseDir . '/includes/Traits/Date_Query.php',
+    'AdvancedQueryLoop\\Traits\\Disable_Pagination' => $baseDir . '/includes/Traits/Disable_Pagination.php',
     'AdvancedQueryLoop\\Traits\\Exclude_Current' => $baseDir . '/includes/Traits/Exclude_Current.php',
+    'AdvancedQueryLoop\\Traits\\Exclude_Taxonomies' => $baseDir . '/includes/Traits/Exclude_Taxonomies.php',
     'AdvancedQueryLoop\\Traits\\Include_Posts' => $baseDir . '/includes/Traits/Include_Posts.php',
     'AdvancedQueryLoop\\Traits\\Meta_Query' => $baseDir . '/includes/Traits/Meta_Query.php',
     'AdvancedQueryLoop\\Traits\\Multiple_Posts' => $baseDir . '/includes/Traits/Multiple_Posts.php',

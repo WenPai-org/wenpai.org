@@ -9,13 +9,13 @@ const PLUGIN = 'plugins';
 const THEME = 'themes';
 
 function get_web_page_contents( $url ): WP_Error|bool|string {
-	$ch = curl_init();
+	/*$ch = curl_init();
 
 	curl_setopt( $ch, CURLOPT_URL, $url );
 	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
 	curl_setopt( $ch, CURLOPT_TIMEOUT, 60 );
 	curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
-	curl_setopt( $ch, CURLOPT_USERAGENT, 'WordPress/6.4.3; https://translate.wpmirror.com/' );
+	curl_setopt( $ch, CURLOPT_USERAGENT, 'WordPress/6.4.3; https://translate.wordpress.org/' );
 
 	$response = curl_exec( $ch );
 
@@ -29,7 +29,22 @@ function get_web_page_contents( $url ): WP_Error|bool|string {
 		return new WP_Error( 'http_request_error_404', '请求URL失败，返回状态码: ' . $status_code );
 	}
 
-	return $response;
+	return $response;*/
+	$response = wp_remote_get( $url, array(
+		'timeout'    => 60,
+		'sslverify'  => false,
+	) );
+
+	if ( is_wp_error( $response ) ) {
+		return $response;
+	}
+
+	$status_code = wp_remote_retrieve_response_code( $response );
+	if ( 200 !== $status_code ) {
+		return new WP_Error( 'http_request_error_404', '请求URL失败，返回状态码: ' . $status_code );
+	}
+
+	return wp_remote_retrieve_body( $response );
 }
 
 function create_project( string $name, string $slug, string $type, int $parent_project_id, string $parent_project_slug = '' ): int {

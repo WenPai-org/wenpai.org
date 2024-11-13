@@ -44,30 +44,31 @@ class Release extends WP_CLI_Command {
 			'body'    =>
 				array(
 					'name' => '主体',
-					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 大洲与城市
 			'cc'      =>
 				array(
 					'name' => '大洲与城市',
-					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/cc/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/cc/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 管理面板
 			'admin'   =>
 				array(
 					'name' => '管理',
-					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/admin/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/admin/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 			// 多站点网络管理面板
 			'network' =>
 				array(
 					'name' => '网络管理',
-					'url'  => sprintf( 'https://translate.wpmirror.com/projects/wp/%s/admin/network/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
+					'url'  => sprintf( 'https://translate.wordpress.org/projects/wp/%s/admin/network/zh-cn/default/export-translations/?filters[term]&filters[term_scope]=scope_any&filters[status]=current_or_waiting_or_fuzzy_or_untranslated&filters[user_login]&format=po', $version ),
 				),
 		);
 
 		foreach ( $sub_projects as $slug => $project ) {
 			$this->worker( $version, $old_version, $slug, $project['name'], $project['url'], $display_version );
+			sleep( 5 ); // 不加延迟现在会直接触发 429 制裁
 		}
 
 		WP_CLI::line( '恭喜你，执行成功' );
@@ -113,7 +114,7 @@ class Release extends WP_CLI_Command {
 		WP_CLI::line( 'URL: ' . $wporg_translate_url );
 		$data = get_web_page_contents( $wporg_translate_url );
 		if ( is_wp_error( $data ) ) {
-			WP_CLI::line( '翻译文件下载失败，子项目：' . $sub_project_name );
+			WP_CLI::line( '翻译文件下载失败，错误：' . $data->get_error_message() . '，子项目：' . $sub_project_name );
 			exit;
 		}
 

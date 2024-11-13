@@ -59,7 +59,7 @@ class UpdateCheck extends Base {
 		return new WP_REST_Response( $args );
 	}
 
-	private function prepare_params( array $params ): array {
+	private function prepare_params( mixed $params ): array {
 		$allowed = array(
 			'themes',
 			'translations'

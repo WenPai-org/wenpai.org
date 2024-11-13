@@ -32,6 +32,7 @@ function bsp_required_topic_field ($forum_id) {
 		if ($check == true) {
 			if (!empty($bsp_style_settings_topic_fields ['itemrequired_item'.$i]) && empty( $_POST['bsp_topic_fields_label'.$i])) {
 				$label =  $bsp_style_settings_topic_fields['item'.$i.'_label'] ;
+				/* translators: %1s - $label */
 				bbp_add_error( 'bbp_topic_fields_status', sprintf(__( '<strong>Error</strong>: Please complete the <strong>%1s</strong> field.', 'bbp-style-pack') , $label ));
 			}
 		}

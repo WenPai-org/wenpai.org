@@ -1271,7 +1271,9 @@ function bsp_style_settings_t () {
 				_e ('Default' , 'bbp-style-pack' ) ; ?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>Whether the links open in a new window will depend on how the author added the link</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'Whether the links open in a new window will depend on how the author added the link' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 		</tr>
@@ -1286,7 +1288,9 @@ function bsp_style_settings_t () {
 				_e ('All Links to open in new window' , 'bbp-style-pack' ) ; ?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>This should make all links open in a new window</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'This should make all links open in a new window' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 				
 			</td>

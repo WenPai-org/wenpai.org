@@ -55,7 +55,8 @@ class bspbbPressModToolsPlugin_Report extends bspbbPressModToolsPlugin {
 
 			foreach ( $report_types as $type => $count ) {
 
-				$notices .= '<div class="bbp-mt-template-notice">' . __( $count . ' users reported this as ' . $type . '.', 'bbp-style-pack' ) . '</div>';
+				$notices .= '<div class="bbp-mt-template-notice">' ; 
+				$notices .= $count . esc_html__( ' users reported this as ', 'bbp-style-pack') . $type . '.</div>';
 
 			}
 

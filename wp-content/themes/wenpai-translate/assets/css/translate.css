@@ -20,7 +20,7 @@ a:link, a:visited {
     color: #3858e9;
 }
 
-li>a:hover, p a:hover {
+li > a:hover, p a:hover {
     color: #22282d;
 }
 
@@ -42,17 +42,21 @@ li>a:hover, p a:hover {
     color: #3858e9;
     border: 1px solid #3858e9;
 }
+
 .gp-content .button:visited {
     color: #222;
     border: 1px solid #222;
-  }
+}
+
 .gp-content input[type=checkbox]::before, .gp-content input[type=radio]::before {
     box-shadow: inset 1rem 1rem #3858e9;
 }
+
 .gp-content input[type=number]:focus, .gp-content input[type=text]:focus, .gp-content textarea:focus {
     border-color: #3858e9;
     box-shadow: 0 0 0 1px #3858e9;
 }
+
 .gp-content input[type=checkbox]:focus, .gp-content input[type=radio]:focus {
     border-color: #3858e9;
     box-shadow: 0 0 0 1px #3858e9;
@@ -61,14 +65,17 @@ li>a:hover, p a:hover {
 .gp-content select:hover {
     color: #3858e9;
 }
+
 .gp-content select:focus {
     border-color: #3858e9;
     color: #3858e9;
     box-shadow: 0 0 0 1px #3858e9;
 }
+
 .gp-content .button.is-link {
     color: #222;
-  }
+}
+
 .gp-content .button:focus, .gp-content .button:hover {
     color: #3858e9;
     border-color: #3858e9;
@@ -81,6 +88,7 @@ li>a:hover, p a:hover {
     color: var(--gp-color-btn-primary-hover-text);
     box-shadow: 0 0 0 1px var(--gp-color-canvas-default), 0 0 0 2px #213fd4;
 }
+
 .editor-panel .textareas textarea {
     margin: 1% 0;
 }
@@ -88,9 +96,11 @@ li>a:hover, p a:hover {
 table.gp-table {
     margin: 2rem 0;
 }
+
 table.gp-table tfoot th, table.gp-table thead th {
     padding: .95em .75em;
 }
+
 table.gp-table tbody td, table.gp-table tbody th {
     padding: .95em .75em;
 }
@@ -104,10 +114,12 @@ table.gp-table tbody td, table.gp-table tbody th {
     padding-left: unset;
     justify-content: space-between;
 }
+
 .translation-wrapper:focus-within {
     box-shadow: 0 0 2px 1px #1640ff;
     border-color: #3858e9;
 }
+
 .translator-list {
     margin: 10px 0;
 }
@@ -299,6 +311,7 @@ span.page-numbers.current {
     min-width: 2em;
     padding: 8px;
 }
+
 a.page-numbers {
     background-color: #f9f9f9;
     cursor: hand;

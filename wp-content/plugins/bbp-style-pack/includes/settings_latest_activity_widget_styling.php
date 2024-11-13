@@ -52,7 +52,7 @@ function bsp_style_settings_la () {
 	<!--Font - Widget title  ------------------------------------------------------------------->
 		<tr>
 			<?php 
-			$name = __('Widget Title') ;
+			$name = 'Widget Title' ;
 			$name0 = __('Widget Title', 'bbp-style-pack') ;
 			$name1 = __('Size', 'bbp-style-pack') ;
 			$name2 = __('Color', 'bbp-style-pack') ;
@@ -137,7 +137,7 @@ function bsp_style_settings_la () {
 	<!--Font - Topic/reply title  ------------------------------------------------------------------->
 		<tr>
 			<?php 
-			$name = __('Topic Title') ;
+			$name = 'Topic Title' ;
 			$name0 = __('Topic/Reply Title', 'bbp-style-pack') ;
 			$name1 = __('Size', 'bbp-style-pack') ;
 			$name3 = __('Font', 'bbp-style-pack') ;

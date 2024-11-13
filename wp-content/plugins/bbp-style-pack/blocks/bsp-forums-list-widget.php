@@ -50,7 +50,7 @@ if (!$check) return ;
 		
 		if ( !empty( $attributes['title'] ) ) {
 	
-			echo '<span class="bsp-fl-title"><h3 class="widget-title bsp-widget-title">' .  $attributes['title']  . '</h3></span>' ;
+			echo '<span class="bsp-fl-title"><h3 class="widget-title bsp-widget-title">' . esc_html($attributes['title'])  . '</h3></span>' ;
 		} 
 		
 		do_action ('bsp_forums_list_after_title') ;

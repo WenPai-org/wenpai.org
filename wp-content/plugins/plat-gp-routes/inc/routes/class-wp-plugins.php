@@ -151,7 +151,7 @@ class WP_Plugins extends WP_Directory {
 
 		$json = wp_remote_retrieve_body(
 			wp_safe_remote_get(
-				"https://api.wpmirror.com/translations/plugins/1.0/?slug={$project_slug}",
+				"https://api.wordpress.org/translations/plugins/1.0/?slug={$project_slug}",
 				array(
 					'user-agent' => 'WordPress.org Translate',
 				)

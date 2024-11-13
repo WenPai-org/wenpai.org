@@ -83,22 +83,22 @@ function bsp_style_settings_forum_order () {
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="2" class="code"  ' . checked( 2,$value2, false ) . ' />' ;
 				_e ('Freshness' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_forum_description]"><?php _e( '<i>Display forums in the order of recent topics/replies so the most recent active forum appears at the top etc.</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_forum_description]"><i><?php _e( 'Display forums in the order of recent topics/replies so the most recent active forum appears at the top etc.', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 				<P>
-					<label class="description" for="bsp_settings[new_forum_description]"><?php _e( '<i>Note : Any forums with no topics will display at the top, so you might want to post a starter topic in any new forum</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_forum_description]"><i><?php _e( 'Note : Any forums with no topics will display at the top, so you might want to post a starter topic in any new forum', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="3" class="code"  ' . checked( 3,$value2, false ) . ' />' ;
 				_e ('Date Forum Created - newest at top' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_forum_description]"><?php _e( '<i>Display forums in the order the forum was created, newest at the top.</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_forum_description]"><i><?php _e( 'Display forums in the order the forum was created, newest at the top.', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="4" class="code"  ' . checked( 4,$value2, false ) . ' />' ;
 				_e ('Date Forum Created - oldest at top' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_forum_description]"><?php _e( '<i>Display forums in the order the forum was created, oldest at the top.</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_forum_description]"><i><?php _e( 'Display forums in the order the forum was created, oldest at the top.', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 								
 			</td>		

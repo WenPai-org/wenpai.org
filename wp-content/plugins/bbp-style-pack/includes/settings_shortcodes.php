@@ -7,10 +7,10 @@ defined( 'ABSPATH' ) || exit;
 function bsp_shortcodes_display() {
     
         // reused strings
-        $copy_message = __( 'Copy to clipboard', 'bbp_style_pack' );
-        $show_details_message = __( 'Show Details', 'bbp_style_pack' );
-        $hide_details_message = __( 'Hide Details', 'bbp_style_pack' );
-        $addtl_example_message = __( 'Additional Examples', 'bbp_style_pack' );
+        $copy_message = __( 'Copy to clipboard', 'bbp-style-pack' );
+        $show_details_message = __( 'Show Details', 'bbp-style-pack' );
+        $hide_details_message = __( 'Hide Details', 'bbp-style-pack' );
+        $addtl_example_message = __( 'Additional Examples', 'bbp-style-pack' );
 ?>
 
 
@@ -29,7 +29,7 @@ function bsp_shortcodes_display() {
                 <?php _e ( 'Additional Shortcodes' , 'bbp-style-pack' ) ; ?>
         </h3>
         <p>
-                <?php _e( 'Listed below are additional shortcodes available for use, provided by bbP Style Pack. You can use any of them that you want, as many times as you want, anywhere that shortcodes are allowed.', 'bbp_stylee_pack' ); ?>
+                <?php _e( 'Listed below are additional shortcodes available for use, provided by bbP Style Pack. You can use any of them that you want, as many times as you want, anywhere that shortcodes are allowed.', 'bbp-style-pack' ); ?>
         </p>
         <p style="padding-left:6px;">
                 * <a href="#display_latest_topics"><?php _e( 'Display Latest Topics', 'bbp-style-pack' ); ?></a><br/>
@@ -93,19 +93,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -113,19 +113,19 @@ function bsp_shortcodes_display() {
                                                         show
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - show bbPress setting for # of topics to display (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - show bbPress setting for # of topics to display (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'single integer - show specific # of topics', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'single integer - show specific # of topics', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         show="5"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'Limit total # of topics shown', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Limit total # of topics shown', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -133,16 +133,16 @@ function bsp_shortcodes_display() {
                                                         forum
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - show topics from all forums (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - show topics from all forums (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'single integer - show topics from a specific forum', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'single integer - show topics from a specific forum', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'comma separated integers - show topics from multiple specific forums', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'comma separated integers - show topics from multiple specific forums', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         forum="10"
@@ -151,18 +151,18 @@ function bsp_shortcodes_display() {
                                                         forum="10,11,12"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can limit topics to a single forum or multiple forums.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can limit topics to a single forum or multiple forums.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <?php echo sprintf(
                                                                 /* translators: %s is a URL */
-                                                                __( 'You will see at the bottom of the page %s', 'bbp_style_pack' ),
+                                                                __( 'You will see at the bottom of the page %s', 'bbp-style-pack' ),
                                                                 'http://www.mysite.com/wp-admin/post.php?post=10&action=edit'
                                                         ); ?>
                                                         <br/>
-                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -170,16 +170,16 @@ function bsp_shortcodes_display() {
                                                         template
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - show standard topics view template including breadcrumb/search, and topic count (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - show standard topics view template including breadcrumb/search, and topic count (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        short - <?php _e( 'show just the header and posts', 'bbp_style_pack' ); ?>
+                                                        short - <?php _e( 'show just the header and posts', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        list - <?php _e( 'show just a topic list (can be styled using the CSS class "bsp-list")', 'bbp_style_pack' ); ?>
+                                                        list - <?php _e( 'show just a topic list (can be styled using the CSS class "bsp-list")', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         template="short"
@@ -188,7 +188,7 @@ function bsp_shortcodes_display() {
                                                         template="list"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This allows you to change the template layout for the topics display.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This allows you to change the template layout for the topics display.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -196,19 +196,19 @@ function bsp_shortcodes_display() {
                                                         show_stickies
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - do not include sticky topics (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - do not include sticky topics (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        true - <?php _e( 'include sticky topics', 'bbp_style_pack' ); ?>
+                                                        true - <?php _e( 'include sticky topics', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         show_stickies="true"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This allows you to include sticky topics within the topics displayed.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This allows you to include sticky topics within the topics displayed.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -216,19 +216,19 @@ function bsp_shortcodes_display() {
                                                         noreply
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - include all topics, whther there\'s a reply or not (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - include all topics, whther there\'s a reply or not (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        true - <?php _e( 'only show topics with no replies', 'bbp_style_pack' ); ?>
+                                                        true - <?php _e( 'only show topics with no replies', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         noreply="true"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This allows you to include only topics that have not received a reply yet.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This allows you to include only topics that have not received a reply yet.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>
@@ -289,19 +289,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -309,13 +309,13 @@ function bsp_shortcodes_display() {
                                                         forum
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'yes', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'yes', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'single integer - specific forum ID to display', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'single integer - specific forum ID to display', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'comma separated integers - specific forum IDs to display, and their display order', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'comma separated integers - specific forum IDs to display, and their display order', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         forum="10"
@@ -324,18 +324,18 @@ function bsp_shortcodes_display() {
                                                         forum="2932,2922,2921"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You must specify a forum ID to display a single forum index, or multiple forum IDs separated with a comma to display multiple forum indexes. Multiple forum Indexes will be displayed in the order specified.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You must specify a forum ID to display a single forum index, or multiple forum IDs separated with a comma to display multiple forum indexes. Multiple forum Indexes will be displayed in the order specified.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <?php echo sprintf(
                                                                 /* translators: %s is a URL */
-                                                                __( 'You will see at the bottom of the page %s', 'bbp_style_pack' ),
+                                                                __( 'You will see at the bottom of the page %s', 'bbp-style-pack' ),
                                                                 'http://www.mysite.com/wp-admin/post.php?post=10&action=edit'
                                                         ); ?>
                                                         <br/>
-                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -343,19 +343,19 @@ function bsp_shortcodes_display() {
                                                         search
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - include the search within the display (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - include the search within the display (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        false - <?php _e( 'do not show the search within the display', 'bbp_style_pack' ); ?>
+                                                        false - <?php _e( 'do not show the search within the display', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         search="false"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can remove the built-in search from the forum index display.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can remove the built-in search from the forum index display.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -363,19 +363,19 @@ function bsp_shortcodes_display() {
                                                         breadcrumb
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - include the breadcrumbs within the display (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - include the breadcrumbs within the display (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        false - <?php _e( 'do not show the breadcrumbs within the display', 'bbp_style_pack' ); ?>
+                                                        false - <?php _e( 'do not show the breadcrumbs within the display', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         breadcrumb="false"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can remove the built-in breadcrumbs from the forum index display.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can remove the built-in breadcrumbs from the forum index display.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -383,19 +383,19 @@ function bsp_shortcodes_display() {
                                                         title
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - use the word "Forum" in the headings  (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - use the word "Forum" in the headings  (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'string - use the custom string in the headings', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'string - use the custom string in the headings', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         title="Featured Forums"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This allows you to change the default forum heading word from "Forum" to any string you want.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This allows you to change the default forum heading word from "Forum" to any string you want.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>
@@ -456,19 +456,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -476,19 +476,19 @@ function bsp_shortcodes_display() {
                                                         show
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - disply last 5 newest users (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - disply last 5 newest users (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'single integer - specific number of new users to display', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'single integer - specific number of new users to display', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         show="25"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can display the last X newest users to register to the site. The last 5 newest members will be shown by default unless you specificy a different number.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can display the last X newest users to register to the site. The last 5 newest members will be shown by default unless you specificy a different number.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>
@@ -549,19 +549,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -569,27 +569,27 @@ function bsp_shortcodes_display() {
                                                         forum
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'yes', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'yes', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'single integer - specific forum ID to display', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'single integer - specific forum ID to display', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         forum="2932"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You must specify a forum ID to display the subscriber count for that specific forum.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You must specify a forum ID to display the subscriber count for that specific forum.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'To find the ID of a forum(s) go into Dashboard > Forums.', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <?php echo sprintf(
                                                                 /* translators: %s is a URL */
-                                                                __( 'You will see at the bottom of the page %s', 'bbp_style_pack' ),
+                                                                __( 'You will see at the bottom of the page %s', 'bbp-style-pack' ),
                                                                 'http://www.mysite.com/wp-admin/post.php?post=10&action=edit'
                                                         ); ?>
                                                         <br/>
-                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'where post=10 is the ID number of the forum.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -597,19 +597,19 @@ function bsp_shortcodes_display() {
                                                         before
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - no text string before the number (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - no text string before the number (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'string - string to display before the subscriber count number', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'string - string to display before the subscriber count number', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         before="This forum has "
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can specific a specific string to be displayed before the number count with this option.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can specific a specific string to be displayed before the number count with this option.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -617,19 +617,19 @@ function bsp_shortcodes_display() {
                                                         after
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - no text string after the number (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - no text string after the number (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'string - string to display after the subscriber count number', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'string - string to display after the subscriber count number', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         after=" subscribers."
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'You can specific a specific string to be displayed after the number count with this option.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'You can specific a specific string to be displayed after the number count with this option.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>
@@ -690,19 +690,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -710,19 +710,19 @@ function bsp_shortcodes_display() {
                                                         label
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - displays "My Profile" as the link label (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - displays "My Profile" as the link label (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'string - custom string to display as the link label', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'string - custom string to display as the link label', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         label="Edit my profile"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This option allows you to overide the default link label "My Profile" with any string of your choice.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This option allows you to overide the default link label "My Profile" with any string of your choice.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                         <tr>
@@ -730,19 +730,19 @@ function bsp_shortcodes_display() {
                                                         edit
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - links to main view profile page (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - links to main view profile page (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        true - <?php _e( 'links to profile edit page', 'bbp_style_pack' ); ?>
+                                                        true - <?php _e( 'links to profile edit page', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         edit="true"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'By default, the profile link links to the main view profile page. You can override that here to force it to link to the profile edit page instead.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'By default, the profile link links to the main view profile page. You can override that here to force it to link to the profile edit page instead.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>
@@ -810,19 +810,19 @@ function bsp_shortcodes_display() {
                                 <tbody>
                                         <tr>
                                                 <th>
-                                                        <?php _e( 'Option', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Option', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Required', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Required', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Values', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Values', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Examples', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Examples', 'bbp-style-pack' ); ?>
                                                 </th>
                                                 <th>
-                                                        <?php _e( 'Description', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'Description', 'bbp-style-pack' ); ?>
                                                 </th>
                                         </tr>
                                         <tr>
@@ -830,19 +830,19 @@ function bsp_shortcodes_display() {
                                                         message
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'no', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'no', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'not set - just show the login widget without a message (default)', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'not set - just show the login widget without a message (default)', 'bbp-style-pack' ); ?>
                                                         <br/>
                                                         <br/>
-                                                        <?php _e( 'string - show custom message string with the login widget', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'string - show custom message string with the login widget', 'bbp-style-pack' ); ?>
                                                 </td>
                                                 <td>
                                                         message="You must be logged in to view the forums"
                                                 </td>
                                                 <td>
-                                                        <?php _e( 'This option allows you to display a custom message with the login widget to logged-out users.', 'bbp_style_pack' ); ?>
+                                                        <?php _e( 'This option allows you to display a custom message with the login widget to logged-out users.', 'bbp-style-pack' ); ?>
                                                 </td>
                                         </tr>
                                 </tbody>

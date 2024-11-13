@@ -73,13 +73,13 @@ function bsp_translation_settings() {
 				<tr>
 					<td width="50%">
 					<b>
-						<?php _e('Original word or phrase' , 'bbp-style-packs' ) ; ?>
+						<?php _e('Original word or phrase' , 'bbp-style-pack' ) ; ?>
 					</b>
 					</td>
 					
 					<td >
 					<b>
-						<?php _e('New word or phrase' , 'bbp-style-packs' ) ; ?>
+						<?php _e('New word or phrase' , 'bbp-style-pack' ) ; ?>
 					</b>
 					</td>
 				</tr>

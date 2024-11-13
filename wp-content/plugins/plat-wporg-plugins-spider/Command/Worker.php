@@ -294,7 +294,7 @@ class Worker extends WP_CLI_Command {
 			[ 'ID' => $post->ID ] );
 
 		// 创建论坛
-		$this->create_bbpress_forum_for_post( $post->ID );
+		//$this->create_bbpress_forum_for_post( $post->ID );
 
 		// 手工触发 save_post 钩子，以使诸如 EP 等插件监控到插件的更新
 		do_action( 'save_post', $post->ID, $post, true );
@@ -332,7 +332,7 @@ class Worker extends WP_CLI_Command {
 	 * @return bool|array
 	 */
 	private function fetch_remote_plugins( array $slugMap ): bool|array {
-		$url    = "https://api.wpmirror.com/plugins/info/1.2/";
+		$url    = "https://api.wordpress.org/plugins/info/1.2/";
 		$query  = "action=plugin_information&request[fields][short_description]=1&request[fields][downloaded]=1&request[fields][icons]=1&request[fields][contributors]=0&request[fields][versions]=0&request[slug]=";
 		$client = new Client( [ 'base_uri' => $url ] );
 

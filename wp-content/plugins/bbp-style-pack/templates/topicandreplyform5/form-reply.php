@@ -32,6 +32,7 @@ defined( 'ABSPATH' ) || exit;
 			<fieldset class="bbp-form">
 				<legend>
                                         <?php printf( 
+										 /* translators: %s is topic title */
                                                 __( 'Reply To: %s', 'bbpress' ), 
                                                 bbp_get_topic_title() 
                                         ); ?>

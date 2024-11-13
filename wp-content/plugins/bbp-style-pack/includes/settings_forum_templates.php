@@ -53,7 +53,9 @@ function bsp_forum_templates() {
 				_e ('Click to select' , 'bbp-style-pack' ) ;?>
 				<br>
 					<label class="description">
-						<?php _e( '<i>(You can set the sub forum display in the forum display tab)</i>' , 'bbp-style-pack' ); ?>
+						<i>
+						<?php _e( '(You can set the sub forum display in the forum display tab)' , 'bbp-style-pack' ); ?>
+						</i>
 					</label>
 			</td>
 			
@@ -123,7 +125,7 @@ function bsp_forum_templates() {
 			</td>
 			<td>
 				<?php echo '<input id="'.$item1.'" class="small-text" name="'.$item1.'" type="text" value="'.esc_html( $value1 ).'"<br/>' ; ?> 
-				<label class="description"><?php _e( '<b>In most cases the templates in this plugin will work.  Only enter a value here if the template does not work.</b>', 'bbp-style-pack' ); ?></label><br/>
+				<label class="description"><b><?php _e( 'In most cases the templates in this plugin will work.  Only enter a value here if the template does not work.', 'bbp-style-pack' ); ?></b></label><br/>
 				<label class="description"><?php _e( 'In some cases, your theme or other plugins can also change templates and register different templates. ' , 'bbp-style-pack' ); ?></label><br/>
 				<label class="description"><?php _e( 'If this is the case, then you may have to choose between the theme/plugin template and this plugin\'s templates' , 'bbp-style-pack' ); ?></label><br/>
 				<label class="description"><?php _e( 'To get this plugin\'s templates to load at the right point, you may need to change its priority.' , 'bbp-style-pack' ); ?></label><br/>

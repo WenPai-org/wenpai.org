@@ -276,7 +276,7 @@ class Language_Pack extends WP_CLI_Command {
 	private function get_plugin_stable_tag( $plugin_slug ) {
 		$plugin = wp_remote_retrieve_body(
 			wp_safe_remote_get(
-				"https://api.wpmirror.com/plugins/info/1.0/{$plugin_slug}.json?fields=stable_tag"
+				"https://api.wordpress.org/plugins/info/1.0/{$plugin_slug}.json?fields=stable_tag"
 			)
 		);
 		if ( ! $plugin ) {
@@ -297,7 +297,7 @@ class Language_Pack extends WP_CLI_Command {
 	private function get_latest_theme_version( $theme_slug ) {
 		$theme = wp_remote_retrieve_body(
 			wp_safe_remote_get(
-				"https://api.wpmirror.com/themes/info/1.1/?action=theme_information&request[slug]={$theme_slug}"
+				"https://api.wordpress.org/themes/info/1.1/?action=theme_information&request[slug]={$theme_slug}"
 			)
 		);
 		if ( ! $theme ) {
@@ -318,7 +318,7 @@ class Language_Pack extends WP_CLI_Command {
 	private function get_latest_plugin_version( $plugin_slug ) {
 		$plugin = wp_remote_retrieve_body(
 			wp_safe_remote_get(
-				"https://api.wpmirror.com/plugins/info/1.0/{$plugin_slug}.json"
+				"https://api.wordpress.org/plugins/info/1.0/{$plugin_slug}.json"
 			)
 		);
 		if ( ! $plugin ) {

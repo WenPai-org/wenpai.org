@@ -11,15 +11,15 @@
  * Plugin Name: Index WP MySQL For Speed
  * Plugin URI:  https://plumislandmedia.org/index-wp-mysql-for-speed/
  * Description: Speed up your WordPress site by adding high-performance keys (database indexes) to your MySQL database tables.
- * Version:           1.4.19
+ * Version:           1.5.2
  * Requires at least: 4.2
- * Tested up to:      6.6.1
+ * Tested up to:      6.6.2
  * Requires PHP:      5.6
  * Author:       OllieJones, rjasdfiii
  * Author URI:   https://github.com/OllieJones
  * License:      GPL v2 or later
  * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
- * Github Plugin URI: https://github.com/OllieJones/index-wp-mysql-for-speed
+ * GitHub Plugin URI: https://github.com/OllieJones/index-wp-mysql-for-speed
  * Primary Branch: main
  * Text Domain:  index-wp-mysql-for-speed
  * Domain Path:  /languages
@@ -28,8 +28,8 @@
  */
 
 /** current version number  */
-define( 'index_wp_mysql_for_speed_VERSION_NUM', '1.4.19' );
-define( 'index_mysql_for_speed_major_version', 1.4 );
+define( 'index_wp_mysql_for_speed_VERSION_NUM', '1.5.2' );
+define( 'index_mysql_for_speed_major_version', 1.5 );
 define( 'index_mysql_for_speed_inception_major_version', 1.3 );
 define( 'index_mysql_for_speed_inception_wp_version', '5.8.3' );
 define( 'index_mysql_for_speed_inception_wp_db_version', 49752 );
@@ -42,7 +42,7 @@ define( 'index_wp_mysql_for_speed_monitor', 'imfsQueryMonitor' );
 define( 'index_wp_mysql_for_speed_querytag', '*imfs-query-tag*' );
 /* version 32814 was the advent of utfmb4 */
 define( 'index_wp_mysql_for_speed_first_compatible_db_version', 31536 );
-define( 'index_wp_mysql_for_speed_last_compatible_db_version', 0 ); /*tested up to 56657 */
+define( 'index_wp_mysql_for_speed_last_compatible_db_version', 0 ); /*tested up to 58975 */
 
 define( 'index_wp_mysql_for_speed_help_site', 'https://plumislandmedia.net/index-wp-mysql-for-speed/' );
 

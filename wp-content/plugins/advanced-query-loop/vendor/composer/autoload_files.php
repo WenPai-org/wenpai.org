@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'cd9e51c0921cc701099548b3f01185d6' => $baseDir . '/includes/enqueues.php',
     'd5fda5f77fbee56c66478dd6b45477ad' => $baseDir . '/includes/query-loop.php',
+    '5bb222ba3eac6b49ea73dd847466dd2d' => $baseDir . '/includes/utilities.php',
 );

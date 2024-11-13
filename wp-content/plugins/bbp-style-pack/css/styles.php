@@ -37,7 +37,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.odd
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 			<?php 
 		}
@@ -50,7 +50,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 				#bbpress-forums ul.odd
 			{
-				background-image: url("/<?php echo $field ?>");
+				background-image: url("/<?php echo esc_html ($field) ?>");
 			}
 			<?php 
 		} 
@@ -62,7 +62,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.even
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -75,7 +75,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.even
 			{
-				background-image: url("/<?php echo $field ?>");
+				background-image: url("/<?php echo esc_html ($field) ?>");
 			}
 		<?php
 		} 
@@ -89,7 +89,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums li.bbp-header,
 			#bbpress-forums li.bbp-footer 
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -103,7 +103,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums li.bbp-header,
 			#bbpress-forums li.bbp-footer 
 			{
-				background-image: url("/<?php echo $field ?>");
+				background-image: url("/<?php echo esc_html ($field) ?>");
 			}
 		<?php
 		}
@@ -118,20 +118,20 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.forum-titles li.bbp-forum-info
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		 
 			#bbpress-forums ul.forum-titles li.bbp-forum-topic-count{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-forum-reply-count{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-forum-freshness{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -143,28 +143,28 @@ global $bsp_style_settings_topic_fields ;
 	?>
 		#bbpress-forums ul.forum-titles li.bbp-forum-info
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	 
 		<?php //  and also allow for alternate template ?>
 		#bbpress-forums ul.forum-titles a.bsp-forum-name
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 
 		#bbpress-forums ul.forum-titles li.bbp-forum-topic-count
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 
                 #bbpress-forums ul.forum-titles li.bbp-forum-reply-count
 		{
-		   color: <?php echo $field; ?>;
+		   color: <?php echo esc_html ($field); ?>;
 		}
 
                 #bbpress-forums ul.forum-titles li.bbp-forum-freshness 
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	<?php
 	} 
@@ -176,22 +176,22 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.forum-titles li.bbp-forum-info
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 	 
 			#bbpress-forums ul.forum-titles li.bbp-forum-topic-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-forum-reply-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-forum-freshness
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -281,7 +281,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-breadcrumb p
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -293,7 +293,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-breadcrumb p
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -305,7 +305,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-breadcrumb p
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -349,7 +349,7 @@ global $bsp_style_settings_topic_fields ;
 		?>
 			#bbpress-forums a:link
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -361,7 +361,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a:visited
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -374,7 +374,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a:hover
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -389,7 +389,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-forum-title
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -401,7 +401,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-forum-title
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -447,7 +447,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-forums-list li
 			{
-				font-size: <?php echo $field; ?> !important;
+				font-size: <?php echo esc_html ($field); ?> !important;
 			}
 		<?php
 		} 
@@ -459,7 +459,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-forums-list li
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -508,7 +508,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-forum-content,
 			#bbpress-forums .bbp-forum-info .bbp-forum-content
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -522,7 +522,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-forum-content,
 			#bbpress-forums .bbp-forum-info .bbp-forum-content
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -536,7 +536,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-forum-content,
 			#bbpress-forums .bbp-forum-info .bbp-forum-content
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -588,7 +588,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-forum-freshness, 
 			#bbpress-forums .bbp-topic-freshness
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -603,7 +603,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-forum-freshness, 
 			#bbpress-forums .bbp-topic-freshness
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -650,7 +650,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 				#bbpress-forums .bbp-topic-freshness-author
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 			<?php
 			} 
@@ -662,7 +662,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-topic-freshness-author
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -707,8 +707,8 @@ global $bsp_style_settings_topic_fields ;
 			?>
 			
 			#bbpress-forums p.bbp-topic-meta img.avatar {
-					max-height: <?php echo $field; ?>;
-					max-width: <?php echo $field; ?>;
+					max-height: <?php echo esc_html ($field); ?>;
+					max-width: <?php echo esc_html ($field); ?>;
 				}
 			<?php
 			} 
@@ -736,7 +736,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums div.even,
 			#bbpress-forums ul.bbp-replies
 			{
-				border: <?php echo $field; ?>;
+				border: <?php echo esc_html ($field); ?>;
 			}
 		 
 			#bbpress-forums li.bbp-header,
@@ -745,12 +745,12 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums li.bbp-footer,
 			#bbpress-forums ul.forum
 			{
-				Border-top: <?php echo $field; ?>;
+				Border-top: <?php echo esc_html ($field); ?>;
 			}
 		
 			#bbpress-forums li.bbp-footer
 			{
-				Border-bottom: <?php echo $field; ?>;
+				Border-bottom: <?php echo esc_html ($field); ?>;
 			}
 	 
 		<?php 
@@ -772,7 +772,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 				#bbpress-forums li.bbp-forum-topic-count
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php
 		} 
@@ -784,7 +784,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-forum-topic-count
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -796,7 +796,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-forum-topic-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -842,7 +842,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-forum-reply-count
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -854,7 +854,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-forum-reply-count
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -866,7 +866,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-forum-reply-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -929,7 +929,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-pagination
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -941,7 +941,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-pagination
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -953,7 +953,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-pagination
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -1000,7 +1000,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-topic-voice-count, li.bbp-topic-reply-count
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1012,7 +1012,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-topic-voice-count, li.bbp-topic-reply-count
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1024,7 +1024,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums li.bbp-topic-voice-count, li.bbp-topic-reply-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1068,7 +1068,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a.bbp-topic-permalink:link
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1080,7 +1080,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a.bbp-topic-permalink:visited
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1092,7 +1092,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a.bbp-topic-permalink:hover
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1106,7 +1106,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 				#bbpress-forums .bbp-topic-title
 		 		{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php 
 		} 
@@ -1118,7 +1118,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-topic-title
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1163,7 +1163,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 				#bbpress-forums .bbp-template-notice p
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php
 		}
@@ -1175,7 +1175,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-template-notice p
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1187,7 +1187,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-template-notice p
 			{
-				font-family:: <?php echo $field; ?>;
+				font-family:: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1232,7 +1232,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-template-notice
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1252,7 +1252,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-template-notice
 			{
-				border: <?php echo $field; ?>;
+				border: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1268,7 +1268,7 @@ global $bsp_style_settings_topic_fields ;
 				#bbpress-forums .bbp-topic-started-by,
 				.bbp-topic-started-in
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 			<?php
 			}
@@ -1281,7 +1281,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-topic-started-by,
 			.bbp-topic-started-in
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1294,7 +1294,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-topic-started-by,
 			.bbp-topic-started-in
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1342,7 +1342,7 @@ global $bsp_style_settings_topic_fields ;
 			.bbp-topics ul.sticky,
 			.bbp-forum-content ul.sticky
 			{
-				background-color: <?php echo $field; ?> !important;
+				background-color: <?php echo esc_html ($field); ?> !important;
 			}
 		<?php
 		} 
@@ -1355,7 +1355,7 @@ global $bsp_style_settings_topic_fields ;
 			.bbp-topics-front ul.super-sticky,
 			.bbp-topics ul.super-sticky
 			{
-				background-color: <?php echo $field; ?> !important;
+				background-color: <?php echo esc_html ($field); ?> !important;
 			}
 
 		<?php 
@@ -1372,7 +1372,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums div.bbp-template-notice.info .bbp-forum-description,
 			#bbpress-forums div.bbp-template-notice.info .bbp-topic-description 
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1385,7 +1385,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums div.bbp-template-notice.info .bbp-forum-description,
 			#bbpress-forums div.bbp-template-notice.info .bbp-topic-description 
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1398,7 +1398,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums div.bbp-template-notice.info .bbp-forum-description,
 			#bbpress-forums div.bbp-template-notice.info .bbp-topic-description 
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -1445,7 +1445,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.bbp-template-notice.info
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1465,7 +1465,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.bbp-template-notice.info
 			{
-				border: <?php echo $field; ?>;
+				border: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -1481,22 +1481,22 @@ global $bsp_style_settings_topic_fields ;
 
 				#bbpress-forums ul.forum-titles li.bbp-topic-title
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 				 
 				#bbpress-forums ul.forum-titles li.bbp-topic-voice-count
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 
 				#bbpress-forums ul.forum-titles li.bbp-topic-reply-count
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 
 				#bbpress-forums ul.forum-titles li.bbp-topic-freshness
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php
 		}
@@ -1508,22 +1508,22 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.forum-titles li.bbp-topic-title
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 			 
 			#bbpress-forums ul.forum-titles li.bbp-topic-voice-count
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-topic-reply-count
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-topic-freshness
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1535,22 +1535,22 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums ul.forum-titles li.bbp-topic-title
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 			 
 			#bbpress-forums ul.forum-titles li.bbp-topic-voice-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-topic-reply-count
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 
 			#bbpress-forums ul.forum-titles li.bbp-topic-freshness
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 
 		<?php 
@@ -1646,8 +1646,8 @@ global $bsp_style_settings_topic_fields ;
 			?>
 			
 			#bbpress-forums p.bbp-topic-meta img.avatar {
-					max-height: <?php echo $field; ?>;
-					max-width: <?php echo $field; ?>;
+					max-height: <?php echo esc_html ($field); ?>;
+					max-width: <?php echo esc_html ($field); ?>;
 				}
 			<?php
 			} 
@@ -1666,7 +1666,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.odd
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1678,7 +1678,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.even
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1693,7 +1693,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums div.bbp-reply-header,
 			#bbpress-forums div.bbp-topic-header
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1708,7 +1708,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .status-trash.odd,
 			#bbpress-forums .status-spam.odd 
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1721,7 +1721,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .status-trash.even,
 			#bbpress-forums .status-spam.even
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1736,7 +1736,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .status-closed,
 			#bbpress-forums .status-closed a
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1751,7 +1751,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-reply-post-date
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1763,7 +1763,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-reply-post-date
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1775,7 +1775,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-reply-post-date
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1822,7 +1822,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-topic-content, 
 			#bbpress-forums .bbp-reply-content
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1835,7 +1835,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-topic-content, 
 			#bbpress-forums .bbp-reply-content
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1848,7 +1848,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bbp-topic-content, 
 			#bbpress-forums .bbp-reply-content
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1894,9 +1894,9 @@ global $bsp_style_settings_topic_fields ;
 		if (!empty ($field)){
 			if (is_numeric($field)) $field=$field.'px';
 	?>
-			#bbpress-forums a.bbp-author-name
+			#bbpress-forums div.bbp-reply-author .bbp-author-name
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -1906,9 +1906,9 @@ global $bsp_style_settings_topic_fields ;
 		$field= (!empty($datat['Author Name FontFont']) ? $datat['Author Name FontFont'] : '');
 		if (!empty ($field)){
 	?>
-			#bbpress-forums a.bbp-author-name
+			#bbpress-forums div.bbp-reply-author .bbp-author-name
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -1919,7 +1919,7 @@ global $bsp_style_settings_topic_fields ;
 		if (!empty ($field)){
 			if (strpos($field,'Italic') !== false){
 			?>
-				#bbpress-forums a.bbp-author-name
+				#bbpress-forums div.bbp-reply-author .bbp-author-name
 				{
 					font-style: italic; 
 				}
@@ -1928,14 +1928,14 @@ global $bsp_style_settings_topic_fields ;
 
 			if (strpos($field,'Bold') !== false){
 			?>
-				#bbpress-forums a.bbp-author-name
+				#bbpress-forums div.bbp-reply-author .bbp-author-name
 				{
 					font-weight: bold; 
 				}
 			<?php
 			}
 			else {?>
-				#bbpress-forums a.bbp-author-name
+				#bbpress-forums div.bbp-reply-author .bbp-author-name
 				{
 					font-weight: normal; 
 				}
@@ -1953,7 +1953,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a.bbp-reply-permalink
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -1967,7 +1967,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums a.bbp-reply-permalink
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2012,7 +2012,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.bbp-reply-author .bbp-author-role
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2024,7 +2024,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.bbp-reply-author .bbp-author-role
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2036,7 +2036,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums div.bbp-reply-author .bbp-author-role
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2091,7 +2091,7 @@ global $bsp_style_settings_topic_fields ;
 				#bbpress-forums li.bbp-footer .bbp-reply-content,
 				#bbpress-forums li.bbp-footer  .bbp-reply-author
 				{		
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php 
 		} 
@@ -2106,7 +2106,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums li.bbp-footer .bbp-reply-content,
 			#bbpress-forums li.bbp-footer  .bbp-reply-author
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2121,7 +2121,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums li.bbp-footer .bbp-reply-content,
 			#bbpress-forums li.bbp-footer  .bbp-reply-author
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2187,7 +2187,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums span.bbp-admin-links a,
 			#bbpress-forums span.bbp-admin-links 
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2200,7 +2200,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums span.bbp-admin-links a,
 			#bbpress-forums span.bbp-admin-links 
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2213,7 +2213,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums span.bbp-admin-links a,
 			#bbpress-forums span.bbp-admin-links 
 			{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -2270,7 +2270,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-mentions a,
 			#bbpress-forums .bsp-mentions 
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2283,7 +2283,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-mentions a,
 			#bbpress-forums .bsp-mentions 
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2296,7 +2296,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .bsp-mentions a,
 			#bbpress-forums .bsp-mentions 
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2354,7 +2354,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-form label
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2366,7 +2366,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-form label
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2378,7 +2378,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bbp-form label
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2424,7 +2424,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums input[type="text"]:focus, textarea:focus,
 			#bbpress-forums .quicktags-toolbar
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php 
@@ -2442,7 +2442,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .quicktags-toolbar ,
 			#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2456,7 +2456,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .quicktags-toolbar ,
 			#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -2470,7 +2470,7 @@ global $bsp_style_settings_topic_fields ;
 			#bbpress-forums .quicktags-toolbar ,
 			#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2520,7 +2520,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .button
 			{
-				  background-color: <?php echo $field; ?>;
+				  background-color: <?php echo esc_html ($field); ?>;
 		  	}
 		<?php
 		} 
@@ -2532,7 +2532,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .button
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 
 		<?php
@@ -2548,7 +2548,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bsp-topic-rules
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -2560,7 +2560,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bsp-topic-rules
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -2574,7 +2574,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bsp-topic-rules
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2616,7 +2616,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bsp-topic-rules
 			{
-			background-color: <?php echo $field; ?>;
+			background-color: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php 
@@ -2629,7 +2629,7 @@ global $bsp_style_settings_topic_fields ;
 	?>
 			#bbpress-forums .bsp-topic-rules
 			{
-				border-color: <?php echo $field; ?>;
+				border-color: <?php echo esc_html ($field); ?>;
 				border-radius: 3px;
 				border-style: solid;
 				border-width: 1px;
@@ -2688,7 +2688,7 @@ float : left ;
 				.bsp-la-title h4,
 				.bsp-la-title h5
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php 
 		} 
@@ -2704,7 +2704,7 @@ float : left ;
 			.bsp-la-title h4,
 			.bsp-la-title h5
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -2720,7 +2720,7 @@ float : left ;
 			.bsp-la-title h4,
 			.bsp-la-title h5
 			{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2777,7 +2777,7 @@ float : left ;
 	?>
 			.bsp-la-reply-topic-title
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -2790,7 +2790,7 @@ float : left ;
 	?>
 			.bsp-la-reply-topic-title
 				{
-					font-family: <?php echo $field; ?>;
+					font-family: <?php echo esc_html ($field); ?>;
 				}
 		<?php 
 		}
@@ -2835,7 +2835,7 @@ float : left ;
 		?>
 			.bsp-la-text
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -2847,7 +2847,7 @@ float : left ;
 	?>
 			.bsp-la-text
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2859,7 +2859,7 @@ float : left ;
 	?>
 			.bsp-la-text
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2904,7 +2904,7 @@ float : left ;
 	?>
 			.bsp-la-topic-author
 			{
-			font-size: <?php echo $field; ?>;
+			font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -2917,7 +2917,7 @@ float : left ;
 	?>
 			.bsp-la-topic-author
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2962,7 +2962,7 @@ float : left ;
 	?>
 			.bsp-la-freshness		 
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -2974,7 +2974,7 @@ float : left ;
 	?>
 			.bsp-la-freshness		 
 			{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -2986,7 +2986,7 @@ float : left ;
 	?>
 			.bsp-la-freshness		 
 			{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -3031,7 +3031,7 @@ float : left ;
 	?>
 			.bsp-la-forum-title		 
 			{
-			font-size: <?php echo $field; ?>;
+			font-size: <?php echo esc_html ($field); ?>;
 			}	
 		<?php 
 		}
@@ -3044,7 +3044,7 @@ float : left ;
 		?>
 			.bsp-la-forum-title		 
 			{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -3088,7 +3088,7 @@ float : left ;
 	?>
 			a:link.bsp-la-reply-topic-title		 
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -3100,7 +3100,7 @@ float : left ;
 	?>
 			a:visited.bsp-la-reply-topic-title		 
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		} 
@@ -3112,7 +3112,7 @@ float : left ;
 	?>
 			a:hover.bsp-la-reply-topic-title		 
 			{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -3196,7 +3196,7 @@ float : left ;
 			echo '.bsp-author-'.$role;
 			?> 
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -3208,7 +3208,7 @@ float : left ;
 		echo '.bsp-author-'.$role;
 	?>
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	<?php
 	} 
@@ -3220,7 +3220,7 @@ float : left ;
 		echo '.bsp-author-'.$role;
 	?>
 		{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 		}
 	<?php } ?>
 	 
@@ -3228,7 +3228,7 @@ float : left ;
 		$field= (!empty($data4[$role.'font_style']) ? $data4[$role.'font_style'] : '');
 		if (!empty ($field)){
 			if (strpos($field,'Italic') !== false){
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 	?>
 				{
 					font-style: italic; 
@@ -3237,7 +3237,7 @@ float : left ;
 		} 
 
 			if (strpos($field,'Bold') !== false){
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 		?>
 				{
 					font-weight: bold; 
@@ -3245,7 +3245,7 @@ float : left ;
 			<?php
 			}
 			else { 
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 			?>
 				{
 					font-weight: normal; 
@@ -3261,7 +3261,7 @@ float : left ;
 		$field = (!empty($bsp_roles['all_roleswhere_to_display'] ) ? $bsp_roles['all_roleswhere_to_display'] : '');	
 		$field2 = (!empty($bsp_roles['all_rolesbefore_username_left'] ) ? $bsp_roles['all_rolesbefore_username_left'] : '');	
 		if ($field == 2 && $field2 == 1){
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 			?>
 			{
 				float: left;
@@ -3280,7 +3280,7 @@ float : left ;
 			$background = $role.'background_color';
 			$background=  (!empty($bsp_roles[$background]) ? $bsp_roles[$background] : '');
 				if (!empty ($background)){
-					echo '.bsp-author-'.$role;
+					echo '.bsp-author-'.esc_html($role);
 		?>
 					{
 						background-color: <?php echo $background; ?>; 
@@ -3296,15 +3296,15 @@ float : left ;
 			$image_height = (!empty($bsp_roles[$role.'image_height']) ? $bsp_roles[$role.'image_height'] : '');
 			$image_width = (!empty($bsp_roles[$role.'image_width']) ? $bsp_roles[$role.'image_width'] : '');
 			$padding = (!empty($image_height) ? $image_height/2 : '');
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 		?>			
 			{
-				background-image: url( <?php echo $background; ?> );
+				background-image: url( <?php echo esc_html($background); ?> );
 				background-repeat: no-repeat;
-				height : <?php echo $image_height; ?>;
-				width : <?php echo $image_width; ?>;
+				height : <?php echo esc_html($image_height); ?>;
+				width : <?php echo esc_html($image_width); ?>;
 				text-align : center;
-				padding-top : <?php echo $padding; ?>px;
+				padding-top : <?php echo esc_html ($padding); ?>px;
 			}
 		
 		<?php		
@@ -3318,10 +3318,10 @@ float : left ;
 		$field= (!empty($data4[ $role.'font_size']) ? $data4[ $role.'font_size'] : '');
 		if (!empty ($field)){
 			if (is_numeric($field)) $field=$field.'px';
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 		?>
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -3330,10 +3330,10 @@ float : left ;
 		<?php 
 		$field= (!empty($data4[$role.'font_color']) ? $data4[$role.'font_color'] : '');
 		if (!empty ($field)){
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 		?>
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		} 
@@ -3342,10 +3342,10 @@ float : left ;
 		<?php 
 		$field= (!empty($data4[$role.'font']) ? $dataf[$role.'font'] : '');
 		if (!empty ($field)){
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 		?>
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -3355,7 +3355,7 @@ float : left ;
 		$field= (!empty($data4[$role.'font_style']) ? $data4[$role.'font_style'] : '');
 		if (!empty ($field)){
 			if (strpos($field,'Italic') !== false){
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 		?>
 				{
 					font-style: italic; 
@@ -3364,7 +3364,7 @@ float : left ;
 			} 
 
 			if (strpos($field,'Bold') !== false){
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 		?>
 				{
 					font-weight: bold; 
@@ -3372,7 +3372,7 @@ float : left ;
 			<?php
 			}
 			else { 
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 			?>
 				{
 					font-weight: normal; 
@@ -3391,7 +3391,7 @@ float : left ;
 			$background = $role.'background_color';
 			$background=  (!empty($bsp_roles[$background]) ? $bsp_roles[$background] : '');
 				if (!empty ($background)){
-					echo '.bsp-author-'.$role;
+					echo '.bsp-author-'.esc_html($role);
 		?>
 					{
 						background-color: <?php echo $background; ?>; 
@@ -3407,15 +3407,15 @@ float : left ;
 			$image_height = (!empty($bsp_roles[$role.'image_height']) ? $bsp_roles[$role.'image_height'] : '');
 			$image_width = (!empty($bsp_roles[$role.'image_width']) ? $bsp_roles[$role.'image_width'] : '');
 			$padding = (!empty($image_height) ? $image_height/2 : '');
-			echo '.bsp-author-'.$role;
+			echo '.bsp-author-'.esc_html($role);
 		?>			
 			{
 				background-image: url( <?php echo $background; ?> );
 				background-repeat: no-repeat;
-				height : <?php echo $image_height; ?>;
-				width : <?php echo $image_width; ?>;
+				height : <?php echo esc_html($image_height); ?>;
+				width : <?php echo esc_html($image_width); ?>;
 				text-align : center;
-				padding-top : <?php echo $padding; ?>px;
+				padding-top : <?php echo esc_html ($padding); ?>px;
 			}
 		
 		<?php		
@@ -3426,7 +3426,7 @@ float : left ;
 	$field = (!empty($bsp_roles['all_roleswhere_to_display'] ) ? $bsp_roles['all_roleswhere_to_display'] : '');	
 	$field2 = (!empty($bsp_roles['all_rolesbefore_username_left'] ) ? $bsp_roles['all_rolesbefore_username_left'] : '');	
 	if ($field == 2 && $field2 == 1){
-		echo '.bsp-author-'.$role;
+		echo '.bsp-author-'.esc_html($role);
 		?>
 		{
 			float: left;
@@ -3446,7 +3446,7 @@ float : left ;
 				$background = $role.'background_color';
 				$background=  (!empty($bsp_roles[$background]) ? $bsp_roles[$background] : '');
 				if (!empty ($background)){
-					echo '.bsp-author-'.$role;
+					echo '.bsp-author-'.esc_html($role);
 				?>
 					{
 						background-color: <?php echo $background; ?>; 
@@ -3462,15 +3462,15 @@ float : left ;
 				$image_height = (!empty($bsp_roles[$role.'image_height']) ? $bsp_roles[$role.'image_height'] : '');
 				$image_width = (!empty($bsp_roles[$role.'image_width']) ? $bsp_roles[$role.'image_width'] : '');
 				$padding = (!empty($image_height) ? $image_height/2 : '');
-				echo '.bsp-author-'.$role;
+				echo '.bsp-author-'.esc_html($role);
 				?>
 				{
 					background-image: url( <?php echo $background; ?> );
 					background-repeat: no-repeat;
-					height : <?php echo $image_height; ?>;
-					width : <?php echo $image_width; ?>;
+					height : <?php echo esc_html($image_height); ?>;
+					width : <?php echo esc_html($image_width); ?>;
 					text-align : center;
-					padding-top : <?php echo $padding; ?>px;
+					padding-top : <?php echo esc_html ($padding); ?>px;
 				}
 			<?php		
 			} //end of roletype 3
@@ -3497,7 +3497,7 @@ float : left ;
 			//add the submit button styling if set to match in topic/reply form item 5
 			if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit,#bbp_reply_submit' ; ?>
 			{
-				font-size: <?php echo $field; ?>!important;
+				font-size: <?php echo esc_html ($field); ?>!important;
 			}
 		<?php
 		}
@@ -3525,7 +3525,7 @@ float : left ;
 			//add the submit button styling if set to match in topic/reply form item 5
 			if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit,#bbp_reply_submit' ; ?>
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}	 
 		<?php
 		}
@@ -3551,7 +3551,7 @@ float : left ;
 			if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit,#bbp_reply_submit' ; ?>
 			<?php if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit,#bbp_reply_submit' ; ?>
 			{
-				color: <?php echo $field; ?> !important;
+				color: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -3579,7 +3579,7 @@ float : left ;
 			//add the submit button styling if set to match in topic/reply form item 5
 			if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit,#bbp_reply_submit' ; ?>
 			{
-				background: <?php echo $field; ?>;
+				background: <?php echo esc_html ($field); ?>;
 			}	 
 		<?php
 		}
@@ -3610,7 +3610,7 @@ float : left ;
 			//add the submit button styling if set to match in topic/reply form item 5
 			if (!empty ($dataform['Submittingbutton_styling'])) echo ',#bbp_topic_submit:hover,#bbp_reply_submit:hover' ; ?>
 			{
-				background: <?php echo $field; ?>;
+				background: <?php echo esc_html ($field); ?>;
 			}	 
 		<?php
 		}
@@ -3863,7 +3863,7 @@ float : left ;
 	?>	
 			.bsp-preview .bsp-previewtext
 			{
-				width: <?php echo $field; ?>;
+				width: <?php echo esc_html ($field); ?>;
 			}
 			<?php
 
@@ -3872,7 +3872,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewheight']) ? $bsp_styl
 	?>	
 			.bsp-preview .bsp-previewtext {
 			
-				height: <?php echo $field; ?>;
+				height: <?php echo esc_html ($field); ?>;
 			}
 <?php
 $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_settings_topic_preview['previewSize']  : '10px');
@@ -3880,7 +3880,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			.bsp-preview .bsp-previewtext, .bsp-preview .bsp-previewtextm
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		
 	<?php 
@@ -3888,7 +3888,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 		?>
 		.bsp-preview .bsp-previewtext, .bsp-preview .bsp-previewtextm
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}	 
 		
 	<?php 
@@ -3896,7 +3896,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 		?>
 			.bsp-preview .bsp-previewtext, .bsp-preview .bsp-previewtextm
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}	
 			
 			
@@ -3905,11 +3905,11 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 		?>
 			.bsp-preview .bsp-previewtext, .bsp-preview .bsp-previewtextm
 			{
-				background-color: <?php echo $field; ?>;
+				background-color: <?php echo esc_html ($field); ?>;
 			}	 
 			.bsp-preview .bsp-previewtext::after, .bsp-preview .bsp-previewtextm::after 
 			{
-				   border-color: transparent <?php echo $field; ?> transparent transparent;
+				   border-color: transparent <?php echo esc_html ($field); ?> transparent transparent;
 			}			
 		
 <?php 
@@ -3966,7 +3966,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 			?>	
 				.bsp-preview .bsp-previewtextm
 				{
-					width: <?php echo $field; ?>;
+					width: <?php echo esc_html ($field); ?>;
 				}
 				<?php
 
@@ -3975,7 +3975,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 			?>	
 				.bsp-preview .bsp-previewtextm
 				{
-					height: <?php echo $field; ?>;
+					height: <?php echo esc_html ($field); ?>;
 				}
 		
 		}
@@ -3997,7 +3997,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bbp_search 
 			{			
-			background-color: <?php echo $field; ?> !important;
+			background-color: <?php echo esc_html ($field); ?> !important;
 			}	
 		<?php
 		}
@@ -4012,7 +4012,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	
 			#bbp_search 
 			{			
-			line-height: <?php echo $field; ?> !important;
+			line-height: <?php echo esc_html ($field); ?> !important;
 			}	
 		<?php
 		}
@@ -4025,7 +4025,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search 
 			{
-				font-size: <?php echo $field; ?> !important;
+				font-size: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4039,7 +4039,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search 
 			{
-				font-family: <?php echo $field; ?> !important;
+				font-family: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4053,7 +4053,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search 
 			{
-				color: <?php echo $field; ?> !important;
+				color: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4099,7 +4099,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
 			{			
-			background-color: <?php echo $field; ?> !important;
+			background-color: <?php echo esc_html ($field); ?> !important;
 			}	
 		<?php
 		}
@@ -4114,7 +4114,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	
 			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
 			{			
-			line-height: <?php echo $field; ?> !important;
+			line-height: <?php echo esc_html ($field); ?> !important;
 			}	
 		<?php
 		}
@@ -4127,7 +4127,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
 			{
-				font-size: <?php echo $field; ?> !important;
+				font-size: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4141,7 +4141,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
 			{
-				font-family: <?php echo $field; ?> !important;
+				font-family: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4155,7 +4155,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>	
 			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
 			{
-				color: <?php echo $field; ?> !important;
+				color: <?php echo esc_html ($field); ?> !important;
 			}	 
 		<?php
 		}
@@ -4216,7 +4216,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bbpress-forums ul.sticky li.bbp-topic-title a.bbp-topic-permalink::before, #bbpress-forums ul.super-sticky li.bbp-topic-title a.bbp-topic-permalink::before
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}	
 
 		<?php
@@ -4228,7 +4228,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 		?>
 				#bbpress-forums ul.sticky li.bbp-topic-title a.bbp-topic-permalink::before, #bbpress-forums ul.super-sticky li.bbp-topic-title a.bbp-topic-permalink::before
 				{
-					color: <?php echo $field; ?>;
+					color: <?php echo esc_html ($field); ?>;
 				}	
 
 		<?php
@@ -4253,7 +4253,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			.bsp-home-icon::before
 			{
-			font-size: <?php echo $field; ?>;
+			font-size: <?php echo esc_html ($field); ?>;
 			}	
 		<?php
 		}
@@ -4265,7 +4265,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 		?>
 			.bsp-home-icon::before
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}	 
 
 		<?php
@@ -4281,7 +4281,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bsp-login-error
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php 
@@ -4294,7 +4294,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 		#bsp-login-error
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	 
 		<?php
@@ -4308,7 +4308,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	 
 			#bsp-login-error
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 	 
 		<?php
@@ -4374,7 +4374,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bbpress-forums ul.status-closed li.bbp-topic-title a.bbp-topic-permalink::before
 			{
-			font-size: <?php echo $field; ?>;
+			font-size: <?php echo esc_html ($field); ?>;
 			}	
 		<?php
 		}
@@ -4386,7 +4386,7 @@ $field = (!empty($bsp_style_settings_topic_preview['previewSize']) ? $bsp_style_
 	?>
 			#bbpress-forums ul.status-closed li.bbp-topic-title a.bbp-topic-permalink::before
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}	 
 	<?php
 		}
@@ -4516,7 +4516,7 @@ if (!empty ($bsp_style_settings_quote['quote_activate'])) {
 			if (!empty ($field)){
 				?>
 	blockquote  {
-		background-color: <?php echo $field; ?> !important;
+		background-color: <?php echo esc_html ($field); ?> !important;
 	}
 
 	<?php
@@ -4526,7 +4526,7 @@ if (!empty ($bsp_style_settings_quote['quote_activate'])) {
 			if (!empty ($field)){
 				?>
 	blockquote {
-			 border-left: 4px solid <?php echo $field; ?> !important;
+			 border-left: 4px solid <?php echo esc_html ($field); ?> !important;
 	}
 	<?php
 			}
@@ -4560,7 +4560,7 @@ if (!empty ($bsp_style_settings_quote['quote_activate'])) {
 		?>
 				.bsp-quote-title
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 			 
 			<?php 
@@ -4573,7 +4573,7 @@ if (!empty ($bsp_style_settings_quote['quote_activate'])) {
 		?>
 			.bsp-quote-title
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php
@@ -4586,7 +4586,7 @@ if (!empty ($bsp_style_settings_quote['quote_activate'])) {
 		?>
 				.bsp-quote-title
 				{
-					font-family: <?php echo $field; ?>;
+					font-family: <?php echo esc_html ($field); ?>;
 				}
 		 
 		<?php
@@ -4682,7 +4682,7 @@ if (!empty ($bsp_style_settings_theme_support['fse'])  && $bsp_theme_check == 'b
 	?>
 			.bsp-fse-container
 				{
-					width: <?php echo $field; ?>;
+					width: <?php echo esc_html ($field); ?>;
 					margin : 0 auto;
 				}
 <?php			
@@ -4699,7 +4699,7 @@ if (!empty ($bsp_style_settings_theme_support['fse'])  && $bsp_theme_check == 'b
 	?>
 				.bsp-widget-title
 				{
-					font-size: <?php echo $field; ?>;
+					font-size: <?php echo esc_html ($field); ?>;
 				}
 		<?php 
 		} 
@@ -4711,7 +4711,7 @@ if (!empty ($bsp_style_settings_theme_support['fse'])  && $bsp_theme_check == 'b
 	?>
 			.bsp-widget-title
 			{
-				color: <?php echo $field; ?>;
+				color: <?php echo esc_html ($field); ?>;
 			}
 		<?php 
 		}
@@ -4723,7 +4723,7 @@ if (!empty ($bsp_style_settings_theme_support['fse'])  && $bsp_theme_check == 'b
 	?>
 			.bsp-widget-title
 			{
-			font-family: <?php echo $field; ?>;
+			font-family: <?php echo esc_html ($field); ?>;
 			}
 		<?php
 		}
@@ -4895,14 +4895,14 @@ $content = (!empty($bsp_style_settings_f['forum_topics']) ? $bsp_style_settings_
 $content = '"'.'\\'.$content.'"' ;
 ?>
 .bbpress .forum-titles .bbp-forum-topic-count::before {
-	content: <?php echo $content; ?> ;
+	content: <?php echo esc_html($content) ; ?> ;
 }
 <?php
 $content = (!empty($bsp_style_settings_f['forum_posts']) ? $bsp_style_settings_f['forum_posts'] : 'f125');
 $content = '"'.'\\'.$content.'"' ;
 ?>
 .bbpress .forum-titles .bbp-forum-reply-count::before {
-	content: <?php echo $content; ?> ;
+	content: <?php echo esc_html($content); ?> ;
 }
 
 
@@ -4926,11 +4926,11 @@ if (!empty ($bsp_style_settings_column_display['forum_activate'])) {
 		//do widths in all cases
 		?>
 			li.bbp-forum-info {
-				width : <?php echo $forum_name_width;?>%; 
+				width : <?php echo esc_html($forum_name_width) ;?>%; 
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-forum-info {
-					width : <?php echo $forum_name_width_mobile;?>%
+					width : <?php echo esc_html($forum_name_width_mobile) ;?>%
 				}  
 			}
 	<?php
@@ -4947,11 +4947,11 @@ if (!empty ($bsp_style_settings_column_display['forum_activate'])) {
 		//do widths in all cases
 		?>
 			li.bbp-forum-topic-count {
-				width : <?php echo $forum_topics_width; ?> %; 
+				width : <?php echo esc_html($forum_topics_width) ; ?> %; 
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-forum-topic-count {
-					width : <?php echo $forum_topics_width_mobile; ?>%
+					width : <?php echo esc_html($forum_topics_width_mobile) ; ?>%
 				}  
 			}
 		<?php	
@@ -4987,7 +4987,7 @@ if (!empty ($bsp_style_settings_column_display['forum_activate'])) {
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-forum-reply-count {
-					width : <?php echo $forum_posts_width_mobile; ?>%
+					width : <?php echo esc_html($forum_posts_width_mobile) ; ?>%
 				}  
 			}
 		<?php	
@@ -5023,7 +5023,7 @@ if (!empty ($bsp_style_settings_column_display['forum_activate'])) {
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-forum-freshness {
-					width : <?php echo $forum_freshness_width_mobile; ?>%
+					width : <?php echo esc_html($forum_freshness_width_mobile) ; ?>%
 				}  
 			}
 		<?php	
@@ -5065,7 +5065,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-topic-title {
-					width : <?php echo $topic_name_width_mobile;?>%
+					width : <?php echo esc_html($topic_name_width_mobile) ;?>%
 				}  
 			}
 	<?php
@@ -5086,7 +5086,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-topic-voice-count {
-					width : <?php echo $topic_topics_width_mobile; ?>%
+					width : <?php echo esc_html($topic_topics_width_mobile); ?>%
 				}  
 			}
 		<?php	
@@ -5158,7 +5158,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 			}
 			@media only screen and (max-width: 480px) {
 				li.bbp-topic-freshness {
-					width : <?php echo $topic_freshness_width_mobile; ?>%
+					width : <?php echo esc_html($topic_freshness_width_mobile); ?>%
 				}  
 			}
 		<?php	
@@ -5191,7 +5191,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 			#bbpress-forums span.bsp_topic_fields_label
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php 
@@ -5204,7 +5204,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 		#bbpress-forums span.bsp_topic_fields_label
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	 
 	<?php
@@ -5217,7 +5217,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 			#bbpress-forums span.bsp_topic_fields_label
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 	 
 			
@@ -5268,7 +5268,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 			#bbpress-forums span.bsp_topic_fields_data
 			{
-				font-size: <?php echo $field; ?>;
+				font-size: <?php echo esc_html ($field); ?>;
 			}
 		 
 		<?php 
@@ -5281,7 +5281,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 		#bbpress-forums span.bsp_topic_fields_data
 		{
-			color: <?php echo $field; ?>;
+			color: <?php echo esc_html ($field); ?>;
 		}
 	 
 	<?php
@@ -5294,7 +5294,7 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	?>
 			#bbpress-forums span.bsp_topic_fields_data
 			{
-				font-family: <?php echo $field; ?>;
+				font-family: <?php echo esc_html ($field); ?>;
 			}
 	 
 			
@@ -5342,6 +5342,6 @@ if (!empty ($bsp_style_settings_column_display['topic_activate'])) {
 	<?php
 		$field= (!empty($datacss['css']) ? $datacss['css'] : '');
 		if (!empty ($field)){
-			echo $field;	
+			echo esc_html ($field);	
 		}
 ?>

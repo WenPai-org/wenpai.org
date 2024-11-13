@@ -46,6 +46,7 @@ function bsp_change_email_from_name ($headers) {
 				$new_name = 'From: ' .$bsp_style_settings_email['email_from_name'] ;
 				// re Setup the From header
 				$headers[$header]  = str_replace($name,$new_name, $header_name);
+				break ;
 			}	
 		}
 return $headers ;		

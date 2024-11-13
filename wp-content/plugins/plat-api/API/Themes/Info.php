@@ -120,11 +120,11 @@ class Info extends Base {
 	 * 根据前面获取到的操作来准备参数
 	 *
 	 * @param string $action 操作 可选值：search, browse
-	 * @param array $params 需要处理的参数，这个参数是请求的 request 数组
+	 * @param mixed $params 需要处理的参数，这个参数是请求的 request 数组
 	 *
 	 * @return array
 	 */
-	private function prepare_params( string $action, array $params ): array {
+	private function prepare_params( string $action, mixed $params ): array {
 		switch ( $action ) {
 			case 'search':
 				$allowed = array(

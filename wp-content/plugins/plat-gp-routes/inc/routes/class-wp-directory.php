@@ -207,7 +207,7 @@ class WP_Directory extends GP_Route {
 
 		$json = wp_remote_retrieve_body(
 			wp_safe_remote_get(
-				"https://api.wpmirror.com/translations/$type/1.0/?slug={$slug}",
+				"https://api.wordpress.org/translations/$type/1.0/?slug={$slug}",
 				array(
 					'user-agent' => 'WordPress.org Translate',
 				)

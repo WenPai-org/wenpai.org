@@ -712,13 +712,17 @@ function bsp_not_allowed_subscription_emails ($user_id, $user_management= false)
 			$link2 = '</a>' ;
 			if (!empty ($user_management)) {
 				echo '<h2>' ;
-				printf( esc_html__( ' WARNING: The setting in item 3 in %1s settings %2s overrides these user settings. ', 'bbp-style-pack' ), $link, $link2) ; 
-				printf( esc_html__('The %1s role this user has is set to not send subscription emails', 'bbp-style-pack' ), bbp_get_user_display_role($user_id) );
+				/* translators: %1$s a link, %2$s is a link2 */
+				printf( esc_html__( ' WARNING: The setting in item 3 in %1$s settings %2$s overrides these user settings. ', 'bbp-style-pack' ), $link, $link2) ;
+				/* translators: %s - user role,  */				
+				printf( esc_html__('The %s role this user has is set to not send subscription emails', 'bbp-style-pack' ), bbp_get_user_display_role($user_id) );
 				echo '</h2>' ;
 			}
 			else {
-				printf( esc_html__( ' WARNING: The setting in item 3 in %1s settings %2s overrides this individual setting. ', 'bbp-style-pack' ), $link, $link2) ; 
-				printf( esc_html__('The %1s role is set to not send subscription emails', 'bbp-style-pack' ), bbp_get_user_display_role($user_id) );
+				/* translators: %1$s is a link, %2$s is a link2, */
+				printf( esc_html__( ' WARNING: The setting in item 3 in %1$s settings %2$s overrides this individual setting. ', 'bbp-style-pack' ), $link, $link2) ; 
+				/* translators: %s - user role,  */	
+				printf( esc_html__('The %s role is set to not send subscription emails', 'bbp-style-pack' ), bbp_get_user_display_role($user_id) );
 			}
 			echo '</b></p>' ;
 		}

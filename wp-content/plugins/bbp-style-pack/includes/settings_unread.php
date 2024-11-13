@@ -128,7 +128,9 @@ function bsp_style_settings_unread () {
 				_e ('Use Image' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>Enter the full url to the image below</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'Enter the full url to the image below' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 			<td style="vertical-align:top">
@@ -137,7 +139,9 @@ function bsp_style_settings_unread () {
 				_e ('Do not display Icon' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>No icon will be displayed</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'No icon will be displayed' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 		</tr>
@@ -200,7 +204,9 @@ function bsp_style_settings_unread () {
 				_e ('Use Image' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>Enter the full url to the image below</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'Enter the full url to the image below' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 			<td style="vertical-align:top">
@@ -209,7 +215,9 @@ function bsp_style_settings_unread () {
 				_e ('Do not display Icon' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>No icon will be displayed</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'No icon will be displayed' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 		</tr>
@@ -321,7 +329,9 @@ function bsp_style_settings_unread () {
 				_e ('Allow users to opt-in' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>Users will have to opt-in via their profile to see the icons and use the buttons  </i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'Users will have to opt-in via their profile to see the icons and use the buttons' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 			<td width="200" style="vertical-align:top">
@@ -330,7 +340,9 @@ function bsp_style_settings_unread () {
 				_e ('Allow users to opt-out' , 'bbp-style-pack' ) ;?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>Users will have to opt-out via their profile to see the icons and use the buttons </i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'Users will have to opt-out via their profile to see the icons and use the buttons' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 		</tr>

@@ -72,8 +72,12 @@ function bsp_style_settings_moderation () {
                                 </tr>
                                 <tr>
                                         <td colspan='2'>
-                                                <p>
-                                                        <?php _e('<strong>NOTE- </strong>Once activated the settings are in Dashboard>settings>forums - click <a href="' . site_url() . '/wp-admin/options-general.php?page=bbpress/#bsp-moderation" > here</a>', 'bbp-style-pack'); ?>
+                                                <p><strong>
+                                                        <?php esc_html_e('NOTE- Once activated the settings are in Dashboard>settings>forums - click', 'bbp-style-pack'); 
+														echo '<a href="' . site_url() . '/wp-admin/options-general.php?page=bbpress/#bsp-moderation" >' ;
+														esc_html_e(' here', 'bbp-style-pack'); 
+														echo '</a>' ; ?>
+														</strong>
                                                 </p>
                                         </td>
                                 </tr>

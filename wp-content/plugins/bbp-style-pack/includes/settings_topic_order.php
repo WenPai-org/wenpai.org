@@ -90,25 +90,33 @@ function bsp_style_settings_topic_order () {
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="1" class="code"  ' . checked( 1,$value2, false ) . ' />' ;
 				_e ('Latest Reply date' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in the order of the latest reply</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]"><i><?php _e( 'Display topics in the order of the latest reply', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="2" class="code"  ' . checked( 2,$value2, false ) . ' />' ;
 				_e ('Topic date' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in the order of the original topic date</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]"><i><?php _e( 'Display topics in the order of the original topic date', 'bbp-style-pack' ); ?></i></label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="3" class="code"  ' . checked( 3,$value2, false ) . ' />' ;
 				_e ('Title' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in alphbetical Title order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in alphbetical Title order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="4" class="code"  ' . checked( 4,$value2, false ) . ' />' ;
 				_e ('Author' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in alphbetical Author order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in alphbetical Author order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 			</td>		
 		</tr>
@@ -123,13 +131,21 @@ function bsp_style_settings_topic_order () {
 				echo '<input name="'.$item3.'" id="'.$item3.'" type="radio" value="1" class="code"  ' . checked( 1,$value3, false ) . ' />' ;
 				_e ('Ascending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Earliest Date at top or Alphabetical order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Earliest Date at top or Alphabetical order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item3.'" id="'.$item3.'" type="radio" value="2" class="code"  ' . checked( 2,$value3, false ) . ' />' ;
 				_e ('Descending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Latest Date at top or reverse Alphabetical order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Latest Date at top or reverse Alphabetical order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 			</td>		
 		</tr>						
@@ -198,25 +214,41 @@ function bsp_style_settings_topic_order () {
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="1" class="code"  ' . checked( 1,$value2, false ) . ' />' ;
 				_e ('Latest Reply date' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in the order of the latest reply</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in the order of the latest reply', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="2" class="code"  ' . checked( 2,$value2, false ) . ' />' ;
 				_e ('Topic date' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in the order of the original topic date</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in the order of the original topic date', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="3" class="code"  ' . checked( 3,$value2, false ) . ' />' ;
 				_e ('Title' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in alphbetical Title order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in alphbetical Title order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item2.'" id="'.$item2.'" type="radio" value="4" class="code"  ' . checked( 4,$value2, false ) . ' />' ;
 				_e ('Author' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Display topics in alphbetical Author order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Display topics in alphbetical Author order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 			</td>		
 		</tr>
@@ -231,13 +263,21 @@ function bsp_style_settings_topic_order () {
 				echo '<input name="'.$item3.'" id="'.$item3.'" type="radio" value="1" class="code"  ' . checked( 1,$value3, false ) . ' />' ;
 				_e ('Ascending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Earliest Date at top or Alphabetical order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Earliest Date at top or Alphabetical order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item3.'" id="'.$item3.'" type="radio" value="2" class="code"  ' . checked( 2,$value3, false ) . ' />' ;
 				_e ('Descending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Latest Date at top or reverse Alphabetical order</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Latest Date at top or reverse Alphabetical order', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 			</td>		
 		</tr>					
@@ -271,19 +311,31 @@ function bsp_style_settings_topic_order () {
 				echo '<input name="'.$item1.'" id="'.$item1.'" type="radio" value="1" class="code"  ' . checked( 1,$value1, false ) . ' />' ;
 				_e ('Ascending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Earliest Date at top</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Earliest Date at top', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item1.'" id="'.$item1.'" type="radio" value="2" class="code"  ' . checked( 2,$value1, false ) . ' />' ;
 				_e ('Descending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Latest Date at top, show topic at top of each page</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Latest Date at top, show topic at top of each page', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 				<?php
 				echo '<input name="'.$item1.'" id="'.$item1.'" type="radio" value="3" class="code"  ' . checked( 3,$value1, false ) . ' />' ;
 				_e ('Descending' , 'bbp-style-pack' ) ;?>
 				<P>
-					<label class="description" for="bsp_settings[new_topic_description]"><?php _e( '<i>Latest Date at top, show topic at bottom on last page</i>', 'bbp-style-pack' ); ?></label><br/>
+					<label class="description" for="bsp_settings[new_topic_description]">
+						<i>
+						<?php _e( 'Latest Date at top, show topic at bottom on last page', 'bbp-style-pack' ); ?>
+						</i>
+					</label><br/>
 				<p/>
 			</td>		
 		</tr>

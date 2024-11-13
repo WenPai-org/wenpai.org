@@ -158,7 +158,9 @@ function bsp_style_settings_freshness () {
 				_e ('Click to show time since last post' , 'bbp-style-pack' ) ;?>
 				<br/>
 					<label class="description">
-						<?php _e( '<i>Default</i>' , 'bbp-style-pack' ); ?>
+						<i>
+						<?php _e( 'Default' , 'bbp-style-pack' ); ?>
+						</i>
 					</label>
 			
 			</td>
@@ -189,7 +191,9 @@ function bsp_style_settings_freshness () {
 				_e ('Click to show full Freshness' , 'bbp-style-pack' ) ;?>
 				<br/>
 					<label class="description">
-						<?php _e( '<i>Default</i>' , 'bbp-style-pack' ); ?>
+						<i>
+						<?php _e( 'Default' , 'bbp-style-pack' ); ?>
+						</i>
 						<?php _e( 'e.g' , 'bbp-style-pack' ); ?>
 						<code> 4 days, 5 hours ago</code>
 					</label>
@@ -260,7 +264,7 @@ function bsp_style_settings_freshness () {
 			</td>
 			<td>
 			<th scope="row">
-				<?php _e('Date Format') ?>
+				<?php _e('Date Format', 'bbp-style-pack') ?>
 			</th>
 			<td>
 			</td>

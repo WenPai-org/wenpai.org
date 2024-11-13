@@ -17,10 +17,10 @@ defined( 'ABSPATH' ) || exit;
         }
         // set values for bbp-style-pack
         if ( basename( __FILE__ ) == 'functions_topic_count.php' ) {
-                $tc_textdomain = 'bbp-style-pack'; // bad practice, but still works and is necessary for code portability 
+                $tc_textdomain = 'bbp-style-pack'; // bad practice, but still works and is necessary for code portability - not used after 6.1.1
         }
 
-	_e( "Hi there!  I'm just a plugin, not much I can do when called directly.", $tc_textdomain );
+	esc_html_e( "Hi there!  I'm just a plugin, not much I can do when called directly.", 'bbp-style-pack');
 	exit;
         
 } else {

@@ -19,9 +19,8 @@ class bspbbPressModToolsPlugin_Settings extends bspbbPressModToolsPlugin {
 	 * @param array $sections
 	 */
 	public function add_settings_section( $sections ) {
-
 		$sections['bbp_settings_moderation_options'] = array(
-			'title'    => __( '<span id="bsp-moderation">Moderation Options</span>', 'bbp-style-pack' ),
+			'title'    => '<span id="bsp-moderation">'.__( 'Moderation Options', 'bbp-style-pack' ).'</span>',
 			'callback' => array( $this, 'render_section_header_moderation_options' ),
 			'page'     => 'bbpress',
 		);
@@ -431,7 +430,7 @@ class bspbbPressModToolsPlugin_Settings extends bspbbPressModToolsPlugin {
 		<div>
 			<input type="text" name="_bbp_login_url" value="<?php echo get_option( '_bbp_login_url' ); ?>" class="regular-text">
 			<p class="description"><?php _e('If you are using bbPress login you will have or need a wordpress page with the [bbp-login] shortcode in it.', 'bbp-style-pack' ) ?></p>
-			<label class="description"><?php _e( '<b>Some themes or plugins also add a login page that users use to login</b>', 'bbp-style-pack' ); ?></label><br/>
+			<label class="description"><b><?php _e( 'Some themes or plugins also add a login page that users use to login', 'bbp-style-pack' ); ?></b></label><br/>
 			<label class="description"><?php _e( 'Enter the full URL of this page here.', 'bbp-style-pack' ); ?></label><br/>
 		</div>
 	<?php

@@ -9,6 +9,7 @@ class ComposerStaticInit3d22ab91adb43d177572df3b253a90a1
     public static $files = array (
         'cd9e51c0921cc701099548b3f01185d6' => __DIR__ . '/../..' . '/includes/enqueues.php',
         'd5fda5f77fbee56c66478dd6b45477ad' => __DIR__ . '/../..' . '/includes/query-loop.php',
+        '5bb222ba3eac6b49ea73dd847466dd2d' => __DIR__ . '/../..' . '/includes/utilities.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -28,7 +29,9 @@ class ComposerStaticInit3d22ab91adb43d177572df3b253a90a1
     public static $classMap = array (
         'AdvancedQueryLoop\\Query_Params_Generator' => __DIR__ . '/../..' . '/includes/Query_Params_Generator.php',
         'AdvancedQueryLoop\\Traits\\Date_Query' => __DIR__ . '/../..' . '/includes/Traits/Date_Query.php',
+        'AdvancedQueryLoop\\Traits\\Disable_Pagination' => __DIR__ . '/../..' . '/includes/Traits/Disable_Pagination.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Current' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Current.php',
+        'AdvancedQueryLoop\\Traits\\Exclude_Taxonomies' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Taxonomies.php',
         'AdvancedQueryLoop\\Traits\\Include_Posts' => __DIR__ . '/../..' . '/includes/Traits/Include_Posts.php',
         'AdvancedQueryLoop\\Traits\\Meta_Query' => __DIR__ . '/../..' . '/includes/Traits/Meta_Query.php',
         'AdvancedQueryLoop\\Traits\\Multiple_Posts' => __DIR__ . '/../..' . '/includes/Traits/Multiple_Posts.php',

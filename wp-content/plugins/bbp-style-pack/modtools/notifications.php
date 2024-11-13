@@ -237,11 +237,13 @@ class bspbbPressModToolsPlugin_Notifications extends bspbbPressModToolsPlugin {
                                 __( 'OP: %s', 'bbp-style-pack' ) . "<br>", 
                                 $this->get_author_name( $post )
                             );
-		$message .= sprintf( 
+		$message .= sprintf( 	
+								 /* translators: %s is post title */
                                 __( 'Topic: %s', 'bbp-style-pack' ) . "<br>", 
                                 $this->get_title( $post )
                             );
-		$message .= sprintf( 
+		$message .= sprintf( 	
+								 /* translators: %s is post content */
                                 __( 'Content: %s', 'bbp-style-pack' ) . "<br>", 
                                 nl2br( $post->post_content )
                             );

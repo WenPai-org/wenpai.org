@@ -56,7 +56,9 @@ function bsp_profile_settings() {
 				_e ('Show Profiles to everyone' , 'bbp-style-pack' ) ; ?>
 				<br>
 				<label class="description">
-					<?php _e( '<i>This is the default in bbpress.</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'This is the default in bbpress.' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			</td>
 		</tr>

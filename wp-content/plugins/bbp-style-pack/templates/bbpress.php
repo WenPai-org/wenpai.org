@@ -84,11 +84,11 @@ if ($bsp_style_settings_theme_support['fse'] == 2) {
 		//no template page set					
 		if (empty ($bsp_style_settings_theme_support['fse_template_page'])) {
 			if (current_user_can( 'manage_options' ) ) {
-				_e('No template page selected for forums to display', 'bbp-style-pack');
+				esc_html_e('No template page selected for forums to display', 'bbp-style-pack');
 				echo '<br/>' ;
-				_e('See - ', 'bbp-style-pack');
+				esc_html_e('See - ', 'bbp-style-pack');
 				echo '<a href="' . site_url() . '/wp-admin/options-general.php?page=bbp-style-pack&tab=bsp_block_theme">' ;
-				_e('Style Pack theme support settings', 'bbp-style-pack');
+				esc_html_e('Style Pack theme support settings', 'bbp-style-pack');
 				echo '</a>' ;
 			}
 			//if not admin send to 404
@@ -101,19 +101,19 @@ if ($bsp_style_settings_theme_support['fse'] == 2) {
 		elseif ($bsp_style_settings_theme_support['fse_template_page'] == get_the_ID() ){
 			if (current_user_can( 'manage_options' ) ) {
 				$forums_slug = bbp_get_root_slug() ;
-				_e('You are trying to view the bbpress template page, you need to view the forums page itself at ', 'bbp-style-pack');
+				esc_html_e('You are trying to view the bbpress template page, you need to view the forums page itself at ', 'bbp-style-pack');
 				echo '<br/>' ;
 				echo '<a href="/'.$forums_slug.'">' ;
 				echo get_site_url().'/'.$forums_slug ;
 				echo '</a>' ;
 				echo '<br/><br/>' ;
-				_e('To add forums as a menu item, edit your menu and add this url as a link.', 'bbp-style-pack');
+				esc_html_e('To add forums as a menu item, edit your menu and add this url as a link.', 'bbp-style-pack');
 				echo '<br/><br/>' ;
-				_e('See ', 'bbp-style-pack');
+				esc_html_e('See ', 'bbp-style-pack');
 				echo '<a href="' . site_url() . '/wp-admin/options-general.php?page=bbp-style-pack&tab=bsp_block_theme">' ;
-				_e('Style Pack theme support settings', 'bbp-style-pack');
+				esc_html_e('Style Pack theme support settings', 'bbp-style-pack');
 				echo '</a>' ;
-				_e(' for further information', 'bbp-style-pack');
+				esc_html_e(' for further information', 'bbp-style-pack');
 			}
 			//if not admin send to 404
 			else {
@@ -127,11 +127,13 @@ if ($bsp_style_settings_theme_support['fse'] == 2) {
 			if (!str_contains($post_content->post_content, '[bbp-forum-index]')) {
 				if (current_user_can( 'manage_options' ) ) {
 					$page = get_the_title($post_id) ;
-					_e('The template page you have selected ('.$page.') does not contain the \'[bbp-forum-index]\' shortcode, so forums will not display', 'bbp-style-pack');
+					esc_html_e('The template page you have selected' , 'bbp-style-pack') ;
+					echo '( '.esc_html($page).' ) ' ;
+					esc_html_e('does not contain the \'[bbp-forum-index]\' shortcode, so forums will not display', 'bbp-style-pack');
 					echo '<br/>' ;
-					_e('See - ', 'bbp-style-pack');
+					esc_html_e('See - ', 'bbp-style-pack');
 					echo '<a href="' . site_url() . '/wp-admin/options-general.php?page=bbp-style-pack&tab=bsp_block_theme">' ;
-					echo _e('Style Pack theme support settings', 'bbp-style-pack');
+					echo esc_html_e('Style Pack theme support settings', 'bbp-style-pack');
 					echo '</a>' ;
 				}
 				//if not admin send to 404

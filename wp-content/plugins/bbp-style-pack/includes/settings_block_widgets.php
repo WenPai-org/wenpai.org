@@ -110,7 +110,7 @@ function bsp_style_settings_block_widgets () {
 	<!--Font - Widget title  ------------------------------------------------------------------->
 		<tr>
 			<?php 
-			$name = __('Widget Title') ;
+			$name = 'Widget Title' ;
 			$name0 = __('Widget Title', 'bbp-style-pack') ;
 			$name1 = __('Size', 'bbp-style-pack') ;
 			$name2 = __('Color', 'bbp-style-pack') ;

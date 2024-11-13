@@ -273,7 +273,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<td colspan = 2>
 				<label class="description">
-					<?php _e( '<i>If you want to change the name - enter it here</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( 'If you want to change the name - enter it here' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 				</td>
 			<?php } ?>
@@ -293,7 +295,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<br/>
 				<label class="description">
-					<?php _e( '<i>(Do not display this role)</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( '(Do not display this role)' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			<?php } ?>
 			</td>
@@ -304,7 +308,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<br/>
 				<label class="description">
-					<?php _e( '<i>(Use just an image that you have uploaded)</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( '(Use just an image that you have uploaded)' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			<?php } ?>
 			</td>
@@ -315,7 +321,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<br/>
 				<label class="description">
-					<?php _e( '<i>(Use just the role name - with a background color if desired )</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( '(Use just the role name - with a background color if desired )' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			<?php } ?>
 			</td>
@@ -326,7 +334,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<br/>
 				<label class="description">
-					<?php _e( '<i>(Use the role name superimposed on an image)</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( '(Use the role name superimposed on an image)' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			<?php } ?>
 			</td>
@@ -337,7 +347,9 @@ function bsp_roles() {
 				<?php if ($name == 'bbp_keymaster') { ?>
 				<br/>
 				<label class="description">
-					<?php _e( '<i>(Use the role name below an image)</i>' , 'bbp-style-pack' ); ?>
+					<i>
+					<?php _e( '(Use the role name below an image)' , 'bbp-style-pack' ); ?>
+					</i>
 				</label>
 			<?php } ?>
 			</td>

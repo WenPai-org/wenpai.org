@@ -277,7 +277,7 @@ function bsp_filter_by_the_author() {
 	);
  
 	if ( isset($_GET['user']) )
-		$params['selected'] = filter_var( $_GET['user'], FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ); // choose selected user by $_GET variable
+		$params['selected'] = filter_var( sanitize_text_field(wp_unslash($_GET['user'])), FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ); // choose selected user by $_GET variable
  
 	wp_dropdown_users( $params ); // print the ready author list
 }
@@ -294,17 +294,17 @@ function bsp_filter_admin_rows( $query_vars ) {
 		//on dashboard>topics - replies 
 		// Add post_parent query_var if one is present
                 if ( ! empty( $_GET['bbp_topic_id']) && !empty( $_GET['bsp_checkt']  )) {
-                        $query_vars ['post_parent'] = absint( filter_var( $_GET['bbp_topic_id'], FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
+                        $query_vars ['post_parent'] = absint( filter_var( sanitize_text_field(wp_unslash($_GET['bbp_topic_id'])), FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
 		}
 		// on dashboard>topics - forum 
 		if ( ! empty( $_GET['bbp_forum_id']) && !empty( $_GET['bsp_checkt']  )) {
-			$query_vars ['post_parent'] = absint( filter_var( $_GET['bbp_topic_id'], FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
+			$query_vars ['post_parent'] = absint( filter_var( sanitize_text_field(wp_unslash($_GET['bbp_topic_id'])), FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
 		}
 		
 		// on dashboard>forum - topics
 		if ( ! empty( $_GET['bsp_forum_id']) && !empty( $_GET['bsp_checkf']  )) {
 			$query_vars['meta_key']   = '_bbp_forum_id';
-			$query_vars['meta_value'] = absint( filter_var( $_GET['bsp_forum_id'], FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
+			$query_vars['meta_value'] = absint( filter_var( sanitize_text_field(wp_unslash($_GET['bsp_forum_id'])), FILTER_UNSAFE_RAW, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH ) );
 			
 		}
 	
@@ -314,7 +314,7 @@ function bsp_filter_admin_rows( $query_vars ) {
 			$query_vars['orderby']  = 'meta_value_num';
 		}
 		// on on dashboard>forums  - filter replies column  **** Note we use $_SERVER to understand that this is a call in dashboard>forums so use '_bbp_total_reply_count'
-		if ( strpos($_SERVER['REQUEST_URI'], '?post_type=forum') == true ) {
+		if ( isset($_SERVER['REQUEST_URI']) && strpos($_SERVER['REQUEST_URI'], '?post_type=forum') == true ) {
 			if ( ! empty( $_GET['orderby']) && $_GET['orderby'] == 'Replies' ) {
 				$query_vars['meta_key']   = '_bbp_total_reply_count';
 				$query_vars['orderby']  = 'meta_value_num';
@@ -322,7 +322,7 @@ function bsp_filter_admin_rows( $query_vars ) {
 		}
 		
 		// on dashboard>topics - filter replies column **** Note we use $_SERVER to understand that this is a call in dashboard>topics so use '_bbp_reply_count'
-		if ( strpos($_SERVER['REQUEST_URI'], '?post_type=topic') == true ) {
+		if ( isset($_SERVER['REQUEST_URI']) && strpos($_SERVER['REQUEST_URI'], '?post_type=topic') == true ) {
 			if ( ! empty( $_GET['orderby']) && $_GET['orderby'] == 'Replies') {
 				$query_vars['meta_key']   = '_bbp_reply_count';
 				$query_vars['orderby']  = 'meta_value_num';

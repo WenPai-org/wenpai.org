@@ -314,7 +314,7 @@
 	 
 /*   7 ----------------------  Font - Author name --------------------------*/
  
-				#bbpress-forums a.bbp-author-name
+				#bbpress-forums div.bbp-reply-author .bbp-author-name
 			{
 				font-size: 14px;
 			}
@@ -972,10 +972,10 @@ ul.bsp-forums-widget{
 
 
 .bbpress .forum-titles .bbp-forum-topic-count::before {
-	content: "\f325" ;
+	content: &quot;\f325&quot; ;
 }
 .bbpress .forum-titles .bbp-forum-reply-count::before {
-	content: "\f125" ;
+	content: &quot;\f125&quot; ;
 }
 
 

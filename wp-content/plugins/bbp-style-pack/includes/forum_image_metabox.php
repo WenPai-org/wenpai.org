@@ -14,9 +14,9 @@ add_filter ('bbp_get_forum_post_type_supports' , 'bsp_forum_thumbnail') ;
 
 
 function bsp_forum_meta_box( $object, $box ) {
-	global $post ?>
-
-	<input type="hidden" name="bsp_meta_nonce" value="<?php echo wp_create_nonce(wp_basename(__FILE__)); ?>" />
+	global $post ;
+	wp_nonce_field( 'forums_image_metabox_check', 'forums_image_metabox' );
+	?>
 
 	<div style="overflow: hidden;">
 	
@@ -70,6 +70,13 @@ function bsp_forum_meta_box( $object, $box ) {
  */
 function bsp_forum_save_meta( $post_id, $post ) {
 	
+	//check nonce
+	if ( empty( $_POST['forums_image_metabox'] ) || ! wp_verify_nonce(sanitize_text_field( wp_unslash($_POST['forums_image_metabox'])), 'forums_image_metabox_check' ) ) {
+		return;
+	}
+
+	
+	
 	/* Only allow users that can edit the current post to submit data. */
 	if ( 'post' == $post->post_type && !current_user_can( 'edit_posts', $post_id ) )
 		return;
@@ -81,10 +88,12 @@ function bsp_forum_save_meta( $post_id, $post ) {
 	if ( ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) || !isset( $_POST['bsp_forum_thumbnail'] ) )
         return;
 
-	update_post_meta( $post_id, 'bsp_forum_thumbnail', $_POST['bsp_forum_thumbnail']);
-	update_post_meta( $post_id, 'bsp_forum_thumbnailwidth', $_POST['bsp_forum_thumbnailwidth']);
-	update_post_meta( $post_id, 'bsp_forum_thumbnailheight', $_POST['bsp_forum_thumbnailheight']);
-	
+	if (!empty ($_POST['bsp_forum_thumbnail'])) update_post_meta( $post_id, 'bsp_forum_thumbnail', sanitize_text_field(wp_unslash($_POST['bsp_forum_thumbnail'])));
+	else delete_post_meta( $post_id, 'bsp_forum_thumbnail') ;
+	if (!empty ($_POST['bsp_forum_thumbnailwidth'])) update_post_meta( $post_id, 'bsp_forum_thumbnailwidth', sanitize_text_field(wp_unslash($_POST['bsp_forum_thumbnailwidth'])));
+	else delete_post_meta( $post_id, 'bsp_forum_thumbnailwidth') ;
+	if (!empty ($_POST['bsp_forum_thumbnailheight'])) update_post_meta( $post_id, 'bsp_forum_thumbnailheight', sanitize_text_field(wp_unslash($_POST['bsp_forum_thumbnailheight'])));
+	else delete_post_meta( $post_id, 'bsp_forum_thumbnailheight') ;
 }
 
 

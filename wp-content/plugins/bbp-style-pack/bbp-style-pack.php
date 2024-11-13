@@ -4,7 +4,7 @@
 Plugin Name: bbp style pack
 Plugin URI: http://www.rewweb.co.uk/bbp-style-pack/
 Description: This plugin adds styling and features to bbPress.
-Version: 6.0.8
+Version: 6.1.2
 Author: Robin Wilson
 Text Domain: bbp-style-pack
 Domain Path: /languages
@@ -308,7 +308,7 @@ if( ! function_exists('wp_authenticate') && !empty($bsp_login_fail['activate_fai
                 if ( null == $user ) {
                         // TODO: What should the error message be? (Or would these even happen?)
                         // Only needed if all authentication handlers fail to return anything.
-                        $user = new WP_Error( 'authentication_failed', __( '<strong>Error</strong>: Invalid username, email address or incorrect password.' ) );
+                        $user = new WP_Error( 'authentication_failed', __( 'Error: Invalid username, email address or incorrect password.', 'bbp-style-pack' ) );
                 }
                 //***function amended to take out this line and add blank array to ensure we pass back to bbpress on any error
                 //$ignore_codes = array( 'empty_username', 'empty_password' );
