@@ -8,6 +8,7 @@ use Platform\Chinese_Format\Chinese_Format;
 use Platform\Logger\Logger;
 use Translation_Entry;
 use WordPressdotorg\GlotPress\TranslationSuggestions\Translation_Memory_Client;
+use WP_CLI;
 use WP_Error;
 use WPorg_GP_Project_Stats;
 use function Platform\Translate\WPOrgTranslateImport\create_project;
@@ -42,9 +43,17 @@ class Project {
 			set_time_limit( 3600 );
 			ignore_user_abort( true );
 		}
+
+		$route     = new GP_Route;
 		$wporg_url = sprintf( 'https://translate.wordpress.org/locale/zh-cn/default/wp-%s/%s/', $type, $slug );
 		$data      = get_web_page_contents( $wporg_url );
-		if ( is_wp_error( $data ) || false === $data ) {
+		if ( is_wp_error( $data ) ) {
+			if ( 'cli' !== PHP_SAPI ) {
+				$route->redirect_with_error( $data->get_error_message() );
+			} else {
+				WP_CLI::line( $data->get_error_message() );
+			}
+
 			return false;
 		}
 
@@ -54,8 +63,6 @@ class Project {
 			$sub_projects = self::get_theme_sub_project( $slug );
 		}
 
-		$route = new GP_Route;
-
 		if ( is_wp_error( $sub_projects ) ) {
 			Logger::error( Logger::TRANSLATE, '获取子项目详情失败', array(
 				'slug'  => $slug,
@@ -64,7 +71,9 @@ class Project {
 			) );
 
 			if ( 'cli' !== PHP_SAPI ) {
-				$route->redirect_with_error( '获取子项目详情失败' );
+				$route->redirect_with_error( '获取子项目详情失败：' . $sub_projects->get_error_message() );
+			} else {
+				WP_CLI::line( '获取子项目详情失败：' . $sub_projects->get_error_message() );
 			}
 
 			return false;
@@ -106,6 +115,10 @@ class Project {
 					'url'   => $wporg_url,
 					'error' => $data->get_error_message(),
 				) );
+
+				if ( 'cli' == PHP_SAPI ) {
+					WP_CLI::line( '请求翻译文件失败：' . $data->get_error_message() );
+				}
 
 				continue;
 			}

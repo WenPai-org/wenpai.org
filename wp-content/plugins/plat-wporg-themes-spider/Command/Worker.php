@@ -28,7 +28,7 @@ class Worker extends WP_CLI_Command {
 	 * 全量更新
 	 * @return void
 	 */
-	public function force_run(): void {
+	public function run_force(): void {
 		while ( ob_get_level() ) {
 			ob_end_flush();
 		}
@@ -197,6 +197,35 @@ class Worker extends WP_CLI_Command {
 		if ( class_exists( 'WP_CLI' ) ) {
 			WP_CLI::line( '增量更新完成[' . $endTime . ']' );
 		}
+	}
+
+	public function run_single( $args, $assoc_args ) {
+		if ( empty( $assoc_args['slug'] ) ) {
+			WP_CLI::line( '你需要给出要导入的项目 Slug' );
+			exit;
+		}
+
+		$slugs = [ $assoc_args['slug'] ];
+		$infos = $this->fetch_remote_themes( $slugs );
+
+		foreach ( $infos as $info ) {
+			if ( $info === false ) {
+				WP_CLI::line( '已下架：' . $assoc_args['slug'] );
+				continue;
+			}
+			if ( empty( $info ) ) {
+				WP_CLI::line( '空数据：' . $assoc_args['slug'] );
+				continue;
+			}
+
+			try {
+				$this->update_post( $assoc_args['slug'], $info );
+			} catch ( Exception $e ) {
+				WP_CLI::line( '出错：' . $e->getMessage() );
+			}
+		}
+
+		WP_CLI::line( '搞定！' );
 	}
 
 	/**
