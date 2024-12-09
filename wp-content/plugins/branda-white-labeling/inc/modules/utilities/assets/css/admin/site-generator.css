@@ -1,0 +1,29 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-site-generator-is-defender .module-utilities-site-generator-php .sui-box-body {
+  padding-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-site-generator-is-defender .module-utilities-site-generator-php .sui-box-body .branda-section-defender .sui-summary {
+  background-image: url(../../../../../../assets/images/branda/right@2x.png);
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-right: 0;
+  background-size: 111px 178px;
+  background-position: 40px bottom;
+}
+.branda-admin-page .sui-wrap-branda .branda-site-generator-is-defender .module-utilities-site-generator-php .sui-box-body .branda-section-defender .sui-summary .sui-summary-segment {
+  padding-right: 0;
+  margin-right: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-site-generator-is-defender .module-utilities-site-generator-php .sui-box-body .branda-section-defender .sui-summary .sui-summary-segment .sui-notice {
+  margin-right: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-site-generator-is-defender .module-utilities-site-generator-php .sui-box-body .branda-section-defender .sui-summary .sui-summary-segment .sui-notice p {
+  margin-bottom: 22px;
+  white-space: normal;
+}

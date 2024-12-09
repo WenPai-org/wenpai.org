@@ -1,0 +1,101 @@
+@import '../../../../../assets/sass/mixin';
+
+.branda-admin-page {
+	.sui-wrap.sui-wrap-branda {
+
+		// Selectors repeated so sui-accordion overrides can have higher precedence than actual styles
+		.branda-general-icon.branda-general-icon {
+			position: relative;
+
+			.sui-accordion.sui-accordion {
+				border-color: $gray_d;
+				background-color: $gray_fa;
+				margin: {
+					top: 0;
+					bottom: 0;
+				}
+				.sui-accordion-item-header {
+					padding: {
+						top: 4px;
+						bottom: 4px;
+					}
+					min-height: 38px;
+					.sui-accordion-col {
+						padding: 0;
+						span {
+							@include sui_15;
+							&.dashicons {
+								font-size: 20px;
+							}
+						}
+					}
+					.sui-accordion-col-auto {
+						margin-left: auto;
+						margin-right: 0;
+					}
+				}
+				.sui-accordion-item-header,
+				.sui-accordion-item-body {
+					padding: {
+						left: 15px !important;
+						right: 15px !important;
+					}
+					@media (min-width: 783px) {
+						padding: {
+							left: 15px;
+							right: 15px;
+						}
+					}
+				}
+				.sui-accordion-item-body {
+					border: 1px solid $gray_d;
+					padding: 15px;
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					left: 0;
+					.branda-dashicons {
+						margin-top: 15px;
+						&:first-child {
+							margin-top: 0;
+						}
+						span {
+							cursor: pointer;
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+				.branda-dashicon-list {
+					margin: 15px 0 0;
+					max-height: 200px;
+					overflow-x: hidden;
+					overflow-y: scroll;
+				}
+				.branda-dashicon-selection {
+					.sui-row {
+						@include sui_12;
+						font-weight: 500;
+						margin: {
+							bottom: 5px;
+							right: 0;
+						}
+						.sui-col {
+							&:last-child {
+								text-align: right;
+								padding-right: 5px;
+							}
+						}
+					}
+					.branda-dashicon-preview {
+						.dashicons {
+							&:before {
+								color: $gray_8;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

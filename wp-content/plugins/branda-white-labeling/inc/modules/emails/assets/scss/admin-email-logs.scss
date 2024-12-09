@@ -1,0 +1,87 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-email-logs{
+			.sui-table {
+				font-weight: 500;
+				#branda-email-logs-table td, .branda-ellipsised-last-cell {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.branda-ellipsised-last-cell {
+					display: inline-block;
+					width: calc(100% - 50px);
+				}
+				.branda-details-row {
+					display: flex;
+					margin-bottom: 10px;
+				}
+				td {
+					color: #888;
+					b {
+						color: #333;
+					}
+				}
+			}
+			#branda-email-logs-table .sui-accordion-item--open > td > .sui-box {
+				margin-bottom: 0;
+			}
+
+			#branda-email-logs-settings {
+				.branda-section-export, .branda-section-clear {
+					padding-bottom: 0;
+				}
+				.sui-side-tabs {
+					margin-bottom: 0;
+				}
+				#simple_options_export_items {
+					margin-top: 10px;
+				}
+				#simple_options_clear_items {
+					width: 100px;
+				}
+			}
+        }
+		.branda-box-actions {
+
+			.branda-actions-bar {
+
+				.branda-bulk-actions {
+					display: flex;
+					align-items: center;
+					margin: 0;
+					padding: 0;
+					border: 0;
+
+					.select-container {
+						width: 200px;
+						flex: 0 0 auto;
+						margin-right: 10px;
+					}
+				}
+
+				.branda-pagination {
+					flex: 1;
+					margin-left: 10px;
+					text-align: right;
+				}
+
+				@media(max-width, md) {
+					display: block;
+				}
+
+				@media(min-width, md) {
+					display: flex;
+					align-items: center;
+				}
+			}
+
+			.sui-pagination-filter {
+				.select-container {
+					z-index: unset;
+				}
+			}
+		}
+    }
+}

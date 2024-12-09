@@ -1,0 +1,107 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .module-widgets-dashboard-feeds-php {
+            #branda-dashboard-feeds-panel {
+                &:before {
+                    display: table;
+                    content: "";
+                }
+            }
+            .branda-feed-ellipsis,
+            .sui-col-md-8 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .branda-accordion-body {
+                padding: {
+                    bottom: 22px;
+                    top: 26px;
+                }
+                font-size: 13px;
+                color: $gray_8;
+                h3 {
+                    &.sui-col-md-12 {
+                        line-height: 22px;
+                        margin: {
+                            bottom: 14px;
+                            top: 0;
+                        }
+                        font: {
+                            size: 15px;
+                            weight: bold;
+                        }
+                    }
+                }
+                .sui-row {
+                    margin-bottom: 18px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .sui-col-md-4,
+                    .sui-col-md-8 {
+                        padding: {
+                            top: 4px;
+                            bottom: 4px;
+                        }
+                    }
+                }
+                .branda-list-title {
+                    font-weight: 500;
+                }
+            }
+            .sui-accordion-item-header {
+                .column-title {
+                    padding-left: 0;
+                }
+            }
+            .sui-accordion-header {
+                .check-column {
+                    min-width: 10px;
+                }
+                .column-title {
+                    padding-left: 0;
+                }
+            }
+            .sui-accordion-item {
+                &.sui-accordion-item--open {
+                    .sui-accordion-item-body {
+                        .sui-box {
+                            margin-bottom: 3px;
+                            .branda-divider {
+                                margin: 22px 15px 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .branda-dashboard-feeds-dialog {
+            .sui-with-button {
+                &.sui-with-button-icon {
+                    .sui-button-icon {
+                        right: 0;
+                        top: 5px;
+                    }
+                }
+            }
+            .branda-dashboard-feeds-list {
+                .sui-notice {
+                    margin-top: 20px;
+                }
+                .branda-list {
+                    padding: {
+                        left: 10px;
+                        right: 10px;
+                    }
+                    label {
+                        cursor: pointer;
+                        small, span {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -54,10 +54,10 @@ HTML;
 					<a href="https://wenpai.org/support" target="_blank">支持论坛</a>
 					 |
 					<a href="https://translate.wenpai.org/" target="_blank">翻译平台</a>
-				   |
-		  		 <a href="https://wptea.com/instructions-for-submission/" target="_blank">文章投稿</a>
 					 |
-					 <a href="https://wp-china-yes.com/document/news-source" target="_blank">自选新闻源</a>
+					<a href="https://wptea.com/instructions-for-submission/" target="_blank">文章投稿</a>
+					 |
+					<a href="https://wp-china-yes.com/document/news-source" target="_blank">自选新闻源</a>
 					</p>
 					<style>
 						#wenpai_tea .rss-widget {
@@ -83,8 +83,8 @@ HTML;
 						  margin:0
 						}
 						#wenpai_tea .community-events-footer a {
-              line-height: 2;
-              padding: 0.5em;
+						  line-height: 2;
+						  padding: 0.5em;
 						}
 					</style>
 HTML;
@@ -330,47 +330,47 @@ HTML
 		// code from corner-bracket-lover plugin
 		if ( in_array( 'corner', (array) $this->settings['windfonts_typography'] ) ) {
 			$this->page_str_replace( 'init', 'str_replace', [
-				'n’t',
+				'n』t',
 				'n&rsquo;t'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’s',
+				'』s',
 				'&rsquo;s'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’m',
+				'』m',
 				'&rsquo;m'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’re',
+				'』re',
 				'&rsquo;re'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’ve',
+				'』ve',
 				'&rsquo;ve'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’d',
+				'』d',
 				'&rsquo;d'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’ll',
+				'』ll',
 				'&rsquo;ll'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'“',
+				'「',
 				'&#12300;'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'”',
+				'」',
 				'&#12301;'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'‘',
+				'『',
 				'&#12302;'
 			] );
 			$this->page_str_replace( 'init', 'str_replace', [
-				'’',
+				'』',
 				'&#12303;'
 			] );
 		}

@@ -1,0 +1,35 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .sui-builder-field-label small {
+  display: inline;
+  font-size: .8em;
+  font-weight: normal;
+  line-height: inherit;
+  margin: inherit;
+  padding-left: .5em;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-user-container,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-blog-container {
+  border: 0;
+  background-color: #f8f8f8;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-user-container .sui-box-builder-body,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-blog-container .sui-box-builder-body {
+  padding-bottom: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-user-container .sui-box-builder-body .sui-box,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-blog-container .sui-box-builder-body .sui-box {
+  padding: 15px 20px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-user-container .sui-box-builder-footer,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-signup-code .branda-signup-code-blog-container .sui-box-builder-footer {
+  padding: 30px;
+  border: 0;
+}

@@ -1,0 +1,45 @@
+.branda-custom-admin-menu {
+	> .sui-box-footer {
+		justify-content: space-between;
+	}
+
+	// Loading
+	&.branda-admin-menu-loading {
+		.branda-custom-admin-menu-builder-fields {
+			background: #f8f8f8;
+			padding: 20px;
+
+			> .sui-box-builder {
+				display: none;
+			}
+		}
+	}
+
+	@import "menu-item-container";
+	@import "menu-item";
+}
+
+@at-root {
+	.branda-custom-admin-menu {
+		.sui-accordion-item.sui-builder-field[data-slug^="customize.php"] {
+			display: none;
+		}
+	}
+
+	.customize-support {
+
+		.branda-custom-admin-menu {
+
+			.sui-accordion-item.sui-builder-field {
+				&[data-slug^="customize.php"] {
+					display: block;
+				}
+
+				&[data-slug="custom-header"],
+				&[data-slug="custom-background"] {
+					display: none;
+				}
+			}
+		}
+	}
+}

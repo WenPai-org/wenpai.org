@@ -158,10 +158,10 @@ function bsp_ur_icon_wrapper_begin(){
 
 
 function bsp_ur_get_current_looped_topic_id(){
-	return bbpress ()->topic_query->post->ID;
+	//check if set - not set on a 'search' for instance!
+	if (isset( bbpress()->topic_query->post->ID ) ) return bbpress()->topic_query->post->ID;
+	else return '' ;
 }
-
-
 
 function bsp_ur_on_topic_visit(){
 	$topic_id = bbpress ()->reply_query->query ["post_parent"];

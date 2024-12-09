@@ -1,0 +1,36 @@
+.sui-box-builder {
+	background-color: #f8f8f8;
+	border: none;
+
+	> .sui-box-builder-header {
+		padding-bottom: 0;
+		border-bottom: none;
+
+		.sui-checkbox {
+			padding-top: 10px;
+		}
+
+		.sui-builder-options.sui-options-inline {
+			justify-content: space-between;
+			align-items: flex-end;
+
+			.branda-custom-menu-bulk-controls {
+				display: none;
+
+				.branda-custom-admin-menu-hide,
+				.branda-custom-admin-menu-unhide,
+				.branda-custom-admin-menu-make-invisible,
+				.branda-custom-admin-menu-make-visible {
+					display: none;
+				}
+				.branda-custom-admin-menu-hide {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	> .sui-box-builder-body {
+		padding-top: 10px;
+	}
+}

@@ -1,0 +1,90 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table {
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table #branda-email-logs-table td, .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table .branda-ellipsised-last-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table .branda-ellipsised-last-cell {
+  display: inline-block;
+  width: calc(100% - 50px);
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table .branda-details-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table td {
+  color: #888;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs .sui-table td b {
+  color: #333;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-table .sui-accordion-item--open > td > .sui-box {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-settings .branda-section-export, .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-settings .branda-section-clear {
+  padding-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-settings .sui-side-tabs {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-settings #simple_options_export_items {
+  margin-top: 10px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-email-logs #branda-email-logs-settings #simple_options_clear_items {
+  width: 100px;
+}
+.branda-admin-page .sui-wrap-branda .branda-box-actions .branda-actions-bar .branda-bulk-actions {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-box-actions .branda-actions-bar .branda-bulk-actions .select-container {
+  width: 200px;
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.branda-admin-page .sui-wrap-branda .branda-box-actions .branda-actions-bar .branda-pagination {
+  flex: 1;
+  margin-left: 10px;
+  text-align: right;
+}
+@media (max-width, md) {
+  .branda-admin-page .sui-wrap-branda .branda-box-actions .branda-actions-bar {
+    display: block;
+  }
+}
+@media (min-width, md) {
+  .branda-admin-page .sui-wrap-branda .branda-box-actions .branda-actions-bar {
+    display: flex;
+    align-items: center;
+  }
+}
+.branda-admin-page .sui-wrap-branda .branda-box-actions .sui-pagination-filter .select-container {
+  z-index: unset;
+}
+
+.branda-settings-tab-email-logs .branda-box-actions .sui-select-sm{
+  margin-bottom: 0px !important;
+  margin-right: 20px !important;
+}
+
+#branda-email-logs-table .check-column label {
+  margin-top: 28px;
+  position: relative;
+  vertical-align: middle;
+}
+
+#branda-email-logs-table .check-column .sui-checkbox input {
+  position: relative !important;
+}

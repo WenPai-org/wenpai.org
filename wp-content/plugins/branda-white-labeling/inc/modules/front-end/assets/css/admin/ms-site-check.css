@@ -1,0 +1,13 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-ms-site-check .branda-ms-site-check-error_message .sui-box-body {
+  padding-top: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-ms-site-check .branda-ms-site-check-error_message .sui-box-body div[data-tabs] {
+  border-top: 0;
+}

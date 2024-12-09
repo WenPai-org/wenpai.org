@@ -1,0 +1,42 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-login-screen {
+            .branda-section-content {
+                .branda-login_screen-error-messages {
+                    textarea {
+                        height: 6em;
+                    }
+                }
+            }
+            .branda-section-theme {
+                .branda-big-button {
+                    &.branda-has-theme {
+                        span {
+                            opacity: 0;
+                            transition-duration: .5s;
+                        }
+                        &:hover {
+                            span {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .module-login-screen-login-screen-php {
+                .branda-login-screen-choose-template-dialog {
+                    .sui-modal-content {
+                        max-width: 820px;
+                    }
+                }
+                .simple-option-textarea {
+                    textarea {
+                        min-height: 3em;
+                    }
+                }
+            }
+        }
+    }
+
+}

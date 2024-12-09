@@ -1,0 +1,36 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions #permissions .sui-row {
+  margin: 0 -5px 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status {
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-tabs] {
+  border-top: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-tabs] div:first-of-type {
+  margin-left: 30px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-tabs] div:last-of-type {
+  margin-right: 30px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-panes] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-panes] .sui-box {
+  margin: 0 11px 0 5px;
+  border: none;
+  box-shadow: none;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-permissions .branda-section-subsites .branda-tab-subsites-status div[data-panes] .sui-box .sui-row {
+  margin: 0 0 5px 0;
+}

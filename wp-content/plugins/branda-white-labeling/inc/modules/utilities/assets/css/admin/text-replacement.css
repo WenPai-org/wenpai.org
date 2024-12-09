@@ -1,0 +1,17 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-text-replacement .sui-modal .branda-text-replacement-exclude_url .sui-side-tabs {
+  margin-bottom: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-text-replacement .sui-modal label.sui-label {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}

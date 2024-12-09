@@ -1,0 +1,54 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .module-emails-template-php {
+            .branda-section-theme {
+                .branda-big-button {
+                    width: 160px;
+                    &.branda-has-theme {
+                        span {
+                            opacity: 0
+                        }
+                        &:hover {
+                            span {
+                                opacity: 1
+                            }
+                        }
+                    }
+                }
+                .sui-form-field {
+                    &.simple-option-callback,
+                    &.branda-add {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .branda-section-content {
+                margin-top: 10px;
+                > .sui-settings-label {
+                    color: $gray_3;
+                }
+            }
+            .simple-option {
+                .ub_html_editor {
+                    min-height: 50em;
+                }
+            }
+        }
+        #branda-email-template-preview {
+			.sui-modal-content {
+				max-width: 100%;
+			}
+            img {
+                max-width: 100%;
+            }
+        }
+        #branda-email-template-choose-template {
+            .sui-box-footer {
+                &.sui-actions-right {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

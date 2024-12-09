@@ -1,0 +1,6 @@
+#wpmu_signup_blog_notification .simple-option-checkbox,
+#wpmu_signup_user_notification .simple-option-checkbox,
+#wpmu_welcome_notification .simple-option-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}

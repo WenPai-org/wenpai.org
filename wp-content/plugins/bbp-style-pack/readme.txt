@@ -3,7 +3,7 @@ Contributors: robin-w
 Tags: forum, bbpress, bbp, style
 Donate link: http://www.rewweb.co.uk/donate
 Tested up to: 6.6
-Stable tag: 6.1.2
+Stable tag: 6.1.3
 License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,13 @@ To install this plugin :
 
 
 == Changelog ==
+
+= 6.1.3 =
+* Change to getting bbpress version in bbp-style-pack.php as old method is causing issues with translations following WP 6.7 release.
+* fix to error in unread functions 'Attempt to read property “ID” on null'
+* fix to forums and topic index icons in version 6.1.2
+
+
 
 = 6.1.2 =
 * The second of several technical releases which will help bring this plugin up to date with all the latest WordPress coding standards and PHP changes

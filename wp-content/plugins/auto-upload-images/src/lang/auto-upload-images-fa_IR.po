@@ -1,0 +1,215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Auto Upload Images\n"
+"POT-Creation-Date: 2021-10-10 21:37+0330\n"
+"PO-Revision-Date: 2021-10-10 21:39+0330\n"
+"Last-Translator: Ali Irani <ali@irani.im>\n"
+"Language-Team: Ali Irani <ali@irani.im>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 2.3\n"
+
+#: wp-content/plugins/auto-upload-images/src/WpAutoUpload.php:137
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:4
+msgid "Auto Upload Images Settings"
+msgstr "تنظیمات بارگذاری خودکار تصاویر"
+
+#: wp-content/plugins/auto-upload-images/src/WpAutoUpload.php:138
+msgid "Auto Upload Images"
+msgstr "بارگذاری خودکار تصاویر"
+
+#: wp-content/plugins/auto-upload-images/src/WpAutoUpload.php:204
+msgid "Settings Saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: wp-content/plugins/auto-upload-images/src/WpAutoUpload.php:208
+msgid "Successfully settings reset to defaults."
+msgstr "تنظیمات با موفقیت به حالت پیش‌فرض تغییر یافت."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:21
+msgid "Base URL:"
+msgstr "آدرس اصلی:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:26
+msgid ""
+"If you need to choose a new base URL for the images that will be automatically "
+"uploaded. Ex:"
+msgstr ""
+"در صورت نیاز آدرس اصلی جدیدی برای تصاویری که به صورت خودکار بارگذاری می‌شوند "
+"انتخاب کنید. مثل:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:32
+msgid "Image Name:"
+msgstr "نام تصویر:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:38
+#, php-format
+msgid ""
+"Choose a custom filename for the new images will be uploaded. You can also use "
+"these shortcodes %s."
+msgstr ""
+"نام دلخواهی برای نام فایل تصاویر جدیدی که بارگذاری می‌شود انتخاب کنید. همچنین "
+"می‌توانید از کدهای کوتاه %s در این نام استفاده کنید."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:45
+msgid "Alt Name:"
+msgstr "نام alt تصویر:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:51
+#, php-format
+msgid ""
+"Choose a custom alt name for the new images will be uploaded. You can also use "
+"these shortcodes %s."
+msgstr ""
+"نام دلخواهی برای نام alt تصاویر جدیدی که بارگذاری می‌شود انتخاب کنید. همچنین "
+"می‌توانید از کدهای کوتاه %s در این نام استفاده کنید."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:59
+msgid "Image Size:"
+msgstr "اندازه تصویر:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:61
+msgid "(Inactive)"
+msgstr "(غیرفعال)"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:65
+msgid "Max Width"
+msgstr "بیشترین عرض"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:67
+msgid "Max Height"
+msgstr "بیشترین ارتفاع"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:69
+msgid ""
+"You can choose max width and height for images uploaded by this plugin on your "
+"site. If you leave empty each one of fields by default use the original size of "
+"the image."
+msgstr ""
+"شما می‌توانید بیشترین عرض و ارتفاع تصاویری که با استفاده از این افزونه در سایت "
+"بارگذاری می‌شوند را از این قسمت تعیین نمایید. همچنین در صورت خالی رها کردن هر یک "
+"از این گزینه‌ها به صورت پیش‌فرض از اندازه های اصلی تصویر استفاده می‌گردد."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:71
+msgid "To activate this feature please enable Gd or Imagick extensions of PHP."
+msgstr ""
+"برای فعال سازی این امکان لطفا افزونه های Gd یا Imagick را برای PHP نصب و فعال "
+"نمائید."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:79
+msgid "Exclude Post Types:"
+msgstr "نوع مطلب های مثتثنی:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:92
+msgid "Select the Post Types that you want exclude from automatic uploading"
+msgstr ""
+"نوع مطالبی که می‌خواهید بارگذاری خودکار تصاویر در آنها انجام نشود را انتخاب کنید."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:98
+msgid "Exclude Domains:"
+msgstr "دامنه‌های مثتثنی:"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:102
+msgid ""
+"Enter the domains you wish to be excluded from uploading images: (One domain "
+"per line)"
+msgstr ""
+"دامنه‌هایی را که می‌خواهید از آنها آپلود تصاویر انجام نگردد وارد نمایید: (هر خط "
+"یک آدرس)"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:109
+msgid "Reset Options"
+msgstr "بازگردانی تنظیمات اصلی"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:110
+msgid "Are you sure to reset all options to defaults?"
+msgstr "آیا از تغییر تمام تنظیمات این افزونه به حالت پیش‌فرض اطمینان دارید؟"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:118
+msgid "Information"
+msgstr "اطلاعات"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:123
+msgid "Support and Donate to the Plugin"
+msgstr "پشتیبانی و حمایت مالی از توسعه افزونه"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:126
+msgid "Report Bug and Issues"
+msgstr "گزارش مشکل و درخواست بهبود"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:129
+msgid "Github Repository"
+msgstr "مخزن گیت‌هاب"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:132
+msgid "Plugin Page in WP"
+msgstr "صفحه افزونه در سایت وردپرس"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:136
+msgid "Rate to this plugin"
+msgstr "به این افزونه امتیاز دهید"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:140
+msgid "Official Page"
+msgstr "صفحه رسمی افزونه"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:144
+msgid ""
+"If you want to help to plugin development and if you can do so please make a "
+"donation to the project and encourage others to do so, for more updates and "
+"more features."
+msgstr ""
+"اگر تمایل دارید تا از توسعه این افزونه پشتیبانی کنید و اگر این افزونه برای شما "
+"کاربردی است با حمایت مالی خود از این افزونه به ادامه توسعه و بهبود های آینده و "
+"اضافه شدن ویژگی های جدید به افزونه کمک کنید."
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:144
+msgid "Make a Donation"
+msgstr "حمایت مالی از توسعه افزونه"
+
+#: wp-content/plugins/auto-upload-images/src/setting-page.php:146
+msgid ""
+"If you are a wp developer and like to contribute to this plugin development or "
+"you are a translator and want to have this plugin in your language you can "
+"start from <a href=\"https://github.com/airani/wp-auto-upload\" target=\"_blank"
+"\">plugin Github repository</a>."
+msgstr ""
+"اگر شما یک توسعه‌دهنده وردپرس هستید و تمایل دارید تا در توسعه این افزونه مشارکت "
+"داشته باشید و یا یک مترجم هستید و می‌خواهید زبان مورد نظر خود را به افزونه اضافه "
+"کنید همین حالا می‌توانید از <a href=\"https://github.com/airani/wp-auto-upload\" "
+"target=\"_blank\">مخزن افزونه در گیت‌هاب</a> شروع کنید."
+
+#~ msgid "Twitter of Plugin Developer"
+#~ msgstr "توییتر توسعه‌دهنده افزونه"
+
+#~ msgid ""
+#~ "\"PHP CURL\" not enabled on your site! For working with \"Auto Upload Images"
+#~ "\" plugin, you need to enable \"PHP CURL\", please contact with server admin "
+#~ "and send request to enable \"PHP CURL\" on your site."
+#~ msgstr ""
+#~ "\"PHP CURL\" در سایت شما غیرفعال است! برای آنکه افزونه «آپلود خودکار تصاویر» "
+#~ "به خوبی کار کند نیاز است تا \"PHP CURL\" را در سایت خود فعال کنید. به همین "
+#~ "منظور می‌توانید با مدیر سرور خود تماس گرفته و برای فعال شدن \"PHP CURL\" "
+#~ "درخواستی ارسال بفرمائید."
+
+#~ msgid "Developer at Twitter"
+#~ msgstr "حساب توییتر توسعه دهنده"
+
+#, fuzzy
+#~ msgid ""
+#~ "Choose a custom filename for the new images will be uploaded. You can also "
+#~ "use these shortcodes <code dir=\"ltr\">%filename%</code>, <code dir=\"ltr\">"
+#~ "%url%</code>, <code dir=\"ltr\">%date%</code>, <code dir=\"ltr\">%year%</"
+#~ "code>, <code dir=\"ltr\">%month%</code>, <code dir=\"ltr\">%day%</code>, "
+#~ "<code dir=\"ltr\">%random%</code>, <code dir=\"ltr\">%timestamp%</code>, "
+#~ "<code dir=\"ltr\">%postname%</code>, <code dir=\"ltr\">%post_id%</code>."
+#~ msgstr ""
+#~ "نام دلخواهی برای نام فایل تصاویر جدیدی که بارگذاری می‌شود انتخاب کنید. همچنین "
+#~ "می‌توانید از کدهای کوتاه <code dir=\"ltr\">%filename%</code>, <code dir=\"ltr"
+#~ "\">%url%</code>, <code dir=\"ltr\">%date%</code> , <code dir=\"ltr\">%year%</"
+#~ "code>, <code dir=\"ltr\">%month%</code>, <code dir=\"ltr\">%day%</code> در "
+#~ "این نام استفاده کنید."

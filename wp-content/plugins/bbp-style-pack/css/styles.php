@@ -4895,14 +4895,14 @@ $content = (!empty($bsp_style_settings_f['forum_topics']) ? $bsp_style_settings_
 $content = '"'.'\\'.$content.'"' ;
 ?>
 .bbpress .forum-titles .bbp-forum-topic-count::before {
-	content: <?php echo esc_html($content) ; ?> ;
+	content: <?php echo ($content) ; ?> ;
 }
 <?php
 $content = (!empty($bsp_style_settings_f['forum_posts']) ? $bsp_style_settings_f['forum_posts'] : 'f125');
 $content = '"'.'\\'.$content.'"' ;
 ?>
 .bbpress .forum-titles .bbp-forum-reply-count::before {
-	content: <?php echo esc_html($content); ?> ;
+	content: <?php echo ($content); ?> ;
 }
 
 

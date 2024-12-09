@@ -18,20 +18,10 @@ if ( ! class_exists( FreemiusConfig::class ) ) :
 	 */
 	class FreemiusConfig extends CoreComponent {
 		/**
-		 * The premium title
-		 *
-		 * @var string
-		 */
-		private $premium_title;
-
-		/**
 		 * The constructor
 		 */
 		public function __construct( $the_plugin_instance ) {
 			parent::__construct( $the_plugin_instance );
-
-			// Set value for labels.
-			$this->premium_title = __( 'Upgrade', 'display-a-meta-field-as-block' );
 		}
 
 		/**
@@ -96,7 +86,7 @@ if ( ! class_exists( FreemiusConfig::class ) ) :
 				if ( $mfb_fs->is_not_paying() ) {
 					$custom_links[] = [
 						'url'    => $is_network_activate ? str_replace( 'options-general.php', 'admin.php', $mfb_fs->get_upgrade_url() ) : $mfb_fs->get_upgrade_url(),
-						'title'  => $this->premium_title,
+						'title'  => $this->get_premium_label(),
 						'target' => '_self',
 						'icon'   => '<span class="dashicons dashicons-superhero-alt"></span> ',
 						'id'     => $is_network_activate ? 'admin_page_mfb-settings-pricing-network' : 'settings_page_mfb-settings-pricing',
@@ -116,7 +106,7 @@ if ( ! class_exists( FreemiusConfig::class ) ) :
 		 */
 		public function plugin_settings_links( $links ) {
 			if ( mfb_fs()->is_not_paying() ) {
-				$links[] = sprintf( '<a href="%1$s" target="_self" style="font-weight:bold;color:#d20962;">%2$s</a>', mfb_fs()->get_upgrade_url(), $this->premium_title );
+				$links[] = sprintf( '<a href="%1$s" target="_self" style="font-weight:bold;color:#d20962;">%2$s</a>', mfb_fs()->get_upgrade_url(), $this->get_premium_label() );
 			}
 
 			return $links;
@@ -129,6 +119,15 @@ if ( ! class_exists( FreemiusConfig::class ) ) :
 		 */
 		public function enqueue_data_on_the_setting_page() {
 			wp_add_inline_script( 'mfb-settings', 'var MFB=' . wp_json_encode( [ 'isPremium' => apply_filters( 'meta_field_block_is_premium', ! mfb_fs()->is_not_paying() ) ] ) . ';', 'before' );
+		}
+
+		/**
+		 * Get the labels
+		 *
+		 * @return string
+		 */
+		private function get_premium_label() {
+			return __( 'Upgrade', 'display-a-meta-field-as-block' );
 		}
 	}
 endif;

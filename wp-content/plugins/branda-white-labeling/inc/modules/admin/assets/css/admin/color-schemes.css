@@ -1,0 +1,42 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .branda-customize-ultimate-scheme {
+  margin-left: auto; }
+
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback {
+  max-width: 450px; }
+  .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option {
+    width: 140px;
+    padding: 13px 10px 10px 10px; }
+    .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option td {
+      line-height: 1px; }
+    .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option .sui-checkbox {
+      margin-bottom: 6px; }
+      .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option .sui-checkbox .branda-customize-ultimate-scheme {
+        padding: 0;
+        height: 22px;
+        width: 12px; }
+      .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option .sui-checkbox .sui-description {
+        color: #666;
+        font-size: 13px; }
+    .branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .module-admin-color-schemes-php .sui-box-body .branda-section-available_color_schemes .simple-option-callback .color-option:hover {
+      background-color: #fafafa; }
+
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes #branda-color-schemes-edit .sui-accordion-item-header {
+  min-height: 56px; }
+
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes #branda-color-schemes-edit .sui-accordion-item-body .sui-label {
+  color: #666;
+  font-size: 13px; }
+
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes .sui-checkbox.sui-checkbox-stacked {
+  display: inline-flex; }
+
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-color-schemes button.branda-customize-ultimate-scheme {
+  left: 25px;
+  bottom: 4px; }

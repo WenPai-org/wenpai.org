@@ -1,0 +1,22 @@
+.apt-action {
+    float: right;
+    font-size: 0.9em;
+}
+.admin-panel-tips .apt-content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.admin-panel-tips h4 + .apt-content {
+    padding-top: 0;
+}
+.admin-panel-tips .apt-content {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.admin-panel-tips .apt-content p:first-child {
+    margin-top: 0;
+}
+.admin-panel-tips .apt-content p:last-child {
+    margin-bottom: 0;
+}

@@ -2,8 +2,8 @@
 Contributors: welcher
 Tags: Query Loop, Custom Queries
 Requires at least: 6.2
-Tested up to: 6.5.2
-Stable tag: 3.2.0
+Tested up to: 6.7.1
+Stable tag: 4.0.0
 Requires PHP: 7.4
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,36 +18,44 @@ Please use the either the [support](https://wordpress.org/support/plugin/advance
 
 === Available Controls ===
 
-====  Disable Pagination ====
-Improve the performance of the query by disabling pagination
+==== Taxonomy queries ====
+
+Built complicated taxonomy queries!
 
 ==== Multiple post types ====
+
 Select additional post types for your query!
 
 ==== Post Count ====
+
 Set the number of items you want to display (up to 50).
 
 ==== Include Posts ====
 
-Choose the posts you want to display manually.
+Choose the posts you want to display manually or only the children of the current content.
 
 ==== Exclude current post ====
 
 Remove the current post from the query.
 
 ==== Exclude posts by category ====
+
 Choose to exclude posts from a list of categories
 
 ==== Offset ====
+
 Choose whether you want to start at the first or 100th!
 
 ==== Post Meta Query ====
+
 Generate complicated post meta queries using an interface that allows you to create a query based on `meta_key`, `meta_value` and the `compare` options. Combine multiple queries and determine if they combine results (OR) or narrow them down (AND).
 
 ==== Date Query ====
-Query items before a date, after a date or between two dates or choose to show the post from the last 1, 3, 6 and 12 months.
+
+Query items before/after the current or selected or choose to show the post from the last 1, 3, 6 and 12 months.
 
 ==== Post Order controls ====
+
 Sort in ascending or descending order by:
 
 -   Author
@@ -63,6 +71,10 @@ Sort in ascending or descending order by:
 
 **Please note that this is a slight duplication of the existing sorting controls. They both work interchangeably but it just looks a bit odd in the UI**
 
+==== Disable Pagination ====
+
+Improve the performance of the query by disabling pagination
+
 == Screenshots ==
 
 1. Select how many posts you want to display and the number to start at.
@@ -70,6 +82,12 @@ Sort in ascending or descending order by:
 3. Query posts before a date, after a date or between two dates.
 
 == Changelog ==
+= 4.0.0 =
+* Introducing the new Taxonomy Builder!
+* Show children of current item only.
+* Adds before and after current date controls
+* Clean up the UI.
+
 = 3.2.0 =
 * Adds the ability to exclude posts by category (props @ghost-ng)
 * Adds the ability to disable pagination.

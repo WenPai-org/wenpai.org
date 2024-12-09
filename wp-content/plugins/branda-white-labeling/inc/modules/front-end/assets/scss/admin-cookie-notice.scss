@@ -1,0 +1,15 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-cookie-notice {
+            .branda-section-colors {
+                @include branda_tab_with_subtabs;
+                .branda-cookie-notice-color-general {
+                    .sui-box-body {
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

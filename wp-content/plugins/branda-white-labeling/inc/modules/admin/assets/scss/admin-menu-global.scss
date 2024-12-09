@@ -1,0 +1,86 @@
+#adminmenuwrap {
+	#adminmenu {
+		$icon-container-width: 20px;
+		$icon-container-height: 20px;
+		$icon-width: 18px;
+		$icon-height: 18px;
+
+		div.wp-menu-image {
+			img {
+				width: 20px;
+				height: 20px;
+				object-fit: scale-down;
+			}
+		}
+
+		a.branda-sub-menu-with-icon {
+			display: flex;
+			align-items: center;
+
+			div.wp-menu-image {
+				flex-basis: 32px;
+				flex-grow: 0;
+				flex-shrink: 0;
+				box-sizing: border-box;
+				padding: 0 12px 0 0;
+				margin: 0;
+				height: auto;
+				width: auto;
+				text-align: left;
+				float: none;
+
+				&:before,
+				img {
+					opacity: .8;
+				}
+
+				&:before {
+					transition: all .1s ease-in-out;
+					font-size: $icon-width;
+					text-align: left;
+					padding: 0;
+				}
+
+				img {
+					width: $icon-width;
+					height: $icon-height;
+					object-fit: scale-down;
+					padding: 0;
+				}
+
+				&.svg {
+					width: $icon-container-width;
+					height: $icon-container-height;
+					background-size: $icon-width $icon-height;
+					background-position: left;
+					display: inline-block;
+				}
+			}
+
+			&:hover {
+				> div.wp-menu-image {
+					&::before,
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		li.current {
+			div.wp-menu-image {
+				&::before,
+				img {
+					opacity: 1;
+				}
+			}
+		}
+
+		.wp-menu-separator {
+			&:first-child,
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}

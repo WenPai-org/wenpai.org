@@ -682,9 +682,9 @@ function CreatePatternModalContents({
 function getTermLabels(pattern, categories) {
   // Theme patterns rely on core pattern categories.
   if (pattern.type !== PATTERN_TYPES.user) {
-    return categories.core?.filter(category => pattern.categories.includes(category.name)).map(category => category.label);
+    return categories.core?.filter(category => pattern.categories?.includes(category.name)).map(category => category.label);
   }
-  return categories.user?.filter(category => pattern.wp_pattern_category.includes(category.id)).map(category => category.label);
+  return categories.user?.filter(category => pattern.wp_pattern_category?.includes(category.id)).map(category => category.label);
 }
 function useDuplicatePatternProps({
   pattern,
@@ -712,13 +712,13 @@ function useDuplicatePatternProps({
     defaultSyncType: pattern.type !== PATTERN_TYPES.user // Theme patterns are unsynced by default.
     ? PATTERN_SYNC_TYPES.unsynced : pattern.wp_pattern_sync_status || PATTERN_SYNC_TYPES.full,
     defaultTitle: (0,external_wp_i18n_namespaceObject.sprintf)(/* translators: %s: Existing pattern title */
-    (0,external_wp_i18n_namespaceObject.__)('%s (Copy)'), typeof pattern.title === 'string' ? pattern.title : pattern.title.raw),
+    (0,external_wp_i18n_namespaceObject._x)('%s (Copy)', 'pattern'), typeof pattern.title === 'string' ? pattern.title : pattern.title.raw),
     onSuccess: ({
       pattern: newPattern
     }) => {
       createSuccessNotice((0,external_wp_i18n_namespaceObject.sprintf)(
       // translators: %s: The new pattern's title e.g. 'Call to action (copy)'.
-      (0,external_wp_i18n_namespaceObject.__)('"%s" duplicated.'), newPattern.title.raw), {
+      (0,external_wp_i18n_namespaceObject._x)('"%s" duplicated.', 'pattern'), newPattern.title.raw), {
         type: 'snackbar',
         id: 'patterns-create'
       });
@@ -928,6 +928,15 @@ function PatternConvertButton({
     } = select(external_wp_blockEditor_namespaceObject.store);
     const rootId = rootClientId || (clientIds.length > 0 ? getBlockRootClientId(clientIds[0]) : undefined);
     const blocks = (_getBlocksByClientId = getBlocksByClientId(clientIds)) !== null && _getBlocksByClientId !== void 0 ? _getBlocksByClientId : [];
+
+    // Check if the block has reusable support defined.
+    const hasReusableBlockSupport = blockName => {
+      const blockType = (0,external_wp_blocks_namespaceObject.getBlockType)(blockName);
+      const hasParent = blockType && 'parent' in blockType;
+
+      // If the block has a parent, check with false as default, otherwise with true.
+      return (0,external_wp_blocks_namespaceObject.hasBlockSupport)(blockName, 'reusable', !hasParent);
+    };
     const isReusable = blocks.length === 1 && blocks[0] && (0,external_wp_blocks_namespaceObject.isReusableBlock)(blocks[0]) && !!select(external_wp_coreData_namespaceObject.store).getEntityRecord('postType', 'wp_block', blocks[0].attributes.ref);
     const _canConvert =
     // Hide when this is already a synced pattern.
@@ -939,7 +948,7 @@ function PatternConvertButton({
     // Hide on invalid blocks.
     block.isValid &&
     // Hide when block doesn't support being made into a pattern.
-    (0,external_wp_blocks_namespaceObject.hasBlockSupport)(block.name, 'reusable', true)) &&
+    hasReusableBlockSupport(block.name)) &&
     // Hide when current doesn't have permission to do that.
     // Blocks refers to the wp_block post type, this checks the ability to create a post of that type.
     !!canUser('create', {
@@ -1621,7 +1630,7 @@ function PatternOverridesToolbarIndicator({
     clientId: clientIds[0],
     maximumLength: 35
   });
-  const blockDescription = isSingleBlockSelected ? (0,external_wp_i18n_namespaceObject.sprintf)(/* translators: %1s: The block type's name; %2s: The block's user-provided name (the same as the override name). */
+  const blockDescription = isSingleBlockSelected ? (0,external_wp_i18n_namespaceObject.sprintf)(/* translators: 1: The block type's name. 2: The block's user-provided name (the same as the override name). */
   (0,external_wp_i18n_namespaceObject.__)('This %1$s is editable using the "%2$s" override.'), firstBlockTitle.toLowerCase(), firstBlockName) : (0,external_wp_i18n_namespaceObject.__)('These blocks are editable using overrides.');
   const descriptionId = (0,external_wp_element_namespaceObject.useId)();
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ToolbarItem, {

@@ -972,10 +972,10 @@ ul.bsp-forums-widget{
 
 
 .bbpress .forum-titles .bbp-forum-topic-count::before {
-	content: &quot;\f325&quot; ;
+	content: "\f325" ;
 }
 .bbpress .forum-titles .bbp-forum-reply-count::before {
-	content: &quot;\f125&quot; ;
+	content: "\f125" ;
 }
 
 

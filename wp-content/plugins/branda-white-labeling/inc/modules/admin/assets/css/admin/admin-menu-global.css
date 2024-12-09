@@ -1,0 +1,55 @@
+#adminmenuwrap #adminmenu div.wp-menu-image img {
+  width: 20px;
+  height: 20px;
+  object-fit: scale-down;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon {
+  display: flex;
+  align-items: center;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image {
+  flex-basis: 32px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0 12px 0 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  text-align: left;
+  float: none;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image:before,
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image img {
+  opacity: .8;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image:before {
+  transition: all .1s ease-in-out;
+  font-size: 18px;
+  text-align: left;
+  padding: 0;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image img {
+  width: 18px;
+  height: 18px;
+  object-fit: scale-down;
+  padding: 0;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon div.wp-menu-image.svg {
+  width: 20px;
+  height: 20px;
+  background-size: 18px 18px;
+  background-position: left;
+  display: inline-block;
+}
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon:hover > div.wp-menu-image::before,
+#adminmenuwrap #adminmenu a.branda-sub-menu-with-icon:hover > div.wp-menu-image img {
+  opacity: 1;
+}
+#adminmenuwrap #adminmenu li.current div.wp-menu-image::before,
+#adminmenuwrap #adminmenu li.current div.wp-menu-image img {
+  opacity: 1;
+}
+#adminmenuwrap #adminmenu .wp-menu-separator:first-child, #adminmenuwrap #adminmenu .wp-menu-separator:last-child {
+  display: none;
+}

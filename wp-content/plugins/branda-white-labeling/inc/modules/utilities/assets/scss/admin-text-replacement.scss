@@ -1,0 +1,22 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap {
+        &.sui-wrap-branda {
+            .branda-settings-tab-content-text-replacement {
+                .sui-modal {
+                    .branda-text-replacement-exclude_url {
+                        .sui-side-tabs {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    label {
+                        &.sui-label {
+                            @include sui_12;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

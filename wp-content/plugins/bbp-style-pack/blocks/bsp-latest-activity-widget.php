@@ -135,7 +135,7 @@ if (!$check) return ;
 		do_action ('bsp_latest_activity_widget_before_title') ;
 
 		if ( !empty( $attributes['laTitle'] ) ) {
-			echo '<span class="bsp-la-title"><h3 class="widget-title bsp-widget-title">' .  $attributes['laTitle']  . '</h3></span>' ;
+			echo '<span class="bsp-la-title"><h3 class="widget-title bsp-widget-title">' .  esc_html($attributes['laTitle'])  . '</h3></span>' ;
 		} 
 		
 		do_action ('bsp_latest_activity_widget_after_title') ;
@@ -169,7 +169,7 @@ if (!$check) return ;
 				<?php } 
 				//if replies then set link to the latest reply
 				else { 
-					echo '<a class="bsp-la-reply-topic-title " href="' . esc_url( bbp_get_reply_url( $reply ) ) . '" title="' . esc_attr( bbp_get_reply_excerpt( $reply, 50 ) ) . '">' . bbp_get_reply_topic_title( $reply ) . '</a>';
+					echo '<a class="bsp-la-reply-topic-title " href="' . esc_url( bbp_get_reply_url( $reply ) ) . '" title="' . esc_attr( bbp_get_reply_excerpt( $reply, 50 ) ) . '">' . esc_html(bbp_get_reply_topic_title( $reply )) . '</a>';
 				} ?>
 				
 					<?php if ( ! empty( $author_link ) ) : ?>
@@ -178,11 +178,11 @@ if (!$check) return ;
 						
 							if (empty($reply)) {
 							echo '<span class="bsp-la-text">' ;
-							echo $attributes['laTopicAuthorLabel'].'</span> <span class="bsp-la-topic-author topic-author">' . $author_link . '</span>' ; 
+							echo esc_html($attributes['laTopicAuthorLabel']).'</span> <span class="bsp-la-topic-author topic-author">' . esc_url($author_link) . '</span>' ; 
 							}
 							else {
 							echo '<span class="bsp-la-text">' ;
-							echo $attributes['laReplyAuthorLabel'].'</span> <span class=" bsp-la-topic-author topic-author">' . $author_link . '</span>' ; 
+							echo esc_html($attributes['laReplyAuthorLabel']).'</span> <span class=" bsp-la-topic-author topic-author">' . esc_url($author_link) . '</span>' ; 
 							} ?>
 							
 						</div>
@@ -195,7 +195,7 @@ if (!$check) return ;
 										<?php //if show author off, then add a <br>
 										if (empty ($attributes['laShowAuthor'])) echo '<br>' ;
 										if (!empty ($attributes ['laShowReplyCount'])) {
-											echo $attributes['laReplyCountLabel'] ; 
+											echo esc_html($attributes['laReplyCountLabel']) ; 
 											bbp_topic_reply_count($topic); ?>
 										</span>
 										<?php }
@@ -222,9 +222,9 @@ if (!$check) return ;
 						else $forum1 = bbp_get_forum_title($forum) ;
 						$forum2 = esc_url( bbp_get_forum_permalink( $forum )) ;
 						echo '<span class="bsp-la-text">' ;
-						_e ( 'in ', 'bbp-style-pack' ) ;
+						esc_html_e ( 'in ', 'bbp-style-pack' ) ;
 						echo '</span>' ; ?>
-						<a class="bsp-la-forum-title bbp-forum-title" href="<?php echo $forum2; ?>"><?php echo $forum1 ; ?></a>
+						<a class="bsp-la-forum-title bbp-forum-title" href="<?php echo esc_html($forum2); ?>"><?php echo esc_html($forum1) ; ?></a>
 					</div>
 					<?php endif; ?>
 				

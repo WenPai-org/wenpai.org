@@ -1,0 +1,184 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .simple-option-select2 select,
+.branda-admin-page .sui-wrap-branda .simple-option-select2-ajax select {
+  min-width: 300px;
+  width: 40%;
+}
+.branda-admin-page .sui-wrap-branda .branda-empty {
+  padding: 0 10px 30px;
+  text-align: center;
+}
+.branda-admin-page .sui-wrap-branda .branda-empty h2.branda-image {
+  margin-top: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-empty h2.branda-image:before {
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: transparent none no-repeat 50%;
+  margin: 30px auto;
+}
+.branda-admin-page .sui-wrap-branda .branda-empty h2.branda-image.branda-image-confused:before {
+  background-image: url(../images/branda/empty-office-tray.png);
+}
+
+.branda-admin-page .sui-wrap-branda .branda-empty h2.branda-image.branda-image-empty:before {
+  background-image: url(../images/branda/empty-office-tray.png);
+}
+
+.branda-admin-page .sui-wrap-branda .branda-divider {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 21px 15px 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-accordion-body .sui-row:last-child .branda-divider {
+  display: none;
+}
+.branda-admin-page .sui-wrap-branda .branda-images-images-override {
+  max-width: 500px;
+}
+.branda-admin-page .sui-wrap-branda > div.sui-header > h1.sui-header-title {
+  text-transform: uppercase;
+}
+.branda-admin-page .sui-wrap-branda .sui-actions-left.top .select-container {
+  margin-right: 10px;
+}
+.branda-admin-page .sui-wrap-branda .sui-accordion-item-header .check-column {
+  max-width: 55px;
+}
+.branda-admin-page .sui-wrap-branda canvas.branda-focal {
+  width: 302px;
+  height: 202px;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+  background-color: #ddd;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+.branda-admin-page .sui-wrap-branda .branda-not-affected {
+  opacity: .5;
+}
+.branda-admin-page .sui-wrap-branda .check-column {
+  max-width: 55px;
+}
+.branda-admin-page .sui-wrap-branda .check-column label.sui-checkbox {
+  min-width: 18px;
+}
+.branda-admin-page .sui-wrap-branda .sui-modal.sui-modal-sm.branda-test-email .sui-box .sui-box-header {
+  padding-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .sui-modal.sui-modal-sm.branda-test-email .sui-box .sui-box-body {
+  padding-bottom: 7px;
+}
+.branda-admin-page .sui-wrap-branda .sui-modal.sui-modal-sm.branda-test-email .sui-box .sui-box-footer {
+  padding-bottom: 210px;
+  background-image: url(../images/branda/happy@2x.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 140px auto;
+}
+.branda-admin-page .sui-wrap-branda .sui-modal.sui-modal-sm.branda-test-email .sui-box .sui-box-footer .sui-button .sui-icon-loader {
+  position: static;
+}
+.branda-admin-page .sui-wrap-branda .sui-modal #branda-copy-settings-db-error-page .sui-box .sui-box-body .sui-label,
+.branda-admin-page .sui-wrap-branda .sui-modal .branda-test-email .sui-box .sui-box-body .sui-label {
+  color: #aaa;
+  font-size: 12px;
+}
+.branda-admin-page .sui-wrap-branda .ace_emptyMessage {
+  color: #aaa;
+}
+.branda-admin-page .sui-wrap-branda .simple-option .sui-tab-item.branda-icon.active svg path {
+  fill: #17a8e3;
+}
+.branda-admin-page .sui-wrap-branda .simple-option .sui-tabs-menu .sui-form-control {
+  padding: 9px 14px;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-size: 15px;
+}
+.branda-admin-page .sui-wrap-branda .simple-option.simple-option-sui-tab-icon div[for=simple_options_design_background_position_x],
+.branda-admin-page .sui-wrap-branda .simple-option.simple-option-sui-tab-icon div[for=simple_options_design_background_position_y] {
+  max-width: 355px;
+}
+.branda-admin-page .sui-wrap-branda.no-branda .branda-empty h2.branda-image:before {
+  background-image: none;
+  padding-top: 0px;
+  display: none;
+}
+.branda-admin-page .sui-wrap-branda.no-branda .branda-empty h2.branda-image.branda-image-confused:before {
+  background-image: none;
+  padding-top: 0px;
+  display: none;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users {
+  border: 0;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .sui-box-builder-body {
+  padding: 0;
+  background-color: #FFF;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .sui-builder-field {
+  border: 1px solid #E6E6E6;
+  padding: 10px 15px;
+  margin: 0 0 10px;
+  min-height: unset;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .sui-builder-field:hover {
+  box-shadow: none;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .sui-builder-field .sui-builder-field-label span:last-child {
+  font-weight: 400;
+  color: #888;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .branda-button-hover-red {
+  width: 9%;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .branda-button-hover-red:hover {
+  color: #FF6D6D;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .branda-permissions-user-title {
+  width: 30%;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .branda-field-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-users .branda-field-image .branda-circle-image {
+  width: 28px;
+  height: 28px;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  border-radius: 30px;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-add-user span[role="presentation"] {
+  display: none;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-add-user .sui-loading-text-adding {
+  display: none;
+}
+.branda-admin-page .sui-wrap-branda #branda-permissions-add-user .sui-loading-text-adding i:before {
+  animation: spin 1.3s linear infinite;
+}
+.branda-admin-page .sui-wrap-branda ul.branda-small-list {
+  padding-left: 17px;
+  margin: 0;
+  list-style: disc;
+  color: black;
+}
+.branda-admin-page .sui-wrap-branda ul.branda-small-list > li > span.sui-settings-label {
+  font-size: 13px;
+}
+.branda-admin-page .sui-wrap-branda .branda-new-features h3.sui-box-title {
+  white-space: normal;
+  overflow: visible;
+}

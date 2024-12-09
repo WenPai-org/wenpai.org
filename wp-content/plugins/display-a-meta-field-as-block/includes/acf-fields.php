@@ -496,7 +496,10 @@ if ( ! class_exists( ACFFields::class ) ) :
 				array_map(
 					function ( $term ) {
 						if ( $term ) {
-							return sprintf( '<a class="term-link" href="%1$s">%2$s</a>', get_term_link( $term ), get_term( $term )->name );
+							$term_object = get_term( $term );
+							if ( $term_object && $term_object instanceof \WP_Term ) {
+								return sprintf( '<a class="term-link" href="%1$s">%2$s</a>', get_term_link( $term ), $term_object->name );
+							}
 						} else {
 							return '';
 						}
@@ -595,14 +598,16 @@ if ( ! class_exists( ACFFields::class ) ) :
 		private function get_post_link( $post ) {
 			if ( $post ) {
 				$url = esc_url( get_permalink( $post ) );
-				return sprintf(
-					'<a class="post-link" href="%1$s" rel="bookmark">%2$s</a>',
-					$url,
-					esc_html( get_the_title( $post ) )
-				);
-			} else {
-				return '';
+				if ( $url ) {
+					return sprintf(
+						'<a class="post-link" href="%1$s" rel="bookmark">%2$s</a>',
+						$url,
+						esc_html( get_the_title( $post ) )
+					);
+				}
 			}
+
+			return '';
 		}
 
 		/**

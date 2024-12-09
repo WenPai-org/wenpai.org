@@ -207,7 +207,9 @@ if ( ! class_exists( Settings::class ) ) :
 
 			// Redirect to the getting started page, ignore bulk activation.
 			if (
-			! ( ( isset( $_REQUEST['action'] ) && 'activate-selected' === $_REQUEST['action'] ) &&
+				// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+				! ( ( isset( $_REQUEST['action'] ) && 'activate-selected' === $_REQUEST['action'] ) &&
+				// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			( isset( $_POST['checked'] ) && count( $_POST['checked'] ) > 1 ) ) ) {
 				add_option( 'meta_field_block_activation_redirect', wp_get_current_user()->ID );
 			}
@@ -310,11 +312,11 @@ if ( ! class_exists( Settings::class ) ) :
 						'url'     => $external_url . 'email-file-fields.mp4',
 						'caption' => 'Display ACF Email and File fields',
 					],
-					'galleryFields'     => [
+					'galleryFields'    => [
 						'url'     => $external_url . 'gallery-field.mp4',
 						'caption' => 'Display an ACF Gallery field',
 					],
-					'fileVideoFields'   => [
+					'fileVideoFields'  => [
 						'url'     => $external_url . 'file-video-field.mp4',
 						'caption' => 'Display an ACF File field as a video',
 					],

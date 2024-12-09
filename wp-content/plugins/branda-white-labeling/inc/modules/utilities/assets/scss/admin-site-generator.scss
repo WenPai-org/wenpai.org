@@ -1,0 +1,37 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-site-generator-is-defender {
+            .module-utilities-site-generator-php {
+                .sui-box-body {
+                    padding-bottom: 0;
+                    .branda-section-defender {
+                        .sui-summary {
+                            @include branda_in_module( 'right@2x' );
+                            margin:{
+                                bottom: 0;
+                                right: 0;
+                            }
+                            padding-right: 0;
+                            background: {
+                                size: 111px 178px;
+                                position: 40px bottom;
+                            }
+                            .sui-summary-segment {
+                                padding-right: 0;
+                                margin-right: 0;
+                                .sui-notice {
+                                    margin-right: 0;
+                                    p {
+                                        margin-bottom: 22px;
+                                        white-space: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

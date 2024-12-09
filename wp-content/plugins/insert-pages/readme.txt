@@ -1,8 +1,8 @@
 === Insert Pages ===
 Contributors: figureone, the_magician
 Tags: insert, pages, shortcode, embed
-Tested up to: 6.5
-Stable tag: trunk
+Tested up to: 6.7
+Stable tag: 3.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -109,6 +109,16 @@ Just one! The plugin prevents you from embedding a page in itself, but you can t
 3. Insert Pages shortcode example.
 
 == Changelog ==
+
+= 3.9.1 =
+* Additional fixes for error in some Woocommerce contexts.
+* Fix for legacy widgets with custom css from builder plugins having the css escaped and printed.
+
+= 3.9.0 =
+* Fix error in some Woocommerce contexts. Props @osositno for the [report](https://wordpress.org/support/topic/fatal-error-4761)!
+* Fix block layout styles not appearing in the block editor inside an insert page block. Props @davidpotter for the [report](https://wordpress.org/support/topic/block-properties-not-always-honored-in-the-gutenberg-editor/)!
+* Fix issues reported by Plugin Check, including securing output data (escaping).
+* Minor fixes to adhere to WordPress Coding Standards.
 
 = 3.8.1 =
 * Fix WPML compatibility: inserted pages will now match the language of the parent page.
@@ -498,10 +508,10 @@ add_action( 'init', 'theme_init' );`
 == Upgrade Notice ==
 
 = 3.7.0 =
-Note: if you insert private pages/posts, please review the post authors of the pages containing the inserted page and confirm they have the capability to read the private content. This upgrade enforces private page visibility based on the role of the author of the page that inserts any private content.
+If you insert private pages/posts, please review the post authors of the pages containing the inserted page and confirm they have the capability to read the private content. This upgrade enforces private page visibility based on the role of the author of the page that inserts any private content.
 
 = 3.2.4 =
-Security notice: this update fixes a potential directory traversal attack where a WordPress user with Editor role or higher could include any php file by specifying it as a custom template in the Insert Pages shortcode. This vulnerability is limited because the attacker already needs to be an Editor or higher on your WordPress site. Example: [insert page='your-page' display='../../../../../../../../xampp/apache/logs/access.log']
+Security: fixes a directory traversal attack where an Editor role or higher could include any php file by specifying it as a custom template in the Insert Pages shortcode. Example: [insert page='your-page' display='../../../../../../../../xampp/apache/logs/access.log']
 
 = 2.3 =
 Warning: If you apply CSS rules to #insertPages_Content, this update will require you to modify those styles. The element id "insertPages_Content" was removed so multiple pages can be embedded on a single page. You may apply styles instead to the "insert-page" class.

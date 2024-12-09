@@ -1,0 +1,38 @@
+.sui-tabs-overflow {
+	.sui-tab-item {
+		span {
+			position: relative;
+			display: inline-flex;
+			margin-left: 4px;
+
+			i {
+				font-size: 9px;
+				background-color: #F2F2F2;
+				padding: 0 4px;
+
+				&:hover {
+					background-color: #FFE5E9;
+
+					&:before {
+						color: #FF6D6D;
+					}
+				}
+			}
+
+			&.disabled:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 999;
+				cursor: default;
+			}
+		}
+		span,
+		span i {
+			border-radius: 3px;
+		}
+	}
+}

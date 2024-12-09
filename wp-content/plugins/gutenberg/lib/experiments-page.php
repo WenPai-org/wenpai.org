@@ -164,6 +164,18 @@ function gutenberg_initialize_experiments_settings() {
 	);
 
 	add_settings_field(
+		'gutenberg-block-comment',
+		__( 'Block Comments', 'gutenberg' ),
+		'gutenberg_display_experiment_field',
+		'gutenberg-experiments',
+		'gutenberg_experiments_section',
+		array(
+			'label' => __( 'Enable multi-user commenting on blocks', 'gutenberg' ),
+			'id'    => 'gutenberg-block-comment',
+		)
+	);
+
+	add_settings_field(
 		'gutenberg-media-processing',
 		__( 'Client-side media processing', 'gutenberg' ),
 		'gutenberg_display_experiment_field',
@@ -172,6 +184,18 @@ function gutenberg_initialize_experiments_settings() {
 		array(
 			'label' => __( 'Enable client-side media processing.', 'gutenberg' ),
 			'id'    => 'gutenberg-media-processing',
+		)
+	);
+
+	add_settings_field(
+		'gutenberg-editor-write-mode',
+		__( 'Editor write mode', 'gutenberg' ),
+		'gutenberg_display_experiment_field',
+		'gutenberg-experiments',
+		'gutenberg_experiments_section',
+		array(
+			'label' => __( 'Enable write mode in editor.', 'gutenberg' ),
+			'id'    => 'gutenberg-editor-write-mode',
 		)
 	);
 

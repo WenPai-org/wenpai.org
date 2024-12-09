@@ -35,6 +35,8 @@ class ComposerStaticInit3d22ab91adb43d177572df3b253a90a1
         'AdvancedQueryLoop\\Traits\\Include_Posts' => __DIR__ . '/../..' . '/includes/Traits/Include_Posts.php',
         'AdvancedQueryLoop\\Traits\\Meta_Query' => __DIR__ . '/../..' . '/includes/Traits/Meta_Query.php',
         'AdvancedQueryLoop\\Traits\\Multiple_Posts' => __DIR__ . '/../..' . '/includes/Traits/Multiple_Posts.php',
+        'AdvancedQueryLoop\\Traits\\Post_Parent' => __DIR__ . '/../..' . '/includes/Traits/Post_Parent.php',
+        'AdvancedQueryLoop\\Traits\\Tax_Query' => __DIR__ . '/../..' . '/includes/Traits/Tax_Query.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

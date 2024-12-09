@@ -1,0 +1,89 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon {
+  position: relative;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion {
+  border-color: #ddd;
+  background-color: #fafafa;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: 38px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header .sui-accordion-col {
+  padding: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header .sui-accordion-col span {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header .sui-accordion-col span.dashicons {
+  font-size: 20px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header .sui-accordion-col-auto {
+  margin-left: auto;
+  margin-right: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+@media (min-width: 783px) {
+  .branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-header,
+  .branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body {
+  border: 1px solid #ddd;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body .branda-dashicons {
+  margin-top: 15px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body .branda-dashicons:first-child {
+  margin-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .sui-accordion-item-body .branda-dashicons span {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .branda-dashicon-list {
+  margin: 15px 0 0;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .branda-dashicon-selection .sui-row {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-right: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .branda-dashicon-selection .sui-row .sui-col:last-child {
+  text-align: right;
+  padding-right: 5px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-general-icon.branda-general-icon .sui-accordion.sui-accordion .branda-dashicon-selection .branda-dashicon-preview .dashicons:before {
+  color: #888;
+}

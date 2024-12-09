@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>branda</title>
+    <desc>Created with Sketch.</desc>
+    <g id="branda" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="boundary" x="0" y="0" width="16" height="16"></rect>
+        <path d="M8,14 C10.209139,14 12,12.209139 12,10 L12,0.5 C12,0.223857625 12.2238576,5.07265313e-17 12.5,0 L13.5,0 C13.7761424,-5.07265313e-17 14,0.223857625 14,0.5 L14,10 C14,13.3137085 11.3137085,16 8,16 C4.6862915,16 2,13.3137085 2,10 L2,0.5 C2,0.223857625 2.22385763,5.07265313e-17 2.5,0 L4,0 L7.5,0 C7.77614237,-5.07265313e-17 8,0.223857625 8,0.5 L8,2 L8,14 Z M6,13.4648712 L6,2 L4,2 L4,10 C4,11.4805647 4.80439726,12.7732524 6,13.4648712 Z" id="Icon" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

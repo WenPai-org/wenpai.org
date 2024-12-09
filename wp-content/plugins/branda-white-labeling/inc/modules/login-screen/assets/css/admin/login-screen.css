@@ -1,0 +1,23 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-login-screen .branda-section-content .branda-login_screen-error-messages textarea {
+  height: 6em;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-login-screen .branda-section-theme .branda-big-button.branda-has-theme span {
+  opacity: 0;
+  transition-duration: .5s;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-login-screen .branda-section-theme .branda-big-button.branda-has-theme:hover span {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-login-screen .module-login-screen-login-screen-php .branda-login-screen-choose-template-dialog .sui-modal-content {
+  max-width: 820px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-login-screen .module-login-screen-login-screen-php .simple-option-textarea textarea {
+  min-height: 3em;
+}

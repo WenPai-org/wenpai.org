@@ -1,0 +1,23 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-admin-help-content .sui-modal .sui-box-body label.sui-label,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-admin-help-content .sui-modal .sui-box-body div.sui-label {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-admin-help-content #settings .simple-option-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-content-admin-help-content #settings .sui-description {
+  flex-basis: 100%;
+}

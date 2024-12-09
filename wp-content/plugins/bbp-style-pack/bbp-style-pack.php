@@ -4,7 +4,7 @@
 Plugin Name: bbp style pack
 Plugin URI: http://www.rewweb.co.uk/bbp-style-pack/
 Description: This plugin adds styling and features to bbPress.
-Version: 6.1.2
+Version: 6.1.3
 Author: Robin Wilson
 Text Domain: bbp-style-pack
 Domain Path: /languages
@@ -67,27 +67,26 @@ $bsp_buddypress_support = get_option( 'bsp_buddypress_support' );
 $bsp_style_settings_column_display = get_option( 'bsp_style_settings_column_display' );
 $bsp_style_settings_topic_fields = get_option( 'bsp_style_settings_topic_fields' );
 
-//set bbpress version which is needed for function below and template order (around line 187)
-
-if( ! function_exists('get_plugin_data') ){
-	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-}
-$bbpress_plugin  = get_plugin_data(ABSPATH . 'wp-content/plugins/bbpress/bbpress.php') ;
-$bsp_bbpress_full_version = $bbpress_plugin['Version'];
-//and shortened 2.5/2.6 version used in other files
-$bsp_bbpress_version = substr($bsp_bbpress_full_version, 0, 3) ;
-
 if(!defined('BSP_PLUGIN_DIR'))
 	define('BSP_PLUGIN_DIR', dirname(__FILE__));
 
 if(!defined('BSP_PLUGIN_URL'))
 	define('BSP_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
-//now we add the class-bbp-admin class as this throws a dynamic property error as php 8.2 does not allow dynamic properties - we need to do this before bbpress loads
-// and the bbopress extend buddypress loader.php for the same reason if buddypress is active
+//set bbpress version which is needed for function below and template order (around line 187)
+
+$plugin_data = get_file_data(ABSPATH . 'wp-content/plugins/bbpress/bbpress.php', array('Version' => 'Version'), false);
+$bsp_bbpress_full_version = $plugin_data['Version'];
+$bsp_bbpress_version = substr($bsp_bbpress_full_version, 0, 3) ;
+
+//now we add the class-bbp-admin class as this throws a dynamic property error as php 8.2 or above does not allow dynamic properties - we need to do this before bbpress loads
+// and the bbpress extend buddypress loader.php for the same reason if buddypress is active
 		//unless we are in buddyboss which has it's own admin.  is_plugin_active checks whether it is in wp_options active_plugins list, so tells us if buddyboss loader plugin is active - this doesn't guarantee that buddyboss is active, but unlikely not to be !
-		// OR we are not on bbpress 2.6.9
-		
+		// OR we are not on bbpress 2.6.9 or later
+		//function loaded so we can use is_plugin_active
+		if( ! function_exists('get_plugin_data') ){
+			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		}	
 		if (!is_plugin_active ('buddyboss-platform/bp-loader.php') && ($bsp_bbpress_full_version == '2.6.9' || $bsp_bbpress_full_version == '2.6.10' || $bsp_bbpress_full_version == '2.6.11')) {
 			include(BSP_PLUGIN_DIR . '/bbpress-admin/class-bbp-admin.php');
 		}

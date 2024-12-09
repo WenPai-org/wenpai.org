@@ -14,5 +14,7 @@ return array(
     'AdvancedQueryLoop\\Traits\\Include_Posts' => $baseDir . '/includes/Traits/Include_Posts.php',
     'AdvancedQueryLoop\\Traits\\Meta_Query' => $baseDir . '/includes/Traits/Meta_Query.php',
     'AdvancedQueryLoop\\Traits\\Multiple_Posts' => $baseDir . '/includes/Traits/Multiple_Posts.php',
+    'AdvancedQueryLoop\\Traits\\Post_Parent' => $baseDir . '/includes/Traits/Post_Parent.php',
+    'AdvancedQueryLoop\\Traits\\Tax_Query' => $baseDir . '/includes/Traits/Tax_Query.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

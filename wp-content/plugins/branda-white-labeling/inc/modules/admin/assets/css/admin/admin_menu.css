@@ -1,0 +1,349 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tabs-content .sui-tab-content {
+  padding: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-admin-menu-main-tabs > .sui-tabs-content > .sui-tab-boxed {
+  padding: 20px 0 0;
+  border: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-admin-menu-main-tabs > .sui-tabs-content > .sui-tab-boxed .branda-custom-admin-menu-roles,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-admin-menu-main-tabs > .sui-tabs-content > .sui-tab-boxed .branda-custom-admin-menu-users > .sui-box-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-admin-menu-main-tabs > .sui-tabs-content > .sui-tab-boxed[data-tab-content="settings"] > .sui-row:first-child > div:first-child {
+  background: url("../../../../../../assets/images/branda/happy@1x.png") 50% 10%/90px no-repeat;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-box-builder > .sui-box-builder-header {
+  padding-left: 70px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu-users {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu-users .sui-box-body:first-child {
+  padding-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu-users .select2-selection__placeholder:before {
+  font-family: 'wpmudev-plugin-icons';
+  content: "\b5";
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: -1px;
+  padding-right: 12px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span {
+  position: relative;
+  display: inline-flex;
+  margin-left: 4px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span i {
+  font-size: 9px;
+  background-color: #F2F2F2;
+  padding: 0 4px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span i:hover {
+  background-color: #FFE5E9;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span i:hover:before {
+  color: #FF6D6D;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span.disabled:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  cursor: default;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .sui-tabs-overflow .sui-tab-item span i {
+  border-radius: 3px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu > .sui-box-footer {
+  justify-content: space-between;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu.branda-admin-menu-loading .branda-custom-admin-menu-builder-fields {
+  background: #f8f8f8;
+  padding: 20px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu.branda-admin-menu-loading .branda-custom-admin-menu-builder-fields > .sui-box-builder {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder {
+  background-color: #f8f8f8;
+  border: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-checkbox {
+  padding-top: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls .branda-custom-admin-menu-hide,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls .branda-custom-admin-menu-unhide,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls .branda-custom-admin-menu-make-invisible,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls .branda-custom-admin-menu-make-visible {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-header .sui-builder-options.sui-options-inline .branda-custom-menu-bulk-controls .branda-custom-admin-menu-hide {
+  margin-right: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-box-builder > .sui-box-builder-body {
+  padding-top: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field .sui-hover-show {
+  opacity: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field:hover > .sui-accordion-item-header .sui-hover-show {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-remove {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-remove {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-non-native > .sui-accordion-item-header .branda-custom-admin-menu-remove {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-non-native.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-remove {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-undo {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-undo {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-dirty > .sui-accordion-item-header .branda-custom-admin-menu-undo {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-dirty.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-undo {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-duplicate {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-duplicate {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item > .sui-accordion-item-header .branda-custom-admin-menu-duplicate {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-duplicate {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-make-invisible {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-make-invisible {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-make-invisible {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-make-invisible {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-make-visible {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-make-visible {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-make-visible {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-make-visible {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-hide {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-hide {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden > .sui-accordion-item-header .branda-custom-admin-menu-hide {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-hide {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-unhide {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-dropdown .branda-custom-admin-menu-unhide {
+  justify-content: left;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden > .sui-accordion-item-header .branda-custom-admin-menu-unhide {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden.branda-menu-item-invisible > .sui-accordion-item-header .branda-custom-admin-menu-unhide {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .sui-checkbox {
+  margin: 0 10px 0 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .dashicons-before,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-mask,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-img {
+  width: 26px;
+  height: 24px;
+  display: block;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .dashicons-before:before {
+  width: 16px;
+  height: 16px;
+  color: #AAAAAA;
+  padding-top: 3px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-img {
+  height: 22px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-mask {
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-position: left center;
+  -webkit-mask-size: 16px 16px;
+  mask-size: 16px 16px;
+  background-color: #AAAAAA;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls:not(.sui-dropdown) ul {
+  display: flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls:not(.sui-dropdown) ul, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls:not(.sui-dropdown) li {
+  margin: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls:not(.sui-dropdown) .sui-dropdown-anchor,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls:not(.sui-dropdown) .branda-custom-admin-menu-button-text {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown {
+  margin: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown .sui-hover-show {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown .sui-tooltip:before, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown .sui-tooltip:after {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown .sui-dropdown-anchor,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls.sui-dropdown .branda-custom-admin-menu-button-text {
+  display: inline-flex;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls .branda-custom-admin-menu-remove,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls .branda-custom-admin-menu-remove .sui-icon-trash,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls .branda-custom-admin-menu-remove .sui-icon-trash:before {
+  color: #FF6D6D;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls .branda-custom-admin-menu-is-invisible [name="is_invisible"] {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-controls .branda-custom-admin-menu-is-hidden [name="is_hidden"] {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-unhide,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-make-visible {
+  background-color: #E6E6E6;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-unhide:hover,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-header .branda-custom-admin-menu-make-visible:hover {
+  background-color: #AAAAAA;
+  color: #FFF;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-body .sui-tabs.sui-tabs-flushed > [data-panes] > div:nth-child(2) {
+  padding: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-body .branda-admin_menu-icon-type textarea {
+  min-height: 96px;
+  height: 96px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field > .sui-accordion-item-body [data-tab-content="branda-admin_menu-icon-type-dashicon"] {
+  max-height: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item--open .sui-accordion-item-header .sui-accordion-open-indicator [class*="sui-icon-"] {
+  transform: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item--open .sui-accordion-item-body {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item--open > .sui-accordion-item-header .sui-accordion-open-indicator [class*="sui-icon-"] {
+  transform: rotate(180deg);
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item--open > .sui-accordion-item-header .sui-hover-show {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.sui-accordion-item--open > .sui-accordion-item-body {
+  display: block;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible {
+  box-shadow: none;
+  border: 1px solid #DDDDDD;
+  background: transparent;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .sui-accordion-item-header, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .sui-accordion-item-header {
+  cursor: default;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden.sui-accordion-item--open .sui-accordion-item-body, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible.sui-accordion-item--open .sui-accordion-item-body {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .sui-builder-field-label, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .sui-builder-field-label {
+  opacity: 0.5;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .sui-builder-field-border,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .sui-accordion-open-indicator,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .branda-custom-admin-menu-controls ul li, .branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .sui-builder-field-border,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .sui-accordion-open-indicator,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .branda-custom-admin-menu-controls ul li {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-hidden .branda-custom-admin-menu-controls ul li:last-child {
+  display: block;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-custom-admin-menu-dialog .branda-custom-admin-menu .sui-accordion-item.sui-builder-field.branda-menu-item-invisible .branda-custom-admin-menu-controls ul li:nth-last-child(2) {
+  display: block;
+}
+.branda-custom-admin-menu .sui-accordion-item.sui-builder-field[data-slug^="customize.php"] {
+  display: none;
+}
+
+.customize-support .branda-custom-admin-menu .sui-accordion-item.sui-builder-field[data-slug^="customize.php"] {
+  display: block;
+}
+.customize-support .branda-custom-admin-menu .sui-accordion-item.sui-builder-field[data-slug="custom-header"], .customize-support .branda-custom-admin-menu .sui-accordion-item.sui-builder-field[data-slug="custom-background"] {
+  display: none;
+}
+#dashboard-link .simple-option-checkbox,
+#link-manager .simple-option-checkbox,
+#tips .simple-option-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#tips .sui-description {
+  flex-basis: 100%;
+}

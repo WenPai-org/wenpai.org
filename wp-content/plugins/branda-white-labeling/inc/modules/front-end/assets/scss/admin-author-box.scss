@@ -1,0 +1,54 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-author-box {
+            .branda-section-profile {
+                .sui-accordion-item-body {
+                    > .sui-box {
+                        background-color: transparent;
+                        box-shadow: none;
+                        .sui-box-body {
+                            background-color: transparent;
+                            .branda-social-logos-main-container {
+                                .simple-option {
+                                    background-color: $white;
+                                    padding: 0;
+                                    margin: 0 0 20px 0;
+                                    border: 1px solid $gray_e6;
+                                    @include border-radius( 4px );
+                                    label {
+                                        box-shadow: 0 2px 7px 0 rgba(0,0,0,.05);
+                                        min-height: 60px;
+                                        padding: 5px 0;
+                                        display: flex;
+                                        padding-left: 29px;
+                                        align-items: center;
+                                        margin: 0;
+                                        .branda-social-logo {
+                                            flex: 1;
+                                            font: 500 13px/22px "Roboto", Arial, sans-serif;
+                                            color: #333333;
+                                        }
+                                        .sui-icon-drag {
+                                            font-size: 20px;
+                                            margin-right: 10px;
+                                        }
+                                        .branda-social-logo-remove {
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sui-box-builder {
+                        border: 0;
+                        .sui-box-builder-body {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

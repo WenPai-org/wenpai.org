@@ -1,0 +1,35 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .module-utilities-images-php .branda-images-subsites .simple-option-media {
+  margin: 14px 0;
+}
+.branda-admin-page .sui-wrap-branda .module-utilities-images-php .branda-images-subsites .simple-option-media .ub-delete-image {
+  padding-top: 27px;
+}
+.branda-admin-page .sui-wrap-branda .module-utilities-images-php .branda-section-images .simple-option-checkbox {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-utilities-images-php .branda-section-images .branda-images-images-override {
+  margin-left: 43px;
+}
+.branda-admin-page .sui-wrap-branda .module-utilities-images-php.branda-single .branda-section-favicon label.sui-label {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.branda-admin-page .sui-wrap.sui-wrap-branda .module-utilities-images-php #images .simple-option-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.branda-admin-page .sui-wrap.sui-wrap-branda .module-utilities-images-php #images .sui-description {
+  flex-basis: 100%;
+}

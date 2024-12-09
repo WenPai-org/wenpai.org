@@ -1,0 +1,47 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-permissions {
+			#permissions .sui-row {
+				margin: 0 -5px 0;
+			}
+            .branda-section-subsites {
+                .branda-tab-subsites-status {
+                    padding: {
+						top: 10px;
+                        left: 0;
+                        right: 0;
+                    }
+                    div {
+                        &[data-tabs] {
+                            border-top: 0;
+                            div {
+                                &:first-of-type {
+                                    margin-left: 30px;
+                                }
+                                &:last-of-type {
+                                    margin-right: 30px;
+                                }
+                            }
+                        }
+                        &[data-panes] {
+                            padding: {
+                                left: 30px;
+                                right: 30px;
+                            }
+                            .sui-box {
+                                margin: 0 11px 0 5px;
+                                border: none;
+                                box-shadow: none;
+                                .sui-row {
+                                    margin: 0 0 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

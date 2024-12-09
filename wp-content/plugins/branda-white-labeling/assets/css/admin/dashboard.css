@@ -1,0 +1,190 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page #branda-dashboard-widget-summary .sui-icon-magnifying-glass-search {
+  top: -28px;
+  left: 13px;
+}
+.branda-admin-page #branda-dashboard-widget-summary .sui-summary-segment:last-child .sui-summary-details {
+  padding-top: 10px;
+}
+.branda-admin-page #branda-dashboard-widget-summary .sui-summary-segment:last-child .sui-control-with-icon {
+  display: inline-table;
+  float: right;
+}
+.branda-admin-page #branda-dashboard-widget-upsell .sui-icon-check:before {
+  color: #8D00B1;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+.branda-admin-page #branda-dashboard-widget-upsell .sui-box-body li {
+  font-weight: 500;
+  color: #333;
+}
+.branda-admin-page #branda-dashboard-widget-upsell .branda_u_logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px auto;
+  width: 36px;
+  height: 34px;
+}
+.branda-admin-page #branda-dashboard-widget-admin .dashicons {
+  margin-right: 10px;
+  line-height: 20px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-box-head {
+  padding: 20px 30px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-box-head h2 {
+  color: #333;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-box-head h2 i {
+  margin-right: 10px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-box-head h2 i:before {
+  font-size: 1em;
+  color: #333;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-box-head h2 .dashicons {
+  font-size: 26px;
+  line-height: 35px;
+  margin-right: 10px;
+  width: 22px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-table--button {
+  width: 80px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-table--status {
+  width: 95px;
+}
+.branda-admin-page #branda-dashboard-widget-modules .sui-table--configure {
+  width: 73px;
+}
+.branda-admin-page #branda-dashboard-widget-modules div.branda-status-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.branda-admin-page #branda-dashboard-widget-modules .branda-module-for-pro {
+  opacity: 0.5;
+}
+.branda-admin-page #branda-dashboard-widget-modules span.branda-module-status {
+  display: inline-block;
+  background-color: #e6e6e6;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.branda-admin-page #branda-dashboard-widget-modules span.branda-module-status.module-status-active {
+  background-color: #17a8e3;
+}
+.branda-admin-page #branda-dashboard-search-no-results .branda-empty {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-header,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-header {
+  background-image: url(../../assets/images/branda/circle-confused@2x.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+  display: block;
+  padding-top: 140px;
+  text-align: center;
+  padding-top: 200px;
+  background-position-y: 45px;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-header .sui-header-title,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-header .sui-header-title {
+  text-align: center;
+  text-transform: none;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-header .sui-notice,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-header .sui-notice {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-header .sui-header-title,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-header .sui-header-title {
+  font-size: 22px;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-footer,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-footer {
+  justify-content: center;
+}
+.branda-admin-page #branda-manage-all-modules .sui-box-footer .branda-save-all .sui-loading,
+.branda-admin-page .branda-welcome-step2 #branda-welcome .sui-box-footer .branda-save-all .sui-loading {
+  position: static;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .sui-header {
+  background-image: url(../../assets/images/branda/circle-confused@2x.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+  display: block;
+  padding-top: 140px;
+  text-align: center;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .sui-header .sui-header-title {
+  text-align: center;
+  text-transform: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .sui-header .sui-notice {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .sui-header.branda-import-error {
+  background-image: url(../../assets/images/branda/confused@2x.png);
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .branda-import-err
+.sui-container {
+  border: 1px solid #e6e6e6;
+  padding: 5px 30px 30px 30px;
+  margin: 60px 75px 30px 75px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .branda-import-err
+.sui-container .sui-label {
+  margin-bottom: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .branda-import-err
+.sui-container .sui-row {
+  justify-content: center;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import .branda-import-err
+.sui-container .sui-row .sui-col {
+  max-width: 200px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.branda-import-import.branda-import-error .sui-header {
+  background-image: url(../../assets/images/branda/confused@2x.png);
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.sui-color-accessible #branda-dashboard-widget-modules span.branda-module-status {
+  background-color: #fff;
+  border: 1px solid #000000;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.sui-color-accessible #branda-dashboard-widget-modules span.branda-module-status.module-status-active {
+  background-color: #000000;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.no-branda #branda-manage-all-modules .sui-box-header,
+.branda-admin-page .sui-wrap.sui-wrap-branda.no-branda .branda-welcome-step2 #branda-welcome .sui-box-header {
+  background-image: none;
+  padding-top: 15px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.no-branda.branda-import-import .sui-header {
+  background-image: none;
+  padding-top: 15px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda.no-branda.branda-import-import .sui-header.branda-import-error {
+  background-image: none;
+  padding-top: 15px;
+}
+.branda-admin-page #wpbody-content .sui-wrap.sui-wrap-branda.no-branda .sui-unbranded .sui-summary-segment {
+  padding-left: 15px;
+}

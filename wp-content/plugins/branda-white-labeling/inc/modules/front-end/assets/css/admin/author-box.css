@@ -1,0 +1,50 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box {
+  background-color: transparent;
+  box-shadow: none;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body {
+  background-color: transparent;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body .branda-social-logos-main-container .simple-option {
+  background-color: #fff;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body .branda-social-logos-main-container .simple-option label {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.05);
+  min-height: 60px;
+  padding: 5px 0;
+  display: flex;
+  padding-left: 29px;
+  align-items: center;
+  margin: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body .branda-social-logos-main-container .simple-option label .branda-social-logo {
+  flex: 1;
+  font: 500 13px/22px "Roboto", Arial, sans-serif;
+  color: #333333;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body .branda-social-logos-main-container .simple-option label .sui-icon-drag {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body > .sui-box .sui-box-body .branda-social-logos-main-container .simple-option label .branda-social-logo-remove {
+  margin-right: 20px;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body .sui-box-builder {
+  border: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-author-box .branda-section-profile .sui-accordion-item-body .sui-box-builder .sui-box-builder-body {
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-cookie-notice .branda-section-colors .sui-box-body {
+  padding-top: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-cookie-notice .branda-section-colors .sui-box-body div[data-tabs] {
+  border-top: 0;
+}
+.branda-admin-page .sui-wrap-branda .branda-settings-tab-content-cookie-notice .branda-section-colors .branda-cookie-notice-color-general .sui-box-body {
+  padding-top: 30px;
+}

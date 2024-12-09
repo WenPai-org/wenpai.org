@@ -27,13 +27,13 @@ class VersionCheck extends Base {
 		$plugin_info = array(
 			"name"            => "WP-China-Yes",
 			"slug"            => "wp-china-yes",
-			"version"         => "3.7.0",
-			"download_url"    => "https://dl1.weixiaoduo.com/2024/09/wp-china-yes-3.7.0.zip",
+			"version"         => "3.7.1",
+			"download_url"    => "https://dl1.weixiaoduo.com/2024/11/wp-china-yes-3.7.1.zip",
 			"homepage"        => "https://wp-china-yes.com",
 			"requires"        => "4.9",
 			"tested"          => "9.9.9",
 			"requires_php"    => "7.0",
-			"last_updated"    => "2024-09-26 16:00:00",
+			"last_updated"    => "2024-11-20 16:00:00",
 			"author"          => "文派开源",
 			"author_homepage" => "https://wenpai.org",
 			"sections"        => array(

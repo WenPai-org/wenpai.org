@@ -1,0 +1,61 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-color-schemes {
+            .module-admin-color-schemes-php {
+                .sui-box-body {
+                    .branda-section-available_color_schemes {
+                        .branda-customize-ultimate-scheme {
+                            margin-left: auto;
+                        }
+                        .simple-option-callback {
+                            max-width: 450px;
+                            .color-option {
+                                width: 140px;
+                                padding: 13px 10px 10px 10px;
+                                td {
+                                    line-height: 1px;
+                                }
+                                .sui-checkbox {
+                                    margin-bottom: 6px;
+                                    .branda-customize-ultimate-scheme {
+                                        padding: 0;
+                                        height: 22px;
+                                        width: 12px;
+                                    }
+                                    .sui-description {
+                                        @include sui_13;
+                                    }
+                                }
+                                &:hover {
+                                    background-color: $gray_fa;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #branda-color-schemes-edit {
+                .sui-accordion-item-header {
+                    min-height: 56px;
+                }
+                .sui-accordion-item-body {
+                    .sui-label {
+                        @include sui_13;
+                    }
+                }
+            }
+
+            .sui-checkbox.sui-checkbox-stacked {
+                display: inline-flex;
+            }
+
+            
+            button.branda-customize-ultimate-scheme {
+                left: 25px;
+                bottom: 4px;
+            }
+        }
+    }
+}
+

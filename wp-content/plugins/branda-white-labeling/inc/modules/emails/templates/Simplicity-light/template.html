@@ -1,0 +1,65 @@
+<table class="container" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="middle" align="center">
+			<div class="width">
+
+			<table class="content content_title" align="center" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="middle" class="branding_html" data-builder="branding_html" colspan="2">
+                                            <!-- By default it is replaced by site description when sending email,
+                                            Although you can place any text here -->
+						{BLOG_DESCRIPTION}
+					</td>
+				</tr>
+				<tr>
+					<td class="title" data-builder="title_color" colspan="2">
+						<div data-builder="blog_name">
+                                                    <!--BLOG_NAME is replaced by site name when sending email,
+                                                    Although you can place any text here -->
+							{BLOG_NAME}
+						</div>
+					</td>
+				</tr>
+				<tr>
+                                        <!-- {FROM_EMAIL is replaced by admin email specified in site settings,
+                                            FROM_NAME is replace if the FROM_EMAIL is associated with an account
+                                            You can directly replace both the parameters with a desired value -->
+					<td class="from" data-builder="from_name">
+						{FROM_NAME}
+					</td>
+					<td class="from text_right" data-builder="from_email">
+						{FROM_EMAIL}
+					</td>
+				</tr>
+			</table>
+			<table class="content content_main" align="center" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="email_content" data-builder="body_color">
+						<div data-builder="email_content">
+                                                    <!--message is replace by email content while sending out an email-->
+							{MESSAGE}
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info" data-builder="body_color">
+						<div data-builder="contact_info">
+							<div style="padding-top:15px; padding-bottom:1px;"><img height="13" width="13" style="vertical-align: middle;" src="{BLOG_URL}wp-admin/images/date-button.gif" alt="Datum"  /> Email sent {DATE} @ {TIME}</div>
+                                                        <div style="color:inherit"><img height="12" width="12" style="vertical-align: middle;" src="{BLOG_URL}wp-admin/images/comment-grey-bubble.png" alt="Contact"  /> For any requests, please contact <a href="mailto:{ADMIN_EMAIL}">{ADMIN_EMAIL}</a></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<table class="content content_site-link" align="center" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="site-link">
+						visit site: <a href="{BLOG_URL}">{BLOG_NAME}.</a>
+					</td>
+				</tr>
+			</table>
+
+			</div>
+		</td>
+	</tr>
+</table>

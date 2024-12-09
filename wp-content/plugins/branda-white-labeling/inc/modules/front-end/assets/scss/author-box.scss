@@ -1,0 +1,105 @@
+$grey_2: #eee;
+
+.branda-author-box {
+    margin-top: 20px;
+    .branda-author-box-content {
+        display: flex;
+        .branda-author-box-avatar {
+            margin {
+                right: 20px;
+            }
+            .social-media {
+                margin-top: 1em;
+                li {
+                    padding: 5px;
+                    a {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+        .branda-author-box-more {
+            ul {
+                list: {
+                    style: none;
+                }
+            }
+        }
+        > div {
+            margin: 10px;
+        }
+    }
+    @media screen and (max-width: 501px) {
+        .branda-author-box-content {
+            display: block;
+            img {
+                display: block;
+                margin: 0 auto 10px auto;
+            }
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+    .social-media {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 10px;
+            a {
+                box-shadow: none;
+                padding: 10px;
+                span {
+                    &:before {
+                        font-size: 24px;
+                    }
+                }
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        &.use-color {
+            .social-logo-amazon:before      { color: #d70;    }
+            .social-logo-blogger:before     { color: #f57d00; }
+            .social-logo-codepen:before     { color: #000;    }
+            .social-logo-dribbble:before    { color: #ea4c89; }
+            .social-logo-dropbox:before     { color: #007ee5; }
+            .social-logo-eventbrite:before  { color: #f6682f; }
+            .social-logo-facebook:before    { color: #3b5999; }
+            .social-logo-flickr:before      { color: #ff0084; }
+            .social-logo-foursquare:before  { color: #f94877; }
+            .social-logo-ghost:before       { color: #ecbb2e; }
+            .social-logo-github:before      { color: #eb4924; }
+            .social-logo-google:before      { color: #dd4b39; }
+            .social-logo-instagram:before   { color: #e4405f; }
+            .social-logo-linkedin:before    { color: #0077B5; }
+            .social-logo-pinterest:before   { color: #bd081c; }
+            .social-logo-pocket:before      { color: #ee4056; }
+            .social-logo-polldaddy:before   { color: #bc0b0b; }
+            .social-logo-reddit:before      { color: #ff5700; }
+            .social-logo-skype:before       { color: #00AFF0; }
+            .social-logo-spotify:before     { color: #1ed760; }
+            .social-logo-squarespace:before { color: #000;    }
+            .social-logo-stumbleupon:before { color: #eb4924; }
+            .social-logo-telegram:before    { color: #eb4924; }
+            .social-logo-tumblr:before      { color: #34465d; }
+            .social-logo-twitter:before     { color: #55acee; }
+            .social-logo-vimeo:before       { color: #1ab7ea; }
+            .social-logo-whatsapp:before    { color: #25D366; }
+            .social-logo-wordpress:before   { color: #21759b; }
+            .social-logo-xanga:before       { color: #437fbb; }
+            .social-logo-youtube:before     { color: #cd201f; }
+        }
+    }
+}

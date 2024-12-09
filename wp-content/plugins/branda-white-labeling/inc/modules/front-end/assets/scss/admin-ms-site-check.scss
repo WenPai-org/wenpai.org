@@ -1,0 +1,10 @@
+@import '../../../../../assets/sass/mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .branda-settings-tab-content-ms-site-check {
+            .branda-ms-site-check-error_message {
+                @include branda_tab_with_subtabs;
+            }
+        }
+    }
+}

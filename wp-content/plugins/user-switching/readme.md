@@ -1,7 +1,7 @@
 # User Switching
 
-Stable tag: 1.8.0  
-Tested up to: 6.6  
+Stable tag: 1.9.1  
+Tested up to: 6.7  
 License: GPL v2 or later  
 Tags: users, user switching, fast user switching, multisite, woocommerce  
 Contributors: johnbillion  
@@ -85,7 +85,7 @@ User Switching should adhere to Web Content Accessibility Guidelines (WCAG) 2.0 
 
 ### Does this plugin work with PHP 8?
 
-Yes, it's actively tested and working up to PHP 8.3.
+Yes, it's actively tested and working up to PHP 8.4.
 
 ### What does "Switch off" mean?
 
@@ -250,6 +250,12 @@ One or more of the above should allow you to correlate an action with the origin
 
 Bear in mind that even without the User Switching plugin in use, any user who has the ability to edit another user can still frame another user for an action by, for example, changing their password and manually logging into that account. If you are concerned about users abusing others, you should take great care when granting users administrative rights.
 
+### Does this plugin warn me if I attempt to switch into an account which somebody else is already switched into?
+
+Yes. When this happens you'll be shown a prompt asking you to confirm that you would like to continue switching to the affected account.
+
+This feature is useful if you have multiple users on your site who may be switching into other user accounts at the same time, for example a team of support agents.
+
 ### Can I switch users directly from the admin toolbar?
 
 Yes, there's a third party add-on plugin for this: [Admin Bar User Switching](https://wordpress.org/plugins/admin-bar-user-switching/).
@@ -339,6 +345,17 @@ In addition, User Switching respects the following filters from WordPress core w
 
 ## Changelog ##
 
+### 1.9.1 (5 December 2024) ###
+
+* Fixes the `wp_login` and `wp_logout` parameter usage which could cause a fatal error when passed an unexpected value.
+
+### 1.9.0 (21 November 2024) ###
+
+* Introduces a confirmation message when a user attempts to switch into an account which somebody else is already switched into. Helpful for teams of support engineers who switch into customer accounts.
+* Confirms support for WordPress 6.7.
+* Confirms support for PHP 8.4.
+* Various code quality improvements.
+
 ### 1.8.0 (22 July 2024) ###
 
 * Adds a 'Switch back' link to some access denied messages within the admin area.
@@ -346,9 +363,9 @@ In addition, User Switching respects the following filters from WordPress core w
 
 ### 1.7.3 (21 February 2024) ###
 
-* Confirm support for PHP 8.3
-* Fix compatibility with BuddyPress version 12
-* Add configuration for the Live Preview feature on wordpress.org
+* Confirms support for PHP 8.3
+* Fixes compatibility with BuddyPress version 12
+* Adds configuration for the Live Preview feature on wordpress.org
 
 
 ### 1.7.2 (16 November 2023) ###
@@ -383,43 +400,6 @@ In addition, User Switching respects the following filters from WordPress core w
 
 * Fix some issues that could lead to PHP errors given a malformed cookie.
 * Fix documentation.
-
-
-### 1.5.6 (18 September 2020) ###
-
-* Add a class to the table row on the user edit screen.
-* Updated docs.
-
-### 1.5.5 (22 June 2020) ###
-
-* Added the `user_switching_in_footer` filter to disable output in footer on front end.
-* Documentation additions and improvements.
-
-### 1.5.4 (7 February 2020) ###
-
-* Fix a cookie issue caused by Jetpack 8.1.1 which prevented switching back to the original user.
-
-### 1.5.3 (5 November 2019) ###
-
-*  Remove usage of a method that's been deprecated in WordPress 5.3
-
-### 1.5.2 (16 August 2019) ###
-
-* Set the correct `lang` attribute on User Switching's admin notice.
-* Move the WooCommerce session forgetting to an action callback so it can be unhooked if necessary.
-
-
-### 1.5.1 (16 June 2019) ###
-
-  * Add appropriate HTTP response codes to the error states.
-  * Display User Switching's messages in the original user's locale.
-  * Increase the priority of the hook that sets up the cookie constants. See #40.
-  * Don't attempt to output the 'Switch To' link on author archives when the queried object isn't a user. See #39.
-
-
-### 1.5.0 (23 March 2019) ###
-
-* Add support for forgetting WooCommerce sessions when switching between users. Requires WooCommerce 3.6+.
 
 
 ### Earlier versions ###

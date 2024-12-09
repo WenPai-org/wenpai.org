@@ -1,0 +1,91 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php #branda-dashboard-feeds-panel:before {
+  display: table;
+  content: "";
+}
+
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php #branda-dashboard-feeds-panel .top button.branda-bulk-delete{
+  width: 30px;
+  margin: 5px 0;
+}
+
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-feed-ellipsis,
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-col-md-8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body {
+  padding-bottom: 22px;
+  padding-top: 26px;
+  font-size: 13px;
+  color: #888;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body h3.sui-col-md-12 {
+  line-height: 22px;
+  margin-bottom: 14px;
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body .sui-row {
+  margin-bottom: 18px;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body .sui-row:last-child {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body .sui-row .sui-col-md-4,
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body .sui-row .sui-col-md-8 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .branda-accordion-body .branda-list-title {
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-accordion-item-header .column-title {
+  padding-left: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-accordion-header .check-column {
+  min-width: 10px;
+  position: relative;
+}
+
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .check-column .sui-checkbox {
+  position: relative;
+}
+
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .check-column .sui-checkbox input+span {
+  margin: 0 auto;
+}
+
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-accordion-header .column-title {
+  padding-left: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-accordion-item.sui-accordion-item--open .sui-accordion-item-body .sui-box {
+  margin-bottom: 3px;
+}
+.branda-admin-page .sui-wrap-branda .module-widgets-dashboard-feeds-php .sui-accordion-item.sui-accordion-item--open .sui-accordion-item-body .sui-box .branda-divider {
+  margin: 22px 15px 7px;
+}
+.branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .sui-with-button.sui-with-button-icon .sui-button-icon {
+  right: 0;
+  top: 5px;
+}
+.branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .branda-dashboard-feeds-list .sui-notice {
+  margin-top: 20px;
+}
+.branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .branda-dashboard-feeds-list .branda-list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .branda-dashboard-feeds-list .branda-list label {
+  cursor: pointer;
+}
+.branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .branda-dashboard-feeds-list .branda-list label small, .branda-admin-page .sui-wrap-branda .branda-dashboard-feeds-dialog .branda-dashboard-feeds-list .branda-list label span {
+  display: block;
+}

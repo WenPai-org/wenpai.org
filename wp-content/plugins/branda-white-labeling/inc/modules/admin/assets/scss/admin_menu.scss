@@ -1,0 +1,65 @@
+@import '../../../../../assets/sass/mixin';
+
+.branda-admin-page {
+	.sui-wrap.sui-wrap-branda {
+		.branda-custom-admin-menu-dialog {
+			.sui-tabs-overflow {
+				.sui-tabs-content {
+					.sui-tab-content {
+						padding: 0;
+					}
+				}
+			}
+
+			.branda-admin-menu-main-tabs > .sui-tabs-content > .sui-tab-boxed {
+				padding: 20px 0 0;
+				border: 0;
+				.branda-custom-admin-menu-roles,
+				.branda-custom-admin-menu-users > .sui-box-body {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				&[data-tab-content="settings"] > .sui-row:first-child > div:first-child {
+					background: url( '../../../../../../assets/images/branda/happy@1x.png' ) 50% 10% / 90px no-repeat;
+				}
+			}
+
+			.sui-box-builder {
+				> .sui-box-builder-header {
+					padding-left: 70px;
+				}
+			}
+
+			.branda-custom-admin-menu-users {
+				display: none;
+
+				.sui-box-body:first-child {
+					padding-top: 0;
+				}
+
+				// TODO: use shared-ui variables
+				.select2-selection__placeholder:before {
+					font-family: 'wpmudev-plugin-icons';
+					content: "\b5";
+					font-size: 16px;
+					display: inline-block;
+					text-align: center;
+					vertical-align: -1px;
+					padding-right: 12px;
+				}
+			}
+
+			@import "admin-menu/menu-tabs";
+			@import "admin-menu/custom-admin-menu";
+		}
+	}
+
+	#link-manager .simple-option-checkbox,
+	#tips .simple-option-checkbox {
+		display: flex;
+	}
+
+	#tips .sui-description {
+		flex-basis: 100%;
+	  }
+}

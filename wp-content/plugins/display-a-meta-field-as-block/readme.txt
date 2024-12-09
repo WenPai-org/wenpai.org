@@ -4,8 +4,8 @@ Donate link:       https://metafieldblock.com?utm_source=wp.org&utm_campaign=rea
 Tags:              custom field, meta field, ACF custom field, block, Gutenberg
 Requires PHP:      7.4
 Requires at least: 6.5
-Tested up to:      6.6
-Stable tag:        1.3.0
+Tested up to:      6.7
+Stable tag:        1.3.2
 License:           GPL-3.0
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,7 +26,7 @@ An edge case where this block is really helpful is when you need to get the corr
 = Links =
 
 * [Website](https://metafieldblock.com?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=Website)
-* [Features](https://metafieldblock.com/features?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=Website%20Features)
+* [How it works](https://metafieldblock.com/how-it-works?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=Website%20How%20it%20works)
 * [MFB PRO](https://metafieldblock.com/pro?utm_source=wp.org&utm_campaign=readme&utm_medium=link&utm_content=MFB%20Pro)
 
 = What is the HTML output of a custom field? =
@@ -260,13 +260,13 @@ If this plugin is useful for you, please do a quick review and [rate it](https:/
 
 Please check out my other plugins if you're interested:
 
-* [Content Blocks Builder](https://wordpress.org/plugins/content-blocks-builder) - A tool to create blocks, patterns or variations easily for your site directly on the Block Editor.
-* [Block Enhancements](https://wordpress.org/plugins/block-enhancements) - A plugin to add more useful features to blocks likes: icons, box-shadow, transform...
-* [Icon separator](https://wordpress.org/plugins/icon-separator) - A tiny block just like the core/separator block but with the ability to add an icon to it.
-* [SVG Block](https://wordpress.org/plugins/svg-block) - A block to insert inline SVG images easily and safely. It also bundles with more than 3000 icons and some common non-rectangular dividers.
-* [Counting Number Block](https://wordpress.org/plugins/counting-number-block) - A block to display a number that has the number-counting effect.
-* [Breadcrumb Block](https://wordpress.org/plugins/breadcrumb-block) - A simple breadcrumb trail block that supports JSON-LD structured data.
-* [Better Youtube Embed Block](https://wordpress.org/plugins/better-youtube-embed-block) - Embed YouTube videos without slowing down your site.
+- **[Content Blocks Builder](https://wordpress.org/plugins/content-blocks-builder)** - This plugin turns the Block Editor into a powerful page builder by allowing you to create blocks, variations, and patterns directly in the Block Editor without needing a code editor.
+- **[SVG Block](https://wordpress.org/plugins/svg-block)** - A block to display SVG images as blocks. Useful for images, icons, dividers, and buttons. It allows you to upload SVG images and load them into the icon library.
+- **[Icon separator](https://wordpress.org/plugins/icon-separator)** - A tiny block just like the core/separator block but with the ability to add an icon.
+- **[Breadcrumb Block](https://wordpress.org/plugins/breadcrumb-block)** - A simple breadcrumb trail block that supports JSON-LD structured data and is compatible with WooCommerce.
+- **[Block Enhancements](https://wordpress.org/plugins/block-enhancements)** - Adds practical features to blocks like icons, box shadows, transforms, etc.
+- **[Counting Number Block](https://wordpress.org/plugins/counting-number-block)** - A block to display numbers with a counting effect
+- **[Better YouTube Embed Block](https://wordpress.org/plugins/better-youtube-embed-block)** - A block to solve the performance issue with embedded YouTube videos. It can also embed multiple videos and playlists.
 
 The plugin is developed using @wordpress/create-block.
 
@@ -316,9 +316,23 @@ There is a chance that your meta value contains some HTML tags or HTML attribute
 
 2. Prefix and suffix settings
 
-3. Enable `Show in REST API` ACF setting
+3. Prefix and suffix style
+
+4. Enable `Show in REST API` ACF setting
 
 == Changelog ==
+
+= 1.3.2 =
+*Release Date - 17 November 2024*
+
+* Improved - Updated translation text for compatibility with WordPress 6.7
+
+= 1.3.1 =
+*Release Date - 28 October 2024*
+
+* Improved - Prevent inner links from being clickable in the editor
+* Improved - Add code to check if the post and term exist before displaying them
+* Updated  - Upgrade to Freemius SDK 2.9.0
 
 = 1.3.0 =
 *Release Date - 05 August 2024*

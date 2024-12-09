@@ -1,0 +1,185 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content {
+  max-width: 700px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body {
+  padding: 30px 0 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-description {
+  padding: 0 30px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors {
+  margin: 0;
+  padding: 20px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul li {
+  flex: auto;
+  min-width: 120px;
+  max-width: 120px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul li .branda-social-logo-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul li .branda-social-logo-container .social-logo {
+  margin: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul li .branda-social-logo-container .social-media-title {
+  display: block;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-body .sui-box-selectors ul li .sui-box-selector input + span {
+  padding: 14px 10px 15px 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .sui-modal.branda-social-logo-add-dialog .sui-modal-content .sui-box-footer {
+  border-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .branda-social-logos-main-container .branda-social-logo-remove-container {
+  margin-right: 0;
+  padding-right: 0;
+  opacity: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .branda-social-logos-main-container .branda-social-logo-remove-container:after {
+  border-right: 1px solid #e6e6e6;
+  content: " ";
+  height: 20px;
+  margin-left: 14px;
+  width: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .branda-social-logos-main-container .sui-icon-drag:before {
+  color: #ddd;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .branda-social-logos-main-container .sui-accordion-item-header:hover .branda-social-logo-remove-container {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-box-body .branda-social-logos-main-container .sui-accordion-item-header:hover .sui-icon-drag:before {
+  color: #888;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  color: #fff;
+  font-size: 1.3em;
+  margin-right: 5px;
+  padding: 3px;
+  background-color: #666;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-amazon {
+  background-color: #d70;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-blogger {
+  background-color: #f57d00;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-codepen {
+  background-color: #000;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-dribbble {
+  background-color: #ea4c89;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-dropbox {
+  background-color: #007ee5;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-eventbrite {
+  background-color: #f6682f;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-facebook {
+  background-color: #3b5999;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-flickr {
+  background-color: #ff0084;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-foursquare {
+  background-color: #f94877;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-ghost {
+  background-color: #ecbb2e;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-github {
+  background-color: #eb4924;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-google {
+  background-color: #dd4b39;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-instagram {
+  background-color: #e4405f;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-linkedin {
+  background-color: #0077B5;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-pinterest {
+  background-color: #bd081c;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-pocket {
+  background-color: #ee4056;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-polldaddy {
+  background-color: #bc0b0b;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-reddit {
+  background-color: #ff5700;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-skype {
+  background-color: #00AFF0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-spotify {
+  background-color: #1ed760;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-squarespace {
+  background-color: #000;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-stumbleupon {
+  background-color: #eb4924;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-telegram {
+  background-color: #eb4924;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-tumblr {
+  background-color: #34465d;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-twitter {
+  background-color: #55acee;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-vimeo {
+  background-color: #1ab7ea;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-whatsapp {
+  background-color: #25D366;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-wordpress {
+  background-color: #21759b;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-xanga {
+  background-color: #437fbb;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .social-logo-color .social-logo-youtube {
+  background-color: #cd201f;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-social-logo-preview {
+  border: 1px solid #e6e6e6;
+  display: flex;
+  margin: 10px 0 0;
+  padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-social-logo-preview li {
+  margin: 0;
+  padding: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .simple-option.branda-icons-style .sui-side-tabs {
+  margin-bottom: 10px;
+}

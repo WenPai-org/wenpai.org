@@ -1,0 +1,37 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-theme .branda-big-button {
+  width: 160px;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-theme .branda-big-button.branda-has-theme span {
+  opacity: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-theme .branda-big-button.branda-has-theme:hover span {
+  opacity: 1;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-theme .sui-form-field.simple-option-callback, .branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-theme .sui-form-field.branda-add {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-content {
+  margin-top: 10px;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .branda-section-content > .sui-settings-label {
+  color: #333;
+}
+.branda-admin-page .sui-wrap-branda .module-emails-template-php .simple-option .ub_html_editor {
+  min-height: 50em;
+}
+.branda-admin-page .sui-wrap-branda #branda-email-template-preview .sui-modal-content {
+  max-width: 100%;
+}
+.branda-admin-page .sui-wrap-branda #branda-email-template-preview img {
+  max-width: 100%;
+}
+.branda-admin-page .sui-wrap-branda #branda-email-template-choose-template .sui-box-footer.sui-actions-right {
+  justify-content: flex-end;
+}

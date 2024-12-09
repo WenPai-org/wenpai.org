@@ -1,0 +1,38 @@
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-search {
+  margin-bottom: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-search i.sui-icon-magnifying-glass-search {
+  position: absolute;
+  font-size: 16px;
+  display: block;
+  line-height: 1;
+  padding: 11px 15px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-search .sui-form-control {
+  padding-left: 42px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-icons .sui-label {
+  line-height: 22px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-icons .branda-dashicon-picker-group-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-icons .branda-dashicon-picker-group-inner .dashicons {
+  width: 40px;
+  height: 40px;
+  padding-top: 11px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  background-color: #F4F4F4;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-dashicon-picker .branda-dashicon-picker-icons .branda-dashicon-picker-group-inner .dashicons.active {
+  border: 1px solid #17a8e3;
+  background-color: #E1F6FF;
+}

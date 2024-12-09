@@ -1,0 +1,103 @@
+/* debug */
+/* $gray_3: yellow; */
+/* $gray_6: green; */
+/* $gray_8: blue; */
+/* $gray_d: lime; */
+/* $gray_e6: red; */
+/* $gray_fa: blue; */
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .sui-box-settings-col-2 .sui-side-tabs .branda-tab-items-visibility label.sui-label {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .sui-box-settings-col-2 .sui-side-tabs .branda-tab-items-visibility .sui-row {
+  margin-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .sui-box-settings-col-2 .sui-side-tabs .branda-tab-items-visibility .sui-row .sui-description {
+  color: #666;
+  font-size: 13px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-submenu-items .sui-description {
+  margin-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-submenu-items .sui-form-control + p.sui-description {
+  margin-top: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-submenu-items .sui-form-control + p.sui-description b {
+  color: #333;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-submenu-items .sui-box-builder-body .branda-sui-accordion-sortable {
+  margin: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-visibility-roles label.sui-label,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-visibility-mobile label.sui-label {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-visibility-mobile {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs .branda-visibility-mobile .sui-tabs-content .sui-tab-boxed {
+  border: 0;
+  padding: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs label.sui-label,
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-modal .sui-box-body .sui-tabs div.sui-label {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-tabs-content .branda-admin-bar-items-visibility label.sui-label {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-tabs-content .branda-admin-bar-items-visibility .sui-row {
+  margin-top: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-settings-tab-admin-bar .sui-tabs-content .branda-admin-bar-items-visibility .sui-row .sui-checkbox .sui-description {
+  color: #666;
+  font-size: 13px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .sui-builder-field-label img.branda-image {
+  max-height: 28px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .sui-description {
+  margin-top: 30px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .sui-modal .sui-description {
+  margin-top: 10px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .sui-modal .sui-form-field.branda-general-url {
+  margin-bottom: 0;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .branda-has-items .sui-description {
+  display: none;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .branda-has-items .sui-builder-field-label .dashicons {
+  margin-right: 5px;
+}
+.branda-admin-page .sui-wrap.sui-wrap-branda .branda-admin-bar-items-custom-entries .branda-has-items .sui-builder-field-label .branda-image {
+  max-height: 30px;
+}
+.branda-admin-page #ub_admin_bar_save_ordering {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding: 0 14px;
+  letter-spacing: -.25px;
+  text-transform: uppercase;
+}
+.branda-admin-page #ub_admin_bar_save_ordering span {
+  line-height: 28px;
+}
+.branda-admin-page #ub_admin_bar_save_ordering span i {
+  width: 22px;
+  position: relative;
+  top: -1px;
+  margin-left: -7px;
+}

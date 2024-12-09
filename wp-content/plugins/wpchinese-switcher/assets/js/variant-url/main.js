@@ -1,0 +1,1 @@
+import * as WPCSuriFn from './src/variant'

@@ -12,9 +12,9 @@ Please use the either the [support](https://wordpress.org/support/plugin/advance
 
 ### Available Controls
 
-#### Disable Pagination
+#### Taxonomy queries
 
-Improve the performance of the query by disabling pagination
+Built complicated taxonomy queries!
 
 #### Multiple post types
 
@@ -26,7 +26,7 @@ Set the number of items you want to display (up to 50).
 
 #### Include Posts
 
-Choose the posts you want to display manually.
+Choose the posts you want to display manually or only the children of the current content.
 
 #### Exclude current post
 
@@ -46,7 +46,7 @@ Generate complicated post meta queries using an interface that allows you to cre
 
 #### Date Query
 
-Query items before a date, after a date or between two dates or choose to show the post from the last 1, 3, 6 and 12 months.
+Query items before/after the current or selected or choose to show the post from the last 1, 3, 6 and 12 months.
 
 #### Post Order controls
 
@@ -64,6 +64,10 @@ Sort in ascending or descending order by:
 -   Post ID (props to @markhowellsmead)
 
 **Please note that this is a slight duplication of the existing sorting controls. They both work interchangeably but it just looks a bit odd in the UI**
+
+#### Disable Pagination
+
+Improve the performance of the query by disabling pagination
 
 ## Extending AQL
 
